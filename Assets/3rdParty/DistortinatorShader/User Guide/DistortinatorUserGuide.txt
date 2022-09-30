@@ -1,0 +1,26 @@
+Hello and thanks for purchasing Distortinator! 
+
+I really, really appretiate it! :3
+
+----------------------------
+
+How to use:
+
+To use Distortionator is quite simple.
+
+1 - Just create a new material under Assets > Create > Shader
+2 - Name and select new material
+3 - As the material's shader, select Custom/FunkyBackground
+4 - Assign material to a Sprite Renderer's Material
+5 - Adjust parameters as needed!
+
+However, there are a couple of things to note:
+- For best performance, textures' Wrap Mode should be NOT Clamp. Use insted Repeat/Mirror (or variations) according with your necessities.
+- The shader should work with all three Draw Modes: Default, Sliced and Tiled, though I mostly tested on Default and Tiled.
+- Quite a bit can be done with the Blend Modes. For the most common combinations of Blend Modes, read "Blend Types.txt", included with this package.
+
+----------------------------
+
+Distortionator Release 1.0
+
+© 2019 Estevam Chen - All Rights Reserved

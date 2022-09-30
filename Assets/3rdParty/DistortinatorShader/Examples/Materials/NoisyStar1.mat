@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: NoisyStar1
+  m_Shader: {fileID: 4800000, guid: 1265c942dcf64fa45ac15e5b0299819c, type: 3}
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA INTERLACING_ON NOISE_ON TILESET_MODE_ON VERTICAL_WOBBLE_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 30210496cb0cd7746ad95b2a1aec33d8, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTex:
+        m_Texture: {fileID: 2800000, guid: ff071bb6236ba1145b6cd381caaa7089, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - INTERLACING: 1
+    - NOISING: 1
+    - TILESET_MODE: 1
+    - VERTICAL_WOBBLE: 1
+    - _Amplitude: 0.137
+    - _AnimationPhase: 0
+    - _AnimationSpeed: 0.6
+    - _Distortion: 0
+    - _DistortionX: 0
+    - _DistortionY: 0
+    - _Frequency: 0.3
+    - _Interlace2: 4
+    - _InterlaceSize: 2
+    - _MoveX: 0
+    - _MoveY: 0
+    - _MyDstMode: 0
+    - _MySrcMode: 1
+    - _NoiseLv: 0.131
+    - _OscilationY: 0
+    - _OscilationYAmplitude: 0
+    - _OscilationYFrequency: 0.57
+    - _OscilationYPhase: 0
+    m_Colors: []

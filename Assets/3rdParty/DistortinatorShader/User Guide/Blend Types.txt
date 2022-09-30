@@ -1,0 +1,26 @@
+Most common Blend Types:
+
+Traditional transparency:
+- Source: SrcAlpha
+- Destination: OneMinusSrcAlpha 
+
+Premultiplied transparency:
+- Source: One
+- Destination: OneMinusSrcAlpha 
+
+Additive:
+- Source: One
+- Destination: One 
+
+Soft Additive:
+- Source: OneMinusDstColor
+- Destination: One 
+
+Multiplicative:
+- Source: DstColor
+- Destination: Zero 
+
+2x Multiplicative:
+- Source: DstColor
+- Destination: SrcColor 
+
