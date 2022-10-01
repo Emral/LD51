@@ -9,7 +9,7 @@ public class Guessable
     [HorizontalGroup]
     [HideLabel]
     [PreviewField(Height = 32, Alignment = ObjectFieldAlignment.Left)]
-    public Texture2D texture;
+    public Sprite texture;
     [HorizontalGroup]
     [HideLabel]
     [Range(1, 10)]
@@ -25,6 +25,6 @@ public class GuessableImage : ScriptableObject
     public Texture2D GetRandom()
     {
         images.Sort((a, b) => Random.Range(0, 2));
-        return images[0].texture;
+        return images[0].texture.texture;
     }
 }
