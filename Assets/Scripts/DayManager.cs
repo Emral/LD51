@@ -2,6 +2,7 @@ using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class DayManager : MonoBehaviour
@@ -27,6 +28,9 @@ public class DayManager : MonoBehaviour
 
     private bool _dayActive;
     private bool _timerActive;
+
+    public static bool DayActive;
+    public static bool TimerActive;
 
     private Texture2D __currentGuessable;
     private Texture2D _currentGuessable
@@ -81,6 +85,9 @@ public class DayManager : MonoBehaviour
         }
 
         TimerImage.fillAmount = 1 - _timerTimeElapsed / 10;
+
+        DayActive = _dayActive;
+        TimerActive = _timerActive;
     }
 
     public void Sell()
@@ -99,13 +106,13 @@ public class DayManager : MonoBehaviour
         CompareImages(tex, _currentGuessable);
         _oldTextures.Add(tex);
         _texturesToday++;
-        CanvasSurface.DOMove(CanvasSurface.transform.position + Vector3.up * 9, 0.25f, true);
+        CanvasSurface.DOMove(CanvasSurface.transform.position + Vector3.up * 500, 0.25f, true);
         DrawController.Clear();
         yield return new WaitForSeconds(0.5f);
 
         if (_dayActive)
         {
-            CanvasSurface.DOMove(CanvasSurface.transform.position + Vector3.up * -9, 0.25f, true);
+            CanvasSurface.DOMove(CanvasSurface.transform.position + Vector3.up * -500, 0.25f, true);
             _timerActive = true;
             DrawController.EnableDrawing();
             NewGuessable();
