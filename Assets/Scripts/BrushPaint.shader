@@ -88,7 +88,7 @@ Shader "Region28/BrushPaint"
 				if(pos.x > 0 && pos.x < 1 && pos.y > 0 && pos.y < 1)
 					_maskCol = tex2D(_Brush, pos) * _BrushTint;
 
-				return lerp(col, float4(_maskCol.rgb,1.0), _maskCol.a);
+				return lerp(col, float4(_maskCol.rgb,1.0), 1);
 			}
 			ENDCG
 		}
