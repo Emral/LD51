@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class GlobalVars
 {
-    public int Money = 50;
+    public float Money = 50;
     public int DailyCost = 50;
     public float Reputation = 0.5f;
     public float Popularity = 0f;

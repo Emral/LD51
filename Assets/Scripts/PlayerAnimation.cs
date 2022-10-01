@@ -27,7 +27,7 @@ public class PlayerAnimation : MonoBehaviour
             {
                 Head.transform.localPosition = Vector3.up * -8;
                 Face.sprite = DrawingNormal;
-                Pen.transform.localPosition = Vector3.right * 4 - Vector3.right * 20 * Input.mousePosition.x/Screen.width + Vector3.up * Pen.transform.localPosition.y;
+                Pen.rectTransform.anchoredPosition = Vector3.right * 4 - Vector3.right * 20 * Input.mousePosition.x / Screen.width + Vector3.up * -2 * (Input.GetMouseButton(0) ? 4 : 0);
             }
             else
             {

@@ -13,9 +13,12 @@ public class DayManager : MonoBehaviour
 
     public static GlobalVars Globals;
 
+    public GuySprites guys;
+
+    private GuySprite _currentGuy;
+
     public Image TimerImage;
     public Image GuessableImage;
-    public Image test;
     public DrawDriver DrawController;
     public RectTransform CanvasSurface;
 
@@ -31,6 +34,9 @@ public class DayManager : MonoBehaviour
 
     public static bool DayActive;
     public static bool TimerActive;
+
+    public static UnityEvent<float> OnSubmit = new UnityEvent<float>();
+    public static UnityEvent<GuySprite> OnNewGuy = new UnityEvent<GuySprite>();
 
     private Texture2D __currentGuessable;
     private Texture2D _currentGuessable
@@ -112,16 +118,21 @@ public class DayManager : MonoBehaviour
 
         if (_dayActive)
         {
-            CanvasSurface.DOMove(CanvasSurface.transform.position + Vector3.up * -500, 0.25f, true);
-            _timerActive = true;
-            DrawController.EnableDrawing();
             NewGuessable();
+            CanvasSurface.DOMove(CanvasSurface.transform.position + Vector3.up * -500, 0.25f, true).OnComplete(() =>
+            {
+                _timerActive = true;
+                DrawController.EnableDrawing();
+
+            });
         }
     }
 
     private void NewGuessable()
     {
+        _currentGuy = guys.GetRandom();
         _currentGuessable = imageCandidates.GetRandom();
+        OnNewGuy.Invoke(_currentGuy);
     }
 
     private void CompareImages(Texture2D drawn, Texture2D wanted)
@@ -167,8 +178,12 @@ public class DayManager : MonoBehaviour
 
         Debug.Log(totalPenalty);
 
-        var reward = Mathf.Clamp(totalPenalty, 2, Globals.MaxIncome);
+        var reward = Mathf.Clamp(totalPenalty, 0.01f, Globals.MaxIncome);
 
-        Debug.Log(reward);
+        reward = Mathf.Ceil(reward * 100) / 100.0f;
+
+        Globals.Money += reward;
+
+        OnSubmit.Invoke(reward);
     }
 }

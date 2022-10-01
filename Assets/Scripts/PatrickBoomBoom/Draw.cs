@@ -125,7 +125,6 @@ public class Draw : MonoBehaviour
         var scale = m_canvas.scaleFactor; //new Vector2(Screen.width / 640, Screen.height / 360);
         //???????????????
         Vector2 pos = brushPos / scale - rawImagePos / scale;
-        Debug.Log(m_rawImageSizeX);
         //????????UV??
         Vector2 uv = new Vector2(pos.x / (m_rawImageSizeX) + 0.5f, pos.y / (m_rawImageSizeY) + 0.5f);
 

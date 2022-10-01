@@ -12,7 +12,7 @@ public class Guessable
     public Texture2D texture;
     [HorizontalGroup]
     [HideLabel]
-    [Range(1, 5)]
+    [Range(1, 10)]
     public int difficulty = 1;
     public List<string> tags;
 }

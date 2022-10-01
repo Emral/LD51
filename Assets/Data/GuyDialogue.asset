@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3eae342a93672d4d87b837942c4580f, type: 3}
+  m_Name: GuyDialogue
+  m_EditorClassIdentifier: 
+  worst:
+  - Um...
+  - What is this?
+  - I guess...
+  - I suppose...
+  - Huh?
+  - Aw...
+  - It's... unique.
+  - Whatever.
+  bad:
+  - Okay...
+  - Not quite how I imagined...
+  - It's alright.
+  - Thx.
+  - Goodbye.
+  - Must be avant-garde...
+  decent:
+  - Thanks!
+  - Pretty good.
+  - Thank you!
+  - Good work.
+  - Neat!
+  - Cool.
+  good:
+  - I like it!
+  - Thanks a lot!
+  - Great work!
+  - This is cool.
+  - Great!
+  - Keep it up!
+  great:
+  - Very talented!
+  - Wow! So good.
+  - Just how I imagined it.
+  - Fantastic!
+  - This is so good.
+  - This drawing made my day.
+  - I'm a big fan.
+  exceptional:
+  - Beyond my expectations!
+  - One of a kind!
+  - Love your work!
+  - Splendid craftsmanship!
+  - Such intricate strokes...
+  - This is true art.
+  - My new favourite artist.
