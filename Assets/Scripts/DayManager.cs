@@ -1,6 +1,7 @@
 using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Sprites;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -38,13 +39,13 @@ public class DayManager : MonoBehaviour
     public static UnityEvent<float> OnSubmit = new UnityEvent<float>();
     public static UnityEvent<GuySprite> OnNewGuy = new UnityEvent<GuySprite>();
 
-    private Texture2D __currentGuessable;
-    private Texture2D _currentGuessable
+    private Sprite __currentGuessable;
+    private Sprite _currentGuessable
     {
         get => __currentGuessable;
         set {
             __currentGuessable = value;
-            GuessableImage.sprite = Sprite.Create(__currentGuessable, new Rect(0, 0, 64, 64), Vector2.one * 0.5f);
+            GuessableImage.sprite = _currentGuessable;
         }
     }
 
@@ -109,7 +110,15 @@ public class DayManager : MonoBehaviour
         yield return null;
         _timerActive = false;
         var tex = DrawController.FinishDrawing();
-        CompareImages(tex, _currentGuessable);
+        var tex2 = new Texture2D(64, 64);
+        var tex3 = _currentGuessable.texture;
+        tex2.SetPixels(tex3.GetPixels(
+            Mathf.FloorToInt(_currentGuessable.rect.x),
+            Mathf.FloorToInt(_currentGuessable.rect.y),
+            Mathf.FloorToInt(_currentGuessable.rect.width),
+            Mathf.FloorToInt(_currentGuessable.rect.height)));
+        tex2.Apply();
+        CompareImages(tex, tex2);
         _oldTextures.Add(tex);
         _texturesToday++;
         CanvasSurface.DOMove(CanvasSurface.transform.position + Vector3.up * 500, 0.25f, true);

@@ -22,9 +22,9 @@ public class GuessableImage : ScriptableObject
 {
     public List<Guessable> images = new List<Guessable>();
 
-    public Texture2D GetRandom()
+    public Sprite GetRandom()
     {
         images.Sort((a, b) => Random.Range(0, 2));
-        return images[0].texture.texture;
+        return images[0].texture;
     }
 }
