@@ -24,7 +24,6 @@ public class GuessableImage : ScriptableObject
 
     public Sprite GetRandom()
     {
-        images.Sort((a, b) => Random.Range(0, 2));
-        return images[0].texture;
+        return images[Random.Range(0, images.Count)].texture;
     }
 }
