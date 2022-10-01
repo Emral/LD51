@@ -87,7 +87,7 @@ MonoBehaviour:
     - object
     - nature
   - texture: {fileID: 489982703, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 1
+    difficulty: 4
     tags:
     - object
     - nature
@@ -142,3 +142,40 @@ MonoBehaviour:
     tags:
     - nature
     - landscape
+  - texture: {fileID: -701261358, guid: 50eae042970217d4eac26422469ca83e, type: 3}
+    difficulty: 6
+    tags:
+    - cartoon
+    - bird
+  - texture: {fileID: 1239972853, guid: 50eae042970217d4eac26422469ca83e, type: 3}
+    difficulty: 1
+    tags:
+    - object
+  - texture: {fileID: 1013364148, guid: 50eae042970217d4eac26422469ca83e, type: 3}
+    difficulty: 6
+    tags:
+    - nature
+    - sky
+  - texture: {fileID: 437981352, guid: 50eae042970217d4eac26422469ca83e, type: 3}
+    difficulty: 2
+    tags:
+    - object
+  - texture: {fileID: -1734201321, guid: 50eae042970217d4eac26422469ca83e, type: 3}
+    difficulty: 1
+    tags:
+    - object
+  - texture: {fileID: -1887719661, guid: 50eae042970217d4eac26422469ca83e, type: 3}
+    difficulty: 6
+    tags:
+    - animal
+    - cartoon
+  - texture: {fileID: -1924610622, guid: 50eae042970217d4eac26422469ca83e, type: 3}
+    difficulty: 3
+    tags:
+    - nature
+    - landscape
+  - texture: {fileID: -979064984, guid: 50eae042970217d4eac26422469ca83e, type: 3}
+    difficulty: 3
+    tags:
+    - nature
+    - food
