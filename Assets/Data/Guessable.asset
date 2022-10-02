@@ -146,7 +146,7 @@ MonoBehaviour:
     - bird
     - cute
   - texture: {fileID: -266221329, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 1
+    strokeComplexity: 3
     colors: 1
     tags:
     - cartoon
@@ -603,3 +603,165 @@ MonoBehaviour:
     tags:
     - object
     - finance
+  - texture: {fileID: 2008372559, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 3
+    colors: 5
+    tags:
+    - animal
+    - nature
+  - texture: {fileID: -1958865370, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 3
+    colors: 129
+    tags:
+    - animal
+    - nature
+  - texture: {fileID: -2136653505, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 2
+    colors: 1
+    tags:
+    - object
+    - edgy
+  - texture: {fileID: -813878586, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 2
+    colors: 2
+    tags:
+    - edgy
+    - cartoon
+  - texture: {fileID: 1486427585, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 2
+    colors: 2
+    tags:
+    - edgy
+    - cartoon
+  - texture: {fileID: 47881145, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 1
+    colors: 1
+    tags:
+    - person
+    - edgy
+  - texture: {fileID: 1641322028, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 2
+    colors: 66
+    tags:
+    - nature
+    - sky
+  - texture: {fileID: 1909161107, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 2
+    colors: 16
+    tags:
+    - nature
+    - sky
+  - texture: {fileID: -1334178774, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 2
+    colors: 65
+    tags:
+    - edgy
+    - cartoon
+  - texture: {fileID: -3881750, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 1
+    colors: 1
+    tags:
+    - person
+  - texture: {fileID: 646246173, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 1
+    colors: 1
+    tags:
+    - person
+  - texture: {fileID: -1834464958, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 3
+    colors: 1
+    tags:
+    - person
+    - edgy
+    - cartoon
+  - texture: {fileID: -527316756, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 1
+    colors: 4
+    tags:
+    - object
+    - edgy
+  - texture: {fileID: -1623847478, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 2
+    colors: 4
+    tags:
+    - object
+    - edgy
+  - texture: {fileID: 1572303952, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 3
+    colors: 32
+    tags:
+    - cartoon
+    - cute
+  - texture: {fileID: -1998424530, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 2
+    colors: 32
+    tags:
+    - nature
+    - food
+    - cute
+  - texture: {fileID: 1675206997, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 1
+    colors: 32
+    tags:
+    - nature
+    - food
+    - cute
+  - texture: {fileID: 374368349, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 2
+    colors: 64
+    tags:
+    - edgy
+  - texture: {fileID: -845708030, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 2
+    colors: 64
+    tags:
+    - edgy
+  - texture: {fileID: -1077858868, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 2
+    colors: 64
+    tags:
+    - edgy
+  - texture: {fileID: 843140145, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 2
+    colors: 8
+    tags:
+    - object
+  - texture: {fileID: -2079676154, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 3
+    colors: 1
+    tags:
+    - edgy
+    - person
+  - texture: {fileID: -595147197, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 2
+    colors: 128
+    tags:
+    - edgy
+    - cartoon
+  - texture: {fileID: -376641127, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 1
+    colors: 64
+    tags:
+    - edgy
+    - cartoon
+  - texture: {fileID: -1435913409, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 3
+    colors: 1
+    tags:
+    - object
+  - texture: {fileID: 783470523, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 3
+    colors: 1
+    tags:
+    - object
+  - texture: {fileID: 983741911, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 3
+    colors: 64
+    tags:
+    - object
+  - texture: {fileID: 1960285789, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 1
+    colors: 16
+    tags:
+    - nature
+    - sky
