@@ -313,7 +313,7 @@ public class DayManager : MonoBehaviour
             }
         }
 
-        totalPenalty = (_currentGuy.bias + totalPenalty) * 0.6f + 0.5f;
+        totalPenalty = (_currentGuy.bias + totalPenalty) * 0.45f + 0.55f;
 
         Debug.Log(totalPenalty);
 
