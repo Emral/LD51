@@ -8,6 +8,8 @@ public class MetaManager : MonoBehaviour
 {
     public static MetaManager instance;
 
+    public EventList events;
+
     public RectTransform LoadScreen;
 
     private SessionVariables sessionVariables;
@@ -25,12 +27,13 @@ public class MetaManager : MonoBehaviour
             return;
         }
 
-        sessionVariables = ScriptableObject.CreateInstance<SessionVariables>();
-
-        if (SceneManager.GetActiveScene().buildIndex != 0)
+        foreach(Event ev in events.events)
         {
-            sessionVariables.Initialize();
+            ev.Initialize();
         }
+
+        sessionVariables = ScriptableObject.CreateInstance<SessionVariables>();
+        sessionVariables.Initialize();
     }
 
     private void Start()
@@ -44,6 +47,7 @@ public class MetaManager : MonoBehaviour
     public void TransitionToTitleScene()
     {
         AudioManager.ChangeMusic(BGM.MainMenu);
+        sessionVariables.Initialize();
         ShowLoadScreen(0, a =>
         {
             HideLoadScreen(() =>
@@ -81,7 +85,6 @@ public class MetaManager : MonoBehaviour
     public void TransitionToPreGameScene()
     {
         AudioManager.ChangeMusic(BGM.PreGame);
-        sessionVariables.Initialize();
         ShowLoadScreen(1, a =>
         {
             HideLoadScreen(() =>

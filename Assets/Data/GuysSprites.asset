@@ -15,9 +15,27 @@ MonoBehaviour:
   sprites:
   - sprite: {fileID: 21300000, guid: 61d2bcc745802c643a82976587dcba55, type: 3}
     bias: 0
-    rarity: 10
+    weight: 10
+    RainOnly: 0
+    SunOnly: 0
+    ArrivalSound: {fileID: 0}
+    ThanksSound: {fileID: 0}
     preferredTags: []
   - sprite: {fileID: 21300000, guid: a6ba82f98f6b92a459a0848a77001c5c, type: 3}
     bias: -2
-    rarity: 10
+    weight: 10
+    RainOnly: 0
+    SunOnly: 0
+    ArrivalSound: {fileID: 0}
+    ThanksSound: {fileID: 0}
     preferredTags: []
+  - sprite: {fileID: 21300000, guid: cf517c3430106ed4bb9922122d304f71, type: 3}
+    bias: 0
+    weight: 1
+    RainOnly: 1
+    SunOnly: 0
+    ArrivalSound: {fileID: 0}
+    ThanksSound: {fileID: 0}
+    preferredTags:
+    - creature
+    - edgy

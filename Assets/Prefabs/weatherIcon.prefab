@@ -91,6 +91,7 @@ GameObject:
   - component: {fileID: 5206177110382919994}
   - component: {fileID: 5206177110382919996}
   - component: {fileID: 5206177110382919997}
+  - component: {fileID: 7983737856147816899}
   m_Layer: 5
   m_Name: weatherIcon
   m_TagString: Untagged
@@ -157,3 +158,17 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7983737856147816899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5206177110382919995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8447376b94467314bba4893f622ffc8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  img: {fileID: 5206177110382919997}
+  txt: {fileID: 5206177110087947190}

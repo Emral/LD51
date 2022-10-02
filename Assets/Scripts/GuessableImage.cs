@@ -50,7 +50,7 @@ public class GuessableImage : ScriptableObject
             {
                 if (Mathf.Min(upperLimit, 4) <= image.strokeComplexity)
                 {
-                    if (preferredTags == null)
+                    if (preferredTags == null || preferredTags.Count == 0)
                     {
                         candidates.Add(image);
                     }
@@ -68,6 +68,14 @@ public class GuessableImage : ScriptableObject
                 }
             }
         }
-        return images[Random.Range(0, images.Count)].texture;
+        if (candidates.Count > 0)
+        {
+            return candidates[Random.Range(0, candidates.Count)].texture;
+        }
+        else
+        {
+            Debug.Log("Unable to spawn image");
+            return images[Random.Range(0, images.Count)].texture;
+        }
     }
 }

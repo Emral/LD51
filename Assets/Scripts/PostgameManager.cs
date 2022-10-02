@@ -58,6 +58,7 @@ public class PostgameManager : MonoBehaviour
             ContinueButton.gameObject.SetActive(true);
             ContinueButton.transform.localScale = Vector3.zero;
             ContinueButton.transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack);
+            SessionVariables.NewDayBegins();
         } else
         {
             PlayerPerson.MakeDie();
@@ -80,7 +81,7 @@ public class PostgameManager : MonoBehaviour
         {
             yield return new WaitForSeconds(1.75f);
             Results.DOMoveY(-180, 1).SetEase(Ease.InOutQuint);
-            while (true)
+            while (SessionVariables.todaysDrawings.Count > 0)
             {
                 Canvas.transform.localPosition = Vector3.up * 360;
                 CanvasContents.sprite = Sprite.Create(SessionVariables.todaysDrawings[idx % SessionVariables.todaysDrawings.Count], new Rect(0, 0, 256, 256), new Vector2(0.5f, 0.5f));

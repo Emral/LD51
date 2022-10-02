@@ -1,0 +1,176 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 422480c26e6d64d4fab8ed7206409ec4, type: 3}
+  m_Name: Events
+  m_EditorClassIdentifier: 
+  events:
+  - eventLogMessage: I think I should expand my palette a little. Just black and
+      white is a bit boring.
+    minDuration: 0
+    maxDuration: 0
+    Permanent: 1
+    Delay: 1
+    IncreasesRushHourMin: 0
+    IncreasesRushHourMax: 0
+    CanRepeat: 0
+    MinRepeatDayDifference: 0
+    IncreaseMaxIncomeMultiplier: 0
+    IncreaseMaxIncome: 1
+    UnlocksColors: 1
+    FollowersRequired: 0
+    ExperienceRequired: 0
+    ReputationRequired: 0
+    MoneyRequired: 10
+    eventTags: []
+    newExpenses:
+    - Name: Utensils
+      Value: 5
+  - eventLogMessage: I think I'm gonna expand my palette even further soon.
+    minDuration: 0
+    maxDuration: 0
+    Permanent: 1
+    Delay: 1
+    IncreasesRushHourMin: 0
+    IncreasesRushHourMax: 0
+    CanRepeat: 0
+    MinRepeatDayDifference: 0
+    IncreaseMaxIncomeMultiplier: 0
+    IncreaseMaxIncome: 1
+    UnlocksColors: 1
+    FollowersRequired: 0
+    ExperienceRequired: 0
+    ReputationRequired: 0
+    MoneyRequired: 100
+    eventTags: []
+    newExpenses:
+    - Name: Utensils
+      Value: 5
+  - eventLogMessage: I think it's time to add even more colors to my repertoire.
+    minDuration: 0
+    maxDuration: 0
+    Permanent: 1
+    Delay: 1
+    IncreasesRushHourMin: 0
+    IncreasesRushHourMax: 0
+    CanRepeat: 0
+    MinRepeatDayDifference: 0
+    IncreaseMaxIncomeMultiplier: 0
+    IncreaseMaxIncome: 1
+    UnlocksColors: 1
+    FollowersRequired: 0
+    ExperienceRequired: 0
+    ReputationRequired: 0
+    MoneyRequired: 250
+    eventTags: []
+    newExpenses:
+    - Name: Utensils
+      Value: 5
+  - eventLogMessage: Okay, one more color and then my palette is full. Might as well.
+    minDuration: 0
+    maxDuration: 0
+    Permanent: 1
+    Delay: 1
+    IncreasesRushHourMin: 0
+    IncreasesRushHourMax: 0
+    CanRepeat: 0
+    MinRepeatDayDifference: 0
+    IncreaseMaxIncomeMultiplier: 0
+    IncreaseMaxIncome: 1
+    UnlocksColors: 1
+    FollowersRequired: 0
+    ExperienceRequired: 0
+    ReputationRequired: 0
+    MoneyRequired: 450
+    eventTags: []
+    newExpenses:
+    - Name: Utensils
+      Value: 5
+  - eventLogMessage: Oh wow! Someone's tweet mentioning me blew up! Looks like a
+      lot of people might be coming over soon.
+    minDuration: 1
+    maxDuration: 3
+    Permanent: 0
+    Delay: 0
+    IncreasesRushHourMin: 0.1
+    IncreasesRushHourMax: 0.2
+    CanRepeat: 1
+    MinRepeatDayDifference: 10
+    IncreaseMaxIncomeMultiplier: 0.1
+    IncreaseMaxIncome: 0
+    UnlocksColors: 0
+    FollowersRequired: 25
+    ExperienceRequired: 25
+    ReputationRequired: 10
+    MoneyRequired: 0
+    eventTags: []
+    newExpenses: []
+  - eventLogMessage: Today my landlord increased my rent. I'll have to work harder
+      to make ends meet.
+    minDuration: 0
+    maxDuration: 0
+    Permanent: 1
+    Delay: 0
+    IncreasesRushHourMin: 0
+    IncreasesRushHourMax: 0
+    CanRepeat: 1
+    MinRepeatDayDifference: 10
+    IncreaseMaxIncomeMultiplier: 0
+    IncreaseMaxIncome: 0
+    UnlocksColors: 0
+    FollowersRequired: 15
+    ExperienceRequired: 15
+    ReputationRequired: 0
+    MoneyRequired: 300
+    eventTags: []
+    newExpenses:
+    - Name: Rent
+      Value: 15
+  - eventLogMessage: Looks like a convention for a famous videogame is coming to
+      town soon. Chances are many people will want drawings of their favourite creatures.
+    minDuration: 1
+    maxDuration: 3
+    Permanent: 0
+    Delay: 1
+    IncreasesRushHourMin: 0.05
+    IncreasesRushHourMax: 0.1
+    CanRepeat: 1
+    MinRepeatDayDifference: 15
+    IncreaseMaxIncomeMultiplier: 0
+    IncreaseMaxIncome: 0
+    UnlocksColors: 0
+    FollowersRequired: 25
+    ExperienceRequired: 35
+    ReputationRequired: 5
+    MoneyRequired: 50
+    eventTags:
+    - creature
+    newExpenses: []
+  - eventLogMessage: There is a nature festival today. Maybe people will come over
+      for specific paintings.
+    minDuration: 1
+    maxDuration: 1
+    Permanent: 0
+    Delay: 0
+    IncreasesRushHourMin: 0.2
+    IncreasesRushHourMax: 0.3
+    CanRepeat: 1
+    MinRepeatDayDifference: 12
+    IncreaseMaxIncomeMultiplier: 0
+    IncreaseMaxIncome: 0
+    UnlocksColors: 0
+    FollowersRequired: 5
+    ExperienceRequired: 5
+    ReputationRequired: 1
+    MoneyRequired: 0
+    eventTags:
+    - nature
+    newExpenses: []

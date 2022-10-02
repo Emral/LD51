@@ -56,7 +56,12 @@ public class DayManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        var rushHourDuration = Mathf.FloorToInt((SessionVariables.Followers + SessionVariables.Reputation) / 10.0f) * 0.01f;
+        rushHourDuration = Mathf.Max(0, rushHourDuration - Random.Range(0.2f, 0.3f), 0);
+        Globals.RushHourEnd = Random.Range(0.8f, 1);
+        Globals.RushHourStart = Globals.RushHourEnd - rushHourDuration;
         CoroutineManager.Start(StartNextDay());
+        SessionVariables.todaysDrawings.Clear();
     }
 
     private void Awake()
@@ -66,9 +71,15 @@ public class DayManager : MonoBehaviour
 
     private IEnumerator StartNextDay()
     {
+
+        Globals.IsRaining = SessionVariables.UpcomingWeathers[0] == Weather.Rain;
+        AudioManager.ChangeMusic(Globals.IsRaining ? BGM.GameRain : BGM.GameRegular);
+        foreach (var e in SessionVariables.Events)
+        {
+            yield return e.DailyExecute();
+        }
         _dayActive = true;
         _timerActive = true;
-        AudioManager.ChangeMusic(SessionVariables.UpcomingWeathers[0] == Weather.Rain ? BGM.GameRain : BGM.GameRegular);
         NewGuessable();
         yield return null;
     }
@@ -203,7 +214,6 @@ public class DayManager : MonoBehaviour
 
         float totalInkA = 0;
         float totalInkB = 0;
-        float totalInk = 0;
 
         Dictionary<Color, float> colorDifferences = new Dictionary<Color, float>();
         Dictionary<Color, float> bSum = new Dictionary<Color, float>();
@@ -277,13 +287,9 @@ public class DayManager : MonoBehaviour
 
         totalPenalty = totalPenalty / Mathf.Max(penaltyRange, 1);
 
-        Debug.Log("A: " + totalPenalty);
-
         totalPenalty = totalPenalty + 2 - 2 * Mathf.Abs(totalInkA/penaltyRange - totalInkB/penaltyRange);
 
         totalPenalty = totalPenalty + 1;
-
-        Debug.Log("B: " + totalPenalty);
 
         foreach (var kvp in colorDifferences)
         {
@@ -298,15 +304,18 @@ public class DayManager : MonoBehaviour
             }
         }
 
-        Debug.Log("C: " + totalPenalty);
         totalPenalty = (SessionVariables.Reputation + 0.1f * _currentGuy.bias + totalPenalty * 1.1f) + 0.3f;
-        Debug.Log("D: " + totalPenalty);
-
-
 
         var reward = Mathf.Lerp(0.01f, 1, 0.5f + totalPenalty * 0.5f) * SessionVariables.IncomeMultiplier * SessionVariables.MaxIncomeBase;
 
         reward = Mathf.Ceil(reward * 100) / 100.0f;
+
+        if (reward > 6 - SessionVariables.Reputation + 0.1f)
+        {
+            SessionVariables.Followers = SessionVariables.Followers + 1;
+        }
+        SessionVariables.Experience = SessionVariables.Experience + reward * reward * 0.002f;
+        SessionVariables.Reputation = Mathf.Max(0, SessionVariables.Reputation + 0.001f * totalPenalty);
 
         SessionVariables.TodaysEarnings += reward;
 
