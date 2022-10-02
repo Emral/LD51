@@ -11,6 +11,6 @@ public class DateText : MonoBehaviour
     void Start()
     {
         _text = GetComponent<Text>();
-        _text.text = DayManager.Globals.GetDayString();
+        _text.text = SessionVariables.GetDayString();
     }
 }

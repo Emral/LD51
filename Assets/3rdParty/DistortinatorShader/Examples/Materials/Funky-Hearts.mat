@@ -2,13 +2,19 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: Funky-Hearts
   m_Shader: {fileID: 4800000, guid: 1265c942dcf64fa45ac15e5b0299819c, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA INTERLACING_ON VERTICAL_WOBBLE_ON
+  m_ValidKeywords:
+  - INTERLACING_ON
+  - NOISE_ON
+  - VERTICAL_WOBBLE_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -20,17 +26,32 @@ Material:
     m_TexEnvs:
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: 20b67b881c232314d838c9f8b2edf112, type: 3}
+        m_Scale: {x: 0, y: 0.0000001}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTex:
+        m_Texture: {fileID: 2800000, guid: d151f022dc7bf1c469241e920096804a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - INTERLACING: 1
+    - NOISING: 1
     - VERTICAL_WOBBLE: 1
-    - _Amplitude: 0.058
-    - _AnimationPhase: 0.533
-    - _AnimationSpeed: -0.5
-    - _Frequency: 0.6
-    - _Interlace2: 4
-    - _InterlaceSize: 2
+    - _Amplitude: 0.069
+    - _AnimationPhase: 0.773
+    - _AnimationSpeed: -0.85
+    - _Distortion: 0.3
+    - _DistortionX: 0
+    - _DistortionY: 0
+    - _Frequency: 0.5
+    - _Interlace2: 2
+    - _InterlaceSize: 1
+    - _MoveX: 0
+    - _MoveY: 0
     - _MyDstMode: 0
-    - _MySrcMode: 4
+    - _MySrcMode: 1
+    - _NoiseLv: 0.136
+    - _OscilationYAmplitude: 0.048
+    - _OscilationYFrequency: 0.88
     m_Colors: []
+  m_BuildTextureStacks: []

@@ -119,12 +119,12 @@ TextureImporter:
       name: ColorBlots_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 176
-        width: 43
-        height: 22
+        x: 10
+        y: 255
+        width: 44
+        height: 33
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -140,12 +140,12 @@ TextureImporter:
       name: ColorBlots_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 154
-        width: 43
-        height: 22
+        x: 40
+        y: 214
+        width: 45
+        height: 39
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -161,12 +161,12 @@ TextureImporter:
       name: ColorBlots_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 132
-        width: 43
-        height: 22
+        x: 8
+        y: 182
+        width: 39
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -182,12 +182,12 @@ TextureImporter:
       name: ColorBlots_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 110
-        width: 43
-        height: 22
+        x: 36
+        y: 154
+        width: 38
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -203,12 +203,12 @@ TextureImporter:
       name: ColorBlots_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 88
-        width: 43
-        height: 22
+        x: 13
+        y: 122
+        width: 36
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -224,12 +224,12 @@ TextureImporter:
       name: ColorBlots_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 66
-        width: 43
-        height: 22
+        x: 20
+        y: 94
+        width: 45
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -245,12 +245,12 @@ TextureImporter:
       name: ColorBlots_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 44
-        width: 43
-        height: 22
+        x: 4
+        y: 62
+        width: 37
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -266,12 +266,12 @@ TextureImporter:
       name: ColorBlots_7
       rect:
         serializedVersion: 2
-        x: 0
-        y: 22
-        width: 43
-        height: 22
+        x: 2
+        y: 32
+        width: 44
+        height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -287,12 +287,12 @@ TextureImporter:
       name: ColorBlots_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 43
-        height: 22
+        x: 10
+        y: 4
+        width: 38
+        height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

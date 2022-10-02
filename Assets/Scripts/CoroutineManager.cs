@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CoroutineManager : MonoBehaviour
 {
@@ -8,7 +9,12 @@ public class CoroutineManager : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        instance = this;
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(this);
+            SceneManager.sceneUnloaded += a => AbortAll();
+        }
     }
 
     public static Coroutine Start(IEnumerator function)

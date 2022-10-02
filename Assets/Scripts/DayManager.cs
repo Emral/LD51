@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEditor.Sprites;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class DayManager : MonoBehaviour
@@ -23,10 +24,6 @@ public class DayManager : MonoBehaviour
     public DrawDriver DrawController;
     public RectTransform CanvasSurface;
 
-    private List<Texture2D> _oldTextures = new List<Texture2D>();
-    private int _texturesToday;
-    private int _moneyToday;
-
     private float _dayTimeElapsed;
     private float _timerTimeElapsed;
 
@@ -35,6 +32,11 @@ public class DayManager : MonoBehaviour
 
     public static bool DayActive;
     public static bool TimerActive;
+
+    public RectTransform ThatsAWrap;
+
+    public static UnityEvent<float> OnDayProgress = new UnityEvent<float>();
+    public static UnityEvent OnDayEnd = new UnityEvent();
 
     public static UnityEvent<float> OnSubmit = new UnityEvent<float>();
     public static UnityEvent<GuySprite> OnNewGuy = new UnityEvent<GuySprite>();
@@ -76,6 +78,22 @@ public class DayManager : MonoBehaviour
         if (_dayActive)
         {
             _dayTimeElapsed = _dayTimeElapsed + Time.deltaTime;
+
+            OnDayProgress.Invoke(_dayTimeElapsed/100.0f);
+
+            if (_dayTimeElapsed >= 15)
+            {
+                _dayActive = false;
+                Sell();
+                OnDayEnd.Invoke();
+
+                EventSystem.current.enabled = false;
+
+                ThatsAWrap.DOScale(Vector3.one, 1).SetEase(Ease.OutBack).OnComplete(() =>
+                {
+                    MetaManager.instance.TransitionToPostGameScene();
+                });
+            }
         }
         if (_timerActive)
         {
@@ -88,7 +106,7 @@ public class DayManager : MonoBehaviour
         } else
         {
 
-            _timerTimeElapsed = Mathf.Max(_timerTimeElapsed - 20 * Time.deltaTime, isRushHour ? 1 : 0);
+            _timerTimeElapsed = Mathf.Max(_timerTimeElapsed - 20 * Time.deltaTime, Mathf.Max(_dayTimeElapsed - 90, isRushHour ? 3 : 0));
         }
 
         TimerImage.fillAmount = 1 - _timerTimeElapsed / 10;
@@ -119,8 +137,8 @@ public class DayManager : MonoBehaviour
             Mathf.FloorToInt(_currentGuessable.rect.height)));
         tex2.Apply();
         CompareImages(tex, tex2);
-        _oldTextures.Add(tex);
-        _texturesToday++;
+        SessionVariables.todaysDrawings.Add(tex);
+        SessionVariables.allDrawings.Add(tex);
         CanvasSurface.DOMove(CanvasSurface.transform.position + Vector3.up * 500, 0.25f, true);
         DrawController.Clear();
         yield return new WaitForSeconds(0.5f);
@@ -183,15 +201,15 @@ public class DayManager : MonoBehaviour
             }
         }
 
-        totalPenalty = (0.6f - totalPenalty) * 0.5f;
+        totalPenalty = (0.6f - 0.025f * SessionVariables.Reputation - 0.1f * _currentGuy.bias - totalPenalty) * 0.5f;
 
         Debug.Log(totalPenalty);
 
-        var reward = Mathf.Clamp(totalPenalty, 0.01f, Globals.MaxIncome);
+        var reward = Mathf.Clamp(totalPenalty, 0.01f, SessionVariables.IncomeMultiplier * SessionVariables.MaxIncomeBase);
 
         reward = Mathf.Ceil(reward * 100) / 100.0f;
 
-        Globals.Money += reward;
+        SessionVariables.TodaysEarnings += reward;
 
         OnSubmit.Invoke(reward);
     }

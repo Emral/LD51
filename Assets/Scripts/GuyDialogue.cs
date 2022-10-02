@@ -18,19 +18,19 @@ public class GuyDialogue : ScriptableObject
         if (price < 1)
         {
             list = worst;
-        } else if (price < 0.2f * DayManager.Globals.MaxIncome)
+        } else if (price < 0.2f * SessionVariables.IncomeMultiplier * SessionVariables.MaxIncomeBase)
         {
             list = bad;
         }
-        else if (price < 0.5f * DayManager.Globals.MaxIncome)
+        else if (price < 0.5f * SessionVariables.IncomeMultiplier * SessionVariables.MaxIncomeBase)
         {
             list = decent;
         }
-        else if (price < 0.75f * DayManager.Globals.MaxIncome)
+        else if (price < 0.75f * SessionVariables.IncomeMultiplier * SessionVariables.MaxIncomeBase)
         {
             list = good;
         }
-        else if (price < 0.9f * DayManager.Globals.MaxIncome)
+        else if (price < 0.9f * SessionVariables.IncomeMultiplier * SessionVariables.MaxIncomeBase)
         {
             list = great;
         }

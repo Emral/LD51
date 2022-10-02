@@ -11,7 +11,7 @@ public class MoneyText : MonoBehaviour
     void Start()
     {
         _text = GetComponent<Text>();
-        _text.text = "$" + DayManager.Globals.Money;
+        _text.text = "$" + SessionVariables.TodaysEarnings;
         DayManager.OnSubmit.AddListener(OnSubmit);
     }
 
@@ -22,6 +22,6 @@ public class MoneyText : MonoBehaviour
 
     private void OnSubmit(float a)
     {
-        _text.text = "$" + Mathf.Floor(100 * DayManager.Globals.Money) / 100.0f;
+        _text.text = "$" + Mathf.Floor(100 * SessionVariables.TodaysEarnings) / 100.0f;
     }
 }
