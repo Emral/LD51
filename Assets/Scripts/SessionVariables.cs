@@ -102,6 +102,9 @@ public class SessionVariables : ScriptableObject
 
     public static void NewDayBegins()
     {
+        TodaysEarnings = 0;
+        Debug.Log("Reputation: " + Reputation);
+        Debug.Log("Experience: " + Experience);
         LastDay = Day;
         RentMultiplier = 1;
         bool advanced = false;
@@ -146,6 +149,7 @@ public class SessionVariables : ScriptableObject
             return "Alright, let's get started! Today is the first day of my new art studio!";
         } else if (Events.Count > 0 && !Events[Events.Count - 1].EventLogSeen())
         {
+            Events[Events.Count - 1].SetMessageSeen();
             return Events[Events.Count - 1].eventLogMessage;
         } else if (UpcomingWeathers[0] == Weather.Rain)
         {
@@ -192,12 +196,12 @@ public class SessionVariables : ScriptableObject
             sum += expense.Value;
         }
 
-        return Mathf.FloorToInt(sum * 100 * RentMultiplier) / 100;
+        return (RentMultiplier * sum).MakeDollars();
     }
 
     public static void CalculateWeather(int dayToCalculate)
     {
-        if (dayToCalculate > 2 && dayToCalculate % 5 == 3)
+        if (dayToCalculate >= 2 && dayToCalculate % 4 == 2)
         {
             UpcomingWeathers.Add(Weather.Rain);
         } else if (Experience > 50)

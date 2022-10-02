@@ -18,7 +18,7 @@ MonoBehaviour:
     minDuration: 0
     maxDuration: 0
     Permanent: 1
-    Delay: 1
+    Delay: 0
     IncreasesRushHourMin: 0
     IncreasesRushHourMax: 0
     CanRepeat: 0
@@ -29,16 +29,17 @@ MonoBehaviour:
     FollowersRequired: 0
     ExperienceRequired: 0
     ReputationRequired: 0
-    MoneyRequired: 10
+    MoneyRequired: 0
+    DayRequired: 2
     eventTags: []
     newExpenses:
     - Name: Utensils
       Value: 5
-  - eventLogMessage: I think I'm gonna expand my palette even further soon.
+  - eventLogMessage: I think I'm gonna expand my palette even further.
     minDuration: 0
     maxDuration: 0
     Permanent: 1
-    Delay: 1
+    Delay: 0
     IncreasesRushHourMin: 0
     IncreasesRushHourMax: 0
     CanRepeat: 0
@@ -49,7 +50,8 @@ MonoBehaviour:
     FollowersRequired: 0
     ExperienceRequired: 0
     ReputationRequired: 0
-    MoneyRequired: 100
+    MoneyRequired: 0
+    DayRequired: 4
     eventTags: []
     newExpenses:
     - Name: Utensils
@@ -58,7 +60,7 @@ MonoBehaviour:
     minDuration: 0
     maxDuration: 0
     Permanent: 1
-    Delay: 1
+    Delay: 0
     IncreasesRushHourMin: 0
     IncreasesRushHourMax: 0
     CanRepeat: 0
@@ -69,16 +71,17 @@ MonoBehaviour:
     FollowersRequired: 0
     ExperienceRequired: 0
     ReputationRequired: 0
-    MoneyRequired: 250
+    MoneyRequired: 0
+    DayRequired: 7
     eventTags: []
     newExpenses:
     - Name: Utensils
       Value: 5
-  - eventLogMessage: Okay, one more color and then my palette is full. Might as well.
+  - eventLogMessage: Time to finalize my palette.
     minDuration: 0
     maxDuration: 0
     Permanent: 1
-    Delay: 1
+    Delay: 0
     IncreasesRushHourMin: 0
     IncreasesRushHourMax: 0
     CanRepeat: 0
@@ -89,7 +92,8 @@ MonoBehaviour:
     FollowersRequired: 0
     ExperienceRequired: 0
     ReputationRequired: 0
-    MoneyRequired: 450
+    MoneyRequired: 0
+    DayRequired: 10
     eventTags: []
     newExpenses:
     - Name: Utensils
@@ -108,9 +112,10 @@ MonoBehaviour:
     IncreaseMaxIncome: 0
     UnlocksColors: 0
     FollowersRequired: 25
-    ExperienceRequired: 25
-    ReputationRequired: 10
+    ExperienceRequired: 5
+    ReputationRequired: 5
     MoneyRequired: 0
+    DayRequired: 0
     eventTags: []
     newExpenses: []
   - eventLogMessage: Today my landlord increased my rent. I'll have to work harder
@@ -122,14 +127,15 @@ MonoBehaviour:
     IncreasesRushHourMin: 0
     IncreasesRushHourMax: 0
     CanRepeat: 1
-    MinRepeatDayDifference: 10
+    MinRepeatDayDifference: 7
     IncreaseMaxIncomeMultiplier: 0
     IncreaseMaxIncome: 0
     UnlocksColors: 0
-    FollowersRequired: 15
-    ExperienceRequired: 15
+    FollowersRequired: 0
+    ExperienceRequired: 0
     ReputationRequired: 0
-    MoneyRequired: 300
+    MoneyRequired: 0
+    DayRequired: 5
     eventTags: []
     newExpenses:
     - Name: Rent
@@ -143,14 +149,15 @@ MonoBehaviour:
     IncreasesRushHourMin: 0.05
     IncreasesRushHourMax: 0.1
     CanRepeat: 1
-    MinRepeatDayDifference: 15
+    MinRepeatDayDifference: 12
     IncreaseMaxIncomeMultiplier: 0
     IncreaseMaxIncome: 0
     UnlocksColors: 0
-    FollowersRequired: 25
-    ExperienceRequired: 35
-    ReputationRequired: 5
-    MoneyRequired: 50
+    FollowersRequired: 0
+    ExperienceRequired: 0
+    ReputationRequired: 0
+    MoneyRequired: 0
+    DayRequired: 9
     eventTags:
     - creature
     newExpenses: []
@@ -167,10 +174,11 @@ MonoBehaviour:
     IncreaseMaxIncomeMultiplier: 0
     IncreaseMaxIncome: 0
     UnlocksColors: 0
-    FollowersRequired: 5
-    ExperienceRequired: 5
-    ReputationRequired: 1
+    FollowersRequired: 0
+    ExperienceRequired: 0
+    ReputationRequired: 0
     MoneyRequired: 0
+    DayRequired: 6
     eventTags:
     - nature
     newExpenses: []

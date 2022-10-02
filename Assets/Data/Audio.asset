@@ -25,7 +25,7 @@ MonoBehaviour:
   - type: 3
     clip: {fileID: 8300000, guid: 888ee881bda5cd84d9beb2f03aa57b4d, type: 3}
     subLoopClip: {fileID: 8300000, guid: 37f6861c28eb57b4a8b56ae6b46a78ed, type: 3}
-    volume: 1
+    volume: 0.857
   - type: 2
     clip: {fileID: 8300000, guid: 6bcc1fb052e11124186badefd3dc9141, type: 3}
     subLoopClip: {fileID: 0}
@@ -33,4 +33,4 @@ MonoBehaviour:
   - type: 4
     clip: {fileID: 8300000, guid: eeb588acff5679c4e8545fedb4f997b7, type: 3}
     subLoopClip: {fileID: 8300000, guid: c91dec5ea51daf64ebfb4218e65092bb, type: 3}
-    volume: 1
+    volume: 0.701

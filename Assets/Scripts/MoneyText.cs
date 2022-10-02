@@ -22,6 +22,6 @@ public class MoneyText : MonoBehaviour
 
     private void OnSubmit(float a)
     {
-        _text.text = "$" + Mathf.Floor(100 * SessionVariables.TodaysEarnings) / 100.0f;
+        _text.text = "$" + SessionVariables.TodaysEarnings.MakeDollarsString();
     }
 }

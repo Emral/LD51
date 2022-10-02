@@ -31,6 +31,7 @@ public class GuySprites : ScriptableObject
 
             for (int i = 0; i < sprites.Count; i++)
             {
+                if ((sprites[i].RainOnly && DayManager.Globals.IsRaining) || (sprites[i].SunOnly && !DayManager.Globals.IsRaining) || (!sprites[i].RainOnly && !sprites[i].SunOnly))
                 for (int j = 0; j < sprites[i].weight; j++)
                 {
                     weighted.Add(sprites[i]);

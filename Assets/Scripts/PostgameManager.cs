@@ -58,7 +58,6 @@ public class PostgameManager : MonoBehaviour
             ContinueButton.gameObject.SetActive(true);
             ContinueButton.transform.localScale = Vector3.zero;
             ContinueButton.transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack);
-            SessionVariables.NewDayBegins();
         } else
         {
             PlayerPerson.MakeDie();

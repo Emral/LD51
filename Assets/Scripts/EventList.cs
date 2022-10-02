@@ -56,6 +56,7 @@ public class Event
     public float ExperienceRequired;
     public float ReputationRequired;
     public float MoneyRequired;
+    public float DayRequired;
 
     public List<string> eventTags;
 
@@ -80,6 +81,11 @@ public class Event
         Duration = Random.Range(minDuration, maxDuration + 1);
     }
 
+    public void SetMessageSeen()
+    {
+        eventLogMessageSeen = true;
+    }
+
     public int GetStartDay()
     {
         return StartDay;
@@ -102,7 +108,7 @@ public class Event
             return false;
         }
 
-        if (SessionVariables.Followers >= FollowersRequired && SessionVariables.Experience >= ExperienceRequired && SessionVariables.Reputation >= ReputationRequired && SessionVariables.Savings >= MoneyRequired)
+        if (SessionVariables.Day >= DayRequired && SessionVariables.Followers >= FollowersRequired && SessionVariables.Experience >= ExperienceRequired && SessionVariables.Reputation >= ReputationRequired && SessionVariables.Savings >= MoneyRequired)
         {
             return true;
         }

@@ -62,8 +62,13 @@ public class WeatherScroll : MonoBehaviour
     private IEnumerator Scroll()
     {
         yield return new WaitForSeconds(1);
-        transform.DOMoveX(((RectTransform)transform).anchoredPosition.x - (87.4f + 8) * (SessionVariables.Day - SessionVariables.LastDay), 1.5f).SetEase(Ease.InOutQuad);
-        yield return new WaitForSeconds(2f);
+
+        if (SessionVariables.Day - SessionVariables.LastDay > 0)
+        {
+            transform.DOMoveX(((RectTransform)transform).anchoredPosition.x - (87.4f + 8) * (SessionVariables.Day - SessionVariables.LastDay), 1.5f).SetEase(Ease.InOutQuad);
+            yield return new WaitForSeconds(2f);
+        }
+
         circle.DOFillAmount(1, 0.4f).SetEase(Ease.OutQuint);
     }
 }

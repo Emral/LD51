@@ -8,6 +8,9 @@ public class TotalSavingsText : MonoBehaviour
 {
     private Text _text;
 
+    [TextArea(minLines: 3, maxLines: 5)]
+    public string Prefix;
+
     public Color positiveColor;
     public Color negativeColor;
 
@@ -15,7 +18,7 @@ public class TotalSavingsText : MonoBehaviour
     void Start()
     {
         _text = GetComponent<Text>();
-        _text.text = "$" + SessionVariables.Savings;
+        _text.text = Prefix + "$" + SessionVariables.Savings;
         SessionVariables.OnSavingsChanged.AddListener(OnSubmit);
     }
 
@@ -26,7 +29,7 @@ public class TotalSavingsText : MonoBehaviour
     Tween t;
     private void OnSubmit(float a)
     {
-        _text.text = "$" + Mathf.Floor(100 * a) / 100.0f;
+        _text.text = Prefix + "$" + a.MakeDollarsString();
         if (t != null)
         {
             t.Complete();

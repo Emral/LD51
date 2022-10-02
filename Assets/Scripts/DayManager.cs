@@ -308,14 +308,14 @@ public class DayManager : MonoBehaviour
 
         var reward = Mathf.Lerp(0.01f, 1, 0.5f + totalPenalty * 0.5f) * SessionVariables.IncomeMultiplier * SessionVariables.MaxIncomeBase;
 
-        reward = Mathf.Ceil(reward * 100) / 100.0f;
+        reward = reward.MakeDollars();
 
         if (reward > 6 - SessionVariables.Reputation + 0.1f)
         {
             SessionVariables.Followers = SessionVariables.Followers + 1;
         }
         SessionVariables.Experience = SessionVariables.Experience + reward * reward * 0.002f;
-        SessionVariables.Reputation = Mathf.Max(0, SessionVariables.Reputation + 0.001f * totalPenalty);
+        SessionVariables.Reputation = Mathf.Max(0, SessionVariables.Reputation + 0.01f * totalPenalty);
 
         SessionVariables.TodaysEarnings += reward;
 

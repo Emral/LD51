@@ -84,9 +84,14 @@ public class MetaManager : MonoBehaviour
 
     public void TransitionToPreGameScene()
     {
+        var oldScene = SceneManager.GetActiveScene().buildIndex;
         AudioManager.ChangeMusic(BGM.PreGame);
         ShowLoadScreen(1, a =>
         {
+            if (oldScene == 3)
+            {
+                SessionVariables.NewDayBegins();
+            }
             HideLoadScreen(() =>
             {
                 // Initialize PreGame
