@@ -119,6 +119,7 @@ public class DayManager : MonoBehaviour
             if (_timerTimeElapsed >= 10)
             {
                 Sell();
+                _timerActive = false;
             }
         } else
         {
@@ -175,7 +176,7 @@ public class DayManager : MonoBehaviour
     private void NewGuessable()
     {
         _currentGuy = guys.GetRandom();
-        _currentGuessable = imageCandidates.GetRandom();
+        _currentGuessable = imageCandidates.GetRandom(_currentGuy.bias, _currentGuy.preferredTags);
         OnNewGuy.Invoke(_currentGuy);
     }
 
@@ -183,6 +184,7 @@ public class DayManager : MonoBehaviour
     {
         RenderTexture rt = RenderTexture.GetTemporary(64, 64);
         rt.Create();
+        rt.filterMode = FilterMode.Point;
         Graphics.Blit(drawn, rt);
 
         Texture2D smallerTex = new Texture2D(rt.width, rt.height, TextureFormat.ARGB32, false);
@@ -196,33 +198,113 @@ public class DayManager : MonoBehaviour
         
         var pixels1 = smallerTex.GetPixels();
         var pixels2 = wanted.GetPixels();
-        var divisor = 1 / (64.0f * 64.0f);
         float totalPenalty = 0;
+        float penaltyRange = 0;
+
+        float totalInkA = 0;
+        float totalInkB = 0;
+        float totalInk = 0;
+
+        Dictionary<Color, float> colorDifferences = new Dictionary<Color, float>();
+        Dictionary<Color, float> bSum = new Dictionary<Color, float>();
         for (int i = 0; i < 64 * 64; i++)
         {
+            if (pixels1[i].r + pixels1[i].g + pixels1[i].b == 3)
+            {
+                pixels1[i].a = 0;
+            } else if (pixels1[i].a > 0)
+            {
+                pixels1[i].a = 1;
+            }
+
+            if (pixels1[i].a > 0)
+            {
+                totalInkA++;
+                if (colorDifferences.ContainsKey(pixels1[i]))
+                {
+                    colorDifferences[pixels1[i]]--;
+                }
+                else
+                {
+                    colorDifferences.Add(pixels1[i], -1);
+                    if (!bSum.ContainsKey(pixels1[i]))
+                    {
+                        bSum.Add(pixels1[i], -1);
+                    }
+                }
+            }
+            if (pixels2[i].a > 0)
+            {
+                totalInkB++;
+                if (colorDifferences.ContainsKey(pixels2[i]))
+                {
+                    if (bSum[pixels2[i]] == -1)
+                    {
+                        bSum[pixels2[i]] = 1;
+                    } else
+                    {
+                        bSum[pixels2[i]]++;
+                    }
+                    colorDifferences[pixels2[i]]++;
+                }
+                else
+                {
+                    bSum.Add(pixels2[i], 1);
+                    colorDifferences.Add(pixels2[i], 1);
+                }
+            }
 
             Color diff = pixels1[i] - pixels2[i];
 
-            var colorDiff = Mathf.Sqrt(diff.r * diff.r + diff.g * diff.g + diff.b * diff.b) * 0.25f;
-
             if (pixels1[i].a > 0 && pixels2[i].a > 0)
             {
-                totalPenalty += colorDiff * divisor - 0.25f;
-            } else if (pixels1[i].a == 0 && pixels2[i].a > 0)
+                totalPenalty += 2;
+                penaltyRange++;
+            } else if ((pixels1[i].a == 0 && pixels2[i].a > 0) || (pixels1[i].a > 0 && pixels2[i].a == 0))
             {
-                totalPenalty += 5 * divisor;
-            }
-            else if (pixels1[i].a > 0 && pixels2[i].a == 0)
-            {
-                totalPenalty += 2.5f * divisor + (colorDiff * 4f) * divisor;
+                totalPenalty -= 1f;
+                if (pixels1[i].a == 0)
+                {
+                    penaltyRange++;
+                }
             }
         }
 
-        totalPenalty = (0.6f - 0.025f * SessionVariables.Reputation - 0.1f * _currentGuy.bias - totalPenalty) * 0.5f;
+        if (totalInkA == 0)
+        {
+            totalPenalty = -999;
+        }
 
-        Debug.Log(totalPenalty);
+        totalPenalty = totalPenalty / Mathf.Max(penaltyRange, 1);
 
-        var reward = Mathf.Clamp(totalPenalty, 0.01f, SessionVariables.IncomeMultiplier * SessionVariables.MaxIncomeBase);
+        Debug.Log("A: " + totalPenalty);
+
+        totalPenalty = totalPenalty + 2 - 2 * Mathf.Abs(totalInkA/penaltyRange - totalInkB/penaltyRange);
+
+        totalPenalty = totalPenalty + 1;
+
+        Debug.Log("B: " + totalPenalty);
+
+        foreach (var kvp in colorDifferences)
+        {
+            if (Mathf.Abs(kvp.Value) < bSum[kvp.Key])
+            {
+                totalPenalty = totalPenalty + ((kvp.Value) / bSum[kvp.Key]) / colorDifferences.Count;
+                Debug.Log(kvp.Key.ToString() + ": " + (kvp.Value) / bSum[kvp.Key]);
+            }
+            else if (bSum[kvp.Key] == -1)
+            {
+                totalPenalty = totalPenalty - 2f / colorDifferences.Count;
+            }
+        }
+
+        Debug.Log("C: " + totalPenalty);
+        totalPenalty = (SessionVariables.Reputation + 0.1f * _currentGuy.bias + totalPenalty * 1.1f) + 0.3f;
+        Debug.Log("D: " + totalPenalty);
+
+
+
+        var reward = Mathf.Lerp(0.01f, 1, 0.5f + totalPenalty * 0.5f) * SessionVariables.IncomeMultiplier * SessionVariables.MaxIncomeBase;
 
         reward = Mathf.Ceil(reward * 100) / 100.0f;
 

@@ -5,7 +5,7 @@ using UnityEngine.Events;
 
 public class GlobalVars
 {
-    private Color _penColor = new Color(29 / 255, 31 / 255, 38 / 255);
+    private Color _penColor = new Color(29 / 255.0f, 31 / 255.0f, 38 / 255.0f);
     public float RushHourStart = 0;
     public float RushHourEnd = 0;
     public Color PenColor

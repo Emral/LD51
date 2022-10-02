@@ -55,7 +55,7 @@ public class SessionVariables : ScriptableObject
     public static float TodaysEarnings = 0;
     public static int Day = 1;
 
-    public int ExtraColors = 0;
+    public static ValidColors Colors;
 
     public static List<Texture2D> allDrawings;
     public static List<Texture2D> todaysDrawings;
@@ -79,7 +79,7 @@ public class SessionVariables : ScriptableObject
         MaxIncomeBase = 10;
         IncomeMultiplier = 1;
         _savings = 50;
-        ExtraColors = 0;
+        Colors = ValidColors.Black;
         Day = 1;
         allDrawings = new List<Texture2D>();
         todaysDrawings = new List<Texture2D>();
@@ -89,6 +89,16 @@ public class SessionVariables : ScriptableObject
         {
             CalculateWeather(i);
         }
+    }
+
+    public static void AddFirstColorSet()
+    {
+        Colors = Colors | ValidColors.Purple | ValidColors.Grey | ValidColors.Green | ValidColors.Orange;
+    }
+
+    public static void AddSecondColorSet()
+    {
+        Colors = Colors | ValidColors.Yellow | ValidColors.Grey | ValidColors.Blue | ValidColors.Red;
     }
 
     public static float CalculateExpenses()

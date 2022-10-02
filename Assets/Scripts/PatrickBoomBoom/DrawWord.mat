@@ -137,8 +137,8 @@ Material:
     - _sqrDicStand1: 0
     - _sqrDicStand2: 0
     m_Colors:
-    - _Color: {r: 0, g: 0, b: 0, a: 1}
+    - _Color: {r: 0.43529412, g: 0.42745098, b: 0.5568628, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _LastUV: {r: 0.8066406, g: 0.33203125, b: 0, a: 0}
-    - _UV: {r: 0.7910156, g: 0.32421875, b: 0, a: 0}
+    - _LastUV: {r: 0.42382812, g: 0.64453125, b: 0, a: 0}
+    - _UV: {r: 0.41992188, g: 0.62890625, b: 0, a: 0}
   m_BuildTextureStacks: []
