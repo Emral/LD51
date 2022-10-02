@@ -765,3 +765,54 @@ MonoBehaviour:
     tags:
     - nature
     - sky
+  - texture: {fileID: -1206344135, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 2
+    colors: 32
+    tags:
+    - finance
+    - object
+  - texture: {fileID: -1776794520, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 2
+    colors: 8
+    tags:
+    - object
+  - texture: {fileID: 1387228215, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 2
+    colors: 8
+    tags:
+    - nature
+    - landscape
+  - texture: {fileID: -905184803, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 3
+    colors: 16
+    tags:
+    - nature
+    - sky
+  - texture: {fileID: -1859769556, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 1
+    colors: 8
+    tags:
+    - object
+  - texture: {fileID: -1352398994, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 1
+    colors: 32
+    tags:
+    - object
+  - texture: {fileID: -998305759, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 1
+    colors: 64
+    tags:
+    - animal
+    - object
+  - texture: {fileID: 965581776, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 2
+    colors: 18
+    tags:
+    - food
+  - texture: {fileID: -32289601, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 2
+    colors: 160
+    tags:
+    - nature
+    - food
+    - 
