@@ -68,9 +68,12 @@ public class DayManager : MonoBehaviour
     {
         _dayActive = true;
         _timerActive = true;
+        AudioManager.ChangeMusic(SessionVariables.UpcomingWeathers[0] == Weather.Rain ? BGM.GameRain : BGM.GameRegular);
         NewGuessable();
         yield return null;
     }
+
+    float subtrackVolume = 0;
 
     // Update is called once per frame
     void Update()
@@ -79,6 +82,18 @@ public class DayManager : MonoBehaviour
         {
             _dayTimeElapsed = _dayTimeElapsed + Time.deltaTime;
 
+            if (_dayTimeElapsed/100 >= Globals.RushHourStart && _dayTimeElapsed/100 <= Globals.RushHourEnd)
+            {
+                subtrackVolume += Time.deltaTime;
+            } else
+            {
+                subtrackVolume -= Time.deltaTime;
+            }
+
+            subtrackVolume = Mathf.Clamp01(subtrackVolume);
+
+            AudioManager.SetSubtrackVolume(subtrackVolume);
+
             OnDayProgress.Invoke(_dayTimeElapsed/100.0f);
 
             if (_dayTimeElapsed >= 100)
@@ -86,6 +101,8 @@ public class DayManager : MonoBehaviour
                 _dayActive = false;
                 Sell();
                 OnDayEnd.Invoke();
+
+                AudioManager.ChangeMusic(null, null);
 
                 EventSystem.current.enabled = false;
 

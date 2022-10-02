@@ -139,6 +139,6 @@ Material:
     m_Colors:
     - _Color: {r: 0, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _LastUV: {r: 0.25585938, g: 0.74609375, b: 0, a: 0}
-    - _UV: {r: 0.25585938, g: 0.74609375, b: 0, a: 0}
+    - _LastUV: {r: 0.45898438, g: 0.6015625, b: 0, a: 0}
+    - _UV: {r: 0.45898438, g: 0.6015625, b: 0, a: 0}
   m_BuildTextureStacks: []

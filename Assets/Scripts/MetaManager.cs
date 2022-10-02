@@ -33,8 +33,17 @@ public class MetaManager : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        if (SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            AudioManager.ChangeMusic(BGM.MainMenu);
+        }
+    }
+
     public void TransitionToTitleScene()
     {
+        AudioManager.ChangeMusic(BGM.MainMenu);
         ShowLoadScreen(0, a =>
         {
             HideLoadScreen(() =>
@@ -46,6 +55,7 @@ public class MetaManager : MonoBehaviour
 
     public void TransitionToGameScene()
     {
+        AudioManager.ChangeMusic(null, null);
         ShowLoadScreen(2, a =>
         {
             HideLoadScreen(() =>
@@ -58,6 +68,7 @@ public class MetaManager : MonoBehaviour
 
     public void TransitionToPostGameScene()
     {
+        AudioManager.ChangeMusic(BGM.PostGame);
         ShowLoadScreen(3, a =>
         {
             HideLoadScreen(() =>
@@ -69,6 +80,7 @@ public class MetaManager : MonoBehaviour
 
     public void TransitionToPreGameScene()
     {
+        AudioManager.ChangeMusic(BGM.PreGame);
         sessionVariables.Initialize();
         ShowLoadScreen(1, a =>
         {

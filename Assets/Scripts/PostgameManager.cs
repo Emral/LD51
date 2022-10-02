@@ -75,6 +75,7 @@ public class PostgameManager : MonoBehaviour
 
     private IEnumerator Canvasloop()
     {
+        int idx = 0;
         if (SessionVariables.todaysDrawings.Count > 0)
         {
             yield return new WaitForSeconds(1.75f);
@@ -82,10 +83,11 @@ public class PostgameManager : MonoBehaviour
             while (true)
             {
                 Canvas.transform.localPosition = Vector3.up * 360;
-                CanvasContents.sprite = Sprite.Create(SessionVariables.todaysDrawings[Random.Range(0, SessionVariables.todaysDrawings.Count)], new Rect(0, 0, 256, 256), new Vector2(0.5f, 0.5f));
+                CanvasContents.sprite = Sprite.Create(SessionVariables.todaysDrawings[idx % SessionVariables.todaysDrawings.Count], new Rect(0, 0, 256, 256), new Vector2(0.5f, 0.5f));
                 Canvas.DOMoveY(180, 1).SetEase(Ease.InOutQuint);
                 yield return new WaitForSeconds(2);
                 Canvas.DOMoveY(-180, 1).SetEase(Ease.InOutQuint);
+                idx++;
                 yield return new WaitForSeconds(1);
             }
         }

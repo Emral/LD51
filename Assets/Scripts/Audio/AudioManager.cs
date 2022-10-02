@@ -6,42 +6,16 @@ using UnityEngine.Audio;
 public enum SFX
 {
     None = -1,
-    Shoot,
-    EnemyHit,
-    EnemyKill,
-    Ready,
-    IntroExplosion,
-    CopSound,
-    Yeehaw,
-    PlayerHurt,
-    PlayerDie,
-    TurnOff,
-    Static,
-    ButtonHover,
-    ButtonClick,
-    ButtonRelease,
-    BigShot,
-    Warning,
-    StageBeat,
-    GameOver,
-    Throw,
-    Explosion,
-    Danger,
-    LaserStart,
-    LaserLoop
 }
 
 public enum BGM
 {
     None = -1,
-    MainMenuIntro,
-    MainMenuLoop,
-    Stage1Intro,
-    Stage1Loop,
-    BossIntro,
-    BossLoop,
-    Stage2Intro,
-    Stage2Loop,
+    MainMenu,
+    PreGame,
+    PostGame,
+    GameRegular,
+    GameRain
 }
 
 
@@ -49,6 +23,7 @@ public class AudioManager : MonoBehaviour
 {
     public AudioSource SFXSource;
     public AudioSource MusicSource;
+    public AudioSource MusicSubTrackSource;
 
     public AudioDefinition data;
 
@@ -100,10 +75,17 @@ public class AudioManager : MonoBehaviour
         ChangeMusic(instance.data.GetMusic(introClip), instance.data.GetMusic(loopingClip));
     }
 
+    public static void ChangeMusic(BGM clip)
+    {
+        ChangeMusic(null, instance.data.GetMusic(clip));
+    }
+
     private void OnApplicationQuit()
     {
         MusicSource.Stop();
+        MusicSubTrackSource.Stop();
         MusicSource.clip = null;
+        MusicSubTrackSource.clip = null;
     }
 
     public static async void ChangeMusic(Music introClip, Music loopingClip)
@@ -119,6 +101,7 @@ public class AudioManager : MonoBehaviour
                     {
                         t -= Time.unscaledDeltaTime * 0.5f;
                         instance.MusicSource.volume = t;
+                        instance.MusicSubTrackSource.volume = t;
                         await System.Threading.Tasks.Task.Yield();
                     }
                 }
@@ -126,6 +109,10 @@ public class AudioManager : MonoBehaviour
                 instance.MusicSource.Play();
                 instance.MusicSource.volume = introClip.volume;
                 instance.MusicSource.loop = false;
+                instance.MusicSubTrackSource.clip = introClip.subLoopClip;
+                instance.MusicSubTrackSource.Play();
+                instance.MusicSubTrackSource.volume = 0;
+                instance.MusicSubTrackSource.loop = false;
                 while (instance.MusicSource.isPlaying)
                 {
                     await System.Threading.Tasks.Task.Yield();
@@ -140,7 +127,16 @@ public class AudioManager : MonoBehaviour
             instance.MusicSource.loop = true;
             instance.MusicSource.Play();
             instance.MusicSource.volume = loopingClip.volume;
+            instance.MusicSubTrackSource.clip = loopingClip.subLoopClip;
+            instance.MusicSubTrackSource.loop = true;
+            instance.MusicSubTrackSource.Play();
+            instance.MusicSubTrackSource.volume = 0;
         }
+    }
+
+    public static void SetSubtrackVolume(float volume)
+    {
+        instance.MusicSubTrackSource.volume = volume;
     }
 
     public static void PlaySound(SFX sfx, float volumeModifier = 1, AudioSource sourceToPlayFrom = null)
@@ -159,6 +155,7 @@ public class AudioManager : MonoBehaviour
     public static void ToggleMusic()
     {
         instance.MusicSource.mute = !instance.MusicSource.mute;
+        instance.MusicSubTrackSource.mute = !instance.MusicSubTrackSource.mute;
         instance.SFXSource.mute = !instance.SFXSource.mute;
     }
 }

@@ -15,6 +15,7 @@ public class Music
 {
     public BGM type;
     public AudioClip clip;
+    public AudioClip subLoopClip;
     [Range(0, 1)] public float volume = 1;
 }
 [CreateAssetMenu(menuName ="Data/Audio", fileName ="Audio")]

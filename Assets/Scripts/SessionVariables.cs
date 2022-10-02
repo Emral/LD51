@@ -84,6 +84,11 @@ public class SessionVariables : ScriptableObject
         allDrawings = new List<Texture2D>();
         todaysDrawings = new List<Texture2D>();
         UpcomingWeathers = new List<Weather>();
+
+        for (int i = 0; i < 6; i++)
+        {
+            CalculateWeather(i);
+        }
     }
 
     public static float CalculateExpenses()
