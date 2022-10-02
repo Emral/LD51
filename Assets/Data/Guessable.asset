@@ -14,490 +14,592 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   images:
   - texture: {fileID: 602746942, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 1
+    strokeComplexity: 1
+    colors: 1
     tags:
     - food
     - nature
   - texture: {fileID: 21300000, guid: 97c71b3b38fb72c4e9fed12fc16f1972, type: 3}
-    difficulty: 1
+    strokeComplexity: 1
+    colors: 1
     tags:
     - food
     - nature
   - texture: {fileID: 21300000, guid: afa1f50923de7504b9bec3960bb417ca, type: 3}
-    difficulty: 3
+    strokeComplexity: 1
+    colors: 40
     tags:
     - food
     - nature
   - texture: {fileID: 1835513829, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 6
+    strokeComplexity: 2
+    colors: 17
     tags:
     - food
     - nature
   - texture: {fileID: -168495296, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 2
+    strokeComplexity: 2
+    colors: 1
     tags:
     - food
     - nature
   - texture: {fileID: -1363917730, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 1
+    strokeComplexity: 1
+    colors: 1
     tags:
     - food
     - nature
   - texture: {fileID: -539947196, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 1
+    strokeComplexity: 1
+    colors: 1
     tags:
     - food
     - nature
   - texture: {fileID: 2143210300, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 1
+    strokeComplexity: 1
+    colors: 1
     tags:
     - food
     - nature
   - texture: {fileID: 1838236333, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 3
+    strokeComplexity: 1
+    colors: 40
     tags:
     - food
     - nature
   - texture: {fileID: 209267056, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 2
+    strokeComplexity: 1
+    colors: 1
     tags:
     - food
     - nature
     - cartoon
   - texture: {fileID: 1967289266, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 2
+    strokeComplexity: 3
+    colors: 1
     tags:
     - food
   - texture: {fileID: -248695709, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 7
+    strokeComplexity: 3
+    colors: 28
     tags:
     - food
   - texture: {fileID: 2079435444, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 2
+    strokeComplexity: 1
+    colors: 1
     tags:
     - object
     - edgy
   - texture: {fileID: 459749543, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 1
+    strokeComplexity: 2
+    colors: 1
     tags:
     - object
   - texture: {fileID: -1509446397, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 2
+    strokeComplexity: 4
+    colors: 1
     tags:
     - object
     - nature
   - texture: {fileID: 489982703, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 4
+    strokeComplexity: 1
+    colors: 1
     tags:
     - object
     - nature
   - texture: {fileID: -2005894267, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 1
+    strokeComplexity: 1
+    colors: 1
     tags:
     - food
   - texture: {fileID: -1929478449, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 2
+    strokeComplexity: 1
+    colors: 1
     tags:
     - food
   - texture: {fileID: 1552722514, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 1
+    strokeComplexity: 1
+    colors: 1
     tags:
     - object
   - texture: {fileID: 697915621, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 6
+    strokeComplexity: 1
+    colors: 1
     tags:
     - object
   - texture: {fileID: -1460481320, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 1
+    strokeComplexity: 1
+    colors: 1
     tags:
     - object
   - texture: {fileID: 1134513501, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 6
+    strokeComplexity: 1
+    colors: 1
     tags:
     - object
     - nature
   - texture: {fileID: 1433414738, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 2
+    strokeComplexity: 1
+    colors: 1
     tags:
     - animal
     - bird
     - cute
   - texture: {fileID: -266221329, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 1
+    strokeComplexity: 1
+    colors: 1
     tags:
     - cartoon
     - cute
   - texture: {fileID: 1309446051, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 1
+    strokeComplexity: 1
+    colors: 1
     tags:
     - nature
     - sky
   - texture: {fileID: 395440249, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 6
+    strokeComplexity: 1
+    colors: 1
     tags:
     - nature
     - sky
   - texture: {fileID: -661341348, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 2
+    strokeComplexity: 1
+    colors: 1
     tags:
     - nature
     - landscape
   - texture: {fileID: -701261358, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 6
+    strokeComplexity: 1
+    colors: 1
     tags:
     - cartoon
     - bird
   - texture: {fileID: 1239972853, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 1
+    strokeComplexity: 1
+    colors: 1
     tags:
     - object
   - texture: {fileID: 1013364148, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 6
+    strokeComplexity: 1
+    colors: 1
     tags:
     - nature
     - sky
   - texture: {fileID: 437981352, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 2
+    strokeComplexity: 1
+    colors: 1
     tags:
     - object
   - texture: {fileID: -1734201321, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 1
+    strokeComplexity: 1
+    colors: 1
     tags:
     - object
   - texture: {fileID: -1887719661, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 6
+    strokeComplexity: 1
+    colors: 1
     tags:
     - animal
     - cartoon
   - texture: {fileID: -1924610622, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 3
+    strokeComplexity: 1
+    colors: 1
     tags:
     - nature
     - landscape
   - texture: {fileID: -979064984, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 3
+    strokeComplexity: 1
+    colors: 1
     tags:
     - nature
     - food
   - texture: {fileID: 442589765, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 6
+    strokeComplexity: 1
+    colors: 1
     tags:
     - cute
     - cartoon
   - texture: {fileID: 862924839, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 4
+    strokeComplexity: 1
+    colors: 1
     tags:
     - cute
     - cartoon
   - texture: {fileID: -752183898, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 3
+    strokeComplexity: 1
+    colors: 1
     tags:
     - cute
     - cartoon
   - texture: {fileID: -1917022340, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 4
+    strokeComplexity: 1
+    colors: 1
     tags:
     - cute
     - cartoon
   - texture: {fileID: 731459598, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 3
+    strokeComplexity: 1
+    colors: 1
     tags:
     - cartoon
   - texture: {fileID: -885942530, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 6
+    strokeComplexity: 1
+    colors: 1
     tags:
     - cute
     - cartoon
   - texture: {fileID: 1074753948, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 7
+    strokeComplexity: 1
+    colors: 1
     tags:
     - cute
     - cartoon
   - texture: {fileID: 857357338, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 2
+    strokeComplexity: 1
+    colors: 1
     tags:
     - cute
     - cartoon
   - texture: {fileID: -692183749, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 6
+    strokeComplexity: 1
+    colors: 1
     tags:
     - object
   - texture: {fileID: -119756881, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 2
+    strokeComplexity: 1
+    colors: 1
     tags:
     - object
   - texture: {fileID: -1300148823, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 3
+    strokeComplexity: 1
+    colors: 1
     tags:
     - nature
     - food
     - cute
   - texture: {fileID: 384763032, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 6
+    strokeComplexity: 1
+    colors: 1
     tags:
     - nature
     - food
     - cute
   - texture: {fileID: 1250769357, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 6
+    strokeComplexity: 1
+    colors: 1
     tags:
     - object
     - cute
     - bird
   - texture: {fileID: 844855683, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 8
+    strokeComplexity: 1
+    colors: 1
     tags:
     - animal
     - bird
     - cute
   - texture: {fileID: 1150886159, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 1
+    strokeComplexity: 1
+    colors: 1
     tags:
     - edgy
   - texture: {fileID: -1893658709, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 3
+    strokeComplexity: 1
+    colors: 1
     tags:
     - edgy
   - texture: {fileID: 1964631247, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 1
+    strokeComplexity: 1
+    colors: 1
     tags:
     - number
   - texture: {fileID: 2143019092, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 2
+    strokeComplexity: 1
+    colors: 1
     tags:
     - number
   - texture: {fileID: 1981029503, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 2
+    strokeComplexity: 1
+    colors: 1
     tags:
     - sky
   - texture: {fileID: -92287604, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 4
+    strokeComplexity: 1
+    colors: 1
     tags:
     - nature
     - food
   - texture: {fileID: 42293617, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 1
+    strokeComplexity: 1
+    colors: 1
     tags:
     - nature
     - food
   - texture: {fileID: 1706831985, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 6
+    strokeComplexity: 1
+    colors: 1
     tags:
     - object
     - food
   - texture: {fileID: -610134626, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 6
+    strokeComplexity: 1
+    colors: 1
     tags:
     - cute
     - cartoon
   - texture: {fileID: 1433650531, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 7
+    strokeComplexity: 1
+    colors: 1
     tags:
     - cute
     - cartoon
   - texture: {fileID: -173819526, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 1
+    strokeComplexity: 1
+    colors: 1
     tags:
     - 'person '
   - texture: {fileID: -262286071, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 6
+    strokeComplexity: 1
+    colors: 1
     tags:
     - cute
     - cartoon
   - texture: {fileID: -1355773088, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 1
+    strokeComplexity: 1
+    colors: 1
     tags:
     - cartoon
     - edgy
   - texture: {fileID: -805761136, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 1
+    strokeComplexity: 1
+    colors: 1
     tags:
     - bird
     - cute
     - animal
   - texture: {fileID: 950756285, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 2
+    strokeComplexity: 1
+    colors: 1
     tags:
     - animal
     - cute
     - cat
   - texture: {fileID: 1123704155, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 3
+    strokeComplexity: 1
+    colors: 1
     tags:
     - cute
     - cartoon
   - texture: {fileID: -1767872965, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 6
+    strokeComplexity: 1
+    colors: 1
     tags:
     - cute
     - cartoon
   - texture: {fileID: 773700383, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 1
+    strokeComplexity: 1
+    colors: 1
     tags:
     - edgy
   - texture: {fileID: -1492788004, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 1
+    strokeComplexity: 1
+    colors: 1
     tags:
     - edgy
   - texture: {fileID: -1005911468, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 1
+    strokeComplexity: 1
+    colors: 1
     tags:
     - edgy
   - texture: {fileID: -79114493, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 1
+    strokeComplexity: 1
+    colors: 1
     tags:
     - cat
     - cute
     - animal
   - texture: {fileID: 1901478197, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 3
+    strokeComplexity: 1
+    colors: 1
     tags:
     - cat
     - cute
     - animal
   - texture: {fileID: -182779021, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 2
+    strokeComplexity: 1
+    colors: 1
     tags:
     - bird
     - cute
     - animal
   - texture: {fileID: -1208751750, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 3
+    strokeComplexity: 1
+    colors: 1
     tags:
     - cat
     - cute
     - animal
   - texture: {fileID: 1862659982, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 4
+    strokeComplexity: 1
+    colors: 1
     tags:
     - cat
     - cute
     - animal
   - texture: {fileID: -1567744771, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 1
+    strokeComplexity: 1
+    colors: 1
     tags:
     - person
   - texture: {fileID: -16298350, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 1
+    strokeComplexity: 1
+    colors: 1
     tags:
     - person
   - texture: {fileID: 118067980, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 1
+    strokeComplexity: 1
+    colors: 1
     tags:
     - person
   - texture: {fileID: -1115661259, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 1
+    strokeComplexity: 1
+    colors: 1
     tags:
     - person
     - edgy
   - texture: {fileID: -1986232418, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 1
+    strokeComplexity: 1
+    colors: 1
     tags:
     - number
   - texture: {fileID: -1380077955, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 2
+    strokeComplexity: 1
+    colors: 1
     tags:
     - number
   - texture: {fileID: -1891009455, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 1
+    strokeComplexity: 1
+    colors: 1
     tags:
     - number
   - texture: {fileID: 675301750, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 2
+    strokeComplexity: 1
+    colors: 1
     tags:
     - number
   - texture: {fileID: 2022468232, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 1
+    strokeComplexity: 1
+    colors: 1
     tags:
     - number
   - texture: {fileID: -1048607937, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 1
+    strokeComplexity: 1
+    colors: 1
     tags:
     - number
   - texture: {fileID: -1131123172, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 1
+    strokeComplexity: 1
+    colors: 1
     tags:
     - number
   - texture: {fileID: -764049192, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 1
+    strokeComplexity: 1
+    colors: 1
     tags:
     - number
   - texture: {fileID: -1454017195, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 1
+    strokeComplexity: 1
+    colors: 1
     tags:
     - number
   - texture: {fileID: -1394141785, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 1
+    strokeComplexity: 1
+    colors: 1
     tags:
     - number
   - texture: {fileID: -978150591, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 1
+    strokeComplexity: 1
+    colors: 1
     tags:
     - number
   - texture: {fileID: -533994190, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 6
+    strokeComplexity: 1
+    colors: 1
     tags:
     - cartoon
     - cute
   - texture: {fileID: -1039562853, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 1
+    strokeComplexity: 1
+    colors: 1
     tags:
     - landscape
     - nature
   - texture: {fileID: -1717357821, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 7
+    strokeComplexity: 1
+    colors: 1
     tags:
     - object
   - texture: {fileID: 456267881, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 6
+    strokeComplexity: 1
+    colors: 1
     tags:
     - nature
     - animal
     - cute
     - fish
   - texture: {fileID: -1940678326, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 6
+    strokeComplexity: 1
+    colors: 1
     tags:
     - object
     - edgy
   - texture: {fileID: -1592179255, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 4
+    strokeComplexity: 1
+    colors: 1
     tags:
     - nature
     - animal
     - cute
     - fish
   - texture: {fileID: 1682877175, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 4
+    strokeComplexity: 1
+    colors: 1
     tags:
     - nature
     - animal
     - cute
     - fish
   - texture: {fileID: -1420752693, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 6
+    strokeComplexity: 1
+    colors: 1
     tags:
     - object
   - texture: {fileID: 1399944361, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 6
+    strokeComplexity: 1
+    colors: 1
     tags:
     - object
   - texture: {fileID: 1600946300, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 6
+    strokeComplexity: 1
+    colors: 1
     tags:
     - object
   - texture: {fileID: -575653796, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 2
+    strokeComplexity: 1
+    colors: 1
     tags:
     - bird
     - sky
     - animal
   - texture: {fileID: 1807725637, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 6
+    strokeComplexity: 1
+    colors: 1
     tags:
     - nature
   - texture: {fileID: -2001213396, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    difficulty: 6
+    strokeComplexity: 1
+    colors: 1
     tags:
     - object
     - finance
