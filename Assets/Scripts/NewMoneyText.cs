@@ -29,7 +29,7 @@ public class NewMoneyText : MonoBehaviour
     {
         _group.alpha = 1;
         transform.position = _position;
-        _text.text = "+ $" + a;
+        _text.text = "+ $" + a.MakeDollarsString();
         _group.DOFade(0, 0.5f).SetEase(Ease.InQuint);
         transform.DOMoveY(transform.position.y + 50, 0.6f).SetEase(Ease.OutQuint);
     }

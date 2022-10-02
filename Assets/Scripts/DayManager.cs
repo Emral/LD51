@@ -57,6 +57,16 @@ public class DayManager : MonoBehaviour
     void Start()
     {
         var rushHourDuration = Mathf.FloorToInt((SessionVariables.Followers + SessionVariables.Reputation) / 10.0f) * 0.01f;
+        Globals.IsRaining = SessionVariables.UpcomingWeathers[0] == Weather.Rain;
+        if (SessionVariables.Day > 1)
+        {
+            rushHourDuration = Mathf.Clamp01(rushHourDuration + (Globals.IsRaining ? -0.2f : 0.2f));
+
+            if (SessionVariables.Day == 2)
+            {
+                rushHourDuration = Mathf.Clamp01(rushHourDuration + 0.3f);
+            }
+        }
         rushHourDuration = Mathf.Max(0, rushHourDuration - Random.Range(0.2f, 0.3f), 0);
         Globals.RushHourEnd = Random.Range(0.8f, 1);
         Globals.RushHourStart = Globals.RushHourEnd - rushHourDuration;
@@ -71,8 +81,8 @@ public class DayManager : MonoBehaviour
 
     private IEnumerator StartNextDay()
     {
-
-        Globals.IsRaining = SessionVariables.UpcomingWeathers[0] == Weather.Rain;
+        NewGuessable();
+        yield return new WaitForSeconds(0.75f);
         AudioManager.ChangeMusic(Globals.IsRaining ? BGM.GameRain : BGM.GameRegular);
         foreach (var e in SessionVariables.Events)
         {
@@ -80,7 +90,6 @@ public class DayManager : MonoBehaviour
         }
         _dayActive = true;
         _timerActive = true;
-        NewGuessable();
         yield return null;
     }
 
@@ -304,9 +313,11 @@ public class DayManager : MonoBehaviour
             }
         }
 
-        totalPenalty = (SessionVariables.Reputation + 0.1f * _currentGuy.bias + totalPenalty * 1.1f) + 0.3f;
+        totalPenalty = (_currentGuy.bias + totalPenalty) * 0.6f + 0.5f;
 
-        var reward = Mathf.Lerp(0.01f, 1, 0.5f + totalPenalty * 0.5f) * SessionVariables.IncomeMultiplier * SessionVariables.MaxIncomeBase;
+        Debug.Log(totalPenalty);
+
+        var reward = Mathf.Max( Mathf.Lerp(0, 1, 0.5f + totalPenalty * 0.5f) * SessionVariables.IncomeMultiplier * SessionVariables.MaxIncomeBase, 0);
 
         reward = reward.MakeDollars();
 
@@ -315,7 +326,7 @@ public class DayManager : MonoBehaviour
             SessionVariables.Followers = SessionVariables.Followers + 1;
         }
         SessionVariables.Experience = SessionVariables.Experience + reward * reward * 0.002f;
-        SessionVariables.Reputation = Mathf.Max(0, SessionVariables.Reputation + 0.01f * totalPenalty);
+        SessionVariables.Reputation = Mathf.Max(0, SessionVariables.Reputation + 0.5f * totalPenalty + 0.25f);
 
         SessionVariables.TodaysEarnings += reward;
 

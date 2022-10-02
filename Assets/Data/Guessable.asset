@@ -387,13 +387,13 @@ MonoBehaviour:
     - cat
   - texture: {fileID: 1123704155, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 2
-    colors: 9
+    colors: 8
     tags:
     - cute
     - cartoon
   - texture: {fileID: -1767872965, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 3
-    colors: 97
+    colors: 96
     tags:
     - cute
     - cartoon
@@ -435,7 +435,7 @@ MonoBehaviour:
     - animal
   - texture: {fileID: -1208751750, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 3
-    colors: 9
+    colors: 8
     tags:
     - cat
     - cute
@@ -617,7 +617,7 @@ MonoBehaviour:
     - nature
   - texture: {fileID: -2136653505, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 2
-    colors: 1
+    colors: 10
     tags:
     - object
     - edgy
@@ -728,7 +728,7 @@ MonoBehaviour:
     - object
   - texture: {fileID: -2079676154, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 3
-    colors: 1
+    colors: 128
     tags:
     - edgy
     - person
@@ -751,7 +751,7 @@ MonoBehaviour:
     - object
   - texture: {fileID: 783470523, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 3
-    colors: 1
+    colors: 4
     tags:
     - object
   - texture: {fileID: 983741911, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
