@@ -81,7 +81,7 @@ public class DayManager : MonoBehaviour
 
             OnDayProgress.Invoke(_dayTimeElapsed/100.0f);
 
-            if (_dayTimeElapsed >= 15)
+            if (_dayTimeElapsed >= 100)
             {
                 _dayActive = false;
                 Sell();
