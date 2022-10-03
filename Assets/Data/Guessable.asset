@@ -1045,3 +1045,103 @@ MonoBehaviour:
     tags:
     - rain
     - object
+  - texture: {fileID: 21885822, guid: a6b31de0277b6254d9f0bf237636bf65, type: 3}
+    strokeComplexity: 1
+    colors: 1
+    tags:
+    - kanji
+  - texture: {fileID: -457747520, guid: a6b31de0277b6254d9f0bf237636bf65, type: 3}
+    strokeComplexity: 2
+    colors: 1
+    tags:
+    - kanji
+  - texture: {fileID: -1538444078, guid: a6b31de0277b6254d9f0bf237636bf65, type: 3}
+    strokeComplexity: 1
+    colors: 1
+    tags:
+    - kanji
+  - texture: {fileID: 1418558720, guid: a6b31de0277b6254d9f0bf237636bf65, type: 3}
+    strokeComplexity: 1
+    colors: 1
+    tags:
+    - kanji
+  - texture: {fileID: -1984442454, guid: a6b31de0277b6254d9f0bf237636bf65, type: 3}
+    strokeComplexity: 1
+    colors: 1
+    tags:
+    - kanji
+  - texture: {fileID: 1276549086, guid: a6b31de0277b6254d9f0bf237636bf65, type: 3}
+    strokeComplexity: 2
+    colors: 1
+    tags:
+    - kanji
+  - texture: {fileID: -1850759135, guid: a6b31de0277b6254d9f0bf237636bf65, type: 3}
+    strokeComplexity: 4
+    colors: 1
+    tags:
+    - kanji
+  - texture: {fileID: 1595139034, guid: a6b31de0277b6254d9f0bf237636bf65, type: 3}
+    strokeComplexity: 2
+    colors: 1
+    tags:
+    - kanji
+  - texture: {fileID: 893931495, guid: a6b31de0277b6254d9f0bf237636bf65, type: 3}
+    strokeComplexity: 3
+    colors: 1
+    tags:
+    - kanji
+  - texture: {fileID: -1795862204, guid: a6b31de0277b6254d9f0bf237636bf65, type: 3}
+    strokeComplexity: 1
+    colors: 1
+    tags:
+    - kanji
+  - texture: {fileID: 519543036, guid: a6b31de0277b6254d9f0bf237636bf65, type: 3}
+    strokeComplexity: 1
+    colors: 1
+    tags:
+    - kanji
+  - texture: {fileID: -1215280143, guid: a6b31de0277b6254d9f0bf237636bf65, type: 3}
+    strokeComplexity: 2
+    colors: 1
+    tags:
+    - kanji
+  - texture: {fileID: 1855212351, guid: a6b31de0277b6254d9f0bf237636bf65, type: 3}
+    strokeComplexity: 2
+    colors: 1
+    tags:
+    - kanji
+  - texture: {fileID: 1583153781, guid: a6b31de0277b6254d9f0bf237636bf65, type: 3}
+    strokeComplexity: 1
+    colors: 1
+    tags:
+    - kanji
+  - texture: {fileID: 911784937, guid: a6b31de0277b6254d9f0bf237636bf65, type: 3}
+    strokeComplexity: 4
+    colors: 1
+    tags:
+    - kanji
+  - texture: {fileID: -1633561186, guid: a6b31de0277b6254d9f0bf237636bf65, type: 3}
+    strokeComplexity: 4
+    colors: 1
+    tags:
+    - kanji
+  - texture: {fileID: 730726451, guid: a6b31de0277b6254d9f0bf237636bf65, type: 3}
+    strokeComplexity: 2
+    colors: 1
+    tags:
+    - kanji
+  - texture: {fileID: 409478778, guid: a6b31de0277b6254d9f0bf237636bf65, type: 3}
+    strokeComplexity: 1
+    colors: 1
+    tags:
+    - kanji
+  - texture: {fileID: 1445935536, guid: a6b31de0277b6254d9f0bf237636bf65, type: 3}
+    strokeComplexity: 2
+    colors: 1
+    tags:
+    - kanji
+  - texture: {fileID: 2012689524, guid: a6b31de0277b6254d9f0bf237636bf65, type: 3}
+    strokeComplexity: 1
+    colors: 1
+    tags:
+    - kanji
