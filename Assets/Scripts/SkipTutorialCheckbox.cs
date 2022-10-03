@@ -50,6 +50,14 @@ public class SkipTutorialCheckbox : MonoBehaviour, IPointerEnterHandler, IPointe
         }
     }
 
+    void Start()
+    {
+        if (!MetaManager.TutorialActive)
+        {
+            img.sprite = IdleB;
+        }
+    }
+
     public void OnPointerDown(PointerEventData eventData)
     {
         img.sprite = !MetaManager.TutorialActive ? PressB : Press;

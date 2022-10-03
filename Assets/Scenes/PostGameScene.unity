@@ -749,6 +749,7 @@ GameObject:
   - component: {fileID: 540992821}
   - component: {fileID: 540992820}
   - component: {fileID: 540992824}
+  - component: {fileID: 540992825}
   m_Layer: 5
   m_Name: Button (Legacy)
   m_TagString: Untagged
@@ -897,6 +898,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3dbd459bfbc16a45aa203f4f8fedda9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &540992825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540992818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0303f0f1eb7f2e145982a3ec53f3bf45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Idle: {fileID: 21300000, guid: cc5f2edb9b6b04a499f43f66da3644fc, type: 3}
+  Press: {fileID: 21300000, guid: cc5f2edb9b6b04a499f43f66da3644fc, type: 3}
+  Hover: {fileID: 21300000, guid: cc5f2edb9b6b04a499f43f66da3644fc, type: 3}
+  HoverSound: 17
+  UnhoverSound: 1
+  img: {fileID: 540992822}
 --- !u!1 &557205451
 GameObject:
   m_ObjectHideFlags: 0
@@ -1953,6 +1972,7 @@ GameObject:
   - component: {fileID: 1293760260}
   - component: {fileID: 1293760257}
   - component: {fileID: 1293760256}
+  - component: {fileID: 1293760261}
   m_Layer: 5
   m_Name: Button (Legacy) (1)
   m_TagString: Untagged
@@ -2101,6 +2121,24 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1293760261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1293760254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0303f0f1eb7f2e145982a3ec53f3bf45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Idle: {fileID: 21300000, guid: cc5f2edb9b6b04a499f43f66da3644fc, type: 3}
+  Press: {fileID: 21300000, guid: cc5f2edb9b6b04a499f43f66da3644fc, type: 3}
+  Hover: {fileID: 21300000, guid: cc5f2edb9b6b04a499f43f66da3644fc, type: 3}
+  HoverSound: 17
+  UnhoverSound: 1
+  img: {fileID: 1293760258}
 --- !u!1 &1331870804
 GameObject:
   m_ObjectHideFlags: 0
