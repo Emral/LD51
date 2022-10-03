@@ -105,8 +105,6 @@ public class SessionVariables : ScriptableObject
     public static async void NewDayBegins()
     {
         TodaysEarnings = 0;
-        Debug.Log("Reputation: " + Reputation);
-        Debug.Log("Experience: " + Experience);
         LastDay = Day;
         RentMultiplier = 1;
         bool advanced = false;
@@ -221,7 +219,7 @@ public class SessionVariables : ScriptableObject
 
     public static void CalculateWeather(int dayToCalculate)
     {
-        if (dayToCalculate >= 10 && dayToCalculate % 9 == 1)
+        if (dayToCalculate >= 2 && dayToCalculate % 9 == 0)
         {
             UpcomingWeathers.Add(Weather.Thunder);
         }

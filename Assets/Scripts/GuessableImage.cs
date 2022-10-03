@@ -40,36 +40,40 @@ public class GuessableImage : ScriptableObject
             foreach(var tag in preferredTags)
             {
                 tagMask[tag] = true;
-
-                Debug.Log("Tag: " + tag);
             }
         }
-        var upperLimit = Mathf.FloorToInt((SessionVariables.Experience - bias * 0.5f));
+        var upperLimit = Mathf.FloorToInt((SessionVariables.Experience + 0.5f - bias * 0.5f));
         var candidates = new List<Guessable>();
-        foreach (var image in images)
+
+        while (candidates.Count == 0 && upperLimit < 5)
         {
-            if ((SessionVariables.Colors & image.colors) == image.colors)
+            foreach (var image in images)
             {
-                if (Mathf.Clamp(upperLimit, 1, 7) >= image.strokeComplexity)
+                if ((SessionVariables.Colors & image.colors) == image.colors)
                 {
-                    if (preferredTags == null || preferredTags.Count == 0)
+                    if (Mathf.Clamp(upperLimit, 1, 7) >= image.strokeComplexity)
                     {
-                        candidates.Add(image);
-                    }
-                    else
-                    {
-                        foreach (var tag in image.tags)
+                        if (preferredTags == null || preferredTags.Count == 0)
                         {
-                            if (tagMask.ContainsKey(tag))
+                            candidates.Add(image);
+                        }
+                        else
+                        {
+                            foreach (var tag in image.tags)
                             {
-                                candidates.Add(image);
-                                break;
+                                if (tagMask.ContainsKey(tag))
+                                {
+                                    candidates.Add(image);
+                                    break;
+                                }
                             }
-                        } 
+                        }
                     }
                 }
             }
+            upperLimit++;
         }
+
         if (candidates.Count > 0)
         {
             return candidates[Random.Range(0, candidates.Count)].texture;

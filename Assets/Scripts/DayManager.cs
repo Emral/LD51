@@ -58,7 +58,7 @@ public class DayManager : MonoBehaviour
     // Start is called before the first frame update
     async void Start()
     {
-        var rushHourDuration = Mathf.FloorToInt((SessionVariables.Followers + SessionVariables.Reputation) / 10.0f) * 0.01f;
+        var rushHourDuration = Mathf.FloorToInt((SessionVariables.Followers + SessionVariables.Reputation * 2) / 5.0f) * 0.02f;
         Globals.IsRaining = SessionVariables.UpcomingWeathers[0] == Weather.Rain;
         guys.ResetAll();
         NewGuessable();
@@ -71,7 +71,13 @@ public class DayManager : MonoBehaviour
                 rushHourDuration = Mathf.Clamp01(rushHourDuration + 0.3f);
             }
         }
-        rushHourDuration = Mathf.Max(0, rushHourDuration - Random.Range(0.2f, 0.3f), 0);
+
+        if (Globals.IsRaining && SessionVariables.Day > 5)
+        {
+            rushHourDuration = Mathf.Max(0, rushHourDuration - Random.Range(0.2f, 0.3f), 0);
+        }
+        Globals.RushHourEnd = Mathf.Clamp(Random.Range(0.8f, 1), rushHourDuration, 1);
+        Globals.RushHourStart = Globals.RushHourEnd - rushHourDuration;
 
         if (SessionVariables.Day == 1)
         {
@@ -92,13 +98,6 @@ public class DayManager : MonoBehaviour
         {
             await MetaManager.instance.DoTutorial(Mechanics.MoneyExplanation);
         }
-
-        if (Globals.IsRaining)
-        {
-            await MetaManager.instance.DoTutorial(Mechanics.SelectColor);
-        }
-        Globals.RushHourEnd = Random.Range(0.8f, 1);
-        Globals.RushHourStart = Globals.RushHourEnd - rushHourDuration;
         CoroutineManager.Start(StartNextDay());
         SessionVariables.todaysDrawings.Clear();
     }
@@ -356,7 +355,6 @@ public class DayManager : MonoBehaviour
             if (Mathf.Abs(kvp.Value) < bSum[kvp.Key])
             {
                 totalPenalty = totalPenalty + ((kvp.Value) / bSum[kvp.Key]) / colorDifferences.Count;
-                Debug.Log(kvp.Key.ToString() + ": " + (kvp.Value) / bSum[kvp.Key]);
             }
             else if (bSum[kvp.Key] == -1)
             {
@@ -370,8 +368,6 @@ public class DayManager : MonoBehaviour
         {
             totalPenalty = -999;
         }
-
-        Debug.Log(totalPenalty);
 
         var reward = Mathf.Max( Mathf.Lerp(0, 1 + _currentGuy.bias * 0.05f, 0.5f + totalPenalty * 0.5f) * SessionVariables.IncomeMultiplier * SessionVariables.MaxIncomeBase, 0);
 
