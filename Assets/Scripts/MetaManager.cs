@@ -33,8 +33,9 @@ public class MetaManager : MonoBehaviour
             Destroy(this.gameObject);
             return;
         }
+        GameCanAdvance = true;
 
-        foreach(Event ev in events.events)
+        foreach (Event ev in events.events)
         {
             ev.Initialize();
         }

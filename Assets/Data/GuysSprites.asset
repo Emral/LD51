@@ -21,6 +21,8 @@ MonoBehaviour:
     ArrivalSound: 100
     preferredTags:
     - object
+    - landscape
+    - cartoon
   - sprite: {fileID: 21300000, guid: a6ba82f98f6b92a459a0848a77001c5c, type: 3}
     bias: -1
     weight: 10
@@ -51,7 +53,7 @@ MonoBehaviour:
     - food
   - sprite: {fileID: 21300000, guid: de81271c48dc4734a9b0ff83f7ad06c4, type: 3}
     bias: 0.7
-    weight: 3
+    weight: 5
     RainOnly: 1
     SunOnly: 0
     ArrivalSound: 104
@@ -60,7 +62,7 @@ MonoBehaviour:
     - landscape
   - sprite: {fileID: 21300000, guid: 34777c4d683142d4f80c5507b1d8b710, type: 3}
     bias: 0
-    weight: 10
+    weight: 3
     RainOnly: 0
     SunOnly: 0
     ArrivalSound: 105
@@ -74,7 +76,7 @@ MonoBehaviour:
     ArrivalSound: 106
     preferredTags:
     - cute
-    - nature
+    - cartoon
   - sprite: {fileID: 21300000, guid: 9a01a33868c129248907fdd172e20b62, type: 3}
     bias: -1.4
     weight: 10
@@ -83,6 +85,7 @@ MonoBehaviour:
     ArrivalSound: 107
     preferredTags:
     - food
+    - animal
   - sprite: {fileID: 21300000, guid: f56d373bb6bac154f9f2bd0d543b6bdc, type: 3}
     bias: -0.99
     weight: 2
@@ -118,6 +121,7 @@ MonoBehaviour:
     preferredTags:
     - sky
     - bird
+    - cartoon
   - sprite: {fileID: 21300000, guid: fdb2229288afb5d49aa56d5c02abc9d6, type: 3}
     bias: 0
     weight: 3
@@ -134,7 +138,9 @@ MonoBehaviour:
     SunOnly: 1
     ArrivalSound: 114
     preferredTags:
-    - object
+    - cartoon
+    - edgy
+    - landscape
   - sprite: {fileID: 21300000, guid: b52239143374907438a04f7546fe0d34, type: 3}
     bias: 0
     weight: 10
@@ -196,3 +202,53 @@ MonoBehaviour:
     ArrivalSound: 122
     preferredTags:
     - kanji
+  - sprite: {fileID: 21300000, guid: 142a8903847610d4189299a0c890415f, type: 3}
+    bias: 0.83
+    weight: 3
+    RainOnly: 0
+    SunOnly: 0
+    ArrivalSound: 121
+    preferredTags:
+    - future
+  - sprite: {fileID: 21300000, guid: fa00cb73c3e501b44baf6901cc81d950, type: 3}
+    bias: 0.68
+    weight: 1
+    RainOnly: 0
+    SunOnly: 1
+    ArrivalSound: 0
+    preferredTags:
+    - sandwich
+  - sprite: {fileID: 21300000, guid: b44e15d6f6a76b143b004a0563e3add5, type: 3}
+    bias: 0
+    weight: 6
+    RainOnly: 0
+    SunOnly: 0
+    ArrivalSound: 126
+    preferredTags:
+    - landscape
+    - cartoon
+  - sprite: {fileID: 21300000, guid: a3f00b5a9809e4041b518249b49fba8b, type: 3}
+    bias: -2
+    weight: 1
+    RainOnly: 0
+    SunOnly: 0
+    ArrivalSound: 124
+    preferredTags:
+    - finance
+    - bear
+  - sprite: {fileID: 21300000, guid: b01bd8d47b373ab4592635e10151f7cc, type: 3}
+    bias: -1
+    weight: 3
+    RainOnly: 0
+    SunOnly: 0
+    ArrivalSound: 120
+    preferredTags:
+    - number
+  - sprite: {fileID: 21300000, guid: da469ff651a9a6f48b6794031d219b27, type: 3}
+    bias: 0
+    weight: 3
+    RainOnly: 0
+    SunOnly: 0
+    ArrivalSound: 0
+    preferredTags:
+    - hand
