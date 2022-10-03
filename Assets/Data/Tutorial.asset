@@ -15,7 +15,7 @@ MonoBehaviour:
   entries:
   - mechanic: 0
     title: How to play
-    description: I can use my cursor to draw the artwork customers have in mind.
+    description: I will use my pen to draw the artwork customers have in mind.
   - mechanic: 1
     title: Time limit
     description: The stopwatch shows how much time I have left for a drawing.

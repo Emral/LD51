@@ -109,7 +109,7 @@ public class SessionVariables : ScriptableObject
         SFX.DayAdvance.Play();
         RentMultiplier = 1;
         bool advanced = false;
-        while (!advanced || UpcomingWeathers[1] == Weather.Thunder)
+        while (!advanced || UpcomingWeathers[Day - LastDay] == Weather.Thunder)
         {
             advanced = true;
             Day++;
@@ -141,11 +141,12 @@ public class SessionVariables : ScriptableObject
             }
         }
 
-        while (UpcomingWeathers[RentMultiplier] == Weather.Thunder)
+        while (UpcomingWeathers[Day - LastDay + RentMultiplier] == Weather.Thunder && RentMultiplier < 9)
         {
             RentMultiplier++;
         }
-        if (UpcomingWeathers[1] == Weather.Rain)
+
+        if (UpcomingWeathers[Day - LastDay] == Weather.Rain)
         {
             await MetaManager.instance.DoTutorial(Mechanics.Rain);
         }
