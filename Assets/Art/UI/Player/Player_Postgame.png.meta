@@ -119,12 +119,12 @@ TextureImporter:
       name: Player_Postgame_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 9
-        width: 51
-        height: 114
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 11
+        y: 10
+        width: 43
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -140,12 +140,12 @@ TextureImporter:
       name: Player_Postgame_1
       rect:
         serializedVersion: 2
-        x: 61
-        y: 9
-        width: 51
-        height: 115
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 63
+        y: 10
+        width: 43
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -161,12 +161,12 @@ TextureImporter:
       name: Player_Postgame_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 115
         y: 10
-        width: 51
-        height: 114
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 39
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -182,12 +182,12 @@ TextureImporter:
       name: Player_Postgame_3
       rect:
         serializedVersion: 2
-        x: 186
+        x: 170
         y: 10
-        width: 51
-        height: 115
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 39
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -203,12 +203,12 @@ TextureImporter:
       name: Player_Postgame_4
       rect:
         serializedVersion: 2
-        x: 236
-        y: 15
-        width: 48
-        height: 121
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 221
+        y: 10
+        width: 38
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -224,12 +224,12 @@ TextureImporter:
       name: Player_Postgame_5
       rect:
         serializedVersion: 2
-        x: 291
-        y: 16
-        width: 89
-        height: 30
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        x: 259
+        y: 10
+        width: 49
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -237,6 +237,48 @@ TextureImporter:
       bones: []
       spriteID: 126aa847aabf35c418da131e9bc0b2ca
       internalID: -1750940501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Postgame_6
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 10
+        width: 53
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34fc18a61b925b74d8f2373de1e58d84
+      internalID: -1141542871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Postgame_7
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 10
+        width: 85
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5edb761b25be63241a3a94635f372331
+      internalID: 1141018763
       vertices: []
       indices: 
       edges: []
@@ -256,6 +298,8 @@ TextureImporter:
       Player_Postgame_2: 287781749
       Player_Postgame_1: 395182705
       Player_Postgame_0: 1330482731
+      Player_Postgame_6: -1141542871
+      Player_Postgame_7: 1141018763
       Player_Postgame_5: -1750940501
       Player_Postgame_4: 1571614942
   spritePackingTag: 

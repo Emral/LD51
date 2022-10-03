@@ -119,10 +119,10 @@ TextureImporter:
       name: Player_Faces_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 69
-        width: 25
-        height: 24
+        x: 0
+        y: 38
+        width: 32
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,12 +140,12 @@ TextureImporter:
       name: Player_Faces_1
       rect:
         serializedVersion: 2
-        x: 3
-        y: 41
-        width: 25
-        height: 24
-      alignment: 9
-      pivot: {x: 0.52244675, y: 0.49999985}
+        x: 32
+        y: 38
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -161,10 +161,10 @@ TextureImporter:
       name: Player_Faces_2
       rect:
         serializedVersion: 2
-        x: 3
-        y: 10
-        width: 25
-        height: 27
+        x: 64
+        y: 38
+        width: 32
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,10 +182,10 @@ TextureImporter:
       name: Player_Faces_3
       rect:
         serializedVersion: 2
-        x: 32
+        x: 96
         y: 38
-        width: 31
-        height: 27
+        width: 32
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,10 +203,10 @@ TextureImporter:
       name: Player_Faces_4
       rect:
         serializedVersion: 2
-        x: 32
-        y: 67
-        width: 31
-        height: 25
+        x: 0
+        y: 0
+        width: 32
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,10 +224,10 @@ TextureImporter:
       name: Player_Faces_5
       rect:
         serializedVersion: 2
-        x: 33
-        y: 7
-        width: 33
-        height: 29
+        x: 32
+        y: 0
+        width: 32
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -245,10 +245,10 @@ TextureImporter:
       name: Player_Faces_6
       rect:
         serializedVersion: 2
-        x: 70
-        y: 65
-        width: 29
-        height: 29
+        x: 64
+        y: 0
+        width: 32
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,6 +258,48 @@ TextureImporter:
       bones: []
       spriteID: 24d8043446d8bd441bbc36509297206b
       internalID: 86810114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Faces_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e337efd83cd9457488938426a77d9cf0
+      internalID: -1463073425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Faces_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf2b5f1513191648a5117d4e9baa733
+      internalID: 404605617
       vertices: []
       indices: 
       edges: []
@@ -277,8 +319,10 @@ TextureImporter:
       Player_Faces_4: 69480353
       Player_Faces_6: 86810114
       Player_Faces_3: -129602863
+      Player_Faces_7: -1463073425
       Player_Faces_1: -1860184772
       Player_Faces_5: 1987903145
+      Player_Faces_8: 404605617
       Player_Faces_0: 884714404
   spritePackingTag: 
   pSDRemoveMatte: 0

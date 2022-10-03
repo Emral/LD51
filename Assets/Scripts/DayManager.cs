@@ -186,6 +186,8 @@ public class DayManager : MonoBehaviour
 
         DayActive = _dayActive;
         TimerActive = _timerActive;
+
+        Globals.RushHour = isRushHour;
     }
 
     public void Sell()
@@ -374,6 +376,8 @@ public class DayManager : MonoBehaviour
         var reward = Mathf.Max( Mathf.Lerp(0, 1 + _currentGuy.bias * 0.05f, 0.5f + totalPenalty * 0.5f) * SessionVariables.IncomeMultiplier * SessionVariables.MaxIncomeBase, 0);
 
         reward = reward.MakeDollars();
+
+        Globals.LastGain = reward;
 
         if (reward > 6 - SessionVariables.Reputation + 0.1f)
         {

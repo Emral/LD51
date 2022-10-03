@@ -2,13 +2,17 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_Name: FunkyStripes
   m_Shader: {fileID: 4800000, guid: 1265c942dcf64fa45ac15e5b0299819c, type: 3}
-  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
+  m_ValidKeywords:
+  - VERTICAL_WOBBLE_ON
+  m_InvalidKeywords:
+  - ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -20,17 +24,32 @@ Material:
     m_TexEnvs:
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: d151f022dc7bf1c469241e920096804a, type: 3}
+        m_Scale: {x: 4, y: 4}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTex:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - INTERLACING: 0
-    - VERTICAL_WOBBLE: 0
-    - _Amplitude: 0.052
-    - _AnimationPhase: 0
-    - _AnimationSpeed: 2
-    - _Frequency: 4
+    - NOISING: 0
+    - VERTICAL_WOBBLE: 1
+    - _Amplitude: 0.04
+    - _AnimationPhase: 0.488
+    - _AnimationSpeed: 0.67
+    - _Distortion: 0
+    - _DistortionX: 1.5
+    - _DistortionY: 1.2
+    - _Frequency: 0.4
     - _Interlace2: 0
     - _InterlaceSize: 0
-    - _MyDstMode: 0
-    - _MySrcMode: 3
+    - _MoveX: 0.07
+    - _MoveY: 0
+    - _MyDstMode: 8
+    - _MySrcMode: 5
+    - _NoiseLv: 0
+    - _OscilationYAmplitude: 0
+    - _OscilationYFrequency: 0
     m_Colors: []
+  m_BuildTextureStacks: []

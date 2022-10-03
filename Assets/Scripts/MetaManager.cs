@@ -39,6 +39,11 @@ public class MetaManager : MonoBehaviour
             ev.Initialize();
         }
 
+        if (SceneManager.GetActiveScene().buildIndex != 0)
+        {
+            TutorialActive = false;
+        }
+
         sessionVariables = ScriptableObject.CreateInstance<SessionVariables>();
         sessionVariables.Initialize();
     }

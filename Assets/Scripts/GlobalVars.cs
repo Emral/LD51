@@ -8,7 +8,9 @@ public class GlobalVars
     private Color _penColor = new Color(29 / 255.0f, 31 / 255.0f, 38 / 255.0f);
     public float RushHourStart = 0;
     public float RushHourEnd = 0;
+    public bool RushHour = false;
     public bool IsRaining = false;
+    public float LastGain = 0;
     public List<string> tagBiases = new List<string>();
     public Color PenColor
     {

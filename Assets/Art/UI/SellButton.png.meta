@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 945b46d28f6093344bb3d381d00d5b73
+guid: 8d9232a7d2e717e46afede13ba5318cf
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -116,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GoArrow_0
+      name: SellButton_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 124
-        width: 117
-        height: 62
+        y: 128
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26ce64e940b5c9649bf6b03258156736
-      internalID: -1548580650
+      spriteID: 2b069fc8391d93348a01cb0f1e8f6eae
+      internalID: -777335448
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GoArrow_1
+      name: SellButton_1
       rect:
         serializedVersion: 2
         x: 0
-        y: 62
-        width: 117
-        height: 62
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,20 +151,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 141e9badc20fe6945b0054bc461b34d4
-      internalID: -23344100
+      spriteID: 465bde54ac246b74a9acb3f815924bc0
+      internalID: 1348821117
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GoArrow_2
+      name: SellButton_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 117
-        height: 62
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,8 +172,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3eadba1957e76a4bba85700b262b7a4
-      internalID: -971474813
+      spriteID: 8e864df5f9b3c044e95620156267ce09
+      internalID: 1602399831
       vertices: []
       indices: 
       edges: []
@@ -189,9 +189,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      GoArrow_2: -971474813
-      GoArrow_0: -1548580650
-      GoArrow_1: -23344100
+      SellButton_1: 1348821117
+      SellButton_0: -777335448
+      SellButton_2: 1602399831
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
