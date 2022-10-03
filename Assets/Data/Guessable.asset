@@ -103,7 +103,7 @@ MonoBehaviour:
     - object
     - nature
   - texture: {fileID: 489982703, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 3
+    strokeComplexity: 4
     colors: 161
     tags:
     - object
@@ -134,7 +134,7 @@ MonoBehaviour:
     tags:
     - object
   - texture: {fileID: 1134513501, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 3
+    strokeComplexity: 4
     colors: 97
     tags:
     - object
@@ -467,7 +467,7 @@ MonoBehaviour:
     tags:
     - person
   - texture: {fileID: -1115661259, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 2
+    strokeComplexity: 3
     colors: 1
     tags:
     - person
@@ -603,7 +603,7 @@ MonoBehaviour:
     - nature
     - rain
   - texture: {fileID: -2001213396, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 3
+    strokeComplexity: 2
     colors: 16
     tags:
     - object
@@ -957,13 +957,13 @@ MonoBehaviour:
     - bear
     - animal
   - texture: {fileID: 777002867, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
-    strokeComplexity: 1
+    strokeComplexity: 4
     colors: 1
     tags:
     - bear
     - animal
   - texture: {fileID: -1012297363, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
-    strokeComplexity: 1
+    strokeComplexity: 4
     colors: 2
     tags:
     - bear
@@ -988,7 +988,7 @@ MonoBehaviour:
     colors: 5
     tags: []
   - texture: {fileID: 409157812, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
-    strokeComplexity: 2
+    strokeComplexity: 3
     colors: 48
     tags:
     - finance
@@ -1022,13 +1022,13 @@ MonoBehaviour:
     - rain
     - object
   - texture: {fileID: 1966005646, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
-    strokeComplexity: 2
+    strokeComplexity: 4
     colors: 1
     tags:
     - rain
     - object
   - texture: {fileID: -67492936, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
-    strokeComplexity: 2
+    strokeComplexity: 4
     colors: 16
     tags:
     - rain
