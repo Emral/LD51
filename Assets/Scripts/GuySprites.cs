@@ -7,7 +7,7 @@ public class GuySprite
 {
     public Sprite sprite;
     [Range(-2, 2)]
-    public int bias = 0;
+    public float bias = 0;
     public int weight = 10;
     public bool RainOnly = false;
     public bool SunOnly = false;

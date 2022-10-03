@@ -289,11 +289,6 @@ public class DayManager : MonoBehaviour
             }
         }
 
-        if (totalInkA == 0)
-        {
-            totalPenalty = -999;
-        }
-
         totalPenalty = totalPenalty / Mathf.Max(penaltyRange, 1);
 
         totalPenalty = totalPenalty + 2 - 2 * Mathf.Abs(totalInkA/penaltyRange - totalInkB/penaltyRange);
@@ -313,11 +308,16 @@ public class DayManager : MonoBehaviour
             }
         }
 
-        totalPenalty = (_currentGuy.bias + totalPenalty) * 0.45f + 0.55f;
+        totalPenalty = (totalPenalty * 1.1f) + 0.3f;
+
+        if (totalInkA == 0)
+        {
+            totalPenalty = -999;
+        }
 
         Debug.Log(totalPenalty);
 
-        var reward = Mathf.Max( Mathf.Lerp(0, 1, 0.5f + totalPenalty * 0.5f) * SessionVariables.IncomeMultiplier * SessionVariables.MaxIncomeBase, 0);
+        var reward = Mathf.Max( Mathf.Lerp(0, 1 + _currentGuy.bias * 0.05f, 0.5f + totalPenalty * 0.5f) * SessionVariables.IncomeMultiplier * SessionVariables.MaxIncomeBase, 0);
 
         reward = reward.MakeDollars();
 
