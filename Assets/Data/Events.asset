@@ -34,7 +34,7 @@ MonoBehaviour:
     eventTags: []
     newExpenses:
     - Name: Utensils
-      Value: 5
+      Value: 10
   - eventLogMessage: I think I'm gonna expand my palette even further.
     minDuration: 0
     maxDuration: 0
@@ -55,49 +55,7 @@ MonoBehaviour:
     eventTags: []
     newExpenses:
     - Name: Utensils
-      Value: 5
-  - eventLogMessage: I think it's time to add even more colors to my repertoire.
-    minDuration: 0
-    maxDuration: 0
-    Permanent: 1
-    Delay: 0
-    IncreasesRushHourMin: 0
-    IncreasesRushHourMax: 0
-    CanRepeat: 0
-    MinRepeatDayDifference: 0
-    IncreaseMaxIncomeMultiplier: 0
-    IncreaseMaxIncome: 1
-    UnlocksColors: 1
-    FollowersRequired: 0
-    ExperienceRequired: 0
-    ReputationRequired: 0
-    MoneyRequired: 0
-    DayRequired: 7
-    eventTags: []
-    newExpenses:
-    - Name: Utensils
-      Value: 5
-  - eventLogMessage: Time to finalize my palette.
-    minDuration: 0
-    maxDuration: 0
-    Permanent: 1
-    Delay: 0
-    IncreasesRushHourMin: 0
-    IncreasesRushHourMax: 0
-    CanRepeat: 0
-    MinRepeatDayDifference: 0
-    IncreaseMaxIncomeMultiplier: 0
-    IncreaseMaxIncome: 1
-    UnlocksColors: 1
-    FollowersRequired: 0
-    ExperienceRequired: 0
-    ReputationRequired: 0
-    MoneyRequired: 0
-    DayRequired: 10
-    eventTags: []
-    newExpenses:
-    - Name: Utensils
-      Value: 5
+      Value: 10
   - eventLogMessage: Oh wow! Someone's tweet mentioning me blew up! Looks like a
       lot of people might be coming over soon.
     minDuration: 1

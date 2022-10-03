@@ -58,6 +58,7 @@ public class DayManager : MonoBehaviour
     // Start is called before the first frame update
     async void Start()
     {
+        imageCandidates.Initialize();
         var rushHourDuration = Mathf.FloorToInt((SessionVariables.Followers + SessionVariables.Reputation * 2) / 5.0f) * 0.02f;
         Globals.IsRaining = SessionVariables.UpcomingWeathers[0] == Weather.Rain;
         foreach (var e in SessionVariables.Events)
@@ -138,6 +139,12 @@ public class DayManager : MonoBehaviour
 
         if (_dayActive)
         {
+#if UNITY_EDITOR
+            if (Input.GetKeyDown(KeyCode.K))
+            {
+                _dayTimeElapsed = 100;
+            }
+#endif
             _dayTimeElapsed = _dayTimeElapsed + Time.deltaTime;
 
             if (_dayTimeElapsed/100 >= Globals.RushHourStart && _dayTimeElapsed/100 <= Globals.RushHourEnd)
@@ -258,10 +265,19 @@ public class DayManager : MonoBehaviour
 
     private void NewGuessable()
     {
-        _currentGuy = guys.GetRandom();
+        _currentGuessable = null;
+        while (_currentGuessable == null)
+        {
+            _currentGuy = guys.GetRandom();
+            _currentGuessable = imageCandidates.GetRandom(_currentGuy.bias, _currentGuy.preferredTags);
+
+            if (_currentGuessable == null)
+            {
+                Debug.Log("Selecting different guy...");
+            }
+        }
         _currentGuy.ArrivalSound.Play();
         SFX.NewCustomer.Play();
-        _currentGuessable = imageCandidates.GetRandom(_currentGuy.bias, _currentGuy.preferredTags);
         OnNewGuy.Invoke(_currentGuy);
     }
 

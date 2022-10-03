@@ -192,7 +192,7 @@ public class SessionVariables : ScriptableObject
         }
         int idx2 = 0;
         ValidColors newCols = 0;
-        while (idx2 < 2 && missingColors.Count > 0)
+        while (idx2 < 4 && missingColors.Count > 0)
         {
             var idx = Random.Range(0, missingColors.Count);
             newCols |= missingColors[idx];

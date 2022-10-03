@@ -32,63 +32,78 @@ public class GuessableImage : ScriptableObject
 {
     public List<Guessable> images = new List<Guessable>();
 
+    private Dictionary<string, List<Guessable>> guessablesByTag = new Dictionary<string, List<Guessable>>();
+
+    public void Initialize()
+    {
+        guessablesByTag = new Dictionary<string, List<Guessable>>();
+
+        foreach (var img in images)
+        {
+            foreach (var tag in img.tags)
+            {
+                if (!guessablesByTag.ContainsKey(tag))
+                {
+                    guessablesByTag[tag] = new List<Guessable>();
+                }
+
+                guessablesByTag[tag].Add(img);
+            }
+        }
+    }
+
+    private Sprite FindSprite(List<Guessable> sprites, float bias)
+    {
+        var upperLimit = Mathf.FloorToInt((SessionVariables.Experience + 0.5f - bias * 0.5f));
+        var candidates = new List<Guessable>();
+
+        while (upperLimit < 9 && candidates.Count == 0)
+        {
+            foreach (var image in sprites)
+            {
+                if ((SessionVariables.Colors & image.colors) == image.colors)
+                {
+                    if (Mathf.Max(upperLimit, 1) >= image.strokeComplexity)
+                    {
+                        candidates.Add(image);
+                    }
+                }
+            }
+
+            upperLimit++;
+        }
+
+        if (candidates.Count == 0)
+        {
+            return null;
+        }
+
+        return candidates[Random.Range(0, candidates.Count)].texture;
+    }
+
     public Sprite GetRandom(float bias = 0, List<string> preferredTags = null)
     {
-        var tagMask = new Dictionary<string, bool>();
+        var joinedList = new List<Guessable>();
         if (preferredTags != null)
         {
             foreach(var tag in preferredTags)
             {
-                tagMask[tag] = true;
 
                 if (DayManager.Globals.tagBiases.Contains(tag))
                 {
-                    tagMask.Clear();
-                    tagMask[tag] = true;
+                    var result = FindSprite(guessablesByTag[tag], bias);
+
+                    if (result)
+                    {
+                        return result;
+                    }
                     break;
                 }
+
+                joinedList.AddRange(guessablesByTag[tag]);
             }
         }
-        var upperLimit = Mathf.FloorToInt((SessionVariables.Experience + 0.5f - bias * 0.5f));
-        var candidates = new List<Guessable>();
 
-        while (candidates.Count == 0 && upperLimit < 8)
-        {
-            foreach (var image in images)
-            {
-                if ((SessionVariables.Colors & image.colors) == image.colors)
-                {
-                    if (Mathf.Clamp(upperLimit, 1, 7) >= image.strokeComplexity)
-                    {
-                        if (preferredTags == null || preferredTags.Count == 0)
-                        {
-                            candidates.Add(image);
-                        }
-                        else
-                        {
-                            foreach (var tag in image.tags)
-                            {
-                                if (tagMask.ContainsKey(tag))
-                                {
-                                    candidates.Add(image);
-                                    break;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            upperLimit++;
-        }
-
-        if (candidates.Count > 0)
-        {
-            return candidates[Random.Range(0, candidates.Count)].texture;
-        }
-        else
-        {
-            Debug.Log("Unable to spawn image");
-            return images[Random.Range(0, images.Count)].texture;
-        }
+        return FindSprite(joinedList, bias);
     }
 }
