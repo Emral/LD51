@@ -187,6 +187,7 @@ MonoBehaviour:
     tags:
     - nature
     - sky
+    - rain
   - texture: {fileID: 437981352, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 3
     colors: 1
@@ -197,6 +198,7 @@ MonoBehaviour:
     colors: 1
     tags:
     - object
+    - rain
   - texture: {fileID: -1887719661, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 3
     colors: 4
@@ -599,6 +601,7 @@ MonoBehaviour:
     colors: 192
     tags:
     - nature
+    - rain
   - texture: {fileID: -2001213396, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 3
     colors: 16
@@ -647,12 +650,14 @@ MonoBehaviour:
     tags:
     - nature
     - sky
+    - rain
   - texture: {fileID: 1909161107, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 2
     colors: 16
     tags:
     - nature
     - sky
+    - rain
   - texture: {fileID: -1334178774, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 2
     colors: 65
@@ -761,6 +766,7 @@ MonoBehaviour:
     colors: 64
     tags:
     - object
+    - rain
   - texture: {fileID: 1960285789, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 1
     colors: 16
@@ -1009,3 +1015,33 @@ MonoBehaviour:
     colors: 1
     tags:
     - finance
+  - texture: {fileID: 1545004651, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 1
+    colors: 1
+    tags:
+    - rain
+    - object
+  - texture: {fileID: 1966005646, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 2
+    colors: 1
+    tags:
+    - rain
+    - object
+  - texture: {fileID: -67492936, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 2
+    colors: 16
+    tags:
+    - rain
+    - object
+  - texture: {fileID: -594815916, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 1
+    colors: 128
+    tags:
+    - rain
+    - object
+  - texture: {fileID: -1679566832, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 2
+    colors: 64
+    tags:
+    - rain
+    - object
