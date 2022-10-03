@@ -11,13 +11,13 @@ public class MainManager : MonoBehaviour
     
     public void ShowCredits()
     {
-        Main.DOMoveY(-180, 1).SetEase(Ease.InOutQuad);
-        Credits.DOMoveY(0, 1).SetEase(Ease.InOutQuad);
+        Main.DOLocalMoveY(-360, 1).SetEase(Ease.InOutQuad);
+        Credits.DOLocalMoveY(-180, 1).SetEase(Ease.InOutQuad);
     }
 
     public void HideCredits()
     {
-        Main.DOMoveY(180, 1).SetEase(Ease.InOutQuad);
-        Credits.DOMoveY(360, 1).SetEase(Ease.InOutQuad);
+        Main.DOLocalMoveY(0, 1).SetEase(Ease.InOutQuad);
+        Credits.DOLocalMoveY(180, 1).SetEase(Ease.InOutQuad);
     }
 }

@@ -13,7 +13,7 @@ public class NewMoneyText : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _position = transform.position;
+        _position = transform.localPosition;
         _group = GetComponent<CanvasGroup>();
         _group.alpha = 0;
         _text = GetComponentInChildren<Text>();
@@ -28,9 +28,9 @@ public class NewMoneyText : MonoBehaviour
     private void OnSubmit(float a)
     {
         _group.alpha = 1;
-        transform.position = _position;
+        transform.localPosition = _position;
         _text.text = "+ $" + a.MakeDollarsString();
         _group.DOFade(0, 0.5f).SetEase(Ease.InQuint);
-        transform.DOMoveY(transform.position.y + 50, 0.6f).SetEase(Ease.OutQuint);
+        transform.DOLocalMoveY(transform.localPosition.y + 50, 0.6f).SetEase(Ease.OutQuint);
     }
 }

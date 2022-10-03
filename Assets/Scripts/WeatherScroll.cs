@@ -65,7 +65,7 @@ public class WeatherScroll : MonoBehaviour
 
         if (SessionVariables.Day - SessionVariables.LastDay > 0)
         {
-            transform.DOMoveX(((RectTransform)transform).anchoredPosition.x - (87.4f + 8) * (SessionVariables.Day - SessionVariables.LastDay), 1.5f).SetEase(Ease.InOutQuad);
+            transform.DOLocalMoveX(transform.localPosition.x - (87.4f + 8) * (SessionVariables.Day - SessionVariables.LastDay), 1.5f).SetEase(Ease.InOutQuad);
             yield return new WaitForSeconds(2f);
         }
 

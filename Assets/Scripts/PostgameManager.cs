@@ -79,14 +79,14 @@ public class PostgameManager : MonoBehaviour
         if (SessionVariables.todaysDrawings.Count > 0)
         {
             yield return new WaitForSeconds(1.75f);
-            Results.DOMoveY(-180, 1).SetEase(Ease.InOutQuint);
+            Results.DOLocalMoveY(-360, 1).SetEase(Ease.InOutQuint);
             while (SessionVariables.todaysDrawings.Count > 0)
             {
                 Canvas.transform.localPosition = Vector3.up * 360;
                 CanvasContents.sprite = Sprite.Create(SessionVariables.todaysDrawings[idx % SessionVariables.todaysDrawings.Count], new Rect(0, 0, 256, 256), new Vector2(0.5f, 0.5f));
-                Canvas.DOMoveY(180, 1).SetEase(Ease.InOutQuint);
+                Canvas.DOLocalMoveY(0, 1).SetEase(Ease.OutQuint);
                 yield return new WaitForSeconds(2);
-                Canvas.DOMoveY(-180, 1).SetEase(Ease.InOutQuint);
+                Canvas.DOLocalMoveY(-360, 1).SetEase(Ease.InQuint);
                 idx++;
                 yield return new WaitForSeconds(1);
             }

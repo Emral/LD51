@@ -11,8 +11,8 @@ public class GuySprite
     public int weight = 10;
     public bool RainOnly = false;
     public bool SunOnly = false;
-    public AudioClip ArrivalSound;
-    public AudioClip ThanksSound;
+    public SFX ArrivalSound = SFX.None;
+    public SFX ThanksSound = SFX.None;
     public List<string> preferredTags = new List<string>();
 }
 
@@ -23,22 +23,22 @@ public class GuySprites : ScriptableObject
 
     private List<GuySprite> weighted;
 
-    public GuySprite GetRandom()
+    public void ResetAll()
     {
-        if (weighted == null || weighted.Count == 0)
-        {
-            weighted = new List<GuySprite>();
+        weighted = new List<GuySprite>();
 
-            for (int i = 0; i < sprites.Count; i++)
-            {
-                if ((sprites[i].RainOnly && DayManager.Globals.IsRaining) || (sprites[i].SunOnly && !DayManager.Globals.IsRaining) || (!sprites[i].RainOnly && !sprites[i].SunOnly))
+        for (int i = 0; i < sprites.Count; i++)
+        {
+            if ((sprites[i].RainOnly && DayManager.Globals.IsRaining) || (sprites[i].SunOnly && !DayManager.Globals.IsRaining) || (!sprites[i].RainOnly && !sprites[i].SunOnly))
                 for (int j = 0; j < sprites[i].weight; j++)
                 {
                     weighted.Add(sprites[i]);
                 }
-            }
         }
+    }
 
+    public GuySprite GetRandom()
+    {
         return weighted[Random.Range(0, weighted.Count)];
     }
 }

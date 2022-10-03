@@ -17,17 +17,18 @@ MonoBehaviour:
     bias: 0
     weight: 10
     RainOnly: 0
-    SunOnly: 0
-    ArrivalSound: {fileID: 0}
-    ThanksSound: {fileID: 0}
-    preferredTags: []
+    SunOnly: 1
+    ArrivalSound: -1
+    ThanksSound: -1
+    preferredTags:
+    - object
   - sprite: {fileID: 21300000, guid: a6ba82f98f6b92a459a0848a77001c5c, type: 3}
     bias: -1
     weight: 10
     RainOnly: 0
-    SunOnly: 0
-    ArrivalSound: {fileID: 0}
-    ThanksSound: {fileID: 0}
+    SunOnly: 1
+    ArrivalSound: -1
+    ThanksSound: -1
     preferredTags:
     - finance
     - object
@@ -36,8 +37,8 @@ MonoBehaviour:
     weight: 1
     RainOnly: 1
     SunOnly: 0
-    ArrivalSound: {fileID: 0}
-    ThanksSound: {fileID: 0}
+    ArrivalSound: -1
+    ThanksSound: -1
     preferredTags:
     - creature
     - edgy
@@ -46,8 +47,8 @@ MonoBehaviour:
     weight: 10
     RainOnly: 0
     SunOnly: 1
-    ArrivalSound: {fileID: 0}
-    ThanksSound: {fileID: 0}
+    ArrivalSound: -1
+    ThanksSound: -1
     preferredTags:
     - nature
     - fish
@@ -55,10 +56,10 @@ MonoBehaviour:
   - sprite: {fileID: 21300000, guid: de81271c48dc4734a9b0ff83f7ad06c4, type: 3}
     bias: 0.7
     weight: 3
-    RainOnly: 0
+    RainOnly: 1
     SunOnly: 0
-    ArrivalSound: {fileID: 0}
-    ThanksSound: {fileID: 0}
+    ArrivalSound: -1
+    ThanksSound: -1
     preferredTags:
     - food
     - landscape
@@ -67,8 +68,8 @@ MonoBehaviour:
     weight: 10
     RainOnly: 0
     SunOnly: 0
-    ArrivalSound: {fileID: 0}
-    ThanksSound: {fileID: 0}
+    ArrivalSound: -1
+    ThanksSound: -1
     preferredTags:
     - person
   - sprite: {fileID: 21300000, guid: b225e12fea58d04419588791a34c7c64, type: 3}
@@ -76,18 +77,18 @@ MonoBehaviour:
     weight: 10
     RainOnly: 1
     SunOnly: 0
-    ArrivalSound: {fileID: 0}
-    ThanksSound: {fileID: 0}
+    ArrivalSound: -1
+    ThanksSound: -1
     preferredTags:
     - cute
     - nature
   - sprite: {fileID: 21300000, guid: 9a01a33868c129248907fdd172e20b62, type: 3}
-    bias: 0
+    bias: -1.4
     weight: 10
     RainOnly: 0
-    SunOnly: 0
-    ArrivalSound: {fileID: 0}
-    ThanksSound: {fileID: 0}
+    SunOnly: 1
+    ArrivalSound: -1
+    ThanksSound: -1
     preferredTags:
     - food
   - sprite: {fileID: 21300000, guid: f56d373bb6bac154f9f2bd0d543b6bdc, type: 3}
@@ -95,27 +96,26 @@ MonoBehaviour:
     weight: 2
     RainOnly: 1
     SunOnly: 0
-    ArrivalSound: {fileID: 0}
-    ThanksSound: {fileID: 0}
+    ArrivalSound: -1
+    ThanksSound: -1
     preferredTags:
     - steven
   - sprite: {fileID: 21300000, guid: 670f2ddd19ba2044199b7e709dad6027, type: 3}
     bias: 0.36
     weight: 10
-    RainOnly: 0
+    RainOnly: 1
     SunOnly: 0
-    ArrivalSound: {fileID: 0}
-    ThanksSound: {fileID: 0}
+    ArrivalSound: -1
+    ThanksSound: -1
     preferredTags:
-    - edgy
     - cute
   - sprite: {fileID: 21300000, guid: 3551be94127627c469f75d6db7380f12, type: 3}
     bias: 1.4
     weight: 10
     RainOnly: 0
     SunOnly: 1
-    ArrivalSound: {fileID: 0}
-    ThanksSound: {fileID: 0}
+    ArrivalSound: -1
+    ThanksSound: -1
     preferredTags:
     - cute
     - animal
@@ -124,17 +124,19 @@ MonoBehaviour:
     bias: 0
     weight: 5
     RainOnly: 0
-    SunOnly: 0
-    ArrivalSound: {fileID: 0}
-    ThanksSound: {fileID: 0}
-    preferredTags: []
+    SunOnly: 1
+    ArrivalSound: -1
+    ThanksSound: -1
+    preferredTags:
+    - sky
+    - bird
   - sprite: {fileID: 21300000, guid: fdb2229288afb5d49aa56d5c02abc9d6, type: 3}
     bias: 0
     weight: 3
     RainOnly: 0
-    SunOnly: 0
-    ArrivalSound: {fileID: 0}
-    ThanksSound: {fileID: 0}
+    SunOnly: 1
+    ArrivalSound: -1
+    ThanksSound: -1
     preferredTags:
     - creature
     - cute
@@ -142,38 +144,69 @@ MonoBehaviour:
     bias: -0.16
     weight: 10
     RainOnly: 0
-    SunOnly: 0
-    ArrivalSound: {fileID: 0}
-    ThanksSound: {fileID: 0}
+    SunOnly: 1
+    ArrivalSound: -1
+    ThanksSound: -1
     preferredTags:
     - object
   - sprite: {fileID: 21300000, guid: b52239143374907438a04f7546fe0d34, type: 3}
     bias: 0
     weight: 10
-    RainOnly: 0
+    RainOnly: 1
     SunOnly: 0
-    ArrivalSound: {fileID: 0}
-    ThanksSound: {fileID: 0}
+    ArrivalSound: -1
+    ThanksSound: -1
     preferredTags:
     - edgy
     - sky
+    - finance
   - sprite: {fileID: 21300000, guid: 96217f7a382f6bc4783843ed5993a171, type: 3}
     bias: 0.98
     weight: 5
     RainOnly: 0
-    SunOnly: 0
-    ArrivalSound: {fileID: 0}
-    ThanksSound: {fileID: 0}
+    SunOnly: 1
+    ArrivalSound: -1
+    ThanksSound: -1
     preferredTags:
     - broccoli
   - sprite: {fileID: 21300000, guid: 5eeb5f059c950cc46aa89f431f48bb47, type: 3}
     bias: -1.7
     weight: 5
-    RainOnly: 0
+    RainOnly: 1
     SunOnly: 0
-    ArrivalSound: {fileID: 0}
-    ThanksSound: {fileID: 0}
+    ArrivalSound: -1
+    ThanksSound: -1
     preferredTags:
     - edgy
     - fish
     - bird
+  - sprite: {fileID: 21300000, guid: 743f8f52daa12444184ec4acfb2d637c, type: 3}
+    bias: 0
+    weight: 10
+    RainOnly: 1
+    SunOnly: 0
+    ArrivalSound: -1
+    ThanksSound: -1
+    preferredTags:
+    - bird
+    - nature
+  - sprite: {fileID: 21300000, guid: 9424727fc72e6e4458e99b173650e9bf, type: 3}
+    bias: 0.21
+    weight: 5
+    RainOnly: 1
+    SunOnly: 0
+    ArrivalSound: -1
+    ThanksSound: -1
+    preferredTags:
+    - cat
+    - cute
+  - sprite: {fileID: 21300000, guid: fcfe50b64e6ac7144a5fa340b2f940a2, type: 3}
+    bias: 0.29
+    weight: 5
+    RainOnly: 1
+    SunOnly: 0
+    ArrivalSound: -1
+    ThanksSound: -1
+    preferredTags:
+    - object
+    - cute

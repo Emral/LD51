@@ -13,7 +13,7 @@ public class GuyDisplay : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        guyPosition = guyImage.transform.position;
+        guyPosition = guyImage.transform.localPosition;
         DayManager.OnSubmit.AddListener(OnSubmit);
         DayManager.OnNewGuy.AddListener(OnNewGuy);
     }
@@ -26,14 +26,14 @@ public class GuyDisplay : MonoBehaviour
 
     private void OnSubmit(float a)
     {
-        guyImage.transform.position = guyPosition;
-        guyImage.transform.DOMoveX(guyPosition.x - 250, 0.4f).SetEase(Ease.InBack);
+        guyImage.transform.localPosition = guyPosition;
+        guyImage.transform.DOLocalMoveX(guyPosition.x - 160, 0.4f).SetEase(Ease.InBack);
     }
 
     private void OnNewGuy(GuySprite a)
     {
         guyImage.sprite = a.sprite;
-        guyImage.transform.position = guyPosition + Vector3.right * 250;
-        guyImage.transform.DOMoveX(guyPosition.x, 0.4f).SetEase(Ease.OutBack);
+        guyImage.transform.localPosition = guyPosition + Vector3.right * 160;
+        guyImage.transform.DOLocalMoveX(guyPosition.x, 0.4f).SetEase(Ease.OutBack);
     }
 }

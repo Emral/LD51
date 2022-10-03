@@ -40,15 +40,17 @@ public class GuessableImage : ScriptableObject
             foreach(var tag in preferredTags)
             {
                 tagMask[tag] = true;
+
+                Debug.Log("Tag: " + tag);
             }
         }
-        var upperLimit = Mathf.FloorToInt((SessionVariables.Experience + 20 * bias) / 15);
+        var upperLimit = Mathf.FloorToInt((SessionVariables.Experience - bias * 0.5f));
         var candidates = new List<Guessable>();
         foreach (var image in images)
         {
             if ((SessionVariables.Colors & image.colors) == image.colors)
             {
-                if (Mathf.Min(upperLimit, 4) <= image.strokeComplexity)
+                if (Mathf.Clamp(upperLimit, 1, 7) >= image.strokeComplexity)
                 {
                     if (preferredTags == null || preferredTags.Count == 0)
                     {

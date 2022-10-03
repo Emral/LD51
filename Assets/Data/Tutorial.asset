@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4155452021c736408cc991e17df1dda, type: 3}
+  m_Name: Tutorial
+  m_EditorClassIdentifier: 
+  entries:
+  - mechanic: 0
+    title: How to play
+    description: I can use my cursor to draw the artwork customers have in mind.
+  - mechanic: 1
+    title: Time limit
+    description: The stopwatch shows how much time I have left for a drawing.
+  - mechanic: 2
+    title: Selling
+    description: If I am done early, I can sell immediately by hitting the bell.
+  - mechanic: 3
+    title: Colors
+    description: I can select my new colors by using the palette on the left.
+  - mechanic: 4
+    title: Daily shift
+    description: The line at the bottom shows how far I am in my daily shift.
+  - mechanic: 5
+    title: Customers
+    description: It seems every customer is different. Some of them don't like my
+      art as much as others.
+  - mechanic: 6
+    title: Rush hour
+    description: The tinted section of the daily shift line is a rush hour period.
+      My time limit will be stricter!
+  - mechanic: 7
+    title: Thunderstorm
+    description: A thunderstorm is coming up! That's too dangerous for work, so I
+      will have to have enough money for two days.
+  - mechanic: 8
+    title: Events
+    description: An event is coming up! This can affect the day significantly.
+  - mechanic: 9
+    title: Followers
+    description: I'm gaining quite a few followers. If this keeps up, I might become
+      popular online!
+  - mechanic: 10
+    title: Rainy days
+    description: Not as many people come around on rainy days. But it brings out
+      some unusual folk as well.

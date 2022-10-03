@@ -18,7 +18,7 @@ public class TotalSavingsText : MonoBehaviour
     void Start()
     {
         _text = GetComponent<Text>();
-        _text.text = Prefix + "$" + SessionVariables.Savings;
+        _text.text = Prefix + "$" + SessionVariables.Savings.MakeDollarsString();
         SessionVariables.OnSavingsChanged.AddListener(OnSubmit);
     }
 

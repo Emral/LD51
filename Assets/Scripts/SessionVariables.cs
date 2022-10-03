@@ -21,15 +21,17 @@ public enum Weather
 
 public enum Mechanics
 {
-    TakingRequests,
+    HowToPlay,
     TimeLimit,
     SellEarly,
+    SelectColor,
     DaySlider,
-    GetMoney,
+    MoneyExplanation,
     RushHour,
     Thunderstorms,
     Events,
-    Colors
+    Followers,
+    Rain
 }
 
 public class SessionVariables : ScriptableObject
@@ -100,7 +102,7 @@ public class SessionVariables : ScriptableObject
         }
     }
 
-    public static void NewDayBegins()
+    public static async void NewDayBegins()
     {
         TodaysEarnings = 0;
         Debug.Log("Reputation: " + Reputation);
@@ -119,6 +121,10 @@ public class SessionVariables : ScriptableObject
             if (e != null)
             {
                 e.Schedule();
+                if (!e.Permanent)
+                {
+                    await MetaManager.instance.DoTutorial(Mechanics.Events);
+                }
             }
 
             for (int i = Events.Count-1; i >= 0; i--)
@@ -139,6 +145,20 @@ public class SessionVariables : ScriptableObject
         while (UpcomingWeathers[RentMultiplier] == Weather.Thunder)
         {
             RentMultiplier++;
+        }
+        if (UpcomingWeathers[1] == Weather.Rain)
+        {
+            await MetaManager.instance.DoTutorial(Mechanics.Rain);
+        }
+
+        if (Followers >= 25 && Day > 3)
+        {
+            await MetaManager.instance.DoTutorial(Mechanics.Followers);
+        }
+
+        if (RentMultiplier > 1)
+        {
+            await MetaManager.instance.DoTutorial(Mechanics.Thunderstorms);
         }
     }
 
@@ -201,10 +221,14 @@ public class SessionVariables : ScriptableObject
 
     public static void CalculateWeather(int dayToCalculate)
     {
-        if (dayToCalculate >= 2 && dayToCalculate % 4 == 2)
+        if (dayToCalculate >= 10 && dayToCalculate % 9 == 1)
+        {
+            UpcomingWeathers.Add(Weather.Thunder);
+        }
+        else if (dayToCalculate >= 2 && dayToCalculate % 4 == 2)
         {
             UpcomingWeathers.Add(Weather.Rain);
-        } else if (Experience > 50)
+        } else if (dayToCalculate >= 10 && Experience > 10 && Random.Range(0, 15 - Mathf.Min(Experience * 0.1f, 20)) == 0)
         {
             if (Random.Range(0, 1000) < Mathf.Min(Experience, 250))
             {

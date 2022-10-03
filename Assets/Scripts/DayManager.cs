@@ -53,11 +53,15 @@ public class DayManager : MonoBehaviour
 
     private bool isRushHour = false;
 
+    private int drawingsDone = 0;
+
     // Start is called before the first frame update
-    void Start()
+    async void Start()
     {
         var rushHourDuration = Mathf.FloorToInt((SessionVariables.Followers + SessionVariables.Reputation) / 10.0f) * 0.01f;
         Globals.IsRaining = SessionVariables.UpcomingWeathers[0] == Weather.Rain;
+        guys.ResetAll();
+        NewGuessable();
         if (SessionVariables.Day > 1)
         {
             rushHourDuration = Mathf.Clamp01(rushHourDuration + (Globals.IsRaining ? -0.2f : 0.2f));
@@ -68,6 +72,31 @@ public class DayManager : MonoBehaviour
             }
         }
         rushHourDuration = Mathf.Max(0, rushHourDuration - Random.Range(0.2f, 0.3f), 0);
+
+        if (SessionVariables.Day == 1)
+        {
+            await MetaManager.instance.DoTutorial(Mechanics.HowToPlay);
+        }
+
+        if (SessionVariables.Day == 2)
+        {
+            await MetaManager.instance.DoTutorial(Mechanics.SelectColor);
+        }
+
+        if (rushHourDuration > 0)
+        {
+            await MetaManager.instance.DoTutorial(Mechanics.RushHour);
+        }
+
+        if (SessionVariables.Day == 4)
+        {
+            await MetaManager.instance.DoTutorial(Mechanics.MoneyExplanation);
+        }
+
+        if (Globals.IsRaining)
+        {
+            await MetaManager.instance.DoTutorial(Mechanics.SelectColor);
+        }
         Globals.RushHourEnd = Random.Range(0.8f, 1);
         Globals.RushHourStart = Globals.RushHourEnd - rushHourDuration;
         CoroutineManager.Start(StartNextDay());
@@ -81,7 +110,6 @@ public class DayManager : MonoBehaviour
 
     private IEnumerator StartNextDay()
     {
-        NewGuessable();
         yield return new WaitForSeconds(0.75f);
         AudioManager.ChangeMusic(Globals.IsRaining ? BGM.GameRain : BGM.GameRegular);
         foreach (var e in SessionVariables.Events)
@@ -98,6 +126,11 @@ public class DayManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!MetaManager.GameCanAdvance)
+        {
+            return;
+        }
+
         if (_dayActive)
         {
             _dayTimeElapsed = _dayTimeElapsed + Time.deltaTime;
@@ -105,8 +138,10 @@ public class DayManager : MonoBehaviour
             if (_dayTimeElapsed/100 >= Globals.RushHourStart && _dayTimeElapsed/100 <= Globals.RushHourEnd)
             {
                 subtrackVolume += Time.deltaTime;
+                isRushHour = true;
             } else
             {
+                isRushHour = false;
                 subtrackVolume -= Time.deltaTime;
             }
 
@@ -177,14 +212,33 @@ public class DayManager : MonoBehaviour
         CompareImages(tex, tex2);
         SessionVariables.todaysDrawings.Add(tex);
         SessionVariables.allDrawings.Add(tex);
-        CanvasSurface.DOMove(CanvasSurface.transform.position + Vector3.up * 500, 0.25f, true);
+        var y = CanvasSurface.transform.localPosition.y;
+        CanvasSurface.DOLocalMoveY(160, 0.25f, true);
         DrawController.Clear();
         yield return new WaitForSeconds(0.5f);
+
+        if (SessionVariables.Day == 1)
+        {
+            drawingsDone++;
+
+            if (drawingsDone == 1)
+            {
+                yield return MetaManager.instance.DoTutorial(Mechanics.TimeLimit);
+            }
+            else if (drawingsDone == 2)
+            {
+                yield return MetaManager.instance.DoTutorial(Mechanics.DaySlider);
+            }
+            else if (drawingsDone == 3)
+            {
+                yield return MetaManager.instance.DoTutorial(Mechanics.SellEarly);
+            }
+        }
 
         if (_dayActive)
         {
             NewGuessable();
-            CanvasSurface.DOMove(CanvasSurface.transform.position + Vector3.up * -500, 0.25f, true).OnComplete(() =>
+            CanvasSurface.DOLocalMoveY(y, 0.25f, true).OnComplete(() =>
             {
                 _timerActive = true;
                 DrawController.EnableDrawing();

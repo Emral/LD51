@@ -3,16 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
+using System.Threading.Tasks;
 
 public class MetaManager : MonoBehaviour
 {
     public static MetaManager instance;
 
     public EventList events;
+    public TutorialsList tutorials;
 
     public RectTransform LoadScreen;
 
     private SessionVariables sessionVariables;
+
+    public static bool GameCanAdvance = true;
+    public static bool TutorialActive = true;
+
+    public Tutorial Tutorial;
 
     // Start is called before the first frame update
     void Awake()
@@ -42,6 +49,16 @@ public class MetaManager : MonoBehaviour
         {
             AudioManager.ChangeMusic(BGM.MainMenu);
         }
+    }
+
+    public IEnumerator DoTutorialRoutine(Mechanics mechanic)
+    {
+        yield return Tutorial.ShowRoutine(tutorials.Get(mechanic));
+    }
+
+    public async Task DoTutorial(Mechanics mechanic)
+    {
+        await Tutorial.Show(tutorials.Get(mechanic));
     }
 
     public void TransitionToTitleScene()
@@ -107,12 +124,12 @@ public class MetaManager : MonoBehaviour
 
     private void ShowLoadScreen(int idxToLoad, System.Action<AsyncOperation> callback)
     {
-        LoadScreen.anchoredPosition = Vector3.up * 20;
-        LoadScreen.DOMoveY(180, 1.0f).SetEase(Ease.OutQuint).OnComplete(() => LoadScene(idxToLoad, callback));
+        LoadScreen.localPosition = Vector3.up * 20;
+        LoadScreen.DOLocalMoveY(0, 1.0f).SetEase(Ease.OutQuint).OnComplete(() => LoadScene(idxToLoad, callback));
     }
 
     private void HideLoadScreen(System.Action callback)
     {
-        LoadScreen.DOMoveY(-180, 1.0f).SetEase(Ease.InQuad).OnComplete(() => callback.Invoke());
+        LoadScreen.DOLocalMoveY(20, 1.0f).SetEase(Ease.InQuad).OnComplete(() => callback.Invoke());
     }
 }
