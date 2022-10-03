@@ -878,3 +878,134 @@ MonoBehaviour:
     colors: 32
     tags:
     - broccoli
+  - texture: {fileID: 1408341014, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 1
+    colors: 1
+    tags:
+    - sky
+    - future
+  - texture: {fileID: -2086914744, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 1
+    colors: 8
+    tags:
+    - sky
+    - future
+  - texture: {fileID: 1630469563, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 2
+    colors: 1
+    tags:
+    - future
+  - texture: {fileID: -495179908, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 2
+    colors: 6
+    tags:
+    - future
+  - texture: {fileID: -1310412719, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 3
+    colors: 1
+    tags:
+    - future
+  - texture: {fileID: 37601071, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 3
+    colors: 73
+    tags:
+    - future
+  - texture: {fileID: 1421142349, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 2
+    colors: 1
+    tags:
+    - future
+  - texture: {fileID: -961730778, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 2
+    colors: 160
+    tags:
+    - future
+  - texture: {fileID: -1018187418, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 2
+    colors: 1
+    tags:
+    - future
+  - texture: {fileID: 674962274, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 2
+    colors: 33
+    tags:
+    - future
+  - texture: {fileID: -896383443, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 2
+    colors: 1
+    tags: []
+  - texture: {fileID: 1815841805, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 3
+    colors: 17
+    tags: []
+  - texture: {fileID: 181260120, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 1
+    colors: 1
+    tags:
+    - bear
+    - animal
+  - texture: {fileID: 902577067, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 1
+    colors: 8
+    tags:
+    - bear
+    - animal
+  - texture: {fileID: 777002867, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 1
+    colors: 1
+    tags:
+    - bear
+    - animal
+  - texture: {fileID: -1012297363, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 1
+    colors: 2
+    tags:
+    - bear
+    - animal
+  - texture: {fileID: -297107884, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 1
+    colors: 16
+    tags:
+    - finance
+  - texture: {fileID: -416788246, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 1
+    colors: 1
+    tags:
+    - finance
+  - texture: {fileID: -266445017, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 1
+    colors: 33
+    tags:
+    - finance
+  - texture: {fileID: -2020987275, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 1
+    colors: 5
+    tags: []
+  - texture: {fileID: 409157812, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 2
+    colors: 48
+    tags:
+    - finance
+  - texture: {fileID: 816126269, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 1
+    colors: 1
+    tags:
+    - fish
+    - animal
+  - texture: {fileID: 1045535431, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 1
+    colors: 64
+    tags:
+    - fish
+    - animal
+  - texture: {fileID: 1382404541, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 1
+    colors: 8
+    tags:
+    - fish
+    - animal
+  - texture: {fileID: 1863870307, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 2
+    colors: 1
+    tags:
+    - finance
