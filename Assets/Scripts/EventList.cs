@@ -169,7 +169,7 @@ public class Event
         }
     }
 
-    public IEnumerator DailyExecute()
+    public void DailyExecute()
     {
         foreach (var tag in eventTags)
         {
@@ -186,6 +186,5 @@ public class Event
             DayManager.Globals.RushHourStart = 0;
             DayManager.Globals.RushHourEnd = Mathf.Min(DayManager.Globals.RushHourEnd, 1);
         }
-        yield return null;
     }
 }

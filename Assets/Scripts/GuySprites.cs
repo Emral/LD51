@@ -12,7 +12,6 @@ public class GuySprite
     public bool RainOnly = false;
     public bool SunOnly = false;
     public SFX ArrivalSound = SFX.None;
-    public SFX ThanksSound = SFX.None;
     public List<string> preferredTags = new List<string>();
 }
 

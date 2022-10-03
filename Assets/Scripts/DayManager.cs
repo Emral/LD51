@@ -60,6 +60,14 @@ public class DayManager : MonoBehaviour
     {
         var rushHourDuration = Mathf.FloorToInt((SessionVariables.Followers + SessionVariables.Reputation * 2) / 5.0f) * 0.02f;
         Globals.IsRaining = SessionVariables.UpcomingWeathers[0] == Weather.Rain;
+        foreach (var e in SessionVariables.Events)
+        {
+            e.DailyExecute();
+        }
+        if (Globals.IsRaining)
+        {
+            DayManager.Globals.tagBiases.Add("rain");
+        }
         guys.ResetAll();
         NewGuessable();
         if (SessionVariables.Day > 1)
@@ -72,9 +80,12 @@ public class DayManager : MonoBehaviour
             }
         }
 
-        if (Globals.IsRaining && SessionVariables.Day > 5)
+        if (Globals.IsRaining)
         {
-            rushHourDuration = Mathf.Max(0, rushHourDuration - Random.Range(0.2f, 0.3f), 0);
+            if (SessionVariables.Day > 5)
+            {
+                rushHourDuration = Mathf.Max(0, rushHourDuration - Random.Range(0.2f, 0.3f), 0);
+            }
         }
         Globals.RushHourEnd = Mathf.Clamp(Random.Range(0.8f, 1), rushHourDuration, 1);
         Globals.RushHourStart = Globals.RushHourEnd - rushHourDuration;
@@ -111,13 +122,8 @@ public class DayManager : MonoBehaviour
     {
         yield return new WaitForSeconds(0.75f);
         AudioManager.ChangeMusic(Globals.IsRaining ? BGM.GameRain : BGM.GameRegular);
-        foreach (var e in SessionVariables.Events)
-        {
-            yield return e.DailyExecute();
-        }
         _dayActive = true;
         _timerActive = true;
-        yield return null;
     }
 
     float subtrackVolume = 0;
@@ -154,6 +160,7 @@ public class DayManager : MonoBehaviour
             {
                 _dayActive = false;
                 Sell();
+                SFX.DayEnd.Play();
                 OnDayEnd.Invoke();
 
                 AudioManager.ChangeMusic(null, null);
@@ -193,6 +200,7 @@ public class DayManager : MonoBehaviour
     {
         if (_timerActive)
         {
+            SFX.Sell.Play();
             CoroutineManager.Start(SellRoutine());
         }
     }
@@ -251,6 +259,8 @@ public class DayManager : MonoBehaviour
     private void NewGuessable()
     {
         _currentGuy = guys.GetRandom();
+        _currentGuy.ArrivalSound.Play();
+        SFX.NewCustomer.Play();
         _currentGuessable = imageCandidates.GetRandom(_currentGuy.bias, _currentGuy.preferredTags);
         OnNewGuy.Invoke(_currentGuy);
     }

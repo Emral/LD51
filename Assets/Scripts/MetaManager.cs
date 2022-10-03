@@ -58,6 +58,7 @@ public class MetaManager : MonoBehaviour
 
     public IEnumerator DoTutorialRoutine(Mechanics mechanic)
     {
+        SFX.Pageturn.Play();
         yield return Tutorial.ShowRoutine(tutorials.Get(mechanic));
     }
 
@@ -68,6 +69,7 @@ public class MetaManager : MonoBehaviour
 
     public void TransitionToTitleScene()
     {
+        SFX.ButtonPress.Play();
         AudioManager.ChangeMusic(BGM.MainMenu);
         sessionVariables.Initialize();
         ShowLoadScreen(0, a =>
@@ -81,6 +83,7 @@ public class MetaManager : MonoBehaviour
 
     public void TransitionToGameScene()
     {
+        SFX.ToMainGame.Play();
         AudioManager.ChangeMusic(null, null);
         ShowLoadScreen(2, a =>
         {
@@ -106,6 +109,7 @@ public class MetaManager : MonoBehaviour
 
     public void TransitionToPreGameScene()
     {
+        SFX.ToNextDay.Play();
         var oldScene = SceneManager.GetActiveScene().buildIndex;
         AudioManager.ChangeMusic(BGM.PreGame);
         ShowLoadScreen(1, a =>

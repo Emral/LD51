@@ -33,8 +33,10 @@ public class PostgameManager : MonoBehaviour
         while (SessionVariables.Savings < limit)
         {
             yield return null;
+            SFX.IncomeRise.Play();
             SessionVariables.Savings += Time.deltaTime * 100;
         }
+        SFX.Sell.Play();
         SessionVariables.Savings = limit;
         yield return new WaitForSeconds(1);
         ExpensesText.SetActive(true);
@@ -42,6 +44,7 @@ public class PostgameManager : MonoBehaviour
         while (SessionVariables.Savings > limit)
         {
             yield return null;
+            SFX.IncomeLower.Play();
             SessionVariables.Savings -= Time.deltaTime * 100;
         }
         SessionVariables.Savings = limit;
@@ -50,6 +53,7 @@ public class PostgameManager : MonoBehaviour
         {
             PlayerPerson.MakeJump();
             SuccessText.text = "Well done!";
+            SFX.DaySuccess.Play();
             SuccessText.gameObject.SetActive(true);
             SuccessText.transform.localScale = Vector3.zero;
             SuccessText.transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack);
@@ -61,6 +65,7 @@ public class PostgameManager : MonoBehaviour
         } else
         {
             PlayerPerson.MakeDie();
+            SFX.GameOver.Play();
             SuccessText.text = "Too bad...";
             SuccessText.gameObject.SetActive(true);
             SuccessText.transform.localScale = Vector3.zero;

@@ -11,12 +11,14 @@ public class MainManager : MonoBehaviour
     
     public void ShowCredits()
     {
+        SFX.ButtonPress.Play();
         Main.DOLocalMoveY(-360, 1).SetEase(Ease.InOutQuad);
         Credits.DOLocalMoveY(-180, 1).SetEase(Ease.InOutQuad);
     }
 
     public void HideCredits()
     {
+        SFX.ButtonPress.Play();
         Main.DOLocalMoveY(0, 1).SetEase(Ease.InOutQuad);
         Credits.DOLocalMoveY(180, 1).SetEase(Ease.InOutQuad);
     }

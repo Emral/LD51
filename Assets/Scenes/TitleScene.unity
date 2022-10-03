@@ -758,8 +758,8 @@ MonoBehaviour:
   IdleB: {fileID: 1940443662, guid: 6342fddcb6d872542ab436b6ba299b06, type: 3}
   PressB: {fileID: 32483077, guid: 6342fddcb6d872542ab436b6ba299b06, type: 3}
   HoverB: {fileID: 647675094, guid: 6342fddcb6d872542ab436b6ba299b06, type: 3}
-  HoverSound: 0
-  UnhoverSound: 0
+  HoverSound: 17
+  UnhoverSound: 1
   img: {fileID: 358108296}
 --- !u!1 &388519150
 GameObject:

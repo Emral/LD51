@@ -15,6 +15,7 @@ public class SetColor : MonoBehaviour
     }
     public void Set()
     {
+        SFX.SelectColor.Play();
         DayManager.Globals.PenColor = color;
     }
 }

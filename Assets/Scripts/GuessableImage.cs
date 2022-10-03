@@ -40,12 +40,19 @@ public class GuessableImage : ScriptableObject
             foreach(var tag in preferredTags)
             {
                 tagMask[tag] = true;
+
+                if (DayManager.Globals.tagBiases.Contains(tag))
+                {
+                    tagMask.Clear();
+                    tagMask[tag] = true;
+                    break;
+                }
             }
         }
         var upperLimit = Mathf.FloorToInt((SessionVariables.Experience + 0.5f - bias * 0.5f));
         var candidates = new List<Guessable>();
 
-        while (candidates.Count == 0 && upperLimit < 5)
+        while (candidates.Count == 0 && upperLimit < 8)
         {
             foreach (var image in images)
             {

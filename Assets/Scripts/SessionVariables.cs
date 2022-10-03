@@ -106,6 +106,7 @@ public class SessionVariables : ScriptableObject
     {
         TodaysEarnings = 0;
         LastDay = Day;
+        SFX.DayAdvance.Play();
         RentMultiplier = 1;
         bool advanced = false;
         while (!advanced || UpcomingWeathers[1] == Weather.Thunder)
