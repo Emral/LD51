@@ -33,7 +33,7 @@ MonoBehaviour:
     - nature
   - texture: {fileID: 1835513829, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 2
-    colors: 17
+    colors: 16
     tags:
     - food
     - nature
@@ -1233,7 +1233,7 @@ MonoBehaviour:
     - nature
   - texture: {fileID: 195646765, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 2
-    colors: 1
+    colors: 8
     tags:
     - object
   - texture: {fileID: -134486389, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}

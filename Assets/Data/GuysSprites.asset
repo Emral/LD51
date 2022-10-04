@@ -215,7 +215,7 @@ MonoBehaviour:
     weight: 1
     RainOnly: 0
     SunOnly: 1
-    ArrivalSound: 0
+    ArrivalSound: 125
     preferredTags:
     - sandwich
   - sprite: {fileID: 21300000, guid: b44e15d6f6a76b143b004a0563e3add5, type: 3}

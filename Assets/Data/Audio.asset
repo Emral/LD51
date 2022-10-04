@@ -139,6 +139,15 @@ MonoBehaviour:
   - type: 122
     clip: {fileID: 8300000, guid: f309575e32c0aad41b07f13dab431ead, type: 3}
     volume: 1
+  - type: 125
+    clip: {fileID: 8300000, guid: 200187e6166d4264e9cc64cb0a40c1a0, type: 3}
+    volume: 1
+  - type: 125
+    clip: {fileID: 8300000, guid: 1b9c88507f662bb4ab7401e94f2e61a5, type: 3}
+    volume: 1
+  - type: 125
+    clip: {fileID: 8300000, guid: 6284a8a7cd6f4c9429faee6ff9556f3d, type: 3}
+    volume: 1
   Music:
   - type: 0
     clip: {fileID: 8300000, guid: 1f0b988bb85c34d4885f26ca72505c24, type: 3}
