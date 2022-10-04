@@ -12,6 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d140de1a85b44f47aad8b0c18289ed4, type: 3}
   m_Name: Guessable
   m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
   images:
   - texture: {fileID: 602746942, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 1
@@ -104,7 +113,7 @@ MonoBehaviour:
     - nature
   - texture: {fileID: 489982703, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 4
-    colors: 161
+    colors: 96
     tags:
     - object
     - nature
@@ -136,7 +145,7 @@ MonoBehaviour:
     - object
   - texture: {fileID: 1134513501, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 4
-    colors: 97
+    colors: 128
     tags:
     - object
     - nature
@@ -161,7 +170,7 @@ MonoBehaviour:
     - sky
   - texture: {fileID: 395440249, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 1
-    colors: 16
+    colors: 17
     tags:
     - nature
     - sky
@@ -398,7 +407,7 @@ MonoBehaviour:
     - cartoon
   - texture: {fileID: -1767872965, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 3
-    colors: 96
+    colors: 97
     tags:
     - cute
     - cartoon
@@ -440,7 +449,7 @@ MonoBehaviour:
     - animal
   - texture: {fileID: -1208751750, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 3
-    colors: 8
+    colors: 9
     tags:
     - cat
     - cute
@@ -702,7 +711,7 @@ MonoBehaviour:
     - cute
   - texture: {fileID: -1998424530, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 2
-    colors: 32
+    colors: 128
     tags:
     - nature
     - food

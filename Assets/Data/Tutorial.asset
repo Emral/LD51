@@ -38,8 +38,8 @@ MonoBehaviour:
       My time limit will be stricter!
   - mechanic: 7
     title: Thunderstorm
-    description: A thunderstorm is coming up! That's too dangerous for work, so I
-      will have to have enough money for two days.
+    description: Thunderstorms are too dangerous for work, so I will have to save
+      up money for two days.
   - mechanic: 8
     title: Events
     description: An event is coming up! This can affect the day significantly.
