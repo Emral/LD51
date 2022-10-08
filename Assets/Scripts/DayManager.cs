@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using OpenCvSharp;
 
 public class DayManager : MonoBehaviour
 {
@@ -292,13 +293,22 @@ public class DayManager : MonoBehaviour
         var old_rt = RenderTexture.active;
         RenderTexture.active = rt;
 
-        smallerTex.ReadPixels(new Rect(0, 0, rt.width, rt.height), 0, 0);
+        smallerTex.ReadPixels(new UnityEngine.Rect(0, 0, rt.width, rt.height), 0, 0);
         smallerTex.Apply();
 
         RenderTexture.active = old_rt;
-        
+
+        var abit = new Mat(smallerTex.height, smallerTex.width, MatType.CV_32FC3);
+        var bbit = new Mat(wanted.height, wanted.width, MatType.CV_32FC3);
+        abit.SetArray(0, 0, smallerTex.GetRawTextureData());
+        bbit.SetArray(0, 0, wanted.GetRawTextureData());
+        var c = abit.MatchTemplate(bbit, TemplateMatchModes.SqDiff);
+        var res = c.Get<float>(0);
+        var res2 = c.Get<byte>(0);
+
         var pixels1 = smallerTex.GetPixels();
         var pixels2 = wanted.GetPixels();
+
         float totalPenalty = 0;
         float penaltyRange = 0;
 
