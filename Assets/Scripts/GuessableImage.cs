@@ -45,6 +45,8 @@ public class Guessable
 
     public List<string> tags;
 
+    public List<string> tag;
+
     public void SetColors()
     {
         var arr = texture.texture.GetPixels((int)texture.rect.x, (int)texture.rect.y, (int)texture.rect.width, (int)texture.rect.height);

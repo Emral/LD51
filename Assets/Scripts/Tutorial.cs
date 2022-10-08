@@ -87,6 +87,7 @@ public class Tutorial : MonoBehaviour
         BG.transform.DOLocalMove(goalPos, 1.25f).SetEase(Ease.OutQuint).OnComplete(() =>
         {
             Confirm.gameObject.SetActive(true);
+            Confirm.interactable = true;
             Confirm.transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack);
         });
     }
@@ -95,6 +96,7 @@ public class Tutorial : MonoBehaviour
     {
         SFX.ButtonPress.Play();
         SFX.Pageturn.Play();
+        Confirm.interactable = false;
         Confirm.transform.DOScale(Vector3.zero, 0.35f).SetEase(Ease.InBack);
         Overlay.DOFade(0, 0.75f).SetEase(Ease.OutQuad);
         BG.transform.DOLocalMove(goalPos - 360f * Vector3.up, 0.6f).SetEase(Ease.InQuad).OnComplete(() =>

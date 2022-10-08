@@ -16,7 +16,19 @@ public enum Weather
     Overcast = 2,
     Cloudy = 3,
     Rain = 4,
-    Thunder = 5
+    Thunder = 5,
+    Heat = 6,
+    Wind = 7,
+    Snow = 8,
+    Snowstorm = 9
+}
+
+public enum Season
+{
+    Spring = 1,
+    Summer = 2,
+    Autumn = 3,
+    Winter = 4
 }
 
 public enum Mechanics
@@ -90,6 +102,7 @@ public class SessionVariables : ScriptableObject
         _savings = 50;
         RentMultiplier = 1;
         Colors = ValidColors.Black;
+        TodaysEarnings = 0;
         Day = 1;
         allDrawings = new List<Texture2D>();
         todaysDrawings = new List<Texture2D>();

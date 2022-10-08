@@ -186,7 +186,6 @@ public class DayManager : MonoBehaviour
             if (_timerTimeElapsed >= 10)
             {
                 Sell();
-                _timerActive = false;
             }
         } else
         {
@@ -214,51 +213,53 @@ public class DayManager : MonoBehaviour
     public IEnumerator SellRoutine()
     {
         yield return null;
-        _timerActive = false;
-        var tex = DrawController.FinishDrawing();
-        var tex2 = new Texture2D(64, 64);
-        var tex3 = _currentGuessable.texture;
-        tex2.SetPixels(tex3.GetPixels(
-            Mathf.FloorToInt(_currentGuessable.rect.x),
-            Mathf.FloorToInt(_currentGuessable.rect.y),
-            Mathf.FloorToInt(_currentGuessable.rect.width),
-            Mathf.FloorToInt(_currentGuessable.rect.height)));
-        tex2.Apply();
-        CompareImages(tex, tex2);
-        SessionVariables.todaysDrawings.Add(tex);
-        SessionVariables.allDrawings.Add(tex);
-        var y = CanvasSurface.transform.localPosition.y;
-        CanvasSurface.DOLocalMoveY(160, 0.25f, true);
-        DrawController.Clear();
-        yield return new WaitForSeconds(0.5f);
 
-        if (SessionVariables.Day == 1)
+        if (_timerActive)
         {
-            drawingsDone++;
+            _timerActive = false;
+            var tex = DrawController.FinishDrawing();
+            var tex2 = new Texture2D(64, 64);
+            var tex3 = _currentGuessable.texture;
+            tex2.SetPixels(tex3.GetPixels(
+                Mathf.FloorToInt(_currentGuessable.rect.x),
+                Mathf.FloorToInt(_currentGuessable.rect.y),
+                Mathf.FloorToInt(_currentGuessable.rect.width),
+                Mathf.FloorToInt(_currentGuessable.rect.height)));
+            tex2.Apply();
+            CompareImages(tex, tex2);
+            var y = CanvasSurface.transform.localPosition.y;
+            CanvasSurface.DOLocalMoveY(160, 0.25f, true);
+            DrawController.Clear();
+            yield return new WaitForSeconds(0.5f);
 
-            if (drawingsDone == 1)
+            if (SessionVariables.Day == 1)
             {
-                yield return MetaManager.instance.DoTutorial(Mechanics.TimeLimit);
-            }
-            else if (drawingsDone == 2)
-            {
-                yield return MetaManager.instance.DoTutorial(Mechanics.DaySlider);
-            }
-            else if (drawingsDone == 3)
-            {
-                yield return MetaManager.instance.DoTutorial(Mechanics.SellEarly);
-            }
-        }
+                drawingsDone++;
 
-        if (_dayActive)
-        {
-            NewGuessable();
-            CanvasSurface.DOLocalMoveY(y, 0.25f, true).OnComplete(() =>
-            {
-                _timerActive = true;
-                DrawController.EnableDrawing();
+                if (drawingsDone == 1)
+                {
+                    yield return MetaManager.instance.DoTutorial(Mechanics.TimeLimit);
+                }
+                else if (drawingsDone == 2)
+                {
+                    yield return MetaManager.instance.DoTutorial(Mechanics.DaySlider);
+                }
+                else if (drawingsDone == 3)
+                {
+                    yield return MetaManager.instance.DoTutorial(Mechanics.SellEarly);
+                }
+            }
 
-            });
+            if (_dayActive)
+            {
+                NewGuessable();
+                CanvasSurface.DOLocalMoveY(y, 0.25f, true).OnComplete(() =>
+                {
+                    _timerActive = true;
+                    DrawController.EnableDrawing();
+
+                });
+            }
         }
     }
 
@@ -287,7 +288,7 @@ public class DayManager : MonoBehaviour
         rt.filterMode = FilterMode.Point;
         Graphics.Blit(drawn, rt);
 
-        Texture2D smallerTex = new Texture2D(rt.width, rt.height, TextureFormat.ARGB32, false);
+        Texture2D smallerTex = new Texture2D(rt.width, rt.height, TextureFormat.RGBA32, false);
         var old_rt = RenderTexture.active;
         RenderTexture.active = rt;
 
@@ -392,6 +393,10 @@ public class DayManager : MonoBehaviour
         if (totalInkA == 0)
         {
             totalPenalty = -999;
+        } else
+        {
+            SessionVariables.todaysDrawings.Add(drawn);
+            SessionVariables.allDrawings.Add(drawn);
         }
 
         var reward = Mathf.Max( Mathf.Lerp(0, 1 + _currentGuy.bias * 0.05f, 0.5f + totalPenalty * 0.5f) * SessionVariables.IncomeMultiplier * SessionVariables.MaxIncomeBase, 0);
