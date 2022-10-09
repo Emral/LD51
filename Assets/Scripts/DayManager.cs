@@ -6,6 +6,7 @@ using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using OpenCvSharp;
+using System.Threading.Tasks;
 
 public class DayManager : MonoBehaviour
 {
@@ -281,6 +282,67 @@ public class DayManager : MonoBehaviour
         SFX.NewCustomer.Play();
         OnNewGuy.Invoke(_currentGuy);
     }
+	
+    Mat Texture2DtoMat(Texture2D texture2d)
+    {
+
+        int txWidth = texture2d.width;
+        int txHeight = texture2d.height;
+
+        Vec3d[] matData = new Vec3d[txWidth * txWidth];
+        Color32[] pixels = texture2d.GetPixels32();
+
+        Parallel.For(0, txHeight, i => {
+            for (int j = 0; j < txWidth; j++)
+            {
+                Color32 col = pixels[j + i * txWidth];
+                Vec3d vec3 = new Vec3d
+                {
+                    Item0 = col.b,
+                    Item1 = col.g,
+                    Item2 = col.r
+                };
+                matData[j + i * txWidth] = vec3;
+            }
+        }
+        );
+
+        Mat mat0 = new Mat(txWidth, txHeight, MatType.CV_32FC3, matData);
+        mat0 = mat0.Flip(FlipMode.X);
+        return mat0;
+    }
+
+    private Point[] GetContour(Mat mat)
+    {
+        var points = GetAllContours(mat);
+        var imgArea = mat.Width * mat.Height;
+
+        foreach (var contour in points)
+        {
+            // var area = Cv2.ContourArea(contour);
+            // var ratio = area / (float)imgArea;
+            return contour;
+        }
+        return null;
+    }
+
+    private Point[][] GetAllContours(Mat mat)
+    {
+        Mat grey = new Mat(new Size(mat.Width, mat.Height), MatType.CV_8UC1);
+        Cv2.CvtColor(mat, grey, ColorConversionCodes.RGBA2GRAY);
+        grey.ConvertTo(grey, MatType.CV_8U);
+
+        Mat threshold = new Mat();
+        Cv2.Threshold(grey, threshold, 20, 255, ThresholdTypes.Binary);
+        threshold.ConvertTo(threshold, MatType.CV_8U);
+
+        Point[][] contours;
+        HierarchyIndex[] hIndex;
+        var type = grey.Type();
+        Cv2.FindContours(grey, out contours, out hIndex, RetrievalModes.List, ContourApproximationModes.ApproxSimple);
+
+        return contours;
+    }
 
     private void CompareImages(Texture2D drawn, Texture2D wanted)
     {
@@ -298,13 +360,27 @@ public class DayManager : MonoBehaviour
 
         RenderTexture.active = old_rt;
 
-        var abit = new Mat(smallerTex.height, smallerTex.width, MatType.CV_32FC3);
-        var bbit = new Mat(wanted.height, wanted.width, MatType.CV_32FC3);
-        abit.SetArray(0, 0, smallerTex.GetRawTextureData());
-        bbit.SetArray(0, 0, wanted.GetRawTextureData());
-        var c = abit.MatchTemplate(bbit, TemplateMatchModes.SqDiff);
-        var res = c.Get<float>(0);
-        var res2 = c.Get<byte>(0);
+        // var abit = new Mat(smallerTex.height, smallerTex.width, MatType.CV_32FC3);
+        // var bbit = new Mat(wanted.height, wanted.width, MatType.CV_32FC3);
+        var abit = Texture2DtoMat(smallerTex);
+        var bbit = Texture2DtoMat(wanted);
+
+        var contourB = GetContour(bbit);
+        var contourAs = GetAllContours(abit);
+
+        Point[] closest = null;
+
+        foreach (var inputContour in contourAs)
+        {
+            double ret = Cv2.MatchShapes(inputContour, contourB, ShapeMatchModes.I3);
+            Debug.Log(ret);
+        }
+
+        // abit.SetArray(0, 0, smallerTex.GetRawTextureData());
+        // bbit.SetArray(0, 0, wanted.GetRawTextureData());
+        //var c1 = Cv2.MatchShapes(abit, bbit, ShapeMatchModes.I1);
+        //var c2 = Cv2.MatchShapes(abit, bbit, ShapeMatchModes.I2);
+        //var c3 = Cv2.MatchShapes(abit, bbit, ShapeMatchModes.I3);
 
         var pixels1 = smallerTex.GetPixels();
         var pixels2 = wanted.GetPixels();
