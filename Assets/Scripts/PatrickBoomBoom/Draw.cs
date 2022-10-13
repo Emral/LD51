@@ -39,7 +39,7 @@ public class Draw : MonoBehaviour
         rawImage.texture = m_renderTex;
 
         brushMat.SetColor("_Color", Color.black);
-        brushMat.SetFloat("_Size", 100);
+        brushMat.SetFloat("_Size", 300);
     }
 
     public void Release()

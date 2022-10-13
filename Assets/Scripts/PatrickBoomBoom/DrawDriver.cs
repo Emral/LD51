@@ -8,7 +8,7 @@ public class DrawDriver : MonoBehaviour
     public RectTransform canvasRect;
     public Color brushColor = Color.black;
     public Camera MyCamera;
-    public int size = 200;
+    public int size = 100;
     private readonly Color[] myColor = new Color[] { Color.black, Color.red, Color.green, Color.yellow };
 
     private bool _canDraw = false;
@@ -18,6 +18,8 @@ public class DrawDriver : MonoBehaviour
         drawComponent.Init(canvasRect.GetComponent<Canvas>(), MyCamera);
         drawComponent.SetProperty(brushColor, size);
         _canDraw = true;
+
+        Clear();
     }
 
     private void Update()

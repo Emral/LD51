@@ -12,12 +12,16 @@ public class DayManager : MonoBehaviour
 
     private GlobalVars _vars = new GlobalVars();
 
+    public AnimationCurve BalanceCurve;
+
     public static GlobalVars Globals;
 
     public GuySprites guys;
 
     private GuySprite _currentGuy;
 
+    public Image Test1;
+    public Image Test2;
     public Image TimerImage;
     public Image GuessableImage;
     public DrawDriver DrawController;
@@ -57,6 +61,7 @@ public class DayManager : MonoBehaviour
     // Start is called before the first frame update
     async void Start()
     {
+        DrawComparison.Curve = BalanceCurve;
         imageCandidates.Initialize();
         var rushHourDuration = Mathf.FloorToInt((SessionVariables.Followers + SessionVariables.Reputation * 2) / 5.0f) * 0.02f;
         Globals.IsRaining = SessionVariables.UpcomingWeathers[0] == Weather.Rain;
@@ -281,116 +286,16 @@ public class DayManager : MonoBehaviour
         OnNewGuy.Invoke(_currentGuy);
     }
 
-    private void CompareImages(Texture2D drawn, Texture2D wanted)
+    private async void CompareImages(Texture2D drawn, Texture2D wanted)
     {
-        RenderTexture rt = RenderTexture.GetTemporary(64, 64);
-        rt.Create();
-        rt.filterMode = FilterMode.Point;
-        Graphics.Blit(drawn, rt);
+        var similarity = DrawComparison.CompareImages(drawn, wanted, out Texture2D a, out Texture2D b);
 
-        Texture2D smallerTex = new Texture2D(rt.width, rt.height, TextureFormat.RGBA32, false);
-        var old_rt = RenderTexture.active;
-        RenderTexture.active = rt;
+        Test1.sprite = Sprite.Create(a, new Rect(0, 0, a.width, a.height), Vector2.one * 0.5f);
+        Test2.sprite = Sprite.Create(b, new Rect(0, 0, b.width, b.height), Vector2.one * 0.5f);
 
-        smallerTex.ReadPixels(new Rect(0, 0, rt.width, rt.height), 0, 0);
-        smallerTex.Apply();
+        var totalPenalty = similarity;
 
-        RenderTexture.active = old_rt;
-        
-        var pixels1 = smallerTex.GetPixels();
-        var pixels2 = wanted.GetPixels();
-        float totalPenalty = 0;
-        float penaltyRange = 0;
-
-        float totalInkA = 0;
-        float totalInkB = 0;
-
-        Dictionary<Color, float> colorDifferences = new Dictionary<Color, float>();
-        Dictionary<Color, float> bSum = new Dictionary<Color, float>();
-        for (int i = 0; i < 64 * 64; i++)
-        {
-            if (pixels1[i].r + pixels1[i].g + pixels1[i].b == 3)
-            {
-                pixels1[i].a = 0;
-            } else if (pixels1[i].a > 0)
-            {
-                pixels1[i].a = 1;
-            }
-
-            if (pixels1[i].a > 0)
-            {
-                totalInkA++;
-                if (colorDifferences.ContainsKey(pixels1[i]))
-                {
-                    colorDifferences[pixels1[i]]--;
-                }
-                else
-                {
-                    colorDifferences.Add(pixels1[i], -1);
-                    if (!bSum.ContainsKey(pixels1[i]))
-                    {
-                        bSum.Add(pixels1[i], -1);
-                    }
-                }
-            }
-            if (pixels2[i].a > 0)
-            {
-                totalInkB++;
-                if (colorDifferences.ContainsKey(pixels2[i]))
-                {
-                    if (bSum[pixels2[i]] == -1)
-                    {
-                        bSum[pixels2[i]] = 1;
-                    } else
-                    {
-                        bSum[pixels2[i]]++;
-                    }
-                    colorDifferences[pixels2[i]]++;
-                }
-                else
-                {
-                    bSum.Add(pixels2[i], 1);
-                    colorDifferences.Add(pixels2[i], 1);
-                }
-            }
-
-            Color diff = pixels1[i] - pixels2[i];
-
-            if (pixels1[i].a > 0 && pixels2[i].a > 0)
-            {
-                totalPenalty += 2;
-                penaltyRange++;
-            } else if ((pixels1[i].a == 0 && pixels2[i].a > 0) || (pixels1[i].a > 0 && pixels2[i].a == 0))
-            {
-                totalPenalty -= 1f;
-                if (pixels1[i].a == 0)
-                {
-                    penaltyRange++;
-                }
-            }
-        }
-
-        totalPenalty = totalPenalty / Mathf.Max(penaltyRange, 1);
-
-        totalPenalty = totalPenalty + 2 - 2 * Mathf.Abs(totalInkA/penaltyRange - totalInkB/penaltyRange);
-
-        totalPenalty = totalPenalty + 1;
-
-        foreach (var kvp in colorDifferences)
-        {
-            if (Mathf.Abs(kvp.Value) < bSum[kvp.Key])
-            {
-                totalPenalty = totalPenalty + ((kvp.Value) / bSum[kvp.Key]) / colorDifferences.Count;
-            }
-            else if (bSum[kvp.Key] == -1)
-            {
-                totalPenalty = totalPenalty - 2f / colorDifferences.Count;
-            }
-        }
-
-        totalPenalty = (totalPenalty * 1.1f) + 0.3f;
-
-        if (totalInkA == 0)
+        if (similarity == -1)
         {
             totalPenalty = -999;
         } else
@@ -399,7 +304,7 @@ public class DayManager : MonoBehaviour
             SessionVariables.allDrawings.Add(drawn);
         }
 
-        var reward = Mathf.Max( Mathf.Lerp(0, 1 + _currentGuy.bias * 0.05f, 0.5f + totalPenalty * 0.5f) * SessionVariables.IncomeMultiplier * SessionVariables.MaxIncomeBase, 0);
+        var reward = Mathf.Max( Mathf.Lerp(0, 1 + _currentGuy.bias * 0.05f, totalPenalty) * SessionVariables.IncomeMultiplier * SessionVariables.MaxIncomeBase, 0);
 
         reward = reward.MakeDollars();
 
@@ -410,7 +315,7 @@ public class DayManager : MonoBehaviour
             SessionVariables.Followers = SessionVariables.Followers + 1;
         }
         SessionVariables.Experience = SessionVariables.Experience + reward * reward * 0.002f;
-        SessionVariables.Reputation = Mathf.Max(0, SessionVariables.Reputation + 0.5f * totalPenalty + 0.25f);
+        SessionVariables.Reputation = Mathf.Max(0, SessionVariables.Reputation + Mathf.Clamp(totalPenalty - 0.1f, -0.25f, 0.5f));
 
         SessionVariables.TodaysEarnings += reward;
 
