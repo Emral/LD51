@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
+using Sirenix.Serialization;
 #if UNITY_EDITOR
 using Sirenix.OdinInspector.Editor;
 #endif
@@ -15,6 +16,20 @@ public enum ValidColors {
     Green = 32,
     Blue = 64,
     Purple = 128
+}
+
+[System.Serializable]
+[ShowOdinSerializedPropertiesInInspector]
+public class GuessableMap
+{
+    [ReadOnly]
+    [HorizontalGroup]
+    [ListDrawerSettings(HideRemoveButton = true, HideAddButton = true, ShowPaging = false, DraggableItems = false, Expanded = true, IsReadOnly = true)]
+    public List<ValidColors> Keys = new List<ValidColors>();
+    [HorizontalGroup]
+    [ListDrawerSettings(HideRemoveButton = true, HideAddButton = true, ShowPaging = false, DraggableItems = false, Expanded = true)]
+    [SingleEnumFlagSelect(EnumType = typeof(ValidColors))]
+    public List<ValidColors> Values = new List<ValidColors>();
 }
 
 [System.Serializable]
@@ -33,6 +48,18 @@ public class Guessable
         [new Color(197 / 255.0f, 102 / 255.0f, 219 / 255.0f)] = ValidColors.Purple
     };
 
+    public static readonly Dictionary<ValidColors, Color> colorReverseMap = new Dictionary<ValidColors, Color>()
+    {
+        [ValidColors.Black] = new Color(29 / 255.0f, 31 / 255.0f, 38 / 255.0f),
+        [ValidColors.Grey] = new Color(111 / 255.0f, 109 / 255.0f, 142 / 255.0f),
+        [ValidColors.Red] = new Color(153 / 255.0f, 18 / 255.0f, 54 / 255.0f),
+        [ValidColors.Orange] = new Color(204 / 255.0f, 89 / 255.0f, 7 / 255.0f),
+        [ValidColors.Yellow] = new Color(206 / 255.0f, 196 / 255.0f, 82 / 255.0f),
+        [ValidColors.Green] = new Color(0 / 255.0f, 195 / 255.0f, 110 / 255.0f),
+        [ValidColors.Blue] = new Color(99 / 255.0f, 129 / 255.0f, 211 / 255.0f),
+        [ValidColors.Purple] = new Color(197 / 255.0f, 102 / 255.0f, 219 / 255.0f)
+    };
+
     [HideLabel]
     [PreviewField(Height = 32, Alignment = ObjectFieldAlignment.Left)]
     [OnValueChanged("SetColors", InvokeOnUndoRedo = true)]
@@ -40,12 +67,32 @@ public class Guessable
     [Range(1, 4)]
     public int strokeComplexity = 1;
 
+    public bool allowHorizontalFlip = true;
+    public bool allowVerticalFlip = false;
+
     public ValidColors colors = ValidColors.Black;
 
+    public List<Tag> tag;
 
-    public List<string> tags;
+    [OnCollectionChanged(After = "AddNewVariation")]
+    public List<GuessableMap> variations = new List<GuessableMap>();
 
-    public List<string> tag;
+    public void AddNewVariation(CollectionChangeInfo info, object value)
+    {
+        if (info.ChangeType == CollectionChangeType.Add)
+        {
+            var d = (List<GuessableMap>)value;
+            var dict = d[d.Count - 1];
+            for (int i = 0; i <= 7; i++)
+            {
+                if ((((int)colors) & (int)Mathf.Pow(2, i)) != 0)
+                {
+                    dict.Keys.Add((ValidColors)Mathf.Pow(2, i));
+                    dict.Values.Add(ValidColors.Black);
+                }
+            }
+        }
+    }
 
     public void SetColors()
     {
@@ -78,27 +125,66 @@ public class GuessableImage : SerializedScriptableObject
     [Searchable]
     public List<Guessable> images = new List<Guessable>();
 
-    private Dictionary<string, List<Guessable>> guessablesByTag = new Dictionary<string, List<Guessable>>();
+    private Dictionary<Tag, List<Guessable>> guessablesByTag = new Dictionary<Tag, List<Guessable>>();
+
+    [Button]
+    public void FixAll()
+    {
+        images.ForEach(k => k.SetColors());
+    }
 
     public void Initialize()
     {
-        guessablesByTag = new Dictionary<string, List<Guessable>>();
+        guessablesByTag = new Dictionary<Tag, List<Guessable>>();
 
         foreach (var img in images)
         {
-            foreach (var tag in img.tags)
+            foreach (var t in img.tag)
             {
-                if (!guessablesByTag.ContainsKey(tag))
+                if (!guessablesByTag.ContainsKey(t))
                 {
-                    guessablesByTag[tag] = new List<Guessable>();
+                    guessablesByTag[t] = new List<Guessable>();
                 }
 
-                guessablesByTag[tag].Add(img);
+                guessablesByTag[t].Add(img);
             }
         }
     }
 
-    private Sprite FindSprite(List<Guessable> sprites, float bias)
+    public static bool CanDrawBase(Guessable sprite)
+    {
+        return (SessionVariables.Colors & sprite.colors) == sprite.colors;
+    }
+
+    public static GuessableMap GetRandomValidVariation(Guessable sprite)
+    {
+        var sprites = new List<GuessableMap>();
+        if (sprite.variations == null)
+        {
+            return null;
+        }
+        foreach (var variation in sprite.variations)
+        {
+            ValidColors color = (ValidColors)0;
+            foreach (var col in variation.Values)
+            {
+                color += (int)col;
+            }
+            if ((SessionVariables.Colors & color) == color)
+            {
+                sprites.Add(variation);
+            }
+        }
+
+        if (sprites.Count == 0)
+        {
+            return null;
+        }
+
+        return sprites[Random.Range(0, sprites.Count)];
+    }
+
+    private Guessable FindSprite(List<Guessable> sprites, float bias)
     {
         var upperLimit = Mathf.FloorToInt((SessionVariables.Experience + 0.5f - bias * 0.5f));
         var candidates = new List<Guessable>();
@@ -110,11 +196,23 @@ public class GuessableImage : SerializedScriptableObject
             hasTested = true;
             foreach (var image in sprites)
             {
-                if ((SessionVariables.Colors & image.colors) == image.colors)
+                if (Mathf.Max(upperLimit, 1) >= image.strokeComplexity)
                 {
-                    if (Mathf.Max(upperLimit, 1) >= image.strokeComplexity)
+                    if (CanDrawBase(image))
                     {
                         candidates.Add(image);
+                        continue;
+                    }
+
+                    foreach (var variation in image.variations)
+                    {
+                        ValidColors color = (ValidColors)0;
+
+                        if (GetRandomValidVariation(image) != null)
+                        {
+                            candidates.Add(image);
+                            continue;
+                        }
                     }
                 }
             }
@@ -127,32 +225,108 @@ public class GuessableImage : SerializedScriptableObject
             return null;
         }
 
-        return candidates[Random.Range(0, candidates.Count)].texture;
+        return candidates[Random.Range(0, candidates.Count)];
     }
 
-    public Sprite GetRandom(float bias = 0, List<string> preferredTags = null)
+    public Sprite GetRandom(Guy guy)
     {
         var joinedList = new List<Guessable>();
-        if (preferredTags != null)
+        Guessable result = null;
+        if (guy.preferredTags.Count > 0)
         {
-            foreach(var tag in preferredTags)
+            foreach (var tag in guy.preferredTags)
             {
 
-                if (DayManager.Globals.tagBiases.Contains(tag))
+                if (DayManager.Globals.tagBiases.Contains(tag) && Random.Range(0, 1.0f) <= guy.PreferredTagSelectionChance)
                 {
-                    var result = FindSprite(guessablesByTag[tag], bias);
+                    result = FindSprite(guessablesByTag[tag], guy.bias);
 
-                    if (result)
+                    if (result != null)
                     {
-                        return result;
+                        break;
                     }
-                    break;
                 }
 
                 joinedList.AddRange(guessablesByTag[tag]);
             }
         }
 
-        return FindSprite(joinedList, bias);
+        if (result == null)
+        {
+            result = FindSprite(joinedList, guy.bias);
+        }
+
+        if (result == null)
+        {
+            return null;
+        }
+
+        var variation = GetRandomValidVariation(result);
+        var pixels = result.texture.texture.GetPixels((int)result.texture.rect.x, (int)result.texture.rect.y, 64, 64);
+
+        var flipH = result.allowHorizontalFlip && Random.Range(0, 2) == 1;
+        var flipV = result.allowVerticalFlip && Random.Range(0, 2) == 1;
+
+        if (variation != null && (!CanDrawBase(result) || Random.Range(0, 1.0f) < result.variations.Count / (result.variations.Count + 1.0f)))
+        {
+            for (int x = 0; x < 64; x++)
+            {
+                for (int y = 0; y < 64; y++)
+                {
+                    var i = x + 64 * y;
+
+                    var p = pixels[i];
+
+                    var c = new Color(Mathf.Floor(p.r * 255) / 255.0f, Mathf.Floor(p.g * 255) / 255.0f, Mathf.Floor(p.b * 255) / 255.0f, 1);
+                    if (Guessable.colorMap.ContainsKey(c) && variation.Keys.IndexOf(Guessable.colorMap[c]) is int idx && idx >= 0)
+                    {
+                        var newColor = Guessable.colorReverseMap[variation.Values[idx]];
+                        pixels[i].r = newColor.r;
+                        pixels[i].g = newColor.g;
+                        pixels[i].b = newColor.b;
+                    }
+                }
+            }
+        }
+
+        if (flipH && flipV)
+        {
+            System.Array.Reverse(pixels);
+        }
+        else if (flipH)
+        {
+            for (int x = 0; x < 32; x++)
+            {
+                for (int y = 0; y < 64; y++)
+                {
+                    var i1 = x + 64 * y;
+                    var i2 = 63 - x + 64 * y;
+                    var a = pixels[i1];
+                    pixels[i1] = pixels[i2];
+                    pixels[i2] = a;
+                }
+            }
+        }
+        else if (flipV)
+        {
+            for (int x = 0; x < 64; x++)
+            {
+                for (int y = 0; y < 32; y++)
+                {
+                    var i1 = x + 64 * y;
+                    var i2 = x + 64 * (63 - y);
+                    var a = pixels[i1];
+                    pixels[i1] = pixels[i2];
+                    pixels[i2] = a;
+                }
+            }
+        }
+
+        var texture = new Texture2D(64, 64, result.texture.texture.format, false);
+        texture.filterMode = FilterMode.Point;
+        texture.SetPixels(pixels);
+        texture.Apply();
+
+        return Sprite.Create(texture, new Rect(0, 0, 64, 64), Vector2.one * 0.5f);
     }
 }

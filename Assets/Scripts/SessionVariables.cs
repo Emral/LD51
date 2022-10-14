@@ -376,4 +376,9 @@ public class SessionVariables : ScriptableObject
 
         return s += d;
     }
+
+    public static Season GetSeason()
+    {
+        return (Season) (1 + (Mathf.Min(Day / 10.0f) % 4));
+    }
 }

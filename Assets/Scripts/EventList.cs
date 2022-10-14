@@ -58,7 +58,7 @@ public class Event
     public float MoneyRequired;
     public float DayRequired;
 
-    public List<string> eventTags;
+    public List<Tag> tags;
 
     public List<Expense> newExpenses;
 
@@ -171,7 +171,7 @@ public class Event
 
     public void DailyExecute()
     {
-        foreach (var tag in eventTags)
+        foreach (var tag in tags)
         {
             if (!DayManager.Globals.tagBiases.Contains(tag))
             {

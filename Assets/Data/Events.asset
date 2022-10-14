@@ -32,6 +32,7 @@ MonoBehaviour:
     MoneyRequired: 0
     DayRequired: 2
     eventTags: []
+    tags: 
     newExpenses:
     - Name: Utensils
       Value: 10
@@ -53,6 +54,7 @@ MonoBehaviour:
     MoneyRequired: 0
     DayRequired: 4
     eventTags: []
+    tags: 
     newExpenses:
     - Name: Utensils
       Value: 10
@@ -75,6 +77,7 @@ MonoBehaviour:
     MoneyRequired: 0
     DayRequired: 0
     eventTags: []
+    tags: 
     newExpenses: []
   - eventLogMessage: Today my landlord increased my rent. I'll have to work harder
       to make ends meet.
@@ -95,6 +98,7 @@ MonoBehaviour:
     MoneyRequired: 0
     DayRequired: 5
     eventTags: []
+    tags: 
     newExpenses:
     - Name: Rent
       Value: 15
@@ -116,8 +120,8 @@ MonoBehaviour:
     ReputationRequired: 0
     MoneyRequired: 0
     DayRequired: 9
-    eventTags:
-    - creature
+    eventTags: []
+    tags: 07000000
     newExpenses: []
   - eventLogMessage: There is a nature festival today. Maybe people will come over
       for specific paintings.
@@ -137,6 +141,6 @@ MonoBehaviour:
     ReputationRequired: 0
     MoneyRequired: 0
     DayRequired: 6
-    eventTags:
-    - nature
+    eventTags: []
+    tags: 00000000
     newExpenses: []

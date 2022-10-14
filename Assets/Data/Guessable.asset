@@ -23,1252 +23,2332 @@ MonoBehaviour:
     SerializationNodes: []
   images:
   - texture: {fileID: 602746942, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 1
-    colors: 1
-    tags:
-    - food
-    - nature
+    strokeComplexity: 2
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 72
+    tag: 020000001e00000030000000
+    variations:
+    - Keys: 0800000040000000
+      Values: 0100000001000000
+    - Keys: 0800000040000000
+      Values: 2000000040000000
+    - Keys: 0800000040000000
+      Values: 0800000001000000
+    - Keys: 0800000040000000
+      Values: 0100000040000000
   - texture: {fileID: 21300000, guid: 97c71b3b38fb72c4e9fed12fc16f1972, type: 3}
     strokeComplexity: 1
-    colors: 1
-    tags:
-    - food
-    - nature
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 32
+    tag: 0000000027000000
+    variations:
+    - Keys: 20000000
+      Values: 01000000
   - texture: {fileID: 21300000, guid: afa1f50923de7504b9bec3960bb417ca, type: 3}
     strokeComplexity: 1
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 40
-    tags:
-    - food
-    - nature
+    tag: 0000000027000000
+    variations:
+    - Keys: 0800000020000000
+      Values: 0100000001000000
+    - Keys: 0800000020000000
+      Values: 2000000020000000
+    - Keys: 0800000020000000
+      Values: 0400000020000000
   - texture: {fileID: 1835513829, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 2
+    strokeComplexity: 1
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 16
-    tags:
-    - food
-    - nature
+    tag: 0000000027000000
+    variations:
+    - Keys: 10000000
+      Values: 01000000
   - texture: {fileID: -168495296, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 2
-    colors: 1
-    tags:
-    - food
-    - nature
-    - broccoli
+    strokeComplexity: 3
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 1
+    colors: 64
+    tag: 1f000000
+    variations:
+    - Keys: 40000000
+      Values: 01000000
   - texture: {fileID: -1363917730, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 1
-    colors: 1
-    tags:
-    - food
-    - nature
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 40
+    tag: 0000000027000000
+    variations:
+    - Keys: 0800000020000000
+      Values: 0100000001000000
+    - Keys: 0800000020000000
+      Values: 0800000008000000
   - texture: {fileID: -539947196, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 1
-    colors: 1
-    tags:
-    - food
-    - nature
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 160
+    tag: 0000000006000000
+    variations:
+    - Keys: 2000000080000000
+      Values: 0100000001000000
+    - Keys: 2000000080000000
+      Values: 8000000080000000
+    - Keys: 2000000080000000
+      Values: 2000000001000000
   - texture: {fileID: 2143210300, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 1
-    colors: 1
-    tags:
-    - food
-    - nature
+    strokeComplexity: 3
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
+    colors: 10
+    tag: 2c000000
+    variations:
+    - Keys: 0200000008000000
+      Values: 0100000001000000
+    - Keys: 0200000008000000
+      Values: 0100000008000000
+    - Keys: 0200000008000000
+      Values: 0200000002000000
   - texture: {fileID: 1838236333, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 1
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 40
-    tags:
-    - food
-    - nature
+    tag: 0000000006000000
+    variations:
+    - Keys: 0800000020000000
+      Values: 0100000001000000
+    - Keys: 0800000020000000
+      Values: 0800000001000000
   - texture: {fileID: 209267056, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 1
-    colors: 1
-    tags:
-    - food
-    - nature
-    - cartoon
+    strokeComplexity: 2
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
+    colors: 33
+    tag: 0a0000000f00000018000000
+    variations:
+    - Keys: 0100000020000000
+      Values: 0100000001000000
   - texture: {fileID: 1967289266, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 3
-    colors: 1
-    tags:
-    - food
+    strokeComplexity: 2
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 73
+    tag: 000000001d0000001b000000
+    variations:
+    - Keys: 010000000800000040000000
+      Values: 010000000100000001000000
+    - Keys: 010000000800000040000000
+      Values: 010000004000000040000000
+    - Keys: 010000000800000040000000
+      Values: 010000001000000040000000
+    - Keys: 010000000800000040000000
+      Values: 010000002000000040000000
+    - Keys: 010000000800000040000000
+      Values: 010000008000000040000000
+    - Keys: 010000000800000040000000
+      Values: 010000000400000040000000
+    - Keys: 010000000800000040000000
+      Values: 010000000200000040000000
   - texture: {fileID: -248695709, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 3
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 28
-    tags:
-    - food
+    tag: 00000000
+    variations:
+    - Keys: 040000000800000010000000
+      Values: 010000000100000001000000
+    - Keys: 040000000800000010000000
+      Values: 080000000800000008000000
+    - Keys: 040000000800000010000000
+      Values: 040000000800000008000000
   - texture: {fileID: 2079435444, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 1
-    colors: 1
-    tags:
-    - object
-    - edgy
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 6
+    tag: 290000002a0000001100000010000000
+    variations:
+    - Keys: 0200000004000000
+      Values: 0100000001000000
+    - Keys: 0200000004000000
+      Values: 0200000001000000
+    - Keys: 0200000004000000
+      Values: 0200000040000000
+    - Keys: 0200000004000000
+      Values: 0200000020000000
   - texture: {fileID: 459749543, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 2
-    colors: 1
-    tags:
-    - object
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
+    colors: 32
+    tag: 0000000024000000
+    variations:
+    - Keys: 20000000
+      Values: 01000000
+    - Keys: 20000000
+      Values: 04000000
+    - Keys: 20000000
+      Values: 08000000
   - texture: {fileID: -1509446397, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 4
-    colors: 1
-    tags:
-    - object
-    - nature
+    strokeComplexity: 3
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
+    colors: 96
+    tag: 0300000002000000310000001c000000
+    variations:
+    - Keys: 2000000040000000
+      Values: 0100000001000000
+    - Keys: 2000000040000000
+      Values: 2000000004000000
+    - Keys: 2000000040000000
+      Values: 1000000040000000
+    - Keys: 2000000040000000
+      Values: 1000000004000000
   - texture: {fileID: 489982703, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 4
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 96
-    tags:
-    - object
-    - nature
+    tag: 0300000002000000310000001c000000
+    variations:
+    - Keys: 2000000040000000
+      Values: 0100000001000000
+    - Keys: 2000000040000000
+      Values: 1000000004000000
+    - Keys: 2000000040000000
+      Values: 1000000040000000
+    - Keys: 2000000040000000
+      Values: 2000000001000000
   - texture: {fileID: -2005894267, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 2
-    colors: 1
-    tags:
-    - food
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 6
+    tag: 00000000
+    variations:
+    - Keys: 0200000004000000
+      Values: 0100000001000000
+    - Keys: 0200000004000000
+      Values: 0200000001000000
+    - Keys: 0200000004000000
+      Values: 0100000004000000
+    - Keys: 0200000004000000
+      Values: 0200000008000000
   - texture: {fileID: -1929478449, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 2
-    colors: 1
-    tags:
-    - food
-    - sandwich
+    strokeComplexity: 3
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
+    colors: 28
+    tag: 0000000032000000
+    variations:
+    - Keys: 040000000800000010000000
+      Values: 010000000100000001000000
+    - Keys: 040000000800000010000000
+      Values: 040000000800000008000000
+    - Keys: 040000000800000010000000
+      Values: 080000000800000008000000
   - texture: {fileID: 1552722514, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 1
-    colors: 1
-    tags:
-    - object
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
+    colors: 66
+    tag: 2900000010000000
+    variations:
+    - Keys: 0200000040000000
+      Values: 0100000001000000
+    - Keys: 0200000040000000
+      Values: 4000000040000000
+    - Keys: 0200000040000000
+      Values: 0200000002000000
   - texture: {fileID: 697915621, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 1
+    strokeComplexity: 2
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 144
-    tags:
-    - object
+    tag: 2900000034000000
+    variations:
+    - Keys: 1000000080000000
+      Values: 0100000001000000
+    - Keys: 1000000080000000
+      Values: 1000000010000000
+    - Keys: 1000000080000000
+      Values: 1000000004000000
+    - Keys: 1000000080000000
+      Values: 1000000040000000
   - texture: {fileID: -1460481320, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 1
-    colors: 1
-    tags:
-    - object
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 3
+    tag: 2300000024000000
+    variations:
+    - Keys: 0100000002000000
+      Values: 0100000001000000
+    - Keys: 0100000002000000
+      Values: 0200000002000000
   - texture: {fileID: 1134513501, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 4
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 128
-    tags:
-    - object
-    - nature
+    tag: 0300000031000000020000001c000000
+    variations:
+    - Keys: 80000000
+      Values: 01000000
+    - Keys: 80000000
+      Values: 40000000
+    - Keys: 80000000
+      Values: 04000000
   - texture: {fileID: 1433414738, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 2
-    colors: 1
-    tags:
-    - animal
-    - bird
-    - cute
+    strokeComplexity: 3
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 137
+    tag: 0a0000000e000000
+    variations:
+    - Keys: 010000000800000080000000
+      Values: 010000000100000001000000
+    - Keys: 010000000800000080000000
+      Values: 800000000100000080000000
+    - Keys: 010000000800000080000000
+      Values: 800000000800000080000000
   - texture: {fileID: -266221329, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 3
-    colors: 1
-    tags:
-    - cartoon
-    - cute
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
+    colors: 67
+    tag: 0700000010000000
+    variations:
+    - Keys: 010000000200000040000000
+      Values: 010000000100000001000000
+    - Keys: 010000000200000040000000
+      Values: 020000000200000002000000
+    - Keys: 010000000200000040000000
+      Values: 010000000200000001000000
   - texture: {fileID: 1309446051, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 1
-    colors: 1
-    tags:
-    - nature
-    - sky
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 2
+    tag: 02000000040000003500000005000000
+    variations:
+    - Keys: 02000000
+      Values: 01000000
   - texture: {fileID: 395440249, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 1
-    colors: 17
-    tags:
-    - nature
-    - sky
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 1
+    colors: 16
+    tag: 1d000000040000000200000005000000
+    variations:
+    - Keys: 10000000
+      Values: 01000000
   - texture: {fileID: -661341348, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 1
-    colors: 1
-    tags:
-    - nature
-    - landscape
-  - texture: {fileID: -701261358, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 66
+    tag: 0200000001000000
+    variations:
+    - Keys: 0200000040000000
+      Values: 0100000001000000
+    - Keys: 0200000040000000
+      Values: 0200000002000000
+    - Keys: 0200000040000000
+      Values: 0100000040000000
+    - Keys: 0200000040000000
+      Values: 0800000008000000
+    - Keys: 0200000040000000
+      Values: 0800000040000000
+  - texture: {fileID: -701261358, guid: 50eae042970217d4eac26422469ca83e, type: 3}
+    strokeComplexity: 3
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 4
-    tags:
-    - cartoon
-    - bird
+    tag: 070000000d00000012000000
+    variations:
+    - Keys: 04000000
+      Values: 01000000
   - texture: {fileID: 1239972853, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 1
-    colors: 1
-    tags:
-    - object
+    strokeComplexity: 2
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 8
+    tag: 2400000022000000
+    variations:
+    - Keys: 08000000
+      Values: 01000000
   - texture: {fileID: 1013364148, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 64
-    tags:
-    - nature
-    - sky
-    - rain
+    tag: 020000001c0000001e00000018000000
+    variations:
+    - Keys: 40000000
+      Values: 01000000
   - texture: {fileID: 437981352, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 3
-    colors: 1
-    tags:
-    - object
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 13
+    tag: 24000000
+    variations:
+    - Keys: 010000000400000008000000
+      Values: 010000000100000001000000
+    - Keys: 010000000400000008000000
+      Values: 010000000400000004000000
+    - Keys: 010000000400000008000000
+      Values: 010000004000000040000000
+    - Keys: 010000000400000008000000
+      Values: 010000004000000008000000
+    - Keys: 010000000400000008000000
+      Values: 010000002000000020000000
+    - Keys: 010000000400000008000000
+      Values: 010000002000000008000000
+    - Keys: 010000000400000008000000
+      Values: 010000008000000080000000
+    - Keys: 010000000400000008000000
+      Values: 010000008000000008000000
+    - Keys: 010000000400000008000000
+      Values: 010000000200000002000000
+    - Keys: 010000000400000008000000
+      Values: 010000000200000008000000
+    - Keys: 010000000400000008000000
+      Values: 010000001000000010000000
+    - Keys: 010000000400000008000000
+      Values: 010000001000000008000000
+    - Keys: 010000000400000008000000
+      Values: 010000000800000008000000
   - texture: {fileID: -1734201321, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 2
-    colors: 1
-    tags:
-    - object
-    - rain
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 1
+    colors: 9
+    tag: 1800000022000000
+    variations:
+    - Keys: 0100000008000000
+      Values: 0100000001000000
+    - Keys: 0100000008000000
+      Values: 0100000002000000
+    - Keys: 0100000008000000
+      Values: 0100000004000000
+    - Keys: 0100000008000000
+      Values: 0100000010000000
+    - Keys: 0100000008000000
+      Values: 0100000020000000
+    - Keys: 0100000008000000
+      Values: 0100000040000000
+    - Keys: 0100000008000000
+      Values: 0100000080000000
+    - Keys: 0100000008000000
+      Values: 0200000080000000
+    - Keys: 0100000008000000
+      Values: 0200000040000000
+    - Keys: 0100000008000000
+      Values: 0200000020000000
+    - Keys: 0100000008000000
+      Values: 0200000010000000
+    - Keys: 0100000008000000
+      Values: 0200000008000000
+    - Keys: 0100000008000000
+      Values: 0200000004000000
+    - Keys: 0100000008000000
+      Values: 0200000002000000
   - texture: {fileID: -1887719661, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 3
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 4
-    tags:
-    - animal
-    - cartoon
+    tag: 0a00000007000000
+    variations:
+    - Keys: 04000000
+      Values: 01000000
+    - Keys: 04000000
+      Values: 20000000
   - texture: {fileID: -1924610622, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 40
-    tags:
-    - nature
-    - landscape
+    tag: 0200000003000000
+    variations:
+    - Keys: 0800000020000000
+      Values: 0100000001000000
   - texture: {fileID: -979064984, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 32
-    tags:
-    - nature
-    - food
-    - broccoli
+    tag: 000000003600000006000000
+    variations:
+    - Keys: 20000000
+      Values: 01000000
   - texture: {fileID: 442589765, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 1
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 64
-    tags:
-    - cute
-    - cartoon
+    tag: 0f00000007000000
+    variations:
+    - Keys: 40000000
+      Values: 01000000
+    - Keys: 40000000
+      Values: 20000000
   - texture: {fileID: 862924839, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 4
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 40
-    tags:
-    - cute
-    - cartoon
+    tag: 07000000
+    variations:
+    - Keys: 0800000020000000
+      Values: 0100000001000000
+    - Keys: 0800000020000000
+      Values: 2000000020000000
+    - Keys: 0800000020000000
+      Values: 0100000020000000
   - texture: {fileID: -752183898, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 2
+    strokeComplexity: 3
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 128
-    tags:
-    - cute
-    - cartoon
+    tag: 07000000
+    variations:
+    - Keys: 80000000
+      Values: 01000000
   - texture: {fileID: -1917022340, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 33
-    tags:
-    - cute
-    - cartoon
+    tag: 07000000
+    variations:
+    - Keys: 0100000020000000
+      Values: 0100000001000000
   - texture: {fileID: 731459598, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 8
-    tags:
-    - cartoon
+    tag: 07000000
+    variations:
+    - Keys: 08000000
+      Values: 01000000
   - texture: {fileID: -885942530, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 16
-    tags:
-    - cute
-    - cartoon
+    tag: 07000000
+    variations:
+    - Keys: 10000000
+      Values: 01000000
   - texture: {fileID: 1074753948, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 68
-    tags:
-    - cute
-    - cartoon
+    tag: 07000000
+    variations:
+    - Keys: 0400000040000000
+      Values: 0100000001000000
+    - Keys: 0400000040000000
+      Values: 0100000040000000
+    - Keys: 0400000040000000
+      Values: 0400000001000000
   - texture: {fileID: 857357338, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 2
-    colors: 1
-    tags:
-    - cute
-    - cartoon
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
+    colors: 10
+    tag: 020000000100000011000000
+    variations:
+    - Keys: 0200000008000000
+      Values: 0100000001000000
+    - Keys: 0200000008000000
+      Values: 0100000008000000
+    - Keys: 0200000008000000
+      Values: 0200000004000000
+    - Keys: 0200000008000000
+      Values: 0100000004000000
   - texture: {fileID: -692183749, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 16
-    tags:
-    - object
+    tag: 2400000023000000
+    variations:
+    - Keys: 10000000
+      Values: 40000000
   - texture: {fileID: -119756881, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 1
-    colors: 1
-    tags:
-    - object
+    strokeComplexity: 2
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 8
+    tag: 2400000023000000
+    variations:
+    - Keys: 08000000
+      Values: 01000000
   - texture: {fileID: -1300148823, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 160
-    tags:
-    - nature
-    - food
-    - cute
+    tag: 0600000000000000
+    variations:
+    - Keys: 2000000080000000
+      Values: 0100000001000000
+    - Keys: 2000000080000000
+      Values: 8000000080000000
+    - Keys: 2000000080000000
+      Values: 2000000020000000
   - texture: {fileID: 384763032, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 48
-    tags:
-    - nature
-    - food
-    - cute
+    tag: 0000000006000000
+    variations:
+    - Keys: 1000000020000000
+      Values: 0100000001000000
+    - Keys: 1000000020000000
+      Values: 1000000010000000
+    - Keys: 1000000020000000
+      Values: 2000000020000000
+    - Keys: 1000000020000000
+      Values: 0100000020000000
   - texture: {fileID: 1250769357, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 16
-    tags:
-    - object
-    - cute
-    - bird
+    tag: 0d0000000f000000
+    variations:
+    - Keys: 10000000
+      Values: 01000000
+    - Keys: 10000000
+      Values: 08000000
   - texture: {fileID: 844855683, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 3
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 56
-    tags:
-    - animal
-    - bird
-    - cute
+    tag: 0a0000000d000000
+    variations:
+    - Keys: 080000001000000020000000
+      Values: 010000000100000001000000
+    - Keys: 080000001000000020000000
+      Values: 080000000800000020000000
+    - Keys: 080000001000000020000000
+      Values: 010000000100000020000000
   - texture: {fileID: 1150886159, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 1
-    colors: 1
-    tags:
-    - edgy
+    strokeComplexity: 2
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 160
+    tag: 07000000
+    variations:
+    - Keys: 2000000080000000
+      Values: 0100000001000000
+    - Keys: 2000000080000000
+      Values: 8000000080000000
   - texture: {fileID: -1893658709, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 3
-    colors: 1
-    tags:
-    - edgy
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 13
+    tag: 07000000
+    variations:
+    - Keys: 010000000400000008000000
+      Values: 010000000100000001000000
+    - Keys: 010000000400000008000000
+      Values: 010000000400000004000000
+    - Keys: 010000000400000008000000
+      Values: 010000000800000008000000
   - texture: {fileID: 1964631247, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 1
+    strokeComplexity: 2
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - number
+    tag: 13000000
+    variations: []
   - texture: {fileID: 2143019092, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - number
+    tag: 13000000
+    variations: []
   - texture: {fileID: 1981029503, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 1
-    colors: 1
-    tags:
-    - sky
+    strokeComplexity: 3
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 9
+    tag: 07000000
+    variations:
+    - Keys: 0100000008000000
+      Values: 0100000001000000
+    - Keys: 0100000008000000
+      Values: 0800000008000000
   - texture: {fileID: -92287604, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 40
-    tags:
-    - nature
-    - food
+    tag: 00000000060000001e000000
+    variations:
+    - Keys: 0800000020000000
+      Values: 0100000001000000
+    - Keys: 0800000020000000
+      Values: 0800000008000000
   - texture: {fileID: 42293617, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 1
-    colors: 1
-    tags:
-    - nature
-    - food
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 36
+    tag: 0000000027000000
+    variations:
+    - Keys: 0400000020000000
+      Values: 0400000001000000
+    - Keys: 0400000020000000
+      Values: 0100000001000000
+    - Keys: 0400000020000000
+      Values: 2000000020000000
+    - Keys: 0400000020000000
+      Values: 1000000020000000
   - texture: {fileID: 1706831985, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 69
-    tags:
-    - object
-    - food
+    tag: 00000000240000001d000000
+    variations:
+    - Keys: 010000000400000040000000
+      Values: 010000000100000001000000
+    - Keys: 010000000400000040000000
+      Values: 010000000400000010000000
   - texture: {fileID: -610134626, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 17
-    tags:
-    - cute
-    - cartoon
+    tag: 07000000
+    variations:
+    - Keys: 0100000010000000
+      Values: 0100000001000000
+    - Keys: 0100000010000000
+      Values: 1000000010000000
   - texture: {fileID: 1433650531, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 4
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 20
-    tags:
-    - cute
-    - cartoon
+    tag: 07000000
+    variations:
+    - Keys: 0400000010000000
+      Values: 0100000001000000
+    - Keys: 0400000010000000
+      Values: 1000000010000000
   - texture: {fileID: -173819526, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 1
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - 'person '
+    tag: 14000000
+    variations: []
   - texture: {fileID: -262286071, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 1
+    strokeComplexity: 2
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 64
-    tags:
-    - cute
-    - cartoon
+    tag: 07000000
+    variations:
+    - Keys: 40000000
+      Values: 01000000
+    - Keys: 40000000
+      Values: 80000000
   - texture: {fileID: -1355773088, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 1
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 4
-    tags:
-    - cartoon
-    - edgy
+    tag: 0700000011000000
+    variations:
+    - Keys: 04000000
+      Values: 01000000
+    - Keys: 04000000
+      Values: 02000000
   - texture: {fileID: -805761136, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 2
-    colors: 1
-    tags:
-    - bird
-    - cute
-    - animal
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 9
+    tag: 0f0000000d0000000a0000002b000000
+    variations:
+    - Keys: 0100000008000000
+      Values: 0100000001000000
   - texture: {fileID: 950756285, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - animal
-    - cute
-    - cat
+    tag: 0f000000
+    variations:
+    - Keys: 01000000
+      Values: 40000000
   - texture: {fileID: 1123704155, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 2
+    strokeComplexity: 3
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 8
-    tags:
-    - cute
-    - cartoon
+    tag: 07000000
+    variations:
+    - Keys: 08000000
+      Values: 01000000
+    - Keys: 08000000
+      Values: 80000000
   - texture: {fileID: -1767872965, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 3
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 97
-    tags:
-    - cute
-    - cartoon
+    tag: 07000000
+    variations:
+    - Keys: 010000002000000040000000
+      Values: 010000000100000001000000
+    - Keys: 010000002000000040000000
+      Values: 010000002000000001000000
   - texture: {fileID: 773700383, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 2
-    colors: 1
-    tags:
-    - edgy
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 65
+    tag: 11000000
+    variations:
+    - Keys: 0100000040000000
+      Values: 0100000001000000
+    - Keys: 0100000040000000
+      Values: 0100000004000000
   - texture: {fileID: -1492788004, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 2
-    colors: 1
-    tags:
-    - edgy
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 65
+    tag: 11000000
+    variations:
+    - Keys: 0100000040000000
+      Values: 0100000001000000
+    - Keys: 0100000040000000
+      Values: 0100000004000000
   - texture: {fileID: -1005911468, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 2
-    colors: 1
-    tags:
-    - edgy
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 65
+    tag: 11000000
+    variations:
+    - Keys: 0100000040000000
+      Values: 0100000001000000
+    - Keys: 0100000040000000
+      Values: 0100000004000000
   - texture: {fileID: -79114493, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 2
-    colors: 1
-    tags:
-    - cat
-    - cute
-    - animal
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 33
+    tag: 07000000
+    variations:
+    - Keys: 0100000020000000
+      Values: 0100000001000000
+    - Keys: 0100000020000000
+      Values: 2000000020000000
   - texture: {fileID: 1901478197, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 3
-    colors: 1
-    tags:
-    - cat
-    - cute
-    - animal
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 8
+    tag: 150000000f0000000a0000002b000000
+    variations:
+    - Keys: 08000000
+      Values: 01000000
+    - Keys: 08000000
+      Values: 02000000
   - texture: {fileID: -182779021, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 1
-    colors: 1
-    tags:
-    - bird
-    - cute
-    - animal
+    strokeComplexity: 3
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
+    colors: 9
+    tag: 0a0000000f0000000b0000002b000000
+    variations:
+    - Keys: 0100000008000000
+      Values: 0100000001000000
+    - Keys: 0100000008000000
+      Values: 0800000008000000
   - texture: {fileID: -1208751750, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 3
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 9
-    tags:
-    - cat
-    - cute
-    - animal
+    tag: 150000000f0000000a0000002b000000
+    variations:
+    - Keys: 0100000008000000
+      Values: 0100000001000000
+    - Keys: 0100000008000000
+      Values: 0800000008000000
+    - Keys: 0100000008000000
+      Values: 0100000002000000
+    - Keys: 0100000008000000
+      Values: 0200000002000000
   - texture: {fileID: 1862659982, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 4
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 12
-    tags:
-    - cat
-    - cute
-    - animal
+    tag: 150000000f0000000a0000002b000000
+    variations:
+    - Keys: 0400000008000000
+      Values: 0100000001000000
+    - Keys: 0400000008000000
+      Values: 2000000008000000
+    - Keys: 0400000008000000
+      Values: 0400000002000000
+    - Keys: 0400000008000000
+      Values: 2000000002000000
+    - Keys: 0400000008000000
+      Values: 4000000008000000
+    - Keys: 0400000008000000
+      Values: 4000000002000000
   - texture: {fileID: -1567744771, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 1
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - person
+    tag: 14000000
+    variations: []
   - texture: {fileID: -16298350, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 1
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - person
+    tag: 14000000
+    variations: []
   - texture: {fileID: 118067980, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 1
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - person
+    tag: 14000000
+    variations: []
   - texture: {fileID: -1115661259, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 3
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - person
-    - edgy
+    tag: 14000000
+    variations: []
   - texture: {fileID: -1986232418, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 1
+    strokeComplexity: 3
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - number
+    tag: 13000000
+    variations: []
   - texture: {fileID: -1380077955, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - number
+    tag: 13000000
+    variations: []
   - texture: {fileID: -1891009455, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 1
+    strokeComplexity: 3
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - number
+    tag: 13000000
+    variations: []
   - texture: {fileID: 675301750, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - number
+    tag: 13000000
+    variations: []
   - texture: {fileID: 2022468232, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 1
+    strokeComplexity: 3
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - number
+    tag: 13000000
+    variations: []
   - texture: {fileID: -1048607937, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 1
+    strokeComplexity: 3
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - number
+    tag: 13000000
+    variations: []
   - texture: {fileID: -1131123172, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 1
+    strokeComplexity: 3
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - number
+    tag: 13000000
+    variations: []
   - texture: {fileID: -764049192, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 1
+    strokeComplexity: 3
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - number
+    tag: 13000000
+    variations: []
   - texture: {fileID: -1454017195, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 1
-    colors: 1
-    tags:
-    - number
+    strokeComplexity: 3
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 74
+    tag: 2000000021000000
+    variations:
+    - Keys: 020000000800000040000000
+      Values: 020000000400000020000000
+    - Keys: 020000000800000040000000
+      Values: 020000008000000010000000
+    - Keys: 020000000800000040000000
+      Values: 020000000800000080000000
+    - Keys: 020000000800000040000000
+      Values: 020000002000000040000000
+    - Keys: 020000000800000040000000
+      Values: 020000001000000004000000
+    - Keys: 020000000800000040000000
+      Values: 020000008000000004000000
+    - Keys: 020000000800000040000000
+      Values: 020000002000000008000000
   - texture: {fileID: -1394141785, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 1
-    colors: 1
-    tags:
-    - number
+    strokeComplexity: 3
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 11
+    tag: 2a00000029000000
+    variations:
+    - Keys: 010000000200000008000000
+      Values: 010000000100000001000000
+    - Keys: 010000000200000008000000
+      Values: 010000000100000008000000
   - texture: {fileID: -978150591, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 1
-    colors: 1
-    tags:
-    - number
+    strokeComplexity: 2
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 1
+    colors: 32
+    tag: 0a0000002b000000
+    variations:
+    - Keys: 20000000
+      Values: 01000000
   - texture: {fileID: -533994190, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 2
-    tags:
-    - cartoon
-    - cute
+    tag: 07000000
+    variations:
+    - Keys: 02000000
+      Values: 01000000
   - texture: {fileID: -1039562853, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 2
-    colors: 2
-    tags:
-    - landscape
-    - nature
+    strokeComplexity: 4
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 5
+    tag: 24000000
+    variations:
+    - Keys: 0100000004000000
+      Values: 0100000001000000
+    - Keys: 0100000004000000
+      Values: 0100000020000000
+    - Keys: 0100000004000000
+      Values: 0100000040000000
+    - Keys: 0100000004000000
+      Values: 0100000010000000
+    - Keys: 0100000004000000
+      Values: 0100000080000000
+    - Keys: 0100000004000000
+      Values: 0100000002000000
+    - Keys: 0100000004000000
+      Values: 0100000008000000
   - texture: {fileID: -1717357821, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 3
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 18
-    tags:
-    - object
+    tag: 24000000
+    variations:
+    - Keys: 0200000010000000
+      Values: 0200000001000000
+    - Keys: 0200000010000000
+      Values: 0100000010000000
+    - Keys: 0200000010000000
+      Values: 0100000001000000
   - texture: {fileID: 456267881, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 2
-    tags:
-    - nature
-    - animal
-    - cute
-    - fish
+    tag: 0c0000000a000000
+    variations:
+    - Keys: 02000000
+      Values: 01000000
+    - Keys: 02000000
+      Values: 08000000
+    - Keys: 02000000
+      Values: 04000000
+    - Keys: 02000000
+      Values: 40000000
   - texture: {fileID: -1940678326, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 3
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 34
-    tags:
-    - object
-    - edgy
+    tag: 1100000019000000
+    variations:
+    - Keys: 0200000020000000
+      Values: 0100000001000000
+    - Keys: 0200000020000000
+      Values: 0100000020000000
   - texture: {fileID: -1592179255, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 2
-    colors: 4
-    tags:
-    - nature
-    - animal
-    - cute
-    - fish
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 1
+    colors: 8
+    tag: 28000000
+    variations:
+    - Keys: 08000000
+      Values: 10000000
+    - Keys: 08000000
+      Values: 40000000
+    - Keys: 08000000
+      Values: 80000000
   - texture: {fileID: 1682877175, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 1
     colors: 8
-    tags:
-    - nature
-    - animal
-    - cute
-    - fish
+    tag: 28000000
+    variations:
+    - Keys: 08000000
+      Values: 10000000
+    - Keys: 08000000
+      Values: 02000000
+    - Keys: 08000000
+      Values: 40000000
+    - Keys: 08000000
+      Values: 20000000
   - texture: {fileID: -1420752693, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 66
-    tags:
-    - object
+    tag: 2000000021000000
+    variations:
+    - Keys: 0200000040000000
+      Values: 0200000004000000
+    - Keys: 0200000040000000
+      Values: 0200000008000000
+    - Keys: 0200000040000000
+      Values: 0200000010000000
+    - Keys: 0200000040000000
+      Values: 0200000020000000
+    - Keys: 0200000040000000
+      Values: 0200000080000000
   - texture: {fileID: 1399944361, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 2
-    colors: 34
-    tags:
-    - object
+    strokeComplexity: 3
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 5
+    tag: 28000000
+    variations:
+    - Keys: 0100000004000000
+      Values: 0100000001000000
+    - Keys: 0100000004000000
+      Values: 0100000020000000
+    - Keys: 0100000004000000
+      Values: 0100000080000000
+    - Keys: 0100000004000000
+      Values: 0100000040000000
+    - Keys: 0100000004000000
+      Values: 0100000010000000
+    - Keys: 0100000004000000
+      Values: 0100000008000000
   - texture: {fileID: 1600946300, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 2
-    colors: 6
-    tags:
-    - object
+    strokeComplexity: 3
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 16
+    tag: 28000000
+    variations:
+    - Keys: 10000000
+      Values: 01000000
   - texture: {fileID: -575653796, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - bird
-    - sky
-    - animal
+    tag: 0d00000004000000
+    variations:
+    - Keys: 01000000
+      Values: 02000000
   - texture: {fileID: 1807725637, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 3
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 192
-    tags:
-    - nature
-    - rain
+    tag: 18000000
+    variations:
+    - Keys: 4000000080000000
+      Values: 0100000001000000
+    - Keys: 4000000080000000
+      Values: 4000000040000000
+    - Keys: 4000000080000000
+      Values: 0100000080000000
   - texture: {fileID: -2001213396, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 16
-    tags:
-    - object
-    - finance
+    tag: 2500000034000000
+    variations:
+    - Keys: 10000000
+      Values: 02000000
+    - Keys: 10000000
+      Values: 08000000
   - texture: {fileID: 2008372559, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 3
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 5
-    tags:
-    - animal
-    - nature
+    tag: 0a000000310000001c0000000e000000
+    variations:
+    - Keys: 0100000004000000
+      Values: 0100000080000000
+    - Keys: 0100000004000000
+      Values: 0100000040000000
+    - Keys: 0100000004000000
+      Values: 0100000010000000
+    - Keys: 0100000004000000
+      Values: 0100000020000000
+    - Keys: 0100000004000000
+      Values: 0100000008000000
   - texture: {fileID: -1958865370, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
-    strokeComplexity: 3
-    colors: 129
-    tags:
-    - animal
-    - nature
+    strokeComplexity: 4
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 7
+    tag: 29000000
+    variations:
+    - Keys: 010000000200000004000000
+      Values: 010000000100000001000000
+    - Keys: 010000000200000004000000
+      Values: 020000000200000001000000
+    - Keys: 010000000200000004000000
+      Values: 010000000200000040000000
   - texture: {fileID: -2136653505, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 10
-    tags:
-    - object
-    - edgy
+    tag: 2a00000011000000
+    variations:
+    - Keys: 0200000008000000
+      Values: 0100000001000000
+    - Keys: 0200000008000000
+      Values: 0100000008000000
   - texture: {fileID: -813878586, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 2
-    tags:
-    - edgy
-    - cartoon
+    tag: 19000000
+    variations:
+    - Keys: 02000000
+      Values: 01000000
+    - Keys: 02000000
+      Values: 80000000
   - texture: {fileID: 1486427585, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 2
-    tags:
-    - edgy
-    - cartoon
+    tag: 19000000
+    variations:
+    - Keys: 02000000
+      Values: 01000000
+    - Keys: 02000000
+      Values: 80000000
   - texture: {fileID: 47881145, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 1
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - person
-    - edgy
+    tag: 1400000011000000
+    variations: []
   - texture: {fileID: 1641322028, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 66
-    tags:
-    - nature
-    - sky
-    - rain
+    tag: 04000000180000002e000000
+    variations:
+    - Keys: 0200000040000000
+      Values: 0100000001000000
+    - Keys: 0200000040000000
+      Values: 0100000040000000
   - texture: {fileID: 1909161107, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 16
-    tags:
-    - nature
-    - sky
-    - rain
+    tag: 2e00000018000000
+    variations: []
   - texture: {fileID: -1334178774, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 65
-    tags:
-    - edgy
-    - cartoon
+    tag: 07000000
+    variations:
+    - Keys: 0100000040000000
+      Values: 0100000001000000
+    - Keys: 0100000040000000
+      Values: 0100000004000000
   - texture: {fileID: -3881750, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 1
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 1
     colors: 1
-    tags:
-    - person
+    tag: 14000000
+    variations: []
   - texture: {fileID: 646246173, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 1
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - person
+    tag: 14000000
+    variations: []
   - texture: {fileID: -1834464958, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
-    strokeComplexity: 3
+    strokeComplexity: 4
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - person
-    - edgy
-    - cartoon
+    tag: 0700000033000000
+    variations: []
   - texture: {fileID: -527316756, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
-    strokeComplexity: 1
+    strokeComplexity: 2
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 4
-    tags:
-    - object
-    - edgy
+    tag: 1100000019000000
+    variations:
+    - Keys: 04000000
+      Values: 01000000
   - texture: {fileID: -1623847478, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
-    strokeComplexity: 2
+    strokeComplexity: 4
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 4
-    tags:
-    - object
-    - edgy
+    tag: 1900000011000000
+    variations:
+    - Keys: 04000000
+      Values: 01000000
   - texture: {fileID: 1572303952, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
-    strokeComplexity: 3
-    colors: 32
-    tags:
-    - cartoon
-    - cute
-  - texture: {fileID: -1998424530, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 2
-    colors: 128
-    tags:
-    - nature
-    - food
-    - cute
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 1
+    tag: 14000000
+    variations: []
+  - texture: {fileID: -1998424530, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 1
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 1
+    tag: 14000000
+    variations: []
   - texture: {fileID: 1675206997, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 1
-    colors: 32
-    tags:
-    - nature
-    - food
-    - cute
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 1
+    tag: 14000000
+    variations: []
   - texture: {fileID: 374368349, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 2
-    colors: 64
-    tags:
-    - edgy
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
+    colors: 1
+    tag: 14000000
+    variations: []
   - texture: {fileID: -845708030, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
-    strokeComplexity: 2
-    colors: 64
-    tags:
-    - edgy
+    strokeComplexity: 1
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
+    colors: 1
+    tag: 14000000
+    variations: []
   - texture: {fileID: -1077858868, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
-    strokeComplexity: 2
-    colors: 64
-    tags:
-    - edgy
+    strokeComplexity: 1
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
+    colors: 1
+    tag: 14000000
+    variations: []
   - texture: {fileID: 843140145, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
-    strokeComplexity: 2
-    colors: 8
-    tags:
-    - object
+    strokeComplexity: 3
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
+    colors: 5
+    tag: 2400000023000000
+    variations:
+    - Keys: 0100000004000000
+      Values: 0100000020000000
+    - Keys: 0100000004000000
+      Values: 0100000080000000
   - texture: {fileID: -2079676154, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 3
-    colors: 128
-    tags:
-    - edgy
-    - person
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 5
+    tag: 2f000000
+    variations:
+    - Keys: 0100000004000000
+      Values: 0100000001000000
+    - Keys: 0100000004000000
+      Values: 0100000002000000
+    - Keys: 0100000004000000
+      Values: 0100000008000000
+    - Keys: 0100000004000000
+      Values: 0100000010000000
+    - Keys: 0100000004000000
+      Values: 0100000020000000
+    - Keys: 0100000004000000
+      Values: 0100000040000000
+    - Keys: 0100000004000000
+      Values: 0100000080000000
   - texture: {fileID: -595147197, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
-    strokeComplexity: 2
-    colors: 128
-    tags:
-    - edgy
-    - cartoon
+    strokeComplexity: 3
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 5
+    tag: 2f000000
+    variations:
+    - Keys: 0100000004000000
+      Values: 0100000001000000
+    - Keys: 0100000004000000
+      Values: 0100000002000000
+    - Keys: 0100000004000000
+      Values: 0100000008000000
+    - Keys: 0100000004000000
+      Values: 0100000010000000
+    - Keys: 0100000004000000
+      Values: 0100000020000000
+    - Keys: 0100000004000000
+      Values: 0100000040000000
+    - Keys: 0100000004000000
+      Values: 0100000080000000
   - texture: {fileID: -376641127, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
-    strokeComplexity: 1
-    colors: 64
-    tags:
-    - edgy
-    - cartoon
+    strokeComplexity: 3
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 5
+    tag: 2f000000
+    variations:
+    - Keys: 0100000004000000
+      Values: 0100000001000000
+    - Keys: 0100000004000000
+      Values: 0100000002000000
+    - Keys: 0100000004000000
+      Values: 0100000008000000
+    - Keys: 0100000004000000
+      Values: 0100000010000000
+    - Keys: 0100000004000000
+      Values: 0100000020000000
+    - Keys: 0100000004000000
+      Values: 0100000040000000
+    - Keys: 0100000004000000
+      Values: 0100000080000000
   - texture: {fileID: -1435913409, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 3
-    colors: 1
-    tags:
-    - object
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 5
+    tag: 2f000000
+    variations:
+    - Keys: 0100000004000000
+      Values: 0100000001000000
+    - Keys: 0100000004000000
+      Values: 0100000002000000
+    - Keys: 0100000004000000
+      Values: 0100000008000000
+    - Keys: 0100000004000000
+      Values: 0100000010000000
+    - Keys: 0100000004000000
+      Values: 0100000020000000
+    - Keys: 0100000004000000
+      Values: 0100000040000000
+    - Keys: 0100000004000000
+      Values: 0100000080000000
   - texture: {fileID: 783470523, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 3
-    colors: 4
-    tags:
-    - object
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 1
+    colors: 20
+    tag: 24000000
+    variations:
+    - Keys: 0400000010000000
+      Values: 0100000001000000
+    - Keys: 0400000010000000
+      Values: 0100000002000000
+    - Keys: 0400000010000000
+      Values: 0400000004000000
   - texture: {fileID: 983741911, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 3
-    colors: 64
-    tags:
-    - object
-    - rain
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 25
+    tag: 28000000
+    variations:
+    - Keys: 010000000800000010000000
+      Values: 010000000100000001000000
+    - Keys: 010000000800000010000000
+      Values: 010000000200000002000000
   - texture: {fileID: 1960285789, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 1
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 16
-    tags:
-    - nature
-    - sky
+    tag: 04000000350000003100000005000000
+    variations: []
   - texture: {fileID: -1206344135, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 32
-    tags:
-    - finance
-    - object
+    tag: 2500000034000000
+    variations: []
   - texture: {fileID: -1776794520, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 8
-    tags:
-    - object
+    tag: 24000000
+    variations: []
   - texture: {fileID: 1387228215, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 2
-    colors: 8
-    tags:
-    - nature
-    - landscape
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
+    colors: 40
+    tag: 02000000
+    variations:
+    - Keys: 0800000020000000
+      Values: 0100000001000000
   - texture: {fileID: -905184803, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 3
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 16
-    tags:
-    - nature
-    - sky
+    tag: 35000000040000003100000005000000
+    variations: []
   - texture: {fileID: -1859769556, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
-    strokeComplexity: 1
-    colors: 8
-    tags:
-    - object
+    strokeComplexity: 4
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
+    colors: 56
+    tag: 1f0000002d000000
+    variations:
+    - Keys: 080000001000000020000000
+      Values: 010000000100000001000000
   - texture: {fileID: -1352398994, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 1
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 32
-    tags:
-    - object
+    tag: 24000000
+    variations:
+    - Keys: 20000000
+      Values: 08000000
   - texture: {fileID: -998305759, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 1
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 64
-    tags:
-    - animal
-    - object
+    tag: 24000000
+    variations: []
   - texture: {fileID: 965581776, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 1
     colors: 18
-    tags:
-    - food
+    tag: 00000000
+    variations:
+    - Keys: 0200000010000000
+      Values: 0100000010000000
+    - Keys: 0200000010000000
+      Values: 0100000008000000
+    - Keys: 0200000010000000
+      Values: 0200000008000000
   - texture: {fileID: -32289601, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 2
-    colors: 160
-    tags:
-    - nature
-    - food
-    - 
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
+    colors: 48
+    tag: 0000000027000000
+    variations:
+    - Keys: 1000000020000000
+      Values: 0100000001000000
+    - Keys: 1000000020000000
+      Values: 1000000010000000
   - texture: {fileID: 663573739, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
-    strokeComplexity: 4
-    colors: 1
-    tags:
-    - steven
+    strokeComplexity: 1
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 1
+    colors: 5
+    tag: 28000000
+    variations:
+    - Keys: 0100000004000000
+      Values: 0100000002000000
+    - Keys: 0100000004000000
+      Values: 0100000008000000
+    - Keys: 0100000004000000
+      Values: 0100000010000000
+    - Keys: 0100000004000000
+      Values: 0100000020000000
+    - Keys: 0100000004000000
+      Values: 0100000040000000
+    - Keys: 0100000004000000
+      Values: 0100000080000000
   - texture: {fileID: -803623279, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 3
-    colors: 1
-    tags:
-    - steven
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 1
+    colors: 5
+    tag: 0a000000
+    variations:
+    - Keys: 0100000004000000
+      Values: 0400000004000000
   - texture: {fileID: -1674091701, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
-    strokeComplexity: 4
-    colors: 32
-    tags:
-    - steven
+    strokeComplexity: 3
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
+    colors: 48
+    tag: 2d00000020000000
+    variations:
+    - Keys: 1000000020000000
+      Values: 1000000004000000
+    - Keys: 1000000020000000
+      Values: 1000000002000000
+    - Keys: 1000000020000000
+      Values: 1000000008000000
+    - Keys: 1000000020000000
+      Values: 1000000010000000
+    - Keys: 1000000020000000
+      Values: 1000000040000000
+    - Keys: 1000000020000000
+      Values: 1000000080000000
   - texture: {fileID: -708692506, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
-    strokeComplexity: 4
-    colors: 1
-    tags:
-    - steven
+    strokeComplexity: 2
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 17
+    tag: 0a0000000b000000
+    variations:
+    - Keys: 0100000010000000
+      Values: 1000000010000000
   - texture: {fileID: -140473230, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 4
-    colors: 32
-    tags:
-    - steven
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 7
+    tag: 2d000000
+    variations:
+    - Keys: 010000000200000004000000
+      Values: 010000000100000004000000
+    - Keys: 010000000200000004000000
+      Values: 020000000200000004000000
   - texture: {fileID: 1499701113, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 3
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 32
-    tags:
-    - steven
+    tag: 37000000
+    variations:
+    - Keys: 20000000
+      Values: 01000000
   - texture: {fileID: -1184971904, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 4
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 36
-    tags:
-    - steven
+    tag: 37000000
+    variations:
+    - Keys: 0400000020000000
+      Values: 0100000001000000
+    - Keys: 0400000020000000
+      Values: 2000000020000000
   - texture: {fileID: 926219417, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 4
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 36
-    tags:
-    - steven
+    tag: 37000000
+    variations:
+    - Keys: 0400000020000000
+      Values: 0100000001000000
+    - Keys: 0400000020000000
+      Values: 2000000020000000
   - texture: {fileID: 1368953204, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
-    strokeComplexity: 2
-    colors: 1
-    tags:
-    - broccoli
+    strokeComplexity: 3
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 129
+    tag: 0a0000000d000000
+    variations:
+    - Keys: 0100000080000000
+      Values: 8000000080000000
   - texture: {fileID: -1785202457, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 32
-    tags:
-    - broccoli
+    tag: 000000000600000036000000
+    variations:
+    - Keys: 20000000
+      Values: 01000000
   - texture: {fileID: -1315065277, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 3
-    colors: 1
-    tags:
-    - broccoli
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 9
+    tag: 1a000000
+    variations:
+    - Keys: 0100000008000000
+      Values: 0800000008000000
   - texture: {fileID: -950478479, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 3
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 32
-    tags:
-    - broccoli
+    tag: 000000000600000036000000
+    variations:
+    - Keys: 20000000
+      Values: 01000000
   - texture: {fileID: 1408341014, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
-    strokeComplexity: 1
+    strokeComplexity: 3
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 1
     colors: 1
-    tags:
-    - sky
-    - future
+    tag: 1a000000
+    variations:
+    - Keys: 01000000
+      Values: 02000000
   - texture: {fileID: -2086914744, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 1
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 8
-    tags:
-    - sky
-    - future
+    tag: 040000000500000016000000
+    variations:
+    - Keys: 08000000
+      Values: 01000000
   - texture: {fileID: 1630469563, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 2
-    colors: 1
-    tags:
-    - future
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 16
+    tag: 04000000050000001600000031000000
+    variations: []
   - texture: {fileID: -495179908, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
-    strokeComplexity: 2
+    strokeComplexity: 4
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 1
     colors: 6
-    tags:
-    - future
+    tag: 16000000
+    variations:
+    - Keys: 0200000004000000
+      Values: 0100000001000000
   - texture: {fileID: -1310412719, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 3
-    colors: 1
-    tags:
-    - future
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 1
+    colors: 66
+    tag: 1600000005000000
+    variations:
+    - Keys: 0200000040000000
+      Values: 0100000001000000
+    - Keys: 0200000040000000
+      Values: 0200000020000000
+    - Keys: 0200000040000000
+      Values: 0200000004000000
   - texture: {fileID: 37601071, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
-    strokeComplexity: 3
-    colors: 73
-    tags:
-    - future
+    strokeComplexity: 4
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 1
+    colors: 74
+    tag: 1600000005000000
+    variations:
+    - Keys: 020000000800000040000000
+      Values: 010000000100000001000000
+    - Keys: 020000000800000040000000
+      Values: 020000000800000020000000
+    - Keys: 020000000800000040000000
+      Values: 020000000800000004000000
   - texture: {fileID: 1421142349, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 2
-    colors: 1
-    tags:
-    - future
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 128
+    tag: 0a0000000c000000
+    variations:
+    - Keys: 80000000
+      Values: 08000000
   - texture: {fileID: -961730778, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 160
-    tags:
-    - future
+    tag: 1600000005000000
+    variations:
+    - Keys: 2000000080000000
+      Values: 0100000001000000
+    - Keys: 2000000080000000
+      Values: 2000000010000000
   - texture: {fileID: -1018187418, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 2
-    colors: 1
-    tags:
-    - future
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 10
+    tag: 220000002a000000
+    variations:
+    - Keys: 0200000008000000
+      Values: 0100000001000000
   - texture: {fileID: 674962274, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 33
-    tags:
-    - future
+    tag: 160000002a000000
+    variations:
+    - Keys: 0100000020000000
+      Values: 0100000001000000
   - texture: {fileID: -896383443, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
-    strokeComplexity: 2
-    colors: 1
-    tags: []
-  - texture: {fileID: 1815841805, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 3
-    colors: 17
-    tags: []
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 32
+    tag: 1200000019000000
+    variations:
+    - Keys: 20000000
+      Values: 02000000
+    - Keys: 20000000
+      Values: 80000000
+  - texture: {fileID: 1815841805, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 4
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
+    colors: 18
+    tag: 16000000
+    variations:
+    - Keys: 0200000010000000
+      Values: 0100000010000000
   - texture: {fileID: 181260120, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 1
-    colors: 1
-    tags:
-    - bear
-    - animal
-  - texture: {fileID: 902577067, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
-    strokeComplexity: 1
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 8
-    tags:
-    - bear
-    - animal
-  - texture: {fileID: 777002867, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    tag: 2c000000
+    variations: []
+  - texture: {fileID: 902577067, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 4
-    colors: 1
-    tags:
-    - bear
-    - animal
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
+    colors: 8
+    tag: 260000000a0000000b000000
+    variations:
+    - Keys: 08000000
+      Values: 01000000
+  - texture: {fileID: 777002867, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 1
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 4
+    tag: 38000000
+    variations: []
   - texture: {fileID: -1012297363, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 4
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 2
-    tags:
-    - bear
-    - animal
+    tag: 0b0000000a00000026000000
+    variations:
+    - Keys: 02000000
+      Values: 01000000
   - texture: {fileID: -297107884, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
-    strokeComplexity: 1
+    strokeComplexity: 2
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 16
-    tags:
-    - finance
+    tag: 2500000034000000
+    variations: []
   - texture: {fileID: -416788246, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 1
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - finance
+    tag: 25000000
+    variations: []
   - texture: {fileID: -266445017, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 1
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 33
-    tags:
-    - finance
+    tag: 25000000
+    variations: []
   - texture: {fileID: -2020987275, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 1
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 5
-    tags: []
+    tag: 25000000
+    variations: []
   - texture: {fileID: 409157812, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 3
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 48
-    tags:
-    - finance
+    tag: 2500000034000000
+    variations: []
   - texture: {fileID: 816126269, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 1
-    colors: 1
-    tags:
-    - fish
-    - animal
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 65
+    tag: 0a0000000c000000
+    variations:
+    - Keys: 0100000040000000
+      Values: 0100000001000000
+    - Keys: 0100000040000000
+      Values: 4000000040000000
+    - Keys: 0100000040000000
+      Values: 0800000008000000
+    - Keys: 0100000040000000
+      Values: 0100000008000000
+    - Keys: 0100000040000000
+      Values: 0100000004000000
+    - Keys: 0100000040000000
+      Values: 0400000004000000
   - texture: {fileID: 1045535431, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
-    strokeComplexity: 1
-    colors: 64
-    tags:
-    - fish
-    - animal
-  - texture: {fileID: 1382404541, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
-    strokeComplexity: 1
-    colors: 8
-    tags:
-    - fish
-    - animal
-  - texture: {fileID: 1863870307, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 5
+    tag: 38000000
+    variations: []
+  - texture: {fileID: 1382404541, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 3
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
+    colors: 137
+    tag: 150000000f000000
+    variations:
+    - Keys: 010000000800000080000000
+      Values: 010000000100000001000000
+  - texture: {fileID: 1863870307, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
+    strokeComplexity: 3
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - finance
+    tag: 25000000
+    variations:
+    - Keys: 01000000
+      Values: 08000000
   - texture: {fileID: 1545004651, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
-    strokeComplexity: 1
-    colors: 1
-    tags:
-    - rain
-    - object
+    strokeComplexity: 2
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 1
+    colors: 130
+    tag: 1800000022000000
+    variations:
+    - Keys: 0200000080000000
+      Values: 0100000004000000
+    - Keys: 0200000080000000
+      Values: 0100000008000000
+    - Keys: 0200000080000000
+      Values: 0100000010000000
+    - Keys: 0200000080000000
+      Values: 0100000020000000
+    - Keys: 0200000080000000
+      Values: 0100000040000000
+    - Keys: 0200000080000000
+      Values: 0100000080000000
+    - Keys: 0200000080000000
+      Values: 0200000004000000
+    - Keys: 0200000080000000
+      Values: 0200000008000000
+    - Keys: 0200000080000000
+      Values: 0200000010000000
+    - Keys: 0200000080000000
+      Values: 0200000020000000
+    - Keys: 0200000080000000
+      Values: 0200000040000000
+    - Keys: 0200000080000000
+      Values: 0200000080000000
   - texture: {fileID: 1966005646, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
-    strokeComplexity: 4
-    colors: 1
-    tags:
-    - rain
-    - object
+    strokeComplexity: 1
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 16
+    tag: 00000000
+    variations: []
   - texture: {fileID: -67492936, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 4
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 16
-    tags:
-    - rain
-    - object
+    tag: 18000000
+    variations:
+    - Keys: 10000000
+      Values: 01000000
   - texture: {fileID: -594815916, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 1
-    colors: 128
-    tags:
-    - rain
-    - object
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 9
+    tag: 1a000000
+    variations:
+    - Keys: 0100000008000000
+      Values: 0100000001000000
   - texture: {fileID: -1679566832, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 2
-    colors: 64
-    tags:
-    - rain
-    - object
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 5
+    tag: 00000000
+    variations:
+    - Keys: 0100000004000000
+      Values: 0100000001000000
+    - Keys: 0100000004000000
+      Values: 0100000040000000
   - texture: {fileID: 21885822, guid: a6b31de0277b6254d9f0bf237636bf65, type: 3}
     strokeComplexity: 1
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - kanji
+    tag: 39000000
+    variations: []
   - texture: {fileID: -457747520, guid: a6b31de0277b6254d9f0bf237636bf65, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - kanji
+    tag: 39000000
+    variations: []
   - texture: {fileID: -1538444078, guid: a6b31de0277b6254d9f0bf237636bf65, type: 3}
     strokeComplexity: 1
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - kanji
+    tag: 39000000
+    variations: []
   - texture: {fileID: 1418558720, guid: a6b31de0277b6254d9f0bf237636bf65, type: 3}
     strokeComplexity: 1
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - kanji
+    tag: 39000000
+    variations: []
   - texture: {fileID: -1984442454, guid: a6b31de0277b6254d9f0bf237636bf65, type: 3}
     strokeComplexity: 1
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - kanji
+    tag: 39000000
+    variations: []
   - texture: {fileID: 1276549086, guid: a6b31de0277b6254d9f0bf237636bf65, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - kanji
+    tag: 39000000
+    variations: []
   - texture: {fileID: -1850759135, guid: a6b31de0277b6254d9f0bf237636bf65, type: 3}
     strokeComplexity: 4
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - kanji
+    tag: 39000000
+    variations: []
   - texture: {fileID: 1595139034, guid: a6b31de0277b6254d9f0bf237636bf65, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - kanji
+    tag: 39000000
+    variations: []
   - texture: {fileID: 893931495, guid: a6b31de0277b6254d9f0bf237636bf65, type: 3}
     strokeComplexity: 3
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - kanji
+    tag: 39000000
+    variations: []
   - texture: {fileID: -1795862204, guid: a6b31de0277b6254d9f0bf237636bf65, type: 3}
     strokeComplexity: 1
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - kanji
+    tag: 39000000
+    variations: []
   - texture: {fileID: 519543036, guid: a6b31de0277b6254d9f0bf237636bf65, type: 3}
     strokeComplexity: 1
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - kanji
+    tag: 39000000
+    variations: []
   - texture: {fileID: -1215280143, guid: a6b31de0277b6254d9f0bf237636bf65, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - kanji
+    tag: 39000000
+    variations: []
   - texture: {fileID: 1855212351, guid: a6b31de0277b6254d9f0bf237636bf65, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - kanji
+    tag: 39000000
+    variations: []
   - texture: {fileID: 1583153781, guid: a6b31de0277b6254d9f0bf237636bf65, type: 3}
     strokeComplexity: 1
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - kanji
+    tag: 39000000
+    variations: []
   - texture: {fileID: 911784937, guid: a6b31de0277b6254d9f0bf237636bf65, type: 3}
     strokeComplexity: 4
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - kanji
+    tag: 39000000
+    variations: []
   - texture: {fileID: -1633561186, guid: a6b31de0277b6254d9f0bf237636bf65, type: 3}
     strokeComplexity: 4
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - kanji
+    tag: 39000000
+    variations: []
   - texture: {fileID: 730726451, guid: a6b31de0277b6254d9f0bf237636bf65, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - kanji
+    tag: 39000000
+    variations: []
   - texture: {fileID: 409478778, guid: a6b31de0277b6254d9f0bf237636bf65, type: 3}
     strokeComplexity: 1
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - kanji
+    tag: 39000000
+    variations: []
   - texture: {fileID: 1445935536, guid: a6b31de0277b6254d9f0bf237636bf65, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - kanji
+    tag: 39000000
+    variations: []
   - texture: {fileID: 2012689524, guid: a6b31de0277b6254d9f0bf237636bf65, type: 3}
     strokeComplexity: 1
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - kanji
+    tag: 39000000
+    variations: []
   - texture: {fileID: -1867535191, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
-    strokeComplexity: 2
+    strokeComplexity: 4
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 12
-    tags:
-    - bear
+    tag: 26000000
+    variations: []
   - texture: {fileID: 920518032, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 64
-    tags:
-    - nature
-    - rain
+    tag: 18000000
+    variations: []
   - texture: {fileID: 254499724, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
-    strokeComplexity: 2
-    colors: 1
-    tags:
-    - cartoon
+    strokeComplexity: 3
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 3
+    tag: 08000000
+    variations: []
   - texture: {fileID: -530371770, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
-    strokeComplexity: 2
+    strokeComplexity: 3
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 128
-    tags:
-    - cartoon
-    - rain
+    tag: 08000000
+    variations: []
   - texture: {fileID: 95446062, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 4
-    tags:
-    - cartoon
-    - edgy
+    tag: 07000000
+    variations:
+    - Keys: 04000000
+      Values: 01000000
   - texture: {fileID: -995275893, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 2
-    tags:
-    - cartoon
-    - future
+    tag: 07000000
+    variations:
+    - Keys: 02000000
+      Values: 01000000
   - texture: {fileID: -1478893021, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 4
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 1
     colors: 1
-    tags:
-    - hand
+    tag: 17000000
+    variations: []
   - texture: {fileID: -1926194443, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 4
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 1
     colors: 1
-    tags:
-    - hand
+    tag: 17000000
+    variations: []
   - texture: {fileID: -684448196, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 1
     colors: 1
-    tags:
-    - hand
+    tag: 17000000
+    variations: []
   - texture: {fileID: -1159353211, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 64
-    tags:
-    - cartoon
-    - cute
-    - rain
+    tag: 0700000018000000
+    variations:
+    - Keys: 40000000
+      Values: 01000000
   - texture: {fileID: -189259515, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 4
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 1
     colors: 1
-    tags:
-    - hand
+    tag: 17000000
+    variations: []
   - texture: {fileID: 17734240, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 32
-    tags:
-    - animal
-    - nature
+    tag: 0a0000000e000000
+    variations:
+    - Keys: 20000000
+      Values: 80000000
   - texture: {fileID: 1413654157, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
-    strokeComplexity: 1
-    colors: 4
-    tags:
-    - object
-    - cute
+    strokeComplexity: 3
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
+    colors: 41
+    tag: 07000000
+    variations:
+    - Keys: 010000000800000020000000
+      Values: 010000000100000020000000
   - texture: {fileID: 245075934, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 1
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 8
-    tags:
-    - edgy
-    - nature
+    tag: 020000001100000010000000
+    variations:
+    - Keys: 08000000
+      Values: 40000000
+    - Keys: 08000000
+      Values: 20000000
   - texture: {fileID: 1248217033, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 24
-    tags:
-    - edgy
-    - nature
+    tag: 020000001100000010000000
+    variations:
+    - Keys: 0800000010000000
+      Values: 4000000002000000
+    - Keys: 0800000010000000
+      Values: 2000000010000000
   - texture: {fileID: 195646765, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
-    strokeComplexity: 2
+    strokeComplexity: 3
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 8
-    tags:
-    - object
+    tag: 24000000
+    variations:
+    - Keys: 08000000
+      Values: 01000000
   - texture: {fileID: -134486389, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
-    strokeComplexity: 1
+    strokeComplexity: 2
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 3
-    tags:
-    - future
+    tag: 1600000005000000
+    variations: []
   - texture: {fileID: -673071905, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 9
-    tags:
-    - animal
-    - cute
-    - cat
+    tag: 150000000f000000
+    variations:
+    - Keys: 0100000008000000
+      Values: 0100000001000000
+    - Keys: 0100000008000000
+      Values: 0100000002000000
   - texture: {fileID: 2041467966, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 2
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - number
+    tag: 13000000
+    variations: []
   - texture: {fileID: -280290409, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 3
+    allowHorizontalFlip: 0
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - number
+    tag: 13000000
+    variations: []
   - texture: {fileID: 173312576, guid: 53e3c02b57a89684aa0521c38fdfb5af, type: 3}
     strokeComplexity: 3
+    allowHorizontalFlip: 1
+    allowVerticalFlip: 0
     colors: 1
-    tags:
-    - number
+    tag: 13000000
+    variations: []

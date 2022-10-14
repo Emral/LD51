@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Tags
   m_EditorClassIdentifier: 
   tags:
-  - Nature
+  - Food
   - Landscape
+  - Nature
   - Plants
   - Sky
   - Space
-  - Food
   - Vegetable
   - Cartoon
   - Yokai
@@ -52,3 +52,22 @@ MonoBehaviour:
   - Object
   - Finance
   - Bear
+  - Fruit
+  - Music
+  - Medieval
+  - Weapon
+  - Pet
+  - Nick
+  - Christmas
+  - Thunder
+  - Vehicle
+  - Windy
+  - Beautiful
+  - Elvis
+  - Pingus
+  - Expensive
+  - Night
+  - Broccoli
+  - BroccoliSteven
+  - Love
+  - Kanji

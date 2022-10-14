@@ -5264,23 +5264,23 @@ MonoBehaviour:
       time: 0
       value: 0
       inSlope: 0
-      outSlope: 0.0059588808
+      outSlope: 0.0062479745
       tangentMode: 65
       weightedMode: 0
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.4003495
+      time: 0.38182533
       value: 0.002385635
-      inSlope: 0.0059588808
+      inSlope: 0.0062479745
       outSlope: 0.20102148
       tangentMode: 5
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 1
     - serializedVersion: 3
-      time: 0.5077575
-      value: 0.3005304
+      time: 0.47223502
+      value: 0.4939508
       inSlope: 0.4385668
       outSlope: 0.4385668
       tangentMode: 0

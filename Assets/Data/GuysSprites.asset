@@ -12,243 +12,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 533883afc7d4db84c9eea5990a0654d1, type: 3}
   m_Name: GuysSprites
   m_EditorClassIdentifier: 
-  sprites:
-  - sprite: {fileID: 21300000, guid: 61d2bcc745802c643a82976587dcba55, type: 3}
-    bias: 0
-    weight: 10
-    RainOnly: 0
-    SunOnly: 1
-    ArrivalSound: 100
-    preferredTags:
-    - object
-    - landscape
-    - cartoon
-  - sprite: {fileID: 21300000, guid: a6ba82f98f6b92a459a0848a77001c5c, type: 3}
-    bias: -1
-    weight: 10
-    RainOnly: 0
-    SunOnly: 1
-    ArrivalSound: 101
-    preferredTags:
-    - finance
-    - object
-  - sprite: {fileID: 21300000, guid: cf517c3430106ed4bb9922122d304f71, type: 3}
-    bias: 0
-    weight: 1
-    RainOnly: 1
-    SunOnly: 0
-    ArrivalSound: 102
-    preferredTags:
-    - cartoon
-    - edgy
-  - sprite: {fileID: 21300000, guid: d80bd5362f990bf42bbaf28fc2854cf7, type: 3}
-    bias: 0.21
-    weight: 10
-    RainOnly: 0
-    SunOnly: 1
-    ArrivalSound: 103
-    preferredTags:
-    - nature
-    - fish
-    - food
-  - sprite: {fileID: 21300000, guid: de81271c48dc4734a9b0ff83f7ad06c4, type: 3}
-    bias: 0.7
-    weight: 5
-    RainOnly: 1
-    SunOnly: 0
-    ArrivalSound: 104
-    preferredTags:
-    - food
-    - landscape
-  - sprite: {fileID: 21300000, guid: 34777c4d683142d4f80c5507b1d8b710, type: 3}
-    bias: 0
-    weight: 3
-    RainOnly: 0
-    SunOnly: 0
-    ArrivalSound: 105
-    preferredTags:
-    - person
-  - sprite: {fileID: 21300000, guid: b225e12fea58d04419588791a34c7c64, type: 3}
-    bias: -0.13
-    weight: 10
-    RainOnly: 1
-    SunOnly: 0
-    ArrivalSound: 106
-    preferredTags:
-    - cute
-    - cartoon
-  - sprite: {fileID: 21300000, guid: 9a01a33868c129248907fdd172e20b62, type: 3}
-    bias: -1.4
-    weight: 10
-    RainOnly: 0
-    SunOnly: 1
-    ArrivalSound: 107
-    preferredTags:
-    - food
-    - animal
-  - sprite: {fileID: 21300000, guid: f56d373bb6bac154f9f2bd0d543b6bdc, type: 3}
-    bias: -0.99
-    weight: 2
-    RainOnly: 1
-    SunOnly: 0
-    ArrivalSound: 109
-    preferredTags:
-    - steven
-  - sprite: {fileID: 21300000, guid: 670f2ddd19ba2044199b7e709dad6027, type: 3}
-    bias: 0.36
-    weight: 10
-    RainOnly: 1
-    SunOnly: 0
-    ArrivalSound: 110
-    preferredTags:
-    - cute
-  - sprite: {fileID: 21300000, guid: 3551be94127627c469f75d6db7380f12, type: 3}
-    bias: 1.4
-    weight: 10
-    RainOnly: 0
-    SunOnly: 1
-    ArrivalSound: 111
-    preferredTags:
-    - cute
-    - animal
-    - nature
-  - sprite: {fileID: 21300000, guid: 9f4e9826778b86f43a571279d0e0647f, type: 3}
-    bias: 0
-    weight: 5
-    RainOnly: 0
-    SunOnly: 1
-    ArrivalSound: 112
-    preferredTags:
-    - sky
-    - bird
-    - cartoon
-  - sprite: {fileID: 21300000, guid: fdb2229288afb5d49aa56d5c02abc9d6, type: 3}
-    bias: 0
-    weight: 3
-    RainOnly: 0
-    SunOnly: 1
-    ArrivalSound: 113
-    preferredTags:
-    - cartoon
-    - cute
-  - sprite: {fileID: 21300000, guid: 7e0691a1d63e6eb4c958fb29070b087e, type: 3}
-    bias: -0.16
-    weight: 10
-    RainOnly: 0
-    SunOnly: 1
-    ArrivalSound: 114
-    preferredTags:
-    - cartoon
-    - edgy
-    - landscape
-  - sprite: {fileID: 21300000, guid: b52239143374907438a04f7546fe0d34, type: 3}
-    bias: 0
-    weight: 10
-    RainOnly: 1
-    SunOnly: 0
-    ArrivalSound: 115
-    preferredTags:
-    - edgy
-    - sky
-    - finance
-  - sprite: {fileID: 21300000, guid: 96217f7a382f6bc4783843ed5993a171, type: 3}
-    bias: 0.98
-    weight: 5
-    RainOnly: 0
-    SunOnly: 1
-    ArrivalSound: 108
-    preferredTags:
-    - broccoli
-  - sprite: {fileID: 21300000, guid: 5eeb5f059c950cc46aa89f431f48bb47, type: 3}
-    bias: -1.7
-    weight: 5
-    RainOnly: 1
-    SunOnly: 0
-    ArrivalSound: 116
-    preferredTags:
-    - cartoon
-  - sprite: {fileID: 21300000, guid: 743f8f52daa12444184ec4acfb2d637c, type: 3}
-    bias: 0
-    weight: 10
-    RainOnly: 1
-    SunOnly: 0
-    ArrivalSound: 117
-    preferredTags:
-    - bird
-    - nature
-  - sprite: {fileID: 21300000, guid: 9424727fc72e6e4458e99b173650e9bf, type: 3}
-    bias: 0.21
-    weight: 5
-    RainOnly: 1
-    SunOnly: 0
-    ArrivalSound: 118
-    preferredTags:
-    - cat
-    - cute
-  - sprite: {fileID: 21300000, guid: fcfe50b64e6ac7144a5fa340b2f940a2, type: 3}
-    bias: 0.29
-    weight: 5
-    RainOnly: 1
-    SunOnly: 0
-    ArrivalSound: 119
-    preferredTags:
-    - object
-    - cute
-  - sprite: {fileID: 21300000, guid: 15dd6c2f05b1bd4499b5b820dd37f44f, type: 3}
-    bias: -0.47
-    weight: 2
-    RainOnly: 0
-    SunOnly: 0
-    ArrivalSound: 122
-    preferredTags:
-    - kanji
-  - sprite: {fileID: 21300000, guid: 142a8903847610d4189299a0c890415f, type: 3}
-    bias: 0.83
-    weight: 3
-    RainOnly: 0
-    SunOnly: 0
-    ArrivalSound: 121
-    preferredTags:
-    - future
-  - sprite: {fileID: 21300000, guid: fa00cb73c3e501b44baf6901cc81d950, type: 3}
-    bias: 0.68
-    weight: 1
-    RainOnly: 0
-    SunOnly: 1
-    ArrivalSound: 125
-    preferredTags:
-    - sandwich
-  - sprite: {fileID: 21300000, guid: b44e15d6f6a76b143b004a0563e3add5, type: 3}
-    bias: 0
-    weight: 6
-    RainOnly: 0
-    SunOnly: 0
-    ArrivalSound: 126
-    preferredTags:
-    - landscape
-    - cartoon
-  - sprite: {fileID: 21300000, guid: a3f00b5a9809e4041b518249b49fba8b, type: 3}
-    bias: -2
-    weight: 1
-    RainOnly: 0
-    SunOnly: 0
-    ArrivalSound: 124
-    preferredTags:
-    - finance
-    - bear
-  - sprite: {fileID: 21300000, guid: b01bd8d47b373ab4592635e10151f7cc, type: 3}
-    bias: -1
-    weight: 3
-    RainOnly: 0
-    SunOnly: 0
-    ArrivalSound: 120
-    preferredTags:
-    - number
-  - sprite: {fileID: 21300000, guid: da469ff651a9a6f48b6794031d219b27, type: 3}
-    bias: 0
-    weight: 3
-    RainOnly: 0
-    SunOnly: 0
-    ArrivalSound: 0
-    preferredTags:
-    - hand
+  guys:
+  - {fileID: 11400000, guid: ef28782ff7f34064ab8243635e690a57, type: 2}
+  - {fileID: 11400000, guid: 29a3740aa6c2b49498910ec439fd12d7, type: 2}
+  - {fileID: 11400000, guid: 37e380aba7c83e447bd5c08107a830d7, type: 2}
+  - {fileID: 11400000, guid: cceeabee0d242924f9c2bec6166e1d67, type: 2}
+  - {fileID: 11400000, guid: c9630bd05cef71b43b485aa445ab4376, type: 2}
+  - {fileID: 11400000, guid: 2a3582c4c652add418771eb6b0600be0, type: 2}
+  - {fileID: 11400000, guid: d0d22cf6570677d4b949b4b2c5402823, type: 2}
+  - {fileID: 11400000, guid: 69360398ba9efa84c918b4fe13babde9, type: 2}
+  - {fileID: 11400000, guid: 3f7e66ad00107a84185c849c21b11c21, type: 2}
+  - {fileID: 11400000, guid: f30575889544ede4fb51c76bffd5e1ad, type: 2}
+  - {fileID: 11400000, guid: defa4c2028b70d244a69f93e75ccea3c, type: 2}
+  - {fileID: 11400000, guid: 3b6537da1de4bad48a220653251982d0, type: 2}
+  - {fileID: 11400000, guid: ac0ffe5efe5a4d74687b908b607fcdad, type: 2}
+  - {fileID: 11400000, guid: 65aca65349fd1d64ca385916e280b91f, type: 2}
+  - {fileID: 11400000, guid: 5be824ffa68bbf94496753b54e7a0018, type: 2}
+  - {fileID: 11400000, guid: 431f6b4362418044a9da47a4b41f7e48, type: 2}
+  - {fileID: 11400000, guid: b4e8c4a173078bf479da64b90dbd358c, type: 2}
+  - {fileID: 11400000, guid: 1d2bf6af1b2e8c641818d9bfabe3bcca, type: 2}
+  - {fileID: 11400000, guid: 3e4bc00f2ab352648bc54c17f4014078, type: 2}
+  - {fileID: 11400000, guid: 5124040221a242c4d852ed4581d7ed58, type: 2}
+  - {fileID: 11400000, guid: 47c9b0e890e2cdf4686a423da1bc507e, type: 2}
+  - {fileID: 11400000, guid: 87d7f83c265ad9c4c8d281aa4de15fdf, type: 2}
+  - {fileID: 11400000, guid: 8143b6eac1460ed46bf77389ede32ca9, type: 2}
+  - {fileID: 11400000, guid: b2620c3992c9c6d428e3d545e35d50b9, type: 2}
+  - {fileID: 11400000, guid: 855c617c51cebf948886698b711d7f7c, type: 2}
+  - {fileID: 11400000, guid: 420d055f9e4403f40a1b282780ace1d6, type: 2}
+  - {fileID: 11400000, guid: 3ea1755735a508a47b4374a84604caba, type: 2}
+  - {fileID: 11400000, guid: 057f7c99faf84f847ae17a2a8d90080a, type: 2}
+  - {fileID: 11400000, guid: ab1fbd1733dd2a1419b6ede5e639218f, type: 2}
+  - {fileID: 11400000, guid: 62ec8215a6a2f63499d2072555c6fe6b, type: 2}
+  - {fileID: 11400000, guid: 630cf6cd82897ff4fa4b8d72f54613f2, type: 2}
+  - {fileID: 11400000, guid: 47eaa58d06330c14da64233aec3f2034, type: 2}
+  - {fileID: 11400000, guid: 16d9170420ba84346bc54e716da5b206, type: 2}
+  - {fileID: 11400000, guid: f1df92c6ef670924ea85ca8e2872285d, type: 2}

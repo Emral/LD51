@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
+using Sirenix.OdinInspector;
 
 [System.Serializable]
 public class GuySprite
@@ -18,25 +20,48 @@ public class GuySprite
 [CreateAssetMenu(fileName = "GuysSprites", menuName = "Data/Guys")]
 public class GuySprites : ScriptableObject
 {
-    public List<GuySprite> sprites;
+    [AssetList(AssetNamePrefix = "Guy_", AutoPopulate = true)]
+    public List<Guy> guys;
 
-    private List<GuySprite> weighted;
+    private List<Guy> weighted;
 
     public void ResetAll()
     {
-        weighted = new List<GuySprite>();
+        weighted = new List<Guy>();
 
-        for (int i = 0; i < sprites.Count; i++)
+        for (int i = 0; i < guys.Count; i++)
         {
-            if ((sprites[i].RainOnly && DayManager.Globals.IsRaining) || (sprites[i].SunOnly && !DayManager.Globals.IsRaining) || (!sprites[i].RainOnly && !sprites[i].SunOnly))
-                for (int j = 0; j < sprites[i].weight; j++)
+            var guy = guys[i];
+
+            if (guy.OnlyAppearIfDayPrefersTag)
+            {
+                var stays = false;
+                foreach (var tag in guy.preferredTags)
                 {
-                    weighted.Add(sprites[i]);
+                    if (DayManager.Globals.tagBiases.Contains(tag))
+                    {
+                        stays = true;
+                        break;
+                    }
                 }
+
+                if (!stays)
+                {
+                    continue;
+                }
+            }
+
+            if (guy.appearanceWeights.Keys.Contains(SessionVariables.UpcomingWeathers[0]) && guy.seasonAppearanceMultipliers.Keys.Contains(SessionVariables.GetSeason()))
+            {
+                for (int j = 0; j < Mathf.FloorToInt(guy.appearanceWeights[SessionVariables.UpcomingWeathers[0]].WeightValue * guy.seasonAppearanceMultipliers[SessionVariables.GetSeason()].Multiplier); j++)
+                {
+                    weighted.Add(guys[i]);
+                }
+            }
         }
     }
 
-    public GuySprite GetRandom()
+    public Guy GetRandom()
     {
         return weighted[Random.Range(0, weighted.Count)];
     }

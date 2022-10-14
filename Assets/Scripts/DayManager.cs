@@ -18,7 +18,7 @@ public class DayManager : MonoBehaviour
 
     public GuySprites guys;
 
-    private GuySprite _currentGuy;
+    private Guy _currentGuy;
 
     public Image Test1;
     public Image Test2;
@@ -42,7 +42,7 @@ public class DayManager : MonoBehaviour
     public static UnityEvent OnDayEnd = new UnityEvent();
 
     public static UnityEvent<float> OnSubmit = new UnityEvent<float>();
-    public static UnityEvent<GuySprite> OnNewGuy = new UnityEvent<GuySprite>();
+    public static UnityEvent<Guy> OnNewGuy = new UnityEvent<Guy>();
 
     private Sprite __currentGuessable;
     private Sprite _currentGuessable
@@ -71,7 +71,7 @@ public class DayManager : MonoBehaviour
         }
         if (Globals.IsRaining)
         {
-            DayManager.Globals.tagBiases.Add("rain");
+            DayManager.Globals.tagBiases.Add(Tag.Rain);
         }
         guys.ResetAll();
         NewGuessable();
@@ -274,7 +274,7 @@ public class DayManager : MonoBehaviour
         while (_currentGuessable == null)
         {
             _currentGuy = guys.GetRandom();
-            _currentGuessable = imageCandidates.GetRandom(_currentGuy.bias, _currentGuy.preferredTags);
+            _currentGuessable = imageCandidates.GetRandom(_currentGuy);
 
             if (_currentGuessable == null)
             {
@@ -286,7 +286,7 @@ public class DayManager : MonoBehaviour
         OnNewGuy.Invoke(_currentGuy);
     }
 
-    private async void CompareImages(Texture2D drawn, Texture2D wanted)
+    private void CompareImages(Texture2D drawn, Texture2D wanted)
     {
         var similarity = DrawComparison.CompareImages(drawn, wanted, out Texture2D a, out Texture2D b);
 

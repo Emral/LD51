@@ -10,6 +10,9 @@ public class GuyDisplay : MonoBehaviour
 
     private Vector3 guyPosition;
 
+    private Ease inEase = Ease.InBack;
+    private Ease outEase = Ease.OutBack;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,9 +33,11 @@ public class GuyDisplay : MonoBehaviour
         guyImage.transform.DOLocalMoveX(guyPosition.x - 160, 0.4f).SetEase(Ease.InBack);
     }
 
-    private void OnNewGuy(GuySprite a)
+    private void OnNewGuy(Guy a)
     {
-        guyImage.sprite = a.sprite;
+        inEase = a.leavesRightSide ? Ease.OutQuad : Ease.OutBack;
+        inEase = a.leavesRightSide ? Ease.InQuad : Ease.InBack;
+        guyImage.sprite = a.idleSprite;
         guyImage.transform.localPosition = guyPosition + Vector3.right * 160;
         guyImage.transform.DOLocalMoveX(guyPosition.x, 0.4f).SetEase(Ease.OutBack);
     }

@@ -41,6 +41,8 @@ public class Guy : SerializedScriptableObject
 
     [PreviewField(ObjectFieldAlignment.Left)]
     public Sprite idleSprite;
+    public bool leavesRightSide = false;
+
     [Range(-2, 2)]
     public float bias = 0;
     public Dictionary<Weather, Weight> appearanceWeights = new Dictionary<Weather, Weight>();

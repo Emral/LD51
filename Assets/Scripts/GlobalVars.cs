@@ -11,7 +11,7 @@ public class GlobalVars
     public bool RushHour = false;
     public bool IsRaining = false;
     public float LastGain = 0;
-    public List<string> tagBiases = new List<string>();
+    public List<Tag> tagBiases = new List<Tag>();
     public Color PenColor
     {
         get => _penColor;
