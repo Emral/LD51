@@ -17,6 +17,7 @@ public class GuyDisplay : MonoBehaviour
     void Start()
     {
         guyPosition = guyImage.transform.localPosition;
+        guyImage.transform.localPosition = guyPosition + Vector3.right * 160;
         DayManager.OnSubmit.AddListener(OnSubmit);
         DayManager.OnNewGuy.AddListener(OnNewGuy);
     }
@@ -30,15 +31,15 @@ public class GuyDisplay : MonoBehaviour
     private void OnSubmit(float a)
     {
         guyImage.transform.localPosition = guyPosition;
-        guyImage.transform.DOLocalMoveX(guyPosition.x - 160, 0.4f).SetEase(Ease.InBack);
+        guyImage.transform.DOLocalMoveX(guyPosition.x - 160, 0.4f).SetEase(outEase);
     }
 
     private void OnNewGuy(Guy a)
     {
         inEase = a.leavesRightSide ? Ease.OutQuad : Ease.OutBack;
-        inEase = a.leavesRightSide ? Ease.InQuad : Ease.InBack;
+        outEase = a.leavesRightSide ? Ease.InQuad : Ease.InBack;
         guyImage.sprite = a.idleSprite;
         guyImage.transform.localPosition = guyPosition + Vector3.right * 160;
-        guyImage.transform.DOLocalMoveX(guyPosition.x, 0.4f).SetEase(Ease.OutBack);
+        guyImage.transform.DOLocalMoveX(guyPosition.x, 0.4f).SetEase(inEase);
     }
 }

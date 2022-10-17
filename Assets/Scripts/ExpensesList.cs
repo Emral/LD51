@@ -12,13 +12,6 @@ public class ExpensesList : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (SessionVariables.RentMultiplier > 1)
-        {
-            var exp = Instantiate(expensePrefab, transform);
-            exp.transform.SetAsFirstSibling();
-
-            exp.text = "Storm - " + SessionVariables.RentMultiplier + "x";
-        }
         for (int i = SessionVariables.Expenses.Count - 1; i >= 0; i--)
         {
             var exp = Instantiate(expensePrefab, transform);

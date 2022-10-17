@@ -1,0 +1,1270 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd45070e3f153474a88be727323e7441, type: 3}
+  m_Name: Weather
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: -242181042, guid: 389bccd69ceab894b92d1750e4158cb5, type: 3}
+    - {fileID: -683680980, guid: 389bccd69ceab894b92d1750e4158cb5, type: 3}
+    - {fileID: -2127535988, guid: 9d93ef2304e8d0b46b5b4edf651acb4a, type: 3}
+    - {fileID: 1278272830, guid: fe8def34b9cef9c458dd310178f0f121, type: 3}
+    - {fileID: 1529488312, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
+    - {fileID: -2143683377, guid: 389bccd69ceab894b92d1750e4158cb5, type: 3}
+    - {fileID: 1550394282, guid: 389bccd69ceab894b92d1750e4158cb5, type: 3}
+    - {fileID: 1905037624, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
+    - {fileID: -1458780045, guid: 389bccd69ceab894b92d1750e4158cb5, type: 3}
+    - {fileID: -881454476, guid: 389bccd69ceab894b92d1750e4158cb5, type: 3}
+    - {fileID: -1488672755, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
+    - {fileID: 42950339, guid: 389bccd69ceab894b92d1750e4158cb5, type: 3}
+    - {fileID: 919066003, guid: 389bccd69ceab894b92d1750e4158cb5, type: 3}
+    - {fileID: 21300000, guid: a7e392585b9aecd4d8bbf1f5871b853c, type: 3}
+    - {fileID: 441651585, guid: 9d93ef2304e8d0b46b5b4edf651acb4a, type: 3}
+    - {fileID: 21300000, guid: 769669bf619ac2a49af42531e5be991e, type: 3}
+    - {fileID: 493965287, guid: fe8def34b9cef9c458dd310178f0f121, type: 3}
+    - {fileID: -1686759861, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
+    - {fileID: -1580113956, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
+    - {fileID: -224604990, guid: 389bccd69ceab894b92d1750e4158cb5, type: 3}
+    - {fileID: 920144725, guid: 389bccd69ceab894b92d1750e4158cb5, type: 3}
+    - {fileID: -1471771053, guid: 9d93ef2304e8d0b46b5b4edf651acb4a, type: 3}
+    - {fileID: 225279657, guid: fe8def34b9cef9c458dd310178f0f121, type: 3}
+    - {fileID: -1052792445, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
+    - {fileID: 810213386, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
+    - {fileID: 1677313940, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
+    - {fileID: -1867738658, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
+    - {fileID: -425544912, guid: 389bccd69ceab894b92d1750e4158cb5, type: 3}
+    - {fileID: -1206805055, guid: 389bccd69ceab894b92d1750e4158cb5, type: 3}
+    - {fileID: 1965332221, guid: 9d93ef2304e8d0b46b5b4edf651acb4a, type: 3}
+    - {fileID: 247249791, guid: fe8def34b9cef9c458dd310178f0f121, type: 3}
+    - {fileID: -1940875389, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: weathers
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[Weather, Assembly-CSharp],[WeatherConfig,
+        Assembly-CSharp]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.EnumEqualityComparer`1[[Weather, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 10
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 1
+    - Name: $v
+      Entry: 7
+      Data: 2|WeatherConfig, Assembly-CSharp
+    - Name: dayLength
+      Entry: 4
+      Data: 100
+    - Name: name
+      Entry: 1
+      Data: Sunny
+    - Name: drawTimerMultiplier
+      Entry: 4
+      Data: 1
+    - Name: customerDelay
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: rushHourMultiplier
+      Entry: 4
+      Data: 1
+    - Name: rushHourMinMax
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: exteriorImageDay
+      Entry: 10
+      Data: 0
+    - Name: exteriorImageNight
+      Entry: 10
+      Data: 1
+    - Name: scrollingWeatherTexture
+      Entry: 6
+      Data: 
+    - Name: scrollingWeatherTextureSpeed
+      Entry: 4
+      Data: 0
+    - Name: preScreenExterior
+      Entry: 10
+      Data: 2
+    - Name: preScreenScrollingTexture
+      Entry: 6
+      Data: 
+    - Name: preScreenScrollingTextureSpeed
+      Entry: 4
+      Data: 0
+    - Name: preScreenWindowBackground
+      Entry: 10
+      Data: 3
+    - Name: preScreenWindowScrollingTexture
+      Entry: 6
+      Data: 
+    - Name: preScreenWindowScrollingTextureSpeed
+      Entry: 4
+      Data: 0
+    - Name: weatherIcon
+      Entry: 10
+      Data: 4
+    - Name: sallyDialogue
+      Entry: 7
+      Data: 3|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 1
+      Data: Today is a nice and sunny day! This really lifts the spirits.
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: backgroundMusic
+      Entry: 3
+      Data: 3
+    - Name: weather
+      Entry: 3
+      Data: 1
+    - Name: inherentTags
+      Entry: 7
+      Data: 4|System.Collections.Generic.List`1[[Tag, Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 2
+    - Name: $v
+      Entry: 7
+      Data: 5|WeatherConfig, Assembly-CSharp
+    - Name: dayLength
+      Entry: 4
+      Data: 100
+    - Name: name
+      Entry: 1
+      Data: Overcast
+    - Name: drawTimerMultiplier
+      Entry: 4
+      Data: 1
+    - Name: customerDelay
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: rushHourMultiplier
+      Entry: 4
+      Data: 1
+    - Name: rushHourMinMax
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: exteriorImageDay
+      Entry: 10
+      Data: 5
+    - Name: exteriorImageNight
+      Entry: 10
+      Data: 6
+    - Name: scrollingWeatherTexture
+      Entry: 6
+      Data: 
+    - Name: scrollingWeatherTextureSpeed
+      Entry: 4
+      Data: 0
+    - Name: preScreenExterior
+      Entry: 10
+      Data: 2
+    - Name: preScreenScrollingTexture
+      Entry: 6
+      Data: 
+    - Name: preScreenScrollingTextureSpeed
+      Entry: 4
+      Data: 0
+    - Name: preScreenWindowBackground
+      Entry: 10
+      Data: 3
+    - Name: preScreenWindowScrollingTexture
+      Entry: 6
+      Data: 
+    - Name: preScreenWindowScrollingTextureSpeed
+      Entry: 4
+      Data: 0
+    - Name: weatherIcon
+      Entry: 10
+      Data: 7
+    - Name: sallyDialogue
+      Entry: 7
+      Data: 6|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 1
+      Data: The weather looks to be quite normal today.
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: backgroundMusic
+      Entry: 3
+      Data: 3
+    - Name: weather
+      Entry: 3
+      Data: 2
+    - Name: inherentTags
+      Entry: 7
+      Data: 7|System.Collections.Generic.List`1[[Tag, Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 3
+    - Name: $v
+      Entry: 7
+      Data: 8|WeatherConfig, Assembly-CSharp
+    - Name: dayLength
+      Entry: 4
+      Data: 100
+    - Name: name
+      Entry: 1
+      Data: Cloudy
+    - Name: drawTimerMultiplier
+      Entry: 4
+      Data: 1
+    - Name: customerDelay
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: rushHourMultiplier
+      Entry: 4
+      Data: 1
+    - Name: rushHourMinMax
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.45
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: exteriorImageDay
+      Entry: 10
+      Data: 8
+    - Name: exteriorImageNight
+      Entry: 10
+      Data: 9
+    - Name: scrollingWeatherTexture
+      Entry: 6
+      Data: 
+    - Name: scrollingWeatherTextureSpeed
+      Entry: 4
+      Data: 0
+    - Name: preScreenExterior
+      Entry: 10
+      Data: 2
+    - Name: preScreenScrollingTexture
+      Entry: 6
+      Data: 
+    - Name: preScreenScrollingTextureSpeed
+      Entry: 4
+      Data: 0
+    - Name: preScreenWindowBackground
+      Entry: 10
+      Data: 3
+    - Name: preScreenWindowScrollingTexture
+      Entry: 6
+      Data: 
+    - Name: preScreenWindowScrollingTextureSpeed
+      Entry: 4
+      Data: 0
+    - Name: weatherIcon
+      Entry: 10
+      Data: 10
+    - Name: sallyDialogue
+      Entry: 7
+      Data: 9|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 1
+      Data: A somewhat cloudy day, but overall pleasant.
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: backgroundMusic
+      Entry: 3
+      Data: 3
+    - Name: weather
+      Entry: 3
+      Data: 3
+    - Name: inherentTags
+      Entry: 7
+      Data: 10|System.Collections.Generic.List`1[[Tag, Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 4
+    - Name: $v
+      Entry: 7
+      Data: 11|WeatherConfig, Assembly-CSharp
+    - Name: dayLength
+      Entry: 4
+      Data: 100
+    - Name: name
+      Entry: 1
+      Data: Rain
+    - Name: drawTimerMultiplier
+      Entry: 4
+      Data: 0.8
+    - Name: customerDelay
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.5
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: rushHourMultiplier
+      Entry: 4
+      Data: 0.5
+    - Name: rushHourMinMax
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: exteriorImageDay
+      Entry: 10
+      Data: 11
+    - Name: exteriorImageNight
+      Entry: 10
+      Data: 12
+    - Name: scrollingWeatherTexture
+      Entry: 10
+      Data: 13
+    - Name: scrollingWeatherTextureSpeed
+      Entry: 4
+      Data: 1.5
+    - Name: preScreenExterior
+      Entry: 10
+      Data: 14
+    - Name: preScreenScrollingTexture
+      Entry: 10
+      Data: 15
+    - Name: preScreenScrollingTextureSpeed
+      Entry: 4
+      Data: 1
+    - Name: preScreenWindowBackground
+      Entry: 10
+      Data: 16
+    - Name: preScreenWindowScrollingTexture
+      Entry: 6
+      Data: 
+    - Name: preScreenWindowScrollingTextureSpeed
+      Entry: 4
+      Data: 0
+    - Name: weatherIcon
+      Entry: 10
+      Data: 17
+    - Name: sallyDialogue
+      Entry: 7
+      Data: 12|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 1
+      Data: It's raining today. There may be fewer people out and about.
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: backgroundMusic
+      Entry: 3
+      Data: 4
+    - Name: weather
+      Entry: 3
+      Data: 4
+    - Name: inherentTags
+      Entry: 7
+      Data: 13|System.Collections.Generic.List`1[[Tag, Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 3
+      Data: 24
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 5
+    - Name: $v
+      Entry: 7
+      Data: 14|WeatherConfig, Assembly-CSharp
+    - Name: dayLength
+      Entry: 4
+      Data: 90
+    - Name: name
+      Entry: 1
+      Data: Thunderstorm
+    - Name: drawTimerMultiplier
+      Entry: 4
+      Data: 0.7
+    - Name: customerDelay
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.6
+    - Name: 
+      Entry: 4
+      Data: 1.2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: rushHourMultiplier
+      Entry: 4
+      Data: 0.5
+    - Name: rushHourMinMax
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.25
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: exteriorImageDay
+      Entry: 10
+      Data: 11
+    - Name: exteriorImageNight
+      Entry: 10
+      Data: 12
+    - Name: scrollingWeatherTexture
+      Entry: 10
+      Data: 13
+    - Name: scrollingWeatherTextureSpeed
+      Entry: 4
+      Data: 1.5
+    - Name: preScreenExterior
+      Entry: 10
+      Data: 14
+    - Name: preScreenScrollingTexture
+      Entry: 10
+      Data: 15
+    - Name: preScreenScrollingTextureSpeed
+      Entry: 4
+      Data: 1
+    - Name: preScreenWindowBackground
+      Entry: 10
+      Data: 16
+    - Name: preScreenWindowScrollingTexture
+      Entry: 6
+      Data: 
+    - Name: preScreenWindowScrollingTextureSpeed
+      Entry: 4
+      Data: 0
+    - Name: weatherIcon
+      Entry: 10
+      Data: 18
+    - Name: sallyDialogue
+      Entry: 7
+      Data: 15|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 1
+      Data: It's storming outside. Maybe I should do a shorter shift...
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: backgroundMusic
+      Entry: 3
+      Data: 4
+    - Name: weather
+      Entry: 3
+      Data: 5
+    - Name: inherentTags
+      Entry: 7
+      Data: 16|System.Collections.Generic.List`1[[Tag, Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 3
+      Data: 24
+    - Name: 
+      Entry: 3
+      Data: 46
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 6
+    - Name: $v
+      Entry: 7
+      Data: 17|WeatherConfig, Assembly-CSharp
+    - Name: dayLength
+      Entry: 4
+      Data: 80
+    - Name: name
+      Entry: 1
+      Data: Heatwave
+    - Name: drawTimerMultiplier
+      Entry: 4
+      Data: 0.7
+    - Name: customerDelay
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.3
+    - Name: 
+      Entry: 4
+      Data: 0.6
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: rushHourMultiplier
+      Entry: 4
+      Data: 0.5
+    - Name: rushHourMinMax
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: exteriorImageDay
+      Entry: 10
+      Data: 19
+    - Name: exteriorImageNight
+      Entry: 10
+      Data: 20
+    - Name: scrollingWeatherTexture
+      Entry: 6
+      Data: 
+    - Name: scrollingWeatherTextureSpeed
+      Entry: 4
+      Data: 0
+    - Name: preScreenExterior
+      Entry: 10
+      Data: 21
+    - Name: preScreenScrollingTexture
+      Entry: 6
+      Data: 
+    - Name: preScreenScrollingTextureSpeed
+      Entry: 4
+      Data: 0
+    - Name: preScreenWindowBackground
+      Entry: 10
+      Data: 22
+    - Name: preScreenWindowScrollingTexture
+      Entry: 6
+      Data: 
+    - Name: preScreenWindowScrollingTextureSpeed
+      Entry: 4
+      Data: 0
+    - Name: weatherIcon
+      Entry: 10
+      Data: 23
+    - Name: sallyDialogue
+      Entry: 7
+      Data: 18|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 1
+      Data: It's so hot out today! I should do a shorter shift to avoid heatstroke.
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: backgroundMusic
+      Entry: 3
+      Data: 3
+    - Name: weather
+      Entry: 3
+      Data: 6
+    - Name: inherentTags
+      Entry: 7
+      Data: 19|System.Collections.Generic.List`1[[Tag, Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 7
+    - Name: $v
+      Entry: 7
+      Data: 20|WeatherConfig, Assembly-CSharp
+    - Name: dayLength
+      Entry: 4
+      Data: 100
+    - Name: name
+      Entry: 1
+      Data: Windy
+    - Name: drawTimerMultiplier
+      Entry: 4
+      Data: 0.9
+    - Name: customerDelay
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.2
+    - Name: 
+      Entry: 4
+      Data: 0.4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: rushHourMultiplier
+      Entry: 4
+      Data: 0.7
+    - Name: rushHourMinMax
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: exteriorImageDay
+      Entry: 10
+      Data: 0
+    - Name: exteriorImageNight
+      Entry: 10
+      Data: 0
+    - Name: scrollingWeatherTexture
+      Entry: 6
+      Data: 
+    - Name: scrollingWeatherTextureSpeed
+      Entry: 4
+      Data: 0
+    - Name: preScreenExterior
+      Entry: 10
+      Data: 2
+    - Name: preScreenScrollingTexture
+      Entry: 6
+      Data: 
+    - Name: preScreenScrollingTextureSpeed
+      Entry: 4
+      Data: 0
+    - Name: preScreenWindowBackground
+      Entry: 10
+      Data: 3
+    - Name: preScreenWindowScrollingTexture
+      Entry: 6
+      Data: 
+    - Name: preScreenWindowScrollingTextureSpeed
+      Entry: 4
+      Data: 0
+    - Name: weatherIcon
+      Entry: 10
+      Data: 24
+    - Name: sallyDialogue
+      Entry: 7
+      Data: 21|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 1
+      Data: Looks like it's quite windy today. People might be less inclined to go
+        out.
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: backgroundMusic
+      Entry: 3
+      Data: 3
+    - Name: weather
+      Entry: 3
+      Data: 7
+    - Name: inherentTags
+      Entry: 7
+      Data: 22|System.Collections.Generic.List`1[[Tag, Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 3
+      Data: 48
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 8
+    - Name: $v
+      Entry: 7
+      Data: 23|WeatherConfig, Assembly-CSharp
+    - Name: dayLength
+      Entry: 4
+      Data: 100
+    - Name: name
+      Entry: 1
+      Data: Snow
+    - Name: drawTimerMultiplier
+      Entry: 4
+      Data: 0.7
+    - Name: customerDelay
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: rushHourMultiplier
+      Entry: 4
+      Data: 0.5
+    - Name: rushHourMinMax
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: exteriorImageDay
+      Entry: 10
+      Data: 11
+    - Name: exteriorImageNight
+      Entry: 10
+      Data: 12
+    - Name: scrollingWeatherTexture
+      Entry: 6
+      Data: 
+    - Name: scrollingWeatherTextureSpeed
+      Entry: 4
+      Data: 0
+    - Name: preScreenExterior
+      Entry: 10
+      Data: 14
+    - Name: preScreenScrollingTexture
+      Entry: 6
+      Data: 
+    - Name: preScreenScrollingTextureSpeed
+      Entry: 4
+      Data: 0
+    - Name: preScreenWindowBackground
+      Entry: 10
+      Data: 16
+    - Name: preScreenWindowScrollingTexture
+      Entry: 6
+      Data: 
+    - Name: preScreenWindowScrollingTextureSpeed
+      Entry: 4
+      Data: 0
+    - Name: weatherIcon
+      Entry: 10
+      Data: 25
+    - Name: sallyDialogue
+      Entry: 7
+      Data: 24|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 1
+      Data: It's snowing! This should make for a relaxing change of pace.
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: backgroundMusic
+      Entry: 3
+      Data: 3
+    - Name: weather
+      Entry: 3
+      Data: 8
+    - Name: inherentTags
+      Entry: 7
+      Data: 25|System.Collections.Generic.List`1[[Tag, Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 9
+    - Name: $v
+      Entry: 7
+      Data: 26|WeatherConfig, Assembly-CSharp
+    - Name: dayLength
+      Entry: 4
+      Data: 70
+    - Name: name
+      Entry: 1
+      Data: Snowstorm
+    - Name: drawTimerMultiplier
+      Entry: 4
+      Data: 0.6
+    - Name: customerDelay
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0.7
+    - Name: 
+      Entry: 4
+      Data: 1.4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: rushHourMultiplier
+      Entry: 4
+      Data: 0.3
+    - Name: rushHourMinMax
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.25
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: exteriorImageDay
+      Entry: 10
+      Data: 11
+    - Name: exteriorImageNight
+      Entry: 10
+      Data: 12
+    - Name: scrollingWeatherTexture
+      Entry: 6
+      Data: 
+    - Name: scrollingWeatherTextureSpeed
+      Entry: 4
+      Data: 0
+    - Name: preScreenExterior
+      Entry: 10
+      Data: 14
+    - Name: preScreenScrollingTexture
+      Entry: 6
+      Data: 
+    - Name: preScreenScrollingTextureSpeed
+      Entry: 4
+      Data: 0
+    - Name: preScreenWindowBackground
+      Entry: 10
+      Data: 16
+    - Name: preScreenWindowScrollingTexture
+      Entry: 6
+      Data: 
+    - Name: preScreenWindowScrollingTextureSpeed
+      Entry: 4
+      Data: 0
+    - Name: weatherIcon
+      Entry: 10
+      Data: 26
+    - Name: sallyDialogue
+      Entry: 7
+      Data: 27|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 1
+      Data: A snowstorm is raging. I'll do a shorter shift today.
+    - Name: 
+      Entry: 1
+      Data: A snowstorm is raging. There are likely not many people around today.
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: backgroundMusic
+      Entry: 3
+      Data: 3
+    - Name: weather
+      Entry: 3
+      Data: 9
+    - Name: inherentTags
+      Entry: 7
+      Data: 28|System.Collections.Generic.List`1[[Tag, Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 10
+    - Name: $v
+      Entry: 7
+      Data: 29|WeatherConfig, Assembly-CSharp
+    - Name: dayLength
+      Entry: 4
+      Data: 100
+    - Name: name
+      Entry: 1
+      Data: Festival Night
+    - Name: drawTimerMultiplier
+      Entry: 4
+      Data: 1
+    - Name: customerDelay
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: rushHourMultiplier
+      Entry: 4
+      Data: 1.25
+    - Name: rushHourMinMax
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: exteriorImageDay
+      Entry: 10
+      Data: 27
+    - Name: exteriorImageNight
+      Entry: 10
+      Data: 28
+    - Name: scrollingWeatherTexture
+      Entry: 6
+      Data: 
+    - Name: scrollingWeatherTextureSpeed
+      Entry: 4
+      Data: 0
+    - Name: preScreenExterior
+      Entry: 10
+      Data: 29
+    - Name: preScreenScrollingTexture
+      Entry: 6
+      Data: 
+    - Name: preScreenScrollingTextureSpeed
+      Entry: 4
+      Data: 0
+    - Name: preScreenWindowBackground
+      Entry: 10
+      Data: 30
+    - Name: preScreenWindowScrollingTexture
+      Entry: 6
+      Data: 
+    - Name: preScreenWindowScrollingTextureSpeed
+      Entry: 4
+      Data: 0
+    - Name: weatherIcon
+      Entry: 10
+      Data: 31
+    - Name: sallyDialogue
+      Entry: 7
+      Data: 30|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 1
+      Data: Time for a night shift. The solstice festival is happening tonight.
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: backgroundMusic
+      Entry: 3
+      Data: 3
+    - Name: weather
+      Entry: 3
+      Data: 10
+    - Name: inherentTags
+      Entry: 7
+      Data: 31|System.Collections.Generic.List`1[[Tag, Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 3
+      Data: 33
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 

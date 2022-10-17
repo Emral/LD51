@@ -20,7 +20,8 @@ public enum Weather
     Heat = 6,
     Wind = 7,
     Snow = 8,
-    Snowstorm = 9
+    Snowstorm = 9,
+    FestivalNight = 10,
 }
 
 public enum Season
@@ -50,6 +51,9 @@ public class SessionVariables : ScriptableObject
 {
     public static List<Expense> Expenses = new List<Expense>();
 
+    public static WeatherSettings weatherSettings;
+    public static Seasons seasonSettings;
+
     public static float Experience = 0;
     public static float Followers = 0;
     public static float Reputation = 0;
@@ -76,13 +80,11 @@ public class SessionVariables : ScriptableObject
     public static List<Texture2D> allDrawings;
     public static List<Texture2D> todaysDrawings;
 
-    public static List<Weather> UpcomingWeathers = new List<Weather>();
+    private static List<WeatherConfig> UpcomingWeathers = new List<WeatherConfig>();
 
     public static List<Mechanics> TutorialsDone = new List<Mechanics>();
 
     public static List<Event> Events = new List<Event>();
-
-    public static int RentMultiplier = 1;
 
     public void Initialize()
     {
@@ -99,20 +101,50 @@ public class SessionVariables : ScriptableObject
         MaxIncomeBase = 10;
         IncomeMultiplier = 1;
         LastDay = 1;
+        Day = 1;
         _savings = 50;
-        RentMultiplier = 1;
         Colors = ValidColors.Black;
         TodaysEarnings = 0;
-        Day = 1;
         allDrawings = new List<Texture2D>();
         todaysDrawings = new List<Texture2D>();
-        UpcomingWeathers = new List<Weather>();
+        UpcomingWeathers = new List<WeatherConfig>();
         Events = new List<Event>();
 
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < 5; i++)
         {
-            CalculateWeather(i);
+            CalculateWeather(Day + i);
         }
+    }
+
+    private static void CalculateWeather(int day)
+    {
+        day = day - 1;
+        var list = seasonSettings.springWeathersByDay;
+
+        if (day % 40 >= 30)
+        {
+            list = seasonSettings.winterWeathersByDay;
+        }
+        if (day % 40 >= 20)
+        {
+            list = seasonSettings.autumnWeathersByDay;
+        }
+        if (day % 40 >= 10)
+        {
+            list = seasonSettings.summerWeathersByDay;
+        }
+
+        UpcomingWeathers.Add(weatherSettings.weathers[list[day % 10].choices[Random.Range(0, list[day % 10].choices.Count)]]);
+    }
+
+    public static WeatherConfig GetTodaysWeather()
+    {
+        return UpcomingWeathers[(Day - LastDay)];
+    }
+
+    public static WeatherConfig GetUpcomingWeather(int i)
+    {
+        return UpcomingWeathers[(i)];
     }
 
     public static async void NewDayBegins()
@@ -120,46 +152,35 @@ public class SessionVariables : ScriptableObject
         TodaysEarnings = 0;
         LastDay = Day;
         SFX.DayAdvance.Play();
-        RentMultiplier = 1;
-        bool advanced = false;
-        while (!advanced || UpcomingWeathers[Day - LastDay] == Weather.Thunder)
+        Day++;
+        CalculateWeather(Day + 5);
+
+        var e = MetaManager.instance.events.FindEligible();
+
+        if (e != null)
         {
-            advanced = true;
-            Day++;
-            CalculateWeather(Day + 10);
-
-            var e = MetaManager.instance.events.FindEligible();
-
-            if (e != null)
+            e.Schedule();
+            if (!e.Permanent)
             {
-                e.Schedule();
-                if (!e.Permanent)
-                {
-                    await MetaManager.instance.DoTutorial(Mechanics.Events);
-                }
-            }
-
-            for (int i = Events.Count-1; i >= 0; i--)
-            {
-                var ev = Events[i];
-                if (ev.GetStartDay() == Day)
-                {
-                    ev.StartEvent();
-                }
-                else if (ev.GetEndDay() == Day)
-                {
-                    ev.EndEvent();
-                    Events.Remove(e);
-                }
+                await MetaManager.instance.DoTutorial(Mechanics.Events);
             }
         }
 
-        while (UpcomingWeathers[Day - LastDay + RentMultiplier] == Weather.Thunder && RentMultiplier < 9)
+        for (int i = Events.Count-1; i >= 0; i--)
         {
-            RentMultiplier++;
+            var ev = Events[i];
+            if (ev.GetStartDay() == Day)
+            {
+                ev.StartEvent();
+            }
+            else if (ev.GetEndDay() == Day)
+            {
+                ev.EndEvent();
+                Events.Remove(e);
+            }
         }
 
-        if (UpcomingWeathers[Day - LastDay] == Weather.Rain)
+        if (UpcomingWeathers[Day - LastDay].weather == Weather.Rain)
         {
             await MetaManager.instance.DoTutorial(Mechanics.Rain);
         }
@@ -167,11 +188,6 @@ public class SessionVariables : ScriptableObject
         if (Followers >= 25 && Day > 3)
         {
             await MetaManager.instance.DoTutorial(Mechanics.Followers);
-        }
-
-        if (RentMultiplier > 1)
-        {
-            await MetaManager.instance.DoTutorial(Mechanics.Thunderstorms);
         }
     }
 
@@ -184,12 +200,12 @@ public class SessionVariables : ScriptableObject
         {
             Events[Events.Count - 1].SetMessageSeen();
             return Events[Events.Count - 1].eventLogMessage;
-        } else if (UpcomingWeathers[0] == Weather.Rain)
+        } else if (UpcomingWeathers[Day - LastDay].sallyDialogue.Count > 0)
         {
-            return "Rain, huh? I don't think it will be quite as busy today.";
+            return UpcomingWeathers[Day - LastDay].sallyDialogue[Random.Range(0, UpcomingWeathers[Day - LastDay].sallyDialogue.Count)];
         } else
         {
-            return "Looks like not much is going on these days... Still gotta watch out for thunderstorms.";
+            return "This message should not appear....";
         }
     }
 
@@ -216,11 +232,6 @@ public class SessionVariables : ScriptableObject
         Colors = Colors | newCols;
     }
 
-    public static void AddSecondColorSet()
-    {
-        Colors = Colors | ValidColors.Yellow | ValidColors.Grey | ValidColors.Blue | ValidColors.Red;
-    }
-
     public static float CalculateExpenses()
     {
         float sum = 0;
@@ -229,33 +240,13 @@ public class SessionVariables : ScriptableObject
             sum += expense.Value;
         }
 
-        return (RentMultiplier * sum).MakeDollars();
-    }
-
-    public static void CalculateWeather(int dayToCalculate)
-    {
-        if (dayToCalculate >= 2 && dayToCalculate % 9 == 0)
-        {
-            UpcomingWeathers.Add(Weather.Thunder);
-        }
-        else if (dayToCalculate >= 2 && dayToCalculate % 4 == 2)
-        {
-            UpcomingWeathers.Add(Weather.Rain);
-        } else if (dayToCalculate >= 10 && Experience > 10 && Random.Range(0, 15 - Mathf.Min(Experience * 0.1f, 20)) == 0)
-        {
-            if (Random.Range(0, 1000) < Mathf.Min(Experience, 250))
-            {
-                UpcomingWeathers.Add(Weather.Thunder);
-            }
-        } else
-        {
-            UpcomingWeathers.Add((Weather)Random.Range(1, 3));
-        }
+        return sum.MakeDollars();
     }
 
     public static void RemoveOldestWeather()
     {
         UpcomingWeathers.RemoveAt(0);
+        LastDay = Day;
     }
 
     public static string GetDayStringShort(int d = -1)
@@ -379,6 +370,6 @@ public class SessionVariables : ScriptableObject
 
     public static Season GetSeason()
     {
-        return (Season) (1 + (Mathf.Min(Day / 10.0f) % 4));
+        return (Season) (1 + (Mathf.Min((Day-1) / 10.0f) % 4));
     }
 }

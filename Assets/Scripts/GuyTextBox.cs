@@ -24,7 +24,7 @@ public class GuyTextBox : MonoBehaviour
 
     private void OnSubmit(float a)
     {
-        _text.text = dialogue.GetRandomDialogue(a);
+        _text.text = dialogue.GetRandomDialogue(a, DayManager.Globals.currentGuy.thanksMessages);
         transform.localPosition = idlePosition - Vector3.up * 50;
         transform.DOLocalMoveY(idlePosition.y, 0.25f).SetEase(Ease.OutQuint).OnComplete(() =>
         {

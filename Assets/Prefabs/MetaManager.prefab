@@ -1266,6 +1266,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   events: {fileID: 11400000, guid: f3b584fb84426424795734c3c12813ae, type: 2}
   tutorials: {fileID: 11400000, guid: 30a19e764b223404f96e998a061f511b, type: 2}
+  weathers: {fileID: 11400000, guid: af33f8963e9438e4aa52034abb6f9863, type: 2}
+  seasons: {fileID: 11400000, guid: 3cbc0a231c6846d42a9b2a2d6da895ba, type: 2}
   LoadScreen: {fileID: 5656052779580999475}
   Tutorial: {fileID: 4040893580532006217}
 --- !u!114 &3138017861803142314

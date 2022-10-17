@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64994b966c3e5ec4fac86fb8895d5e86, type: 3}
+  m_Name: Seasons
+  m_EditorClassIdentifier: 
+  springWeathersByDay:
+  - choices: 01000000
+  - choices: 020000000300000001000000
+  - choices: 04000000
+  - choices: 0200000003000000
+  - choices: 040000000300000002000000
+  - choices: 0500000004000000
+  - choices: 05000000
+  - choices: 0200000003000000
+  - choices: 020000000300000001000000
+  - choices: 01000000
+  summerWeathersByDay:
+  - choices: 0200000001000000
+  - choices: 0600000001000000
+  - choices: 0600000001000000
+  - choices: 060000000100000004000000
+  - choices: 010000000200000004000000
+  - choices: 010000000200000003000000
+  - choices: 0100000006000000
+  - choices: 06000000
+  - choices: 0100000002000000
+  - choices: 0a000000
+  autumnWeathersByDay:
+  - choices: 020000000100000003000000
+  - choices: 02000000030000000100000007000000
+  - choices: 02000000030000000700000004000000
+  - choices: 0700000004000000
+  - choices: 05000000
+  - choices: 05000000
+  - choices: 040000000700000002000000
+  - choices: 0300000002000000070000000400000005000000
+  - choices: 0400000002000000030000000700000001000000
+  - choices: 05000000
+  winterWeathersByDay:
+  - choices: 0100000004000000
+  - choices: 0100000008000000
+  - choices: 08000000
+  - choices: 04000000010000000800000007000000
+  - choices: 04000000070000000800000001000000
+  - choices: 08000000
+  - choices: 09000000
+  - choices: 09000000
+  - choices: 08000000
+  - choices: 0a000000

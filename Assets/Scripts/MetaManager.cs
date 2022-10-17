@@ -11,6 +11,8 @@ public class MetaManager : MonoBehaviour
 
     public EventList events;
     public TutorialsList tutorials;
+    public WeatherSettings weathers;
+    public Seasons seasons;
 
     public RectTransform LoadScreen;
 
@@ -33,6 +35,10 @@ public class MetaManager : MonoBehaviour
             Destroy(this.gameObject);
             return;
         }
+
+        weathers.Init();
+        SessionVariables.weatherSettings = weathers;
+        SessionVariables.seasonSettings = seasons;
         GameCanAdvance = true;
 
         foreach (Event ev in events.events)

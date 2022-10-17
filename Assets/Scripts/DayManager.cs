@@ -18,8 +18,6 @@ public class DayManager : MonoBehaviour
 
     public GuySprites guys;
 
-    private Guy _currentGuy;
-
     public Image Test1;
     public Image Test2;
     public Image TimerImage;
@@ -37,6 +35,7 @@ public class DayManager : MonoBehaviour
     public static bool TimerActive;
 
     public RectTransform ThatsAWrap;
+    public List<RectTransform> ReadySetGo;
 
     public static UnityEvent<float> OnDayProgress = new UnityEvent<float>();
     public static UnityEvent OnDayEnd = new UnityEvent();
@@ -62,22 +61,41 @@ public class DayManager : MonoBehaviour
     async void Start()
     {
         DrawComparison.Curve = BalanceCurve;
+        DrawController.DisableDrawing();
         imageCandidates.Initialize();
         var rushHourDuration = Mathf.FloorToInt((SessionVariables.Followers + SessionVariables.Reputation * 2) / 5.0f) * 0.02f;
-        Globals.IsRaining = SessionVariables.UpcomingWeathers[0] == Weather.Rain;
+        Globals.weather = SessionVariables.GetTodaysWeather();
         foreach (var e in SessionVariables.Events)
         {
             e.DailyExecute();
         }
-        if (Globals.IsRaining)
+        foreach (var e in Globals.weather.inherentTags)
         {
-            DayManager.Globals.tagBiases.Add(Tag.Rain);
+            DayManager.Globals.tagBiases.Add(e);
         }
+
+        var season = SessionVariables.GetSeason();
+        switch (season)
+        {
+            case Season.Spring:
+                Globals.tagBiases.Add(Tag.Spring);
+                break;
+            case Season.Summer:
+                Globals.tagBiases.Add(Tag.Summer);
+                break;
+            case Season.Autumn:
+                Globals.tagBiases.Add(Tag.Autumn);
+                break;
+            case Season.Winter:
+                Globals.tagBiases.Add(Tag.Winter);
+                break;
+        }
+
+
         guys.ResetAll();
-        NewGuessable();
         if (SessionVariables.Day > 1)
         {
-            rushHourDuration = Mathf.Clamp01(rushHourDuration + (Globals.IsRaining ? -0.2f : 0.2f));
+            rushHourDuration = Mathf.Clamp(rushHourDuration * Globals.weather.rushHourMultiplier, Globals.weather.rushHourMinMax.x, Globals.weather.rushHourMinMax.y);
 
             if (SessionVariables.Day == 2)
             {
@@ -85,13 +103,6 @@ public class DayManager : MonoBehaviour
             }
         }
 
-        if (Globals.IsRaining)
-        {
-            if (SessionVariables.Day > 5)
-            {
-                rushHourDuration = Mathf.Max(0, rushHourDuration - Random.Range(0.2f, 0.3f), 0);
-            }
-        }
         Globals.RushHourEnd = Mathf.Clamp(Random.Range(0.8f, 1), rushHourDuration, 1);
         Globals.RushHourStart = Globals.RushHourEnd - rushHourDuration;
 
@@ -125,8 +136,15 @@ public class DayManager : MonoBehaviour
 
     private IEnumerator StartNextDay()
     {
-        yield return new WaitForSeconds(0.75f);
-        AudioManager.ChangeMusic(Globals.IsRaining ? BGM.GameRain : BGM.GameRegular);
+        for (int i = 0; i < ReadySetGo.Count; i++)
+        {
+            yield return new WaitForSeconds(0.6f);
+            SFX.ReadySetGoClick.Play();
+            ReadySetGo[i].DOPunchScale(Vector3.one * (1.3f + 0.3f * i), i == ReadySetGo.Count - 1 ? 1.2f : 1.0f, 0, 0);
+        }
+        NewGuessable();
+        DrawController.EnableDrawing();
+        AudioManager.ChangeMusic(Globals.weather.backgroundMusic);
         _dayActive = true;
         _timerActive = true;
     }
@@ -273,17 +291,17 @@ public class DayManager : MonoBehaviour
         _currentGuessable = null;
         while (_currentGuessable == null)
         {
-            _currentGuy = guys.GetRandom();
-            _currentGuessable = imageCandidates.GetRandom(_currentGuy);
+            Globals.currentGuy = guys.GetRandom();
+            _currentGuessable = imageCandidates.GetRandom(Globals.currentGuy);
 
             if (_currentGuessable == null)
             {
                 Debug.Log("Selecting different guy...");
             }
         }
-        _currentGuy.ArrivalSound.Play();
+        Globals.currentGuy.ArrivalSound.Play();
         SFX.NewCustomer.Play();
-        OnNewGuy.Invoke(_currentGuy);
+        OnNewGuy.Invoke(Globals.currentGuy);
     }
 
     private void CompareImages(Texture2D drawn, Texture2D wanted)
@@ -304,7 +322,7 @@ public class DayManager : MonoBehaviour
             SessionVariables.allDrawings.Add(drawn);
         }
 
-        var reward = Mathf.Max( Mathf.Lerp(0, 1 + _currentGuy.bias * 0.05f, totalPenalty) * SessionVariables.IncomeMultiplier * SessionVariables.MaxIncomeBase, 0);
+        var reward = Mathf.Max( Mathf.Lerp(0, 1 + Globals.currentGuy.bias * 0.05f, totalPenalty) * SessionVariables.IncomeMultiplier * SessionVariables.MaxIncomeBase, 0);
 
         reward = reward.MakeDollars();
 

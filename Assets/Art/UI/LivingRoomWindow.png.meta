@@ -120,7 +120,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 137
         width: 106
         height: 137
       alignment: 0
@@ -141,7 +141,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 106
-        y: 0
+        y: 137
         width: 106
         height: 137
       alignment: 0
@@ -153,6 +153,48 @@ TextureImporter:
       bones: []
       spriteID: 631592656a93a19439af9381ea8b3fbf
       internalID: 441651585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LivingRoomWindow_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 106
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2e1302bfc08dd54b81184cb218f2bf6
+      internalID: 1965332221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LivingRoomWindow_3
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 0
+        width: 106
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2c13c2707cf27c48b069e8f930aa491
+      internalID: -1471771053
       vertices: []
       indices: 
       edges: []
@@ -170,6 +212,8 @@ TextureImporter:
     nameFileIdTable:
       LivingRoomWindow_1: 441651585
       LivingRoomWindow_0: -2127535988
+      LivingRoomWindow_3: -1471771053
+      LivingRoomWindow_2: 1965332221
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

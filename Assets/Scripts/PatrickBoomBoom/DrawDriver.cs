@@ -74,6 +74,11 @@ public class DrawDriver : MonoBehaviour
         drawComponent.Writing(Input.mousePosition);
     }
 
+    public void DisableDrawing()
+    {
+        _canDraw = false;
+    }
+
     public Texture2D FinishDrawing()
     {
         var tex = drawComponent.GetTexture();

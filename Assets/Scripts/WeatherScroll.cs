@@ -15,40 +15,31 @@ public class WeatherScroll : MonoBehaviour
     public WeatherElement prefab;
     public Transform root;
     public Image circle;
+    bool scroll = false;
 
     // Start is called before the first frame update
     void Start()
     {
         circle.fillAmount = 0;
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < 5; i++)
         {
             var p = Instantiate(prefab, root);
-            switch(SessionVariables.UpcomingWeathers[i])
-            {
-                case Weather.Sunny:
-                    p.img.sprite = SunSprite;
-                    break;
-                case Weather.Cloudy:
-                    p.img.sprite = CloudSprite;
-                    break;
-                case Weather.Overcast:
-                    p.img.sprite = OvercastSprite;
-                    break;
-                case Weather.Rain:
-                    p.img.sprite = RainSprite;
-                    break;
-                case Weather.Thunder:
-                    p.img.sprite = ThunderSprite;
-                    break;
-            }
+            p.img.sprite = SessionVariables.GetUpcomingWeather(i).weatherIcon;
 
             var day = i + SessionVariables.Day;
+            var d = i + 1;
             if (SessionVariables.Day != 1)
             {
-                day = day - 1;
+                d = d - 1;
+                scroll = true;
             }
 
-            p.txt.text = SessionVariables.GetDayStringShort(day);
+            p.txt.text = SessionVariables.GetUpcomingWeather(i).name;
+
+            if (d == 1)
+            {
+                p.txt.gameObject.SetActive(true);
+            }
         }
 
         if (SessionVariables.Day != 1)
@@ -61,14 +52,15 @@ public class WeatherScroll : MonoBehaviour
 
     private IEnumerator Scroll()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.75f);
 
-        if (SessionVariables.Day - SessionVariables.LastDay > 0)
+        if (scroll)
         {
-            transform.DOLocalMoveX(transform.localPosition.x - (87.4f + 8) * (SessionVariables.Day - SessionVariables.LastDay), 1.5f).SetEase(Ease.InOutQuad);
-            yield return new WaitForSeconds(2f);
+            transform.DOLocalMoveX(transform.localPosition.x - (87.4f + 8), 1f).SetEase(Ease.InOutQuad);
+            yield return new WaitForSeconds(1.5f);
         }
 
+        SFX.SharpieCircle.Play();
         circle.DOFillAmount(1, 0.4f).SetEase(Ease.OutQuint);
     }
 }

@@ -9,8 +9,10 @@ public class GlobalVars
     public float RushHourStart = 0;
     public float RushHourEnd = 0;
     public bool RushHour = false;
-    public bool IsRaining = false;
+    public WeatherConfig weather;
     public float LastGain = 0;
+
+    public Guy currentGuy;
     public List<Tag> tagBiases = new List<Tag>();
     public Color PenColor
     {

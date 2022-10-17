@@ -23,6 +23,8 @@ public enum SFX
     DaySuccess = 14,
     GameOver = 15,
     Pageturn = 16,
+    ReadySetGoClick = 18,
+    SharpieCircle = 19,
 
     Customer_Greenguy = 100,
     Customer_Banker = 101,
@@ -51,6 +53,15 @@ public enum SFX
     Customer_Eligor = 124,
     Customer_Elvis = 125,
     Customer_Car = 126,
+    Customer_RealCar = 127,
+    Customer_Match = 128,
+    Customer_Bowling = 129, 
+    Customer_Bungus = 130,
+    Customer_Hand = 131,
+    Customer_Gordon = 132,
+    Customer_Bouncy = 133,
+    Customer_UFO = 134,
+    Customer_Bloo = 135
 }
 
 public enum BGM

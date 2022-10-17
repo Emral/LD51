@@ -51,9 +51,9 @@ public class GuySprites : ScriptableObject
                 }
             }
 
-            if (guy.appearanceWeights.Keys.Contains(SessionVariables.UpcomingWeathers[0]) && guy.seasonAppearanceMultipliers.Keys.Contains(SessionVariables.GetSeason()))
+            if (guy.appearanceWeights.Keys.Contains(SessionVariables.GetTodaysWeather().weather) && guy.seasonAppearanceMultipliers.Keys.Contains(SessionVariables.GetSeason()))
             {
-                for (int j = 0; j < Mathf.FloorToInt(guy.appearanceWeights[SessionVariables.UpcomingWeathers[0]].WeightValue * guy.seasonAppearanceMultipliers[SessionVariables.GetSeason()].Multiplier); j++)
+                for (int j = 0; j < Mathf.FloorToInt(guy.appearanceWeights[SessionVariables.GetTodaysWeather().weather].WeightValue * guy.seasonAppearanceMultipliers[SessionVariables.GetSeason()].Multiplier); j++)
                 {
                     weighted.Add(guys[i]);
                 }

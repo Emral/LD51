@@ -243,7 +243,8 @@ public static class DrawComparison
 
                 foreach (var kvp in results.referenceInk)
                 {
-                    var g = Guessable.colorMap[new Color(Mathf.Floor(kvp.Key.r * 255) / 255.0f, Mathf.Floor(kvp.Key.g * 255) / 255.0f, Mathf.Floor(kvp.Key.b * 255) / 255.0f, 1)];
+                    var col = new Color(Mathf.Floor(kvp.Key.r * 255) / 255.0f, Mathf.Floor(kvp.Key.g * 255) / 255.0f, Mathf.Floor(kvp.Key.b * 255) / 255.0f, 1);
+                    var g = Guessable.colorMap.ContainsKey(col) ? Guessable.colorMap[col] : ValidColors.Black;
                     if (!totalInkB.ContainsKey(g))
                     {
                         totalInkB.Add(g, kvp.Value);
@@ -255,7 +256,8 @@ public static class DrawComparison
 
                 foreach (var kvp in results.inkUsed)
                 {
-                    var g = Guessable.colorMap[new Color(Mathf.Floor(kvp.Key.r * 255) / 255.0f, Mathf.Floor(kvp.Key.g * 255) / 255.0f, Mathf.Floor(kvp.Key.b * 255) / 255.0f, 1)];
+                    var col = new Color(Mathf.Floor(kvp.Key.r * 255) / 255.0f, Mathf.Floor(kvp.Key.g * 255) / 255.0f, Mathf.Floor(kvp.Key.b * 255) / 255.0f, 1);
+                    var g = Guessable.colorMap.ContainsKey(col) ? Guessable.colorMap[col] : ValidColors.Black;
                     if (!totalInkA.ContainsKey(g))
                     {
                         totalInkA.Add(g, kvp.Value);
