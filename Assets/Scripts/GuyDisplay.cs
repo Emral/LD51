@@ -31,7 +31,7 @@ public class GuyDisplay : MonoBehaviour
     private void OnSubmit(float a)
     {
         guyImage.transform.localPosition = guyPosition;
-        guyImage.transform.DOLocalMoveX(guyPosition.x - 160, 0.4f).SetEase(outEase);
+        guyImage.transform.DOLocalMoveX(guyPosition.x - 160 * (outEase == Ease.InBack ? 1 : -1), 0.4f).SetEase(outEase);
     }
 
     private void OnNewGuy(Guy a)

@@ -16,9 +16,9 @@ public class ExpensesList : MonoBehaviour
         {
             var exp = Instantiate(expensePrefab, transform);
             exp.transform.SetAsFirstSibling();
-            exp.text = SessionVariables.Expenses[i].Name.ToString() + " - $" + SessionVariables.Expenses[i].Value.MakeDollarsString();
+            exp.text = SessionVariables.Expenses[i].Name.ToString() + " - $" + SessionVariables.Expenses[i].Value.MakeDollarsString() + SessionVariables.Expenses[i].PerWhat;
         }
 
-        totalExpenses.text = "$" + SessionVariables.CalculateExpenses().MakeDollarsString();
+        totalExpenses.text = "$" + SessionVariables.CalculateExpenses().MakeDollarsString() + " or more";
     }
 }

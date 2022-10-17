@@ -159,17 +159,19 @@ public class DayManager : MonoBehaviour
             return;
         }
 
+        var dayLength = Globals.weather.dayLength;
+
         if (_dayActive)
         {
 #if UNITY_EDITOR
             if (Input.GetKeyDown(KeyCode.K))
             {
-                _dayTimeElapsed = 100;
+                _dayTimeElapsed = dayLength;
             }
 #endif
             _dayTimeElapsed = _dayTimeElapsed + Time.deltaTime;
 
-            if (_dayTimeElapsed/100 >= Globals.RushHourStart && _dayTimeElapsed/100 <= Globals.RushHourEnd)
+            if (_dayTimeElapsed/ dayLength >= Globals.RushHourStart && _dayTimeElapsed/ dayLength <= Globals.RushHourEnd)
             {
                 subtrackVolume += Time.deltaTime;
                 isRushHour = true;
@@ -183,9 +185,9 @@ public class DayManager : MonoBehaviour
 
             AudioManager.SetSubtrackVolume(subtrackVolume);
 
-            OnDayProgress.Invoke(_dayTimeElapsed/100.0f);
+            OnDayProgress.Invoke(_dayTimeElapsed/ dayLength);
 
-            if (_dayTimeElapsed >= 100)
+            if (_dayTimeElapsed >= dayLength)
             {
                 _dayActive = false;
                 Sell();
@@ -204,7 +206,7 @@ public class DayManager : MonoBehaviour
         }
         if (_timerActive)
         {
-            _timerTimeElapsed = _timerTimeElapsed + Time.deltaTime;
+            _timerTimeElapsed = _timerTimeElapsed + Time.deltaTime * Globals.weather.drawTimerMultiplier;
 
             if (_timerTimeElapsed >= 10)
             {
@@ -336,6 +338,8 @@ public class DayManager : MonoBehaviour
         SessionVariables.Reputation = Mathf.Max(0, SessionVariables.Reputation + Mathf.Clamp(totalPenalty - 0.1f, -0.25f, 0.5f));
 
         SessionVariables.TodaysEarnings += reward;
+
+        SessionVariables.Expenses.Find(e => e.Name == "Utensils").Multiplier += 1;
 
         OnSubmit.Invoke(reward);
     }

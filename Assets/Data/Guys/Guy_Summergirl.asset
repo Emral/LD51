@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ce57628ff98e46c4096da17c0df9294e, type: 3}
-  m_Name: Guy_ActualCar
+  m_Name: Guy_Summergirl
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -40,7 +40,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 5
+      Data: 4
     - Name: 
       Entry: 7
       Data: 
@@ -52,7 +52,7 @@ MonoBehaviour:
       Data: 2|Guy+Weight, Assembly-CSharp
     - Name: WeightValue
       Entry: 3
-      Data: 2
+      Data: 10
     - Name: 
       Entry: 8
       Data: 
@@ -70,7 +70,7 @@ MonoBehaviour:
       Data: 3|Guy+Weight, Assembly-CSharp
     - Name: WeightValue
       Entry: 3
-      Data: 2
+      Data: 8
     - Name: 
       Entry: 8
       Data: 
@@ -88,25 +88,7 @@ MonoBehaviour:
       Data: 4|Guy+Weight, Assembly-CSharp
     - Name: WeightValue
       Entry: 3
-      Data: 2
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 4
-    - Name: $v
-      Entry: 7
-      Data: 5|Guy+Weight, Assembly-CSharp
-    - Name: WeightValue
-      Entry: 3
-      Data: 1
+      Data: 9
     - Name: 
       Entry: 8
       Data: 
@@ -121,10 +103,10 @@ MonoBehaviour:
       Data: 7
     - Name: $v
       Entry: 7
-      Data: 6|Guy+Weight, Assembly-CSharp
+      Data: 5|Guy+Weight, Assembly-CSharp
     - Name: WeightValue
       Entry: 3
-      Data: 2
+      Data: 9
     - Name: 
       Entry: 8
       Data: 
@@ -139,11 +121,11 @@ MonoBehaviour:
       Data: 
     - Name: seasonAppearanceMultipliers
       Entry: 7
-      Data: 7|System.Collections.Generic.Dictionary`2[[Season, Assembly-CSharp],[Guy+Chance,
+      Data: 6|System.Collections.Generic.Dictionary`2[[Season, Assembly-CSharp],[Guy+Chance,
         Assembly-CSharp]], mscorlib
     - Name: comparer
       Entry: 7
-      Data: 8|System.Collections.Generic.EnumEqualityComparer`1[[Season, Assembly-CSharp]],
+      Data: 7|System.Collections.Generic.EnumEqualityComparer`1[[Season, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
@@ -165,6 +147,24 @@ MonoBehaviour:
       Data: 1
     - Name: $v
       Entry: 7
+      Data: 8|Guy+Chance, Assembly-CSharp
+    - Name: Multiplier
+      Entry: 4
+      Data: 0.6
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 2
+    - Name: $v
+      Entry: 7
       Data: 9|Guy+Chance, Assembly-CSharp
     - Name: Multiplier
       Entry: 4
@@ -180,31 +180,13 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 3
-      Data: 2
+      Data: 3
     - Name: $v
       Entry: 7
       Data: 10|Guy+Chance, Assembly-CSharp
     - Name: Multiplier
       Entry: 4
-      Data: 0.8
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 3
-    - Name: $v
-      Entry: 7
-      Data: 11|Guy+Chance, Assembly-CSharp
-    - Name: Multiplier
-      Entry: 4
-      Data: 0.8
+      Data: 0.6
     - Name: 
       Entry: 8
       Data: 
@@ -217,13 +199,13 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  idleSprite: {fileID: 21300000, guid: e5350dc0dfca46e4cb7426d7a39d288d, type: 3}
-  leavesRightSide: 1
-  bias: 0
-  ArrivalSound: 127
+  idleSprite: {fileID: 21300000, guid: b0ad11fb7a4a92b4ba8e71ce36423b66, type: 3}
+  leavesRightSide: 0
+  bias: 0.5
+  ArrivalSound: 0
   OnlyAppearIfDayPrefersTag: 0
   PreferredTagSelectionChance: 0.5
-  preferredTags: 2f0000000200000024000000
+  preferredTags: 0f000000310000001d000000
   thanksMessages:
     worst: []
     bad: []

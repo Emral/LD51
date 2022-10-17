@@ -13,6 +13,6 @@ public class TodaysEarningsText : MonoBehaviour
     void Update()
     {
         _text = _text == null ? GetComponent<Text>() : _text;
-        _text.text = Prefix + "$" + SessionVariables.TodaysEarnings;
+        _text.text = Prefix + "$" + SessionVariables.TodaysEarnings.MakeDollarsString();
     }
 }

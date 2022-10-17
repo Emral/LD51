@@ -31,11 +31,13 @@ MonoBehaviour:
     ReputationRequired: 0
     MoneyRequired: 0
     DayRequired: 2
-    eventTags: []
     tags: 
     newExpenses:
     - Name: Utensils
-      Value: 10
+      Value: 0.05
+      PerWhat: 
+      Multiplier: 0
+      DefaultMultiplier: 1
   - eventLogMessage: I think I'm gonna expand my palette even further.
     minDuration: 0
     maxDuration: 0
@@ -53,11 +55,13 @@ MonoBehaviour:
     ReputationRequired: 0
     MoneyRequired: 0
     DayRequired: 4
-    eventTags: []
     tags: 
     newExpenses:
     - Name: Utensils
-      Value: 10
+      Value: 0.05
+      PerWhat: 
+      Multiplier: 0
+      DefaultMultiplier: 1
   - eventLogMessage: Oh wow! Someone's tweet mentioning me blew up! Looks like a
       lot of people might be coming over soon.
     minDuration: 1
@@ -76,7 +80,6 @@ MonoBehaviour:
     ReputationRequired: 5
     MoneyRequired: 0
     DayRequired: 0
-    eventTags: []
     tags: 
     newExpenses: []
   - eventLogMessage: Today my landlord increased my rent. I'll have to work harder
@@ -97,11 +100,13 @@ MonoBehaviour:
     ReputationRequired: 0
     MoneyRequired: 0
     DayRequired: 5
-    eventTags: []
     tags: 
     newExpenses:
     - Name: Rent
       Value: 15
+      PerWhat: 
+      Multiplier: 0
+      DefaultMultiplier: 1
   - eventLogMessage: Looks like a convention for a famous videogame is coming to
       town soon. Chances are many people will want drawings of their favourite creatures.
     minDuration: 1
@@ -120,7 +125,6 @@ MonoBehaviour:
     ReputationRequired: 0
     MoneyRequired: 0
     DayRequired: 9
-    eventTags: []
     tags: 07000000
     newExpenses: []
   - eventLogMessage: There is a nature festival today. Maybe people will come over
@@ -141,6 +145,5 @@ MonoBehaviour:
     ReputationRequired: 0
     MoneyRequired: 0
     DayRequired: 6
-    eventTags: []
     tags: 00000000
     newExpenses: []

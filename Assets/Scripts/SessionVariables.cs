@@ -8,6 +8,15 @@ public class Expense
 {
     public string Name;
     public float Value;
+    public string PerWhat = "";
+    public int Multiplier = 1;
+    public int DefaultMultiplier = 1;
+
+    public Expense(int dm = 1)
+    {
+        Multiplier = dm;
+        DefaultMultiplier = dm;
+    }
 }
 
 public enum Weather
@@ -92,7 +101,7 @@ public class SessionVariables : ScriptableObject
         {
             new Expense() { Name = "Rent", Value = 25 },
             new Expense() { Name = "Food", Value = 25 },
-            new Expense() { Name = "Utensils", Value = 10 }
+            new Expense(0) { Name = "Utensils", Value = 0.50f, PerWhat = " / canvas" }
         };
 
         Experience = 0;
@@ -104,6 +113,15 @@ public class SessionVariables : ScriptableObject
         Day = 1;
         _savings = 50;
         Colors = ValidColors.Black;
+
+#if UNITY_EDITOR
+        _savings = 500;
+        Day = 28;
+        LastDay = Day;
+        Experience = 100;
+        AddNewColorSet();
+        AddNewColorSet();
+#endif
         TodaysEarnings = 0;
         allDrawings = new List<Texture2D>();
         todaysDrawings = new List<Texture2D>();
@@ -124,12 +142,10 @@ public class SessionVariables : ScriptableObject
         if (day % 40 >= 30)
         {
             list = seasonSettings.winterWeathersByDay;
-        }
-        if (day % 40 >= 20)
+        } else if (day % 40 >= 20)
         {
             list = seasonSettings.autumnWeathersByDay;
-        }
-        if (day % 40 >= 10)
+        } else if (day % 40 >= 10)
         {
             list = seasonSettings.summerWeathersByDay;
         }
@@ -150,6 +166,13 @@ public class SessionVariables : ScriptableObject
     public static async void NewDayBegins()
     {
         TodaysEarnings = 0;
+        foreach (var expense in Expenses)
+        {
+            expense.Multiplier = expense.DefaultMultiplier;
+
+            Debug.Log(expense.Name);
+            Debug.Log(expense.Multiplier);
+        }
         LastDay = Day;
         SFX.DayAdvance.Play();
         Day++;
@@ -237,7 +260,7 @@ public class SessionVariables : ScriptableObject
         float sum = 0;
         foreach (var expense in Expenses)
         {
-            sum += expense.Value;
+            sum += expense.Value * expense.Multiplier;
         }
 
         return sum.MakeDollars();

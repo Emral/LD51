@@ -58,5 +58,6 @@ public enum Tag
 	BroccoliSteven = 55,
 	Love = 56,
 	Kanji = 57,
+	Hot = 58,
 
 }

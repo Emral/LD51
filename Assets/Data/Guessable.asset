@@ -23,7 +23,7 @@ MonoBehaviour:
     SerializationNodes: []
   images:
   - texture: {fileID: 602746942, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 2
+    strokeComplexity: 1
     allowHorizontalFlip: 1
     allowVerticalFlip: 0
     colors: 72
@@ -126,7 +126,7 @@ MonoBehaviour:
     - Keys: 0800000020000000
       Values: 0800000001000000
   - texture: {fileID: 209267056, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 2
+    strokeComplexity: 1
     allowHorizontalFlip: 0
     allowVerticalFlip: 0
     colors: 33
@@ -135,7 +135,7 @@ MonoBehaviour:
     - Keys: 0100000020000000
       Values: 0100000001000000
   - texture: {fileID: 1967289266, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 2
+    strokeComplexity: 1
     allowHorizontalFlip: 1
     allowVerticalFlip: 0
     colors: 73
@@ -307,7 +307,7 @@ MonoBehaviour:
     - Keys: 80000000
       Values: 04000000
   - texture: {fileID: 1433414738, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 3
+    strokeComplexity: 1
     allowHorizontalFlip: 1
     allowVerticalFlip: 0
     colors: 137
@@ -386,7 +386,7 @@ MonoBehaviour:
     - Keys: 08000000
       Values: 01000000
   - texture: {fileID: 1013364148, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 2
+    strokeComplexity: 1
     allowHorizontalFlip: 1
     allowVerticalFlip: 0
     colors: 64
@@ -525,7 +525,7 @@ MonoBehaviour:
     - Keys: 80000000
       Values: 01000000
   - texture: {fileID: -1917022340, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 2
+    strokeComplexity: 1
     allowHorizontalFlip: 1
     allowVerticalFlip: 0
     colors: 33
@@ -543,7 +543,7 @@ MonoBehaviour:
     - Keys: 08000000
       Values: 01000000
   - texture: {fileID: -885942530, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 2
+    strokeComplexity: 1
     allowHorizontalFlip: 1
     allowVerticalFlip: 0
     colors: 16
@@ -565,7 +565,7 @@ MonoBehaviour:
     - Keys: 0400000040000000
       Values: 0400000001000000
   - texture: {fileID: 857357338, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 2
+    strokeComplexity: 1
     allowHorizontalFlip: 0
     allowVerticalFlip: 0
     colors: 10
@@ -598,7 +598,7 @@ MonoBehaviour:
     - Keys: 08000000
       Values: 01000000
   - texture: {fileID: -1300148823, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 2
+    strokeComplexity: 1
     allowHorizontalFlip: 0
     allowVerticalFlip: 0
     colors: 160
@@ -626,7 +626,7 @@ MonoBehaviour:
     - Keys: 1000000020000000
       Values: 0100000020000000
   - texture: {fileID: 1250769357, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 2
+    strokeComplexity: 1
     allowHorizontalFlip: 1
     allowVerticalFlip: 0
     colors: 16
@@ -650,7 +650,7 @@ MonoBehaviour:
     - Keys: 080000001000000020000000
       Values: 010000000100000020000000
   - texture: {fileID: 1150886159, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 2
+    strokeComplexity: 1
     allowHorizontalFlip: 1
     allowVerticalFlip: 0
     colors: 160
@@ -674,14 +674,14 @@ MonoBehaviour:
     - Keys: 010000000400000008000000
       Values: 010000000800000008000000
   - texture: {fileID: 1964631247, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 2
+    strokeComplexity: 1
     allowHorizontalFlip: 0
     allowVerticalFlip: 0
     colors: 1
     tag: 13000000
     variations: []
   - texture: {fileID: 2143019092, guid: 50eae042970217d4eac26422469ca83e, type: 3}
-    strokeComplexity: 2
+    strokeComplexity: 1
     allowHorizontalFlip: 0
     allowVerticalFlip: 0
     colors: 1
@@ -2287,7 +2287,7 @@ MonoBehaviour:
     allowHorizontalFlip: 1
     allowVerticalFlip: 0
     colors: 8
-    tag: 020000001100000010000000
+    tag: 0200000011000000100000003a000000
     variations:
     - Keys: 08000000
       Values: 40000000
@@ -2298,7 +2298,7 @@ MonoBehaviour:
     allowHorizontalFlip: 1
     allowVerticalFlip: 0
     colors: 24
-    tag: 020000001100000010000000
+    tag: 0200000011000000100000003a000000
     variations:
     - Keys: 0800000010000000
       Values: 4000000002000000
