@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Controls;
 
 public class DrawDriver : MonoBehaviour
 {
@@ -12,6 +14,12 @@ public class DrawDriver : MonoBehaviour
     private readonly Color[] myColor = new Color[] { Color.black, Color.red, Color.green, Color.yellow };
 
     private bool _canDraw = false;
+
+    private Mouse mouse;
+    private Vector2 pointerPosition = Vector2.zero;
+    private TouchControl touch;
+
+    private bool isDrawing = false;
 
     private void Awake()
     {
@@ -26,18 +34,31 @@ public class DrawDriver : MonoBehaviour
     {
         if (_canDraw)
         {
+            mouse = Mouse.current;
+            touch = Touchscreen.current?.primaryTouch;
+
+            if (touch != null)
+            {
+                pointerPosition = touch.position.ReadValue();
+            } else
+            {
+                pointerPosition = mouse.position.ReadValue();
+            }
+
             //??
-            if (Input.GetMouseButtonDown(0))
+            if (!isDrawing && (mouse.leftButton.ReadValue() == 1 || touch?.pressure.ReadValue() > 0))
             {
                 DrawStart();
             }
-            if (Input.GetMouseButton(0))
+            if (isDrawing)
             {
-                DrawLine();
-            }
-            if (Input.GetMouseButtonUp(0))
-            {
-                DrawEnd();
+                if ((mouse.leftButton.ReadValue() == 0 && (touch == null || touch?.pressure.ReadValue() == 0)))
+                {
+                    DrawEnd();
+                } else
+                {
+                    DrawLine();
+                }
             }
         }
     }
@@ -64,25 +85,28 @@ public class DrawDriver : MonoBehaviour
     {
         if (MyCamera == null) return;
         //Debug.Log("??");
-        drawComponent.StartWrite(Input.mousePosition);
+        isDrawing = true;
+        drawComponent.StartWrite(pointerPosition, touch != null ? touch.pressure.ReadValue() : 1);
     }
 
     private void DrawLine()
     {
         if (MyCamera == null) return;
 
-        drawComponent.Writing(Input.mousePosition);
+        drawComponent.Writing(pointerPosition, touch != null ? touch.pressure.ReadValue() : 1);
     }
 
     public void DisableDrawing()
     {
         _canDraw = false;
+        isDrawing = false;
     }
 
     public Texture2D FinishDrawing()
     {
         var tex = drawComponent.GetTexture();
         _canDraw = false;
+        isDrawing = false;
 
         return tex;
     }
@@ -95,5 +119,6 @@ public class DrawDriver : MonoBehaviour
     private void DrawEnd()
     {
         //Debug.Log("??");
+        isDrawing = false;
     }
 }

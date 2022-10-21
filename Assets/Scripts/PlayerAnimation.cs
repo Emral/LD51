@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
 public class PlayerAnimation : MonoBehaviour
@@ -21,15 +22,29 @@ public class PlayerAnimation : MonoBehaviour
     public Sprite ShowingWearyHappy;
     public Sprite ShowingRelieved;
 
-    private Vector3 lastMousePosition;
+    private Vector2 lastMousePosition;
 
     private float cooldown = 0;
 
     // Update is called once per frame
     void Update()
     {
-        var delta = Input.mousePosition - lastMousePosition;
-        lastMousePosition = Input.mousePosition;
+        var mouse = Mouse.current;
+        var touch = Touchscreen.current?.primaryTouch;
+        var pos = Vector2.zero;
+
+        if (touch != null)
+        {
+            pos = touch.position.ReadValue();
+        }
+        else
+        {
+            pos = mouse.position.ReadValue();
+        }
+
+        var isPressing = mouse.leftButton.ReadValue() > 0 || (touch != null && touch.pressure.ReadValue() > 0);
+        var delta = pos - lastMousePosition;
+        lastMousePosition = pos;
         if (delta.magnitude > 75)
         {
             cooldown = 0.35f;
@@ -44,8 +59,8 @@ public class PlayerAnimation : MonoBehaviour
                 if (DayManager.TimerActive)
                 {
                     Head.sprite = BodyDown;
-                    Face.sprite = (cooldown > 0 && Input.GetMouseButton(0)) ? DrawingWearyFast : DrawingWeary;
-                    Pen.rectTransform.anchoredPosition = Vector3.right * 4 - Vector3.right * 20 * Input.mousePosition.x / Screen.width + Vector3.up * -2 * (Input.GetMouseButton(0) ? 4 : 0);
+                    Face.sprite = (cooldown > 0 && isPressing) ? DrawingWearyFast : DrawingWeary;
+                    Pen.rectTransform.anchoredPosition = Vector3.right * 4 - Vector3.right * 20 * pos.x / Screen.width + Vector3.up * -2 * (isPressing ? 4 : 0);
                 }
                 else
                 {
@@ -57,8 +72,8 @@ public class PlayerAnimation : MonoBehaviour
                 if (DayManager.TimerActive)
                 {
                     Head.sprite = BodyDown;
-                    Face.sprite = (cooldown > 0 && Input.GetMouseButton(0)) ? DrawingFast : DrawingNormal;
-                    Pen.rectTransform.anchoredPosition = Vector3.right * 4 - Vector3.right * 20 * Input.mousePosition.x / Screen.width + Vector3.up * -2 * (Input.GetMouseButton(0) ? 4 : 0);
+                    Face.sprite = (cooldown > 0 && isPressing) ? DrawingFast : DrawingNormal;
+                    Pen.rectTransform.anchoredPosition = Vector3.right * 4 - Vector3.right * 20 * pos.x / Screen.width + Vector3.up * -2 * (isPressing ? 4 : 0);
                 }
                 else
                 {

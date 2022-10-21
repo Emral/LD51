@@ -59,5 +59,9 @@ public enum Tag
 	Love = 56,
 	Kanji = 57,
 	Hot = 58,
+	egypt = 59,
+	polygonal = 60,
+	emoji = 61,
+	fbi = 62,
 
 }

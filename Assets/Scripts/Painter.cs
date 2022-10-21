@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Controls;
 using UnityEngine.UI;
 
 public class Painter : MonoBehaviour
@@ -10,6 +12,7 @@ public class Painter : MonoBehaviour
     private RawImage _img;
     private RectTransform _rt;
     private Camera _cam;
+
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +29,10 @@ public class Painter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButton(0))
+        var mouse = Mouse.current;
+        var touch = Touchscreen.current;
+
+        if (mouse.leftButton.ReadValue() == 1 || touch.primaryTouch.pressure.ReadValue() > 0)
         {
             if (RectTransformUtility.ScreenPointToLocalPointInRectangle(_rt, Input.mousePosition, _cam, out Vector2 localPoint))
             {

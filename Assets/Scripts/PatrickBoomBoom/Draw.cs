@@ -25,6 +25,8 @@ public class Draw : MonoBehaviour
     private RenderTexture m_lastRenderTex;
     private Canvas m_canvas;
 
+    private float size = 0;
+
     public void Init(Canvas canvas, Camera uiCamera)
     {
         m_canvas = canvas;
@@ -52,6 +54,7 @@ public class Draw : MonoBehaviour
     {
         brushMat.SetColor("_Color", brushColor);
         brushMat.SetFloat("_Size", size);
+        this.size = size;
     }
     public void SetProperty(Color brushColor)
     {
@@ -81,16 +84,18 @@ public class Draw : MonoBehaviour
         Graphics.Blit(null, m_lastRenderTex, clearMat);
     }
 
-    public void StartWrite(Vector3 pos)
+    public void StartWrite(Vector3 pos, float scale)
     {
         m_mousePos = pos;
         m_lastMousePos = pos;
         brushMat.SetColor("_Color", DayManager.Globals.PenColor);
+        brushMat.SetFloat("_Size", scale * size);
     }
 
-    public void Writing(Vector3 pos)
+    public void Writing(Vector3 pos, float scale)
     {
         m_mousePos = pos;
+        brushMat.SetFloat("_Size", scale * size);
         Paint();
         m_lastMousePos = pos;
     }

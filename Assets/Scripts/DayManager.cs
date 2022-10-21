@@ -164,7 +164,7 @@ public class DayManager : MonoBehaviour
         if (_dayActive)
         {
 #if UNITY_EDITOR
-            if (Input.GetKeyDown(KeyCode.K))
+            if (UnityEngine.InputSystem.Keyboard.current.kKey.ReadValue() == 1)
             {
                 _dayTimeElapsed = dayLength;
             }
@@ -277,6 +277,7 @@ public class DayManager : MonoBehaviour
 
             if (_dayActive)
             {
+                yield return new WaitForSeconds(Random.Range(Globals.weather.customerDelay.x, Globals.weather.customerDelay.y));
                 NewGuessable();
                 CanvasSurface.DOLocalMoveY(y, 0.25f, true).OnComplete(() =>
                 {

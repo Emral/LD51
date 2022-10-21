@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 using DG.Tweening;
 
 public class VolumeControl : MonoBehaviour
@@ -24,9 +25,10 @@ public class VolumeControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.mouseScrollDelta.y != 0)
+        var mouse = Mouse.current.scroll.y.ReadValue();
+        if (mouse != 0)
         {
-            volume = Mathf.Clamp(volume + Input.mouseScrollDelta.y * 2, 0, 100);
+            volume = Mathf.Clamp(volume + mouse * 2, 0, 100);
             mixer.SetFloat("masterVol", Mathf.Max(-80f, Mathf.Log(Mathf.Clamp01(volume * 0.01f)) * 20));
             VolumeGroup.alpha = 2;
 

@@ -64,7 +64,7 @@ public class Guessable
     [PreviewField(Height = 32, Alignment = ObjectFieldAlignment.Left)]
     [OnValueChanged("SetColors", InvokeOnUndoRedo = true)]
     public Sprite texture;
-    [Range(1, 4)]
+    [Range(1, 6)]
     public int strokeComplexity = 1;
 
     public bool allowHorizontalFlip = true;
