@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ce57628ff98e46c4096da17c0df9294e, type: 3}
-  m_Name: Guy_Dracula
+  m_Name: Guy_Emoji
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -228,16 +228,34 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 2
     - Name: 
       Entry: 7
       Data: 
     - Name: $k
       Entry: 3
-      Data: 3
+      Data: 1
     - Name: $v
       Entry: 7
       Data: 13|Guy+Chance, Assembly-CSharp
+    - Name: Multiplier
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 2
+    - Name: $v
+      Entry: 7
+      Data: 14|Guy+Chance, Assembly-CSharp
     - Name: Multiplier
       Entry: 4
       Data: 1
@@ -253,13 +271,13 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  idleSprite: {fileID: 21300000, guid: b01bd8d47b373ab4592635e10151f7cc, type: 3}
+  idleSprite: {fileID: 21300000, guid: 2c6d7b55d80dc9842bc2b63377278ac6, type: 3}
   leavesRightSide: 0
-  bias: -1
-  ArrivalSound: 120
+  bias: 0
+  ArrivalSound: 105
   OnlyAppearIfDayPrefersTag: 0
   PreferredTagSelectionChance: 0.5
-  preferredTags: 13000000
+  preferredTags: 3d000000
   thanksMessages:
     worst: []
     bad: []

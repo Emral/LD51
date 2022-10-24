@@ -120,7 +120,6 @@ public class SessionVariables : ScriptableObject
         LastDay = Day;
         Experience = 100;
         AddNewColorSet();
-        AddNewColorSet();
 #endif
         TodaysEarnings = 0;
         allDrawings = new List<Texture2D>();

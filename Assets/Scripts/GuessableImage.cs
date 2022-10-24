@@ -166,10 +166,14 @@ public class GuessableImage : SerializedScriptableObject
         foreach (var variation in sprite.variations)
         {
             ValidColors color = (ValidColors)0;
-            foreach (var col in variation.Values)
+            foreach (var col in Guessable.colorMap)
             {
-                color += (int)col;
+                if (variation.Values.Contains(col.Value))
+                {
+                    color += (int)col.Value;
+                }
             }
+
             if ((SessionVariables.Colors & color) == color)
             {
                 sprites.Add(variation);

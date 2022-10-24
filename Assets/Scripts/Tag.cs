@@ -63,5 +63,6 @@ public enum Tag
 	polygonal = 60,
 	emoji = 61,
 	fbi = 62,
+	frog = 63,
 
 }

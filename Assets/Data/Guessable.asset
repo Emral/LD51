@@ -130,7 +130,7 @@ MonoBehaviour:
     allowHorizontalFlip: 0
     allowVerticalFlip: 0
     colors: 33
-    tag: 0a0000000f00000018000000
+    tag: 0a0000000f000000180000003f000000
     variations:
     - Keys: 0100000020000000
       Values: 0100000001000000
@@ -1136,7 +1136,7 @@ MonoBehaviour:
   - texture: {fileID: 1682877175, guid: 50eae042970217d4eac26422469ca83e, type: 3}
     strokeComplexity: 2
     allowHorizontalFlip: 0
-    allowVerticalFlip: 1
+    allowVerticalFlip: 0
     colors: 8
     tag: 28000000
     variations:

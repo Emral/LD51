@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ce57628ff98e46c4096da17c0df9294e, type: 3}
-  m_Name: Guy_Dracula
+  m_Name: Guy_Anubis
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -253,13 +253,13 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  idleSprite: {fileID: 21300000, guid: b01bd8d47b373ab4592635e10151f7cc, type: 3}
+  idleSprite: {fileID: 21300000, guid: 598d83b2f926ed14f93b9f4a6855d5bc, type: 3}
   leavesRightSide: 0
-  bias: -1
-  ArrivalSound: 120
+  bias: -0.5
+  ArrivalSound: 0
   OnlyAppearIfDayPrefersTag: 0
   PreferredTagSelectionChance: 0.5
-  preferredTags: 13000000
+  preferredTags: 3b000000
   thanksMessages:
     worst: []
     bad: []

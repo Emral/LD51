@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ce57628ff98e46c4096da17c0df9294e, type: 3}
-  m_Name: Guy_Dracula
+  m_Name: Guy_WorriedSkeleton
   m_EditorClassIdentifier: 
   serializationData:
     SerializedFormat: 2
@@ -40,13 +40,13 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 9
+      Data: 3
     - Name: 
       Entry: 7
       Data: 
     - Name: $k
       Entry: 3
-      Data: 1
+      Data: 7
     - Name: $v
       Entry: 7
       Data: 2|Guy+Weight, Assembly-CSharp
@@ -64,31 +64,13 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 3
-      Data: 2
+      Data: 5
     - Name: $v
       Entry: 7
       Data: 3|Guy+Weight, Assembly-CSharp
     - Name: WeightValue
       Entry: 3
-      Data: 3
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 3
-    - Name: $v
-      Entry: 7
-      Data: 4|Guy+Weight, Assembly-CSharp
-    - Name: WeightValue
-      Entry: 3
-      Data: 3
+      Data: 10
     - Name: 
       Entry: 8
       Data: 
@@ -103,100 +85,10 @@ MonoBehaviour:
       Data: 4
     - Name: $v
       Entry: 7
-      Data: 5|Guy+Weight, Assembly-CSharp
+      Data: 4|Guy+Weight, Assembly-CSharp
     - Name: WeightValue
-      Entry: 3
-      Data: 3
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 5
-    - Name: $v
-      Entry: 7
-      Data: 6|Guy+Weight, Assembly-CSharp
-    - Name: WeightValue
-      Entry: 3
-      Data: 3
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 6
-    - Name: $v
-      Entry: 7
-      Data: 7|Guy+Weight, Assembly-CSharp
-    - Name: WeightValue
-      Entry: 3
-      Data: 3
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 7
-    - Name: $v
-      Entry: 7
-      Data: 8|Guy+Weight, Assembly-CSharp
-    - Name: WeightValue
-      Entry: 3
-      Data: 3
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
       Entry: 3
       Data: 8
-    - Name: $v
-      Entry: 7
-      Data: 9|Guy+Weight, Assembly-CSharp
-    - Name: WeightValue
-      Entry: 3
-      Data: 3
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 9
-    - Name: $v
-      Entry: 7
-      Data: 10|Guy+Weight, Assembly-CSharp
-    - Name: WeightValue
-      Entry: 3
-      Data: 3
     - Name: 
       Entry: 8
       Data: 
@@ -211,11 +103,11 @@ MonoBehaviour:
       Data: 
     - Name: seasonAppearanceMultipliers
       Entry: 7
-      Data: 11|System.Collections.Generic.Dictionary`2[[Season, Assembly-CSharp],[Guy+Chance,
+      Data: 5|System.Collections.Generic.Dictionary`2[[Season, Assembly-CSharp],[Guy+Chance,
         Assembly-CSharp]], mscorlib
     - Name: comparer
       Entry: 7
-      Data: 12|System.Collections.Generic.EnumEqualityComparer`1[[Season, Assembly-CSharp]],
+      Data: 6|System.Collections.Generic.EnumEqualityComparer`1[[Season, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
@@ -228,7 +120,43 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 4
+    - Name: $v
+      Entry: 7
+      Data: 7|Guy+Chance, Assembly-CSharp
+    - Name: Multiplier
+      Entry: 4
+      Data: 0.7
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 2
+    - Name: $v
+      Entry: 7
+      Data: 8|Guy+Chance, Assembly-CSharp
+    - Name: Multiplier
+      Entry: 4
+      Data: 0.3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: 
       Entry: 7
       Data: 
@@ -237,7 +165,7 @@ MonoBehaviour:
       Data: 3
     - Name: $v
       Entry: 7
-      Data: 13|Guy+Chance, Assembly-CSharp
+      Data: 9|Guy+Chance, Assembly-CSharp
     - Name: Multiplier
       Entry: 4
       Data: 1
@@ -253,13 +181,13 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  idleSprite: {fileID: 21300000, guid: b01bd8d47b373ab4592635e10151f7cc, type: 3}
+  idleSprite: {fileID: 21300000, guid: 69dd53c6262baaa4988b836d7a536056, type: 3}
   leavesRightSide: 0
-  bias: -1
-  ArrivalSound: 120
+  bias: -0.5
+  ArrivalSound: 0
   OnlyAppearIfDayPrefersTag: 0
   PreferredTagSelectionChance: 0.5
-  preferredTags: 13000000
+  preferredTags: 190000001100000015000000
   thanksMessages:
     worst: []
     bad: []
