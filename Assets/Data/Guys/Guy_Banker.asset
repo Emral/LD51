@@ -187,7 +187,7 @@ MonoBehaviour:
   ArrivalSound: 101
   OnlyAppearIfDayPrefersTag: 0
   PreferredTagSelectionChance: 0.5
-  preferredTags: 250000002400000010000000
+  preferredTags: 25000000420000001000000041000000
   thanksMessages:
     worst: []
     bad: []
