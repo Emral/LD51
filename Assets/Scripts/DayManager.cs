@@ -93,7 +93,7 @@ public class DayManager : MonoBehaviour
 
 
         guys.ResetAll();
-        if (SessionVariables.Day > 1)
+        if (SessionVariables.Day > 0)
         {
             rushHourDuration = Mathf.Clamp(rushHourDuration * Globals.weather.rushHourMultiplier, Globals.weather.rushHourMinMax.x, Globals.weather.rushHourMinMax.y);
 
@@ -106,12 +106,12 @@ public class DayManager : MonoBehaviour
         Globals.RushHourEnd = Mathf.Clamp(Random.Range(0.8f, 1), rushHourDuration, 1);
         Globals.RushHourStart = Globals.RushHourEnd - rushHourDuration;
 
-        if (SessionVariables.Day == 1)
+        if (SessionVariables.Day == 0)
         {
             await MetaManager.instance.DoTutorial(Mechanics.HowToPlay);
         }
 
-        if (SessionVariables.Day == 2)
+        if (SessionVariables.Day == 1)
         {
             await MetaManager.instance.DoTutorial(Mechanics.SelectColor);
         }
@@ -121,7 +121,7 @@ public class DayManager : MonoBehaviour
             await MetaManager.instance.DoTutorial(Mechanics.RushHour);
         }
 
-        if (SessionVariables.Day == 4)
+        if (SessionVariables.Day == 3)
         {
             await MetaManager.instance.DoTutorial(Mechanics.MoneyExplanation);
         }
@@ -257,7 +257,7 @@ public class DayManager : MonoBehaviour
             DrawController.Clear();
             yield return new WaitForSeconds(0.5f);
 
-            if (SessionVariables.Day == 1)
+            if (SessionVariables.Day == 0)
             {
                 drawingsDone++;
 

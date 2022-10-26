@@ -50,8 +50,21 @@ public class WeatherConfig
     public Sprite preScreenWindowScrollingTexture;
     public float preScreenWindowScrollingTextureSpeed;
     [PreviewField]
+    [HorizontalGroup(GroupID = "D")]
     [HideLabel]
-    public Sprite weatherIcon;
+    public Sprite weatherIconSpring;
+    [PreviewField]
+    [HorizontalGroup(GroupID = "D")]
+    [HideLabel]
+    public Sprite weatherIconSummer;
+    [PreviewField]
+    [HorizontalGroup(GroupID = "D")]
+    [HideLabel]
+    public Sprite weatherIconAutumn;
+    [PreviewField]
+    [HorizontalGroup(GroupID = "D")]
+    [HideLabel]
+    public Sprite weatherIconWinter;
 
     public List<string> sallyDialogue;
 

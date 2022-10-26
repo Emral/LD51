@@ -109,14 +109,14 @@ public class SessionVariables : ScriptableObject
         Reputation = 0;
         MaxIncomeBase = 10;
         IncomeMultiplier = 1;
-        LastDay = 1;
-        Day = 1;
+        LastDay = 0;
+        Day = 0;
         _savings = 50;
         Colors = ValidColors.Black;
 
 #if UNITY_EDITOR
         _savings = 500;
-        Day = 28;
+        Day = 18;
         LastDay = Day;
         Experience = 100;
         AddNewColorSet();
@@ -127,7 +127,7 @@ public class SessionVariables : ScriptableObject
         UpcomingWeathers = new List<WeatherConfig>();
         Events = new List<Event>();
 
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < 40; i++)
         {
             CalculateWeather(Day + i);
         }
@@ -135,7 +135,6 @@ public class SessionVariables : ScriptableObject
 
     private static void CalculateWeather(int day)
     {
-        day = day - 1;
         var list = seasonSettings.springWeathersByDay;
 
         if (day % 40 >= 30)
@@ -159,7 +158,7 @@ public class SessionVariables : ScriptableObject
 
     public static WeatherConfig GetUpcomingWeather(int i)
     {
-        return UpcomingWeathers[(i)];
+        return UpcomingWeathers[i];
     }
 
     public static async void NewDayBegins()
@@ -207,7 +206,7 @@ public class SessionVariables : ScriptableObject
             await MetaManager.instance.DoTutorial(Mechanics.Rain);
         }
 
-        if (Followers >= 25 && Day > 3)
+        if (Followers >= 25 && Day > 2)
         {
             await MetaManager.instance.DoTutorial(Mechanics.Followers);
         }
@@ -215,7 +214,7 @@ public class SessionVariables : ScriptableObject
 
     public static string GetMessageOfTheDay()
     {
-        if (Day == 1)
+        if (Day == 0)
         {
             return "Alright, let's get started! Today is the first day of my new art studio!";
         } else if (Events.Count > 0 && !Events[Events.Count - 1].EventLogSeen())
@@ -392,6 +391,11 @@ public class SessionVariables : ScriptableObject
 
     public static Season GetSeason()
     {
-        return (Season) (1 + (Mathf.Min((Day-1) / 10.0f) % 4));
+        return GetSeason(Day);
+    }
+
+    public static Season GetSeason(int day)
+    {
+        return (Season)(1 + (Mathf.Floor(day / 10.0f) % 4));
     }
 }

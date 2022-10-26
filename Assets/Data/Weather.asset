@@ -20,12 +20,21 @@ MonoBehaviour:
     - {fileID: -683680980, guid: 389bccd69ceab894b92d1750e4158cb5, type: 3}
     - {fileID: -2127535988, guid: 9d93ef2304e8d0b46b5b4edf651acb4a, type: 3}
     - {fileID: 1278272830, guid: fe8def34b9cef9c458dd310178f0f121, type: 3}
+    - {fileID: 792834312, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
+    - {fileID: -1130394357, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
+    - {fileID: 1948635282, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
     - {fileID: 1529488312, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
     - {fileID: -2143683377, guid: 389bccd69ceab894b92d1750e4158cb5, type: 3}
     - {fileID: 1550394282, guid: 389bccd69ceab894b92d1750e4158cb5, type: 3}
+    - {fileID: -1095546947, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
+    - {fileID: -2080524781, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
+    - {fileID: -1837377133, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
     - {fileID: 1905037624, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
     - {fileID: -1458780045, guid: 389bccd69ceab894b92d1750e4158cb5, type: 3}
     - {fileID: -881454476, guid: 389bccd69ceab894b92d1750e4158cb5, type: 3}
+    - {fileID: 1638713412, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
+    - {fileID: 966603526, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
+    - {fileID: 430910218, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
     - {fileID: -1488672755, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
     - {fileID: 42950339, guid: 389bccd69ceab894b92d1750e4158cb5, type: 3}
     - {fileID: 919066003, guid: 389bccd69ceab894b92d1750e4158cb5, type: 3}
@@ -33,20 +42,41 @@ MonoBehaviour:
     - {fileID: 441651585, guid: 9d93ef2304e8d0b46b5b4edf651acb4a, type: 3}
     - {fileID: 21300000, guid: 769669bf619ac2a49af42531e5be991e, type: 3}
     - {fileID: 493965287, guid: fe8def34b9cef9c458dd310178f0f121, type: 3}
+    - {fileID: -1646566736, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
+    - {fileID: 582232082, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
+    - {fileID: 831523271, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
     - {fileID: -1686759861, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
+    - {fileID: 799304518, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
+    - {fileID: -313535132, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
+    - {fileID: -1697378135, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
     - {fileID: -1580113956, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
     - {fileID: -224604990, guid: 389bccd69ceab894b92d1750e4158cb5, type: 3}
     - {fileID: 920144725, guid: 389bccd69ceab894b92d1750e4158cb5, type: 3}
     - {fileID: -1471771053, guid: 9d93ef2304e8d0b46b5b4edf651acb4a, type: 3}
     - {fileID: 225279657, guid: fe8def34b9cef9c458dd310178f0f121, type: 3}
+    - {fileID: 63735380, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
+    - {fileID: 1118377307, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
+    - {fileID: 1394159509, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
     - {fileID: -1052792445, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
+    - {fileID: 191756374, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
+    - {fileID: 580946822, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
+    - {fileID: -670231060, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
     - {fileID: 810213386, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
+    - {fileID: 96978101, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
+    - {fileID: 1859468734, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
+    - {fileID: 591365158, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
     - {fileID: 1677313940, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
+    - {fileID: -1189914211, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
+    - {fileID: -1778527968, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
+    - {fileID: -807506870, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
     - {fileID: -1867738658, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
     - {fileID: -425544912, guid: 389bccd69ceab894b92d1750e4158cb5, type: 3}
     - {fileID: -1206805055, guid: 389bccd69ceab894b92d1750e4158cb5, type: 3}
     - {fileID: 1965332221, guid: 9d93ef2304e8d0b46b5b4edf651acb4a, type: 3}
     - {fileID: 247249791, guid: fe8def34b9cef9c458dd310178f0f121, type: 3}
+    - {fileID: -478210564, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
+    - {fileID: -394449948, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
+    - {fileID: -1121461631, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
     - {fileID: -1940875389, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
@@ -148,9 +178,18 @@ MonoBehaviour:
     - Name: preScreenWindowScrollingTextureSpeed
       Entry: 4
       Data: 0
-    - Name: weatherIcon
+    - Name: weatherIconSpring
       Entry: 10
       Data: 4
+    - Name: weatherIconSummer
+      Entry: 10
+      Data: 5
+    - Name: weatherIconAutumn
+      Entry: 10
+      Data: 6
+    - Name: weatherIconWinter
+      Entry: 10
+      Data: 7
     - Name: sallyDialogue
       Entry: 7
       Data: 3|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
@@ -237,10 +276,10 @@ MonoBehaviour:
       Data: 
     - Name: exteriorImageDay
       Entry: 10
-      Data: 5
+      Data: 8
     - Name: exteriorImageNight
       Entry: 10
-      Data: 6
+      Data: 9
     - Name: scrollingWeatherTexture
       Entry: 6
       Data: 
@@ -265,9 +304,18 @@ MonoBehaviour:
     - Name: preScreenWindowScrollingTextureSpeed
       Entry: 4
       Data: 0
-    - Name: weatherIcon
+    - Name: weatherIconSpring
       Entry: 10
-      Data: 7
+      Data: 10
+    - Name: weatherIconSummer
+      Entry: 10
+      Data: 11
+    - Name: weatherIconAutumn
+      Entry: 10
+      Data: 12
+    - Name: weatherIconWinter
+      Entry: 10
+      Data: 13
     - Name: sallyDialogue
       Entry: 7
       Data: 6|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
@@ -354,10 +402,10 @@ MonoBehaviour:
       Data: 
     - Name: exteriorImageDay
       Entry: 10
-      Data: 8
+      Data: 14
     - Name: exteriorImageNight
       Entry: 10
-      Data: 9
+      Data: 15
     - Name: scrollingWeatherTexture
       Entry: 6
       Data: 
@@ -382,9 +430,18 @@ MonoBehaviour:
     - Name: preScreenWindowScrollingTextureSpeed
       Entry: 4
       Data: 0
-    - Name: weatherIcon
+    - Name: weatherIconSpring
       Entry: 10
-      Data: 10
+      Data: 16
+    - Name: weatherIconSummer
+      Entry: 10
+      Data: 17
+    - Name: weatherIconAutumn
+      Entry: 10
+      Data: 18
+    - Name: weatherIconWinter
+      Entry: 10
+      Data: 19
     - Name: sallyDialogue
       Entry: 7
       Data: 9|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
@@ -471,37 +528,46 @@ MonoBehaviour:
       Data: 
     - Name: exteriorImageDay
       Entry: 10
-      Data: 11
+      Data: 20
     - Name: exteriorImageNight
       Entry: 10
-      Data: 12
+      Data: 21
     - Name: scrollingWeatherTexture
       Entry: 10
-      Data: 13
+      Data: 22
     - Name: scrollingWeatherTextureSpeed
       Entry: 4
       Data: 1.5
     - Name: preScreenExterior
       Entry: 10
-      Data: 14
+      Data: 23
     - Name: preScreenScrollingTexture
       Entry: 10
-      Data: 15
+      Data: 24
     - Name: preScreenScrollingTextureSpeed
       Entry: 4
       Data: 1
     - Name: preScreenWindowBackground
       Entry: 10
-      Data: 16
+      Data: 25
     - Name: preScreenWindowScrollingTexture
       Entry: 6
       Data: 
     - Name: preScreenWindowScrollingTextureSpeed
       Entry: 4
       Data: 0
-    - Name: weatherIcon
+    - Name: weatherIconSpring
       Entry: 10
-      Data: 17
+      Data: 26
+    - Name: weatherIconSummer
+      Entry: 10
+      Data: 27
+    - Name: weatherIconAutumn
+      Entry: 10
+      Data: 28
+    - Name: weatherIconWinter
+      Entry: 10
+      Data: 29
     - Name: sallyDialogue
       Entry: 7
       Data: 12|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
@@ -591,37 +657,46 @@ MonoBehaviour:
       Data: 
     - Name: exteriorImageDay
       Entry: 10
-      Data: 11
+      Data: 20
     - Name: exteriorImageNight
       Entry: 10
-      Data: 12
+      Data: 21
     - Name: scrollingWeatherTexture
       Entry: 10
-      Data: 13
+      Data: 22
     - Name: scrollingWeatherTextureSpeed
       Entry: 4
       Data: 1.5
     - Name: preScreenExterior
       Entry: 10
-      Data: 14
+      Data: 23
     - Name: preScreenScrollingTexture
       Entry: 10
-      Data: 15
+      Data: 24
     - Name: preScreenScrollingTextureSpeed
       Entry: 4
       Data: 1
     - Name: preScreenWindowBackground
       Entry: 10
-      Data: 16
+      Data: 25
     - Name: preScreenWindowScrollingTexture
       Entry: 6
       Data: 
     - Name: preScreenWindowScrollingTextureSpeed
       Entry: 4
       Data: 0
-    - Name: weatherIcon
+    - Name: weatherIconSpring
       Entry: 10
-      Data: 18
+      Data: 30
+    - Name: weatherIconSummer
+      Entry: 10
+      Data: 31
+    - Name: weatherIconAutumn
+      Entry: 10
+      Data: 32
+    - Name: weatherIconWinter
+      Entry: 10
+      Data: 33
     - Name: sallyDialogue
       Entry: 7
       Data: 15|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
@@ -714,10 +789,10 @@ MonoBehaviour:
       Data: 
     - Name: exteriorImageDay
       Entry: 10
-      Data: 19
+      Data: 34
     - Name: exteriorImageNight
       Entry: 10
-      Data: 20
+      Data: 35
     - Name: scrollingWeatherTexture
       Entry: 6
       Data: 
@@ -726,7 +801,7 @@ MonoBehaviour:
       Data: 0
     - Name: preScreenExterior
       Entry: 10
-      Data: 21
+      Data: 36
     - Name: preScreenScrollingTexture
       Entry: 6
       Data: 
@@ -735,16 +810,25 @@ MonoBehaviour:
       Data: 0
     - Name: preScreenWindowBackground
       Entry: 10
-      Data: 22
+      Data: 37
     - Name: preScreenWindowScrollingTexture
       Entry: 6
       Data: 
     - Name: preScreenWindowScrollingTextureSpeed
       Entry: 4
       Data: 0
-    - Name: weatherIcon
+    - Name: weatherIconSpring
       Entry: 10
-      Data: 23
+      Data: 38
+    - Name: weatherIconSummer
+      Entry: 10
+      Data: 39
+    - Name: weatherIconAutumn
+      Entry: 10
+      Data: 40
+    - Name: weatherIconWinter
+      Entry: 10
+      Data: 41
     - Name: sallyDialogue
       Entry: 7
       Data: 18|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
@@ -859,9 +943,18 @@ MonoBehaviour:
     - Name: preScreenWindowScrollingTextureSpeed
       Entry: 4
       Data: 0
-    - Name: weatherIcon
+    - Name: weatherIconSpring
       Entry: 10
-      Data: 24
+      Data: 42
+    - Name: weatherIconSummer
+      Entry: 10
+      Data: 43
+    - Name: weatherIconAutumn
+      Entry: 10
+      Data: 44
+    - Name: weatherIconWinter
+      Entry: 10
+      Data: 45
     - Name: sallyDialogue
       Entry: 7
       Data: 21|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
@@ -952,10 +1045,10 @@ MonoBehaviour:
       Data: 
     - Name: exteriorImageDay
       Entry: 10
-      Data: 11
+      Data: 20
     - Name: exteriorImageNight
       Entry: 10
-      Data: 12
+      Data: 21
     - Name: scrollingWeatherTexture
       Entry: 6
       Data: 
@@ -964,7 +1057,7 @@ MonoBehaviour:
       Data: 0
     - Name: preScreenExterior
       Entry: 10
-      Data: 14
+      Data: 23
     - Name: preScreenScrollingTexture
       Entry: 6
       Data: 
@@ -973,16 +1066,25 @@ MonoBehaviour:
       Data: 0
     - Name: preScreenWindowBackground
       Entry: 10
-      Data: 16
+      Data: 25
     - Name: preScreenWindowScrollingTexture
       Entry: 6
       Data: 
     - Name: preScreenWindowScrollingTextureSpeed
       Entry: 4
       Data: 0
-    - Name: weatherIcon
+    - Name: weatherIconSpring
       Entry: 10
-      Data: 25
+      Data: 46
+    - Name: weatherIconSummer
+      Entry: 10
+      Data: 47
+    - Name: weatherIconAutumn
+      Entry: 10
+      Data: 48
+    - Name: weatherIconWinter
+      Entry: 10
+      Data: 49
     - Name: sallyDialogue
       Entry: 7
       Data: 24|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
@@ -1069,10 +1171,10 @@ MonoBehaviour:
       Data: 
     - Name: exteriorImageDay
       Entry: 10
-      Data: 11
+      Data: 20
     - Name: exteriorImageNight
       Entry: 10
-      Data: 12
+      Data: 21
     - Name: scrollingWeatherTexture
       Entry: 6
       Data: 
@@ -1081,7 +1183,7 @@ MonoBehaviour:
       Data: 0
     - Name: preScreenExterior
       Entry: 10
-      Data: 14
+      Data: 23
     - Name: preScreenScrollingTexture
       Entry: 6
       Data: 
@@ -1090,16 +1192,25 @@ MonoBehaviour:
       Data: 0
     - Name: preScreenWindowBackground
       Entry: 10
-      Data: 16
+      Data: 25
     - Name: preScreenWindowScrollingTexture
       Entry: 6
       Data: 
     - Name: preScreenWindowScrollingTextureSpeed
       Entry: 4
       Data: 0
-    - Name: weatherIcon
+    - Name: weatherIconSpring
       Entry: 10
-      Data: 26
+      Data: 50
+    - Name: weatherIconSummer
+      Entry: 10
+      Data: 51
+    - Name: weatherIconAutumn
+      Entry: 10
+      Data: 52
+    - Name: weatherIconWinter
+      Entry: 10
+      Data: 53
     - Name: sallyDialogue
       Entry: 7
       Data: 27|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
@@ -1189,10 +1300,10 @@ MonoBehaviour:
       Data: 
     - Name: exteriorImageDay
       Entry: 10
-      Data: 27
+      Data: 54
     - Name: exteriorImageNight
       Entry: 10
-      Data: 28
+      Data: 55
     - Name: scrollingWeatherTexture
       Entry: 6
       Data: 
@@ -1201,7 +1312,7 @@ MonoBehaviour:
       Data: 0
     - Name: preScreenExterior
       Entry: 10
-      Data: 29
+      Data: 56
     - Name: preScreenScrollingTexture
       Entry: 6
       Data: 
@@ -1210,16 +1321,25 @@ MonoBehaviour:
       Data: 0
     - Name: preScreenWindowBackground
       Entry: 10
-      Data: 30
+      Data: 57
     - Name: preScreenWindowScrollingTexture
       Entry: 6
       Data: 
     - Name: preScreenWindowScrollingTextureSpeed
       Entry: 4
       Data: 0
-    - Name: weatherIcon
+    - Name: weatherIconSpring
       Entry: 10
-      Data: 31
+      Data: 58
+    - Name: weatherIconSummer
+      Entry: 10
+      Data: 59
+    - Name: weatherIconAutumn
+      Entry: 10
+      Data: 60
+    - Name: weatherIconWinter
+      Entry: 10
+      Data: 61
     - Name: sallyDialogue
       Entry: 7
       Data: 30|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib

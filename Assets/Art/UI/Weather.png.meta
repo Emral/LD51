@@ -124,7 +124,7 @@ TextureImporter:
         width: 87
         height: 61
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -145,7 +145,7 @@ TextureImporter:
         width: 87
         height: 61
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -166,7 +166,7 @@ TextureImporter:
         width: 87
         height: 61
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -187,7 +187,7 @@ TextureImporter:
         width: 87
         height: 61
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -208,7 +208,7 @@ TextureImporter:
         width: 87
         height: 61
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -325,6 +325,636 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Weather_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 427
+        width: 87
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d89986817b225f840a457cde3567d4ac
+      internalID: -1095546947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weather_11
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 427
+        width: 87
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 343a538481e86e049bfab29a605a523c
+      internalID: 1638713412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weather_12
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 427
+        width: 87
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a551128bbaec8a4084cfe7d65ec2b66
+      internalID: 792834312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weather_13
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 427
+        width: 87
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab23ece709a20294c817e322ec28a647
+      internalID: -1646566736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weather_14
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 427
+        width: 87
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6de3028323d22f843a5ad19c51472ff3
+      internalID: 799304518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weather_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 366
+        width: 87
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82290bce1922ce845adec072c906b41e
+      internalID: -478210564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weather_16
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 366
+        width: 87
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d9c8ebfa7ea95f4ea1a4a2ee30a71bb
+      internalID: 191756374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weather_17
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 366
+        width: 87
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 420cefa29e9ffda49a522aab421cc42a
+      internalID: 63735380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weather_18
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 366
+        width: 87
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c776840b9ac6d924ab5847daaebb53d1
+      internalID: 96978101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weather_19
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 366
+        width: 87
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9bae04a72b23db4e968426b35e98528
+      internalID: -1189914211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weather_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 305
+        width: 87
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38ca25338b5c1884684cac1f2821f47c
+      internalID: -2080524781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weather_21
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 305
+        width: 87
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c52ddb6e45ce56640a789a8cede82a82
+      internalID: 966603526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weather_22
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 305
+        width: 87
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58f6c52890769014c9367fe5fab687bd
+      internalID: -1130394357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weather_23
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 305
+        width: 87
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a80dbd926bd44b408d660bcf71c0444
+      internalID: 582232082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weather_24
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 305
+        width: 87
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03daef7939a80b740a47ed91f9a45694
+      internalID: -313535132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weather_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 244
+        width: 87
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cf20e3187f80834e938b01ad40a8fa3
+      internalID: -394449948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weather_26
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 244
+        width: 87
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0030996d94589a7448f57410bfd7ef66
+      internalID: 580946822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weather_27
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 244
+        width: 87
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48451d4e4e7158c45989b2a9a14c5f8a
+      internalID: 1118377307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weather_28
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 244
+        width: 87
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0198f0647b3a964297e9275c2ad0177
+      internalID: 1859468734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weather_29
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 244
+        width: 87
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c484fd5b9e9a5144a4299c7a62b17b5
+      internalID: -1778527968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weather_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 183
+        width: 87
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8866f6d8e8ca8ad41b1c159e00c86839
+      internalID: -1837377133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weather_31
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 183
+        width: 87
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f26e7f34073e6144d84e38838362e444
+      internalID: 430910218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weather_32
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 183
+        width: 87
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a5c3f04a531db34db07bf9a24daeeb7
+      internalID: 1948635282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weather_33
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 183
+        width: 87
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d29d62863032fdc42b561af77faeb729
+      internalID: 831523271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weather_34
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 183
+        width: 87
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 454d5613c8448e6409cef2181f9b5f9b
+      internalID: -1697378135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weather_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 122
+        width: 87
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0998c4f69d75d34fbc5ac7f79afd438
+      internalID: -1121461631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weather_36
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 122
+        width: 87
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e0c1d609d225b847b56a193b9189ea5
+      internalID: -670231060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weather_37
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 122
+        width: 87
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99bff1a834c300249b9dadd9e90554fc
+      internalID: 1394159509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weather_38
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 122
+        width: 87
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34c0b2f39e94ed04681cd7b165ce6d4b
+      internalID: 591365158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weather_39
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 122
+        width: 87
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07314bc15655d024389335d80e789d85
+      internalID: -807506870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -336,16 +966,46 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Weather_24: -313535132
+      Weather_29: -1778527968
+      Weather_28: 1859468734
+      Weather_36: -670231060
+      Weather_25: -394449948
+      Weather_11: 1638713412
       Weather_3: 1677313940
+      Weather_18: 96978101
+      Weather_22: -1130394357
+      Weather_26: 580946822
+      Weather_39: -807506870
+      Weather_27: 1118377307
+      Weather_37: 1394159509
+      Weather_35: -1121461631
+      Weather_33: 831523271
       Weather_5: 1905037624
       Weather_8: -1686759861
       Weather_9: -1580113956
+      Weather_34: -1697378135
+      Weather_13: -1646566736
+      Weather_30: -1837377133
       Weather_2: -1052792445
+      Weather_20: -2080524781
+      Weather_17: 63735380
+      Weather_21: 966603526
       Weather_7: 1529488312
+      Weather_31: 430910218
+      Weather_10: -1095546947
+      Weather_38: 591365158
       Weather_6: -1488672755
       Weather_0: -1940875389
+      Weather_15: -478210564
       Weather_4: -1867738658
+      Weather_32: 1948635282
+      Weather_16: 191756374
+      Weather_19: -1189914211
+      Weather_14: 799304518
       Weather_1: 810213386
+      Weather_12: 792834312
+      Weather_23: 582232082
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

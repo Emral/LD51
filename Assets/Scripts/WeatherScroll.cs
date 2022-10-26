@@ -23,26 +23,41 @@ public class WeatherScroll : MonoBehaviour
         circle.fillAmount = 0;
         for (int i = 0; i < 5; i++)
         {
-            var p = Instantiate(prefab, root);
-            p.img.sprite = SessionVariables.GetUpcomingWeather(i).weatherIcon;
 
-            var day = i + SessionVariables.Day;
-            var d = i + 1;
-            if (SessionVariables.Day != 1)
+            var d = i;
+            if (SessionVariables.Day != SessionVariables.LastDay)
             {
                 d = d - 1;
                 scroll = true;
             }
 
+            var p = Instantiate(prefab, root);
+
+            var day = d + SessionVariables.Day;
+            switch (SessionVariables.GetSeason(day))
+            {
+                case Season.Spring:
+                    p.img.sprite = SessionVariables.GetUpcomingWeather(i).weatherIconSpring;
+                    break;
+                case Season.Summer:
+                    p.img.sprite = SessionVariables.GetUpcomingWeather(i).weatherIconSummer;
+                    break;
+                case Season.Autumn:
+                    p.img.sprite = SessionVariables.GetUpcomingWeather(i).weatherIconAutumn;
+                    break;
+                case Season.Winter:
+                    p.img.sprite = SessionVariables.GetUpcomingWeather(i).weatherIconWinter;
+                    break;
+            }
             p.txt.text = SessionVariables.GetUpcomingWeather(i).name;
 
-            if (d == 1)
+            if (d == 0)
             {
                 p.txt.gameObject.SetActive(true);
             }
         }
 
-        if (SessionVariables.Day != 1)
+        if (SessionVariables.Day != SessionVariables.LastDay)
         {
             SessionVariables.RemoveOldestWeather();
         }

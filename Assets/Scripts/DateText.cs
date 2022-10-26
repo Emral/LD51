@@ -11,6 +11,6 @@ public class DateText : MonoBehaviour
     void Start()
     {
         _text = GetComponent<Text>();
-        _text.text = SessionVariables.GetSeason().ToString() + ", " + "Day " + (((SessionVariables.Day - 1) % 10) + 1);
+        _text.text = SessionVariables.GetSeason().ToString() + ", " + "Day " + (((SessionVariables.Day) % 10) + 1);
     }
 }
