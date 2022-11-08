@@ -13,6 +13,7 @@ public class MetaManager : MonoBehaviour
     public TutorialsList tutorials;
     public WeatherSettings weathers;
     public Seasons seasons;
+    public OptionsMenuController options;
 
     public RectTransform LoadScreen;
 

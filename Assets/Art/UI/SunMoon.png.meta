@@ -119,12 +119,12 @@ TextureImporter:
       name: SunMoon_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 9
-        width: 12
-        height: 12
+        x: 14
+        y: 3
+        width: 17
+        height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -140,12 +140,12 @@ TextureImporter:
       name: SunMoon_1
       rect:
         serializedVersion: 2
-        x: 33
-        y: 7
-        width: 15
-        height: 15
+        x: 73
+        y: 3
+        width: 17
+        height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -153,6 +153,69 @@ TextureImporter:
       bones: []
       spriteID: 403ac2b1adfd1534b9734f18703b0b3f
       internalID: -968432210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SunMoon_2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 8
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 2, y: 2, z: 2, w: 2}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2dfa42edb48fee4e97e7e8f0df88b49
+      internalID: -996825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SunMoon_3
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 3
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25414e86ea2a2c74d866bdd01a89f5e3
+      internalID: 209351620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SunMoon_4
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 3
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e8a0ada92fc24644bfd7db54617145c
+      internalID: -405373753
       vertices: []
       indices: 
       edges: []
@@ -168,8 +231,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      SunMoon_3: 209351620
+      SunMoon_4: -405373753
       SunMoon_1: -968432210
       SunMoon_0: 1856121821
+      SunMoon_2: -996825
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

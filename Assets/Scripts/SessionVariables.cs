@@ -81,8 +81,8 @@ public class SessionVariables : ScriptableObject
     }
     public static float MaxIncomeBase = 10;
     public static float TodaysEarnings = 0;
-    public static int Day = 1;
-    public static int LastDay = 1;
+    public static int Day = 0;
+    public static int LastDay = 0;
 
     public static ValidColors Colors;
 
@@ -116,9 +116,10 @@ public class SessionVariables : ScriptableObject
 
 #if UNITY_EDITOR
         _savings = 500;
-        Day = 18;
+        Day = 0;
         LastDay = Day;
         Experience = 100;
+        AddNewColorSet();
         AddNewColorSet();
 #endif
         TodaysEarnings = 0;
@@ -167,9 +168,6 @@ public class SessionVariables : ScriptableObject
         foreach (var expense in Expenses)
         {
             expense.Multiplier = expense.DefaultMultiplier;
-
-            Debug.Log(expense.Name);
-            Debug.Log(expense.Multiplier);
         }
         LastDay = Day;
         SFX.DayAdvance.Play();

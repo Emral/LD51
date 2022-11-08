@@ -28,4 +28,9 @@ public class CallMetaManagerFunction : MonoBehaviour
     {
         MetaManager.instance.TransitionToTitleScene();
     }
+
+    public void OpenOptionsMenu()
+    {
+        MetaManager.instance.options.Open();
+    }
 }

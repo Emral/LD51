@@ -11,7 +11,7 @@ public class MoneyText : MonoBehaviour
     void Start()
     {
         _text = GetComponent<Text>();
-        _text.text = "$" + SessionVariables.TodaysEarnings;
+        _text.text = "$" + SessionVariables.TodaysEarnings.MakeDollarsString();
         DayManager.OnSubmit.AddListener(OnSubmit);
     }
 

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -47,6 +48,22 @@ public class ButtonEffects : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
         if (img.sprite == Press)
         {
             img.sprite = hover ? Hover : Idle;
+        }
+    }
+
+    public async void SimulateEffect()
+    {
+        img.sprite = Press;
+        int i = 0;
+        while (i < 12)
+        {
+            i++;
+            await Task.Yield();
+        }
+
+        if (!hover)
+        {
+            img.sprite = Idle;
         }
     }
 }

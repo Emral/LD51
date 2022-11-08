@@ -121,10 +121,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 38
-        width: 32
+        width: 35
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -140,12 +140,12 @@ TextureImporter:
       name: Player_Faces_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 35
         y: 38
-        width: 32
+        width: 35
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -161,12 +161,12 @@ TextureImporter:
       name: Player_Faces_2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 70
         y: 38
-        width: 32
+        width: 35
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -182,12 +182,12 @@ TextureImporter:
       name: Player_Faces_3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 105
         y: 38
-        width: 32
+        width: 35
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -205,10 +205,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
+        width: 35
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -224,12 +224,12 @@ TextureImporter:
       name: Player_Faces_5
       rect:
         serializedVersion: 2
-        x: 32
+        x: 35
         y: 0
-        width: 32
+        width: 35
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -245,12 +245,12 @@ TextureImporter:
       name: Player_Faces_6
       rect:
         serializedVersion: 2
-        x: 64
+        x: 70
         y: 0
-        width: 32
+        width: 35
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -266,12 +266,12 @@ TextureImporter:
       name: Player_Faces_7
       rect:
         serializedVersion: 2
-        x: 96
+        x: 105
         y: 0
-        width: 32
+        width: 35
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -287,9 +287,30 @@ TextureImporter:
       name: Player_Faces_8
       rect:
         serializedVersion: 2
-        x: 128
+        x: 140
         y: 0
-        width: 32
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf2b5f1513191648a5117d4e9baa733
+      internalID: 404605617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player_Faces_9
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 38
+        width: 35
         height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -298,8 +319,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2cf2b5f1513191648a5117d4e9baa733
-      internalID: 404605617
+      spriteID: f95655272966c0a4390762d60e0af6eb
+      internalID: 739968102
       vertices: []
       indices: 
       edges: []
@@ -317,6 +338,7 @@ TextureImporter:
     nameFileIdTable:
       Player_Faces_2: -939466679
       Player_Faces_4: 69480353
+      Player_Faces_9: 739968102
       Player_Faces_6: 86810114
       Player_Faces_3: -129602863
       Player_Faces_7: -1463073425
