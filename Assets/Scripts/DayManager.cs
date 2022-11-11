@@ -63,11 +63,11 @@ public class DayManager : MonoBehaviour
         DrawComparison.Curve = BalanceCurve;
         DrawController.DisableDrawing();
         imageCandidates.Initialize();
-        var rushHourDuration = Mathf.FloorToInt((SessionVariables.Followers + SessionVariables.Reputation * 2) / 5.0f) * 0.02f;
+        var rushHourDuration = Mathf.FloorToInt((SessionVariables.Followers.Value + SessionVariables.Reputation.Value * 2) / 5.0f) * 0.02f;
         Globals.weather = SessionVariables.GetTodaysWeather();
         foreach (var e in SessionVariables.Events)
         {
-            e.DailyExecute();
+            MetaManager.instance.events.GetEvent(e).DailyExecute();
         }
         foreach (var e in Globals.weather.inherentTags)
         {
@@ -93,7 +93,7 @@ public class DayManager : MonoBehaviour
 
 
         guys.ResetAll();
-        if (SessionVariables.Day > 0)
+        if (SessionVariables.Day.Value > 0)
         {
             rushHourDuration = Mathf.Clamp(rushHourDuration * Globals.weather.rushHourMultiplier, Globals.weather.rushHourMinMax.x, Globals.weather.rushHourMinMax.y);
 
@@ -322,25 +322,24 @@ public class DayManager : MonoBehaviour
         } else
         {
             SessionVariables.todaysDrawings.Add(drawn);
-            SessionVariables.allDrawings.Add(drawn);
         }
 
-        var reward = Mathf.Max( Mathf.Lerp(0, 1 + Globals.currentGuy.bias * 0.05f, totalPenalty) * SessionVariables.IncomeMultiplier * SessionVariables.MaxIncomeBase, 0);
+        var reward = Mathf.Max( Mathf.Lerp(0, 1 + Globals.currentGuy.bias * 0.05f, totalPenalty) * SessionVariables.IncomeMultiplier.Value * SessionVariables.MaxIncomeBase.Value, 0);
 
         reward = reward.MakeDollars();
 
         Globals.LastGain = reward;
 
-        if (reward > 6 - SessionVariables.Reputation + 0.1f)
+        if (reward > 6 - SessionVariables.Reputation.Value + 0.1f)
         {
-            SessionVariables.Followers = SessionVariables.Followers + 1;
+            SessionVariables.Followers.Value = SessionVariables.Followers.Value + 1;
         }
-        SessionVariables.Experience = SessionVariables.Experience + reward * reward * 0.002f;
-        SessionVariables.Reputation = Mathf.Max(0, SessionVariables.Reputation + Mathf.Clamp(totalPenalty - 0.1f, -0.25f, 0.5f));
+        SessionVariables.Experience.Value = SessionVariables.Experience.Value + reward * reward * 0.002f;
+        SessionVariables.Reputation.Value = Mathf.Max(0, SessionVariables.Reputation.Value + Mathf.Clamp(totalPenalty - 0.1f, -0.25f, 0.5f));
 
         SessionVariables.TodaysEarnings += reward;
 
-        SessionVariables.Expenses.Find(e => e.Name == "Utensils").Multiplier += 1;
+        SessionVariables.Expenses.Value.Find(e => e.Name == "Utensils").Multiplier += 1;
 
         OnSubmit.Invoke(reward);
     }

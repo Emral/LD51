@@ -23,7 +23,6 @@ public class SkipTutorialCheckbox : MonoBehaviour, IPointerEnterHandler, IPointe
     public void Toggle()
     {
         SFX.Toggle.Play();
-        MetaManager.TutorialActive = !MetaManager.TutorialActive;
         if (img.sprite == Press)
         {
             img.sprite = PressB;

@@ -33,7 +33,7 @@ public class WeatherScroll : MonoBehaviour
 
             var p = Instantiate(prefab, root);
 
-            var day = d + SessionVariables.Day;
+            var day = d + SessionVariables.Day.Value;
             switch (SessionVariables.GetSeason(day))
             {
                 case Season.Spring:

@@ -1,0 +1,199 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f04e00c890644cc9adb05d0c17f5ee62, type: 3}
+  m_Name: SOGenerationDatabase
+  m_EditorClassIdentifier: 
+  _genericArgumentKeys:
+  - _typeNameAndAssembly: System.Int32, mscorlib
+    _guid: 
+  - _typeNameAndAssembly: System.Single, mscorlib
+    _guid: 
+  - _typeNameAndAssembly: ValidColors, Assembly-CSharp
+    _guid: 
+  - _typeNameAndAssembly: Weather, Assembly-CSharp
+    _guid: 
+  - _typeNameAndAssembly: Mechanics, Assembly-CSharp
+    _guid: 
+  - _typeNameAndAssembly: EventData, Assembly-CSharp
+    _guid: 
+  - _typeNameAndAssembly: Expense, Assembly-CSharp
+    _guid: 
+  _genericArgumentValues:
+  - _array: []
+  - _array: []
+  - _array: []
+  - _array: []
+  - _array: []
+  - _array: []
+  - _array: []
+  - _array: []
+  - _array: []
+  - _array: []
+  - _array: []
+  - _array: []
+  - _array:
+    - _arguments:
+      - _typeNameAndAssembly: System.Int32, mscorlib
+        _guid: 
+      _assemblyGUID: 293a028fda6e5014e865674ae5135628
+    - _arguments:
+      - _typeNameAndAssembly: System.Single, mscorlib
+        _guid: 
+      _assemblyGUID: e1e23c9f63a3cf74ca4a3f8459f8ea7b
+    - _arguments:
+      - _typeNameAndAssembly: ValidColors, Assembly-CSharp
+        _guid: 
+      _assemblyGUID: 65f64cb823facb44a8fa0cd601d988e9
+  - _array: []
+  - _array:
+    - _arguments:
+      - _typeNameAndAssembly: Weather, Assembly-CSharp
+        _guid: 
+      _assemblyGUID: 5296deaa7dc309d4897c94fea6c8d078
+    - _arguments:
+      - _typeNameAndAssembly: Mechanics, Assembly-CSharp
+        _guid: 
+      _assemblyGUID: 87a3ef826afbf104d93802b113a4ab3e
+    - _arguments:
+      - _typeNameAndAssembly: EventData, Assembly-CSharp
+        _guid: 
+      _assemblyGUID: 70901607f34b4ed44acee1fcbac59435
+    - _arguments:
+      - _typeNameAndAssembly: Expense, Assembly-CSharp
+        _guid: 
+      _assemblyGUID: 98c9112220ceffd4cb6a1762e5a795f5
+  _genericTypeValues:
+  - _array:
+    - _typeNameAndAssembly: GameValue`1, Assembly-CSharp
+      _guid: d88561023977ae048ac8038788c8ee03
+      AssemblyGUID: 
+      _argNames:
+      - T
+  - _array:
+    - _typeNameAndAssembly: GameValue`1, Assembly-CSharp
+      _guid: d88561023977ae048ac8038788c8ee03
+      AssemblyGUID: 
+      _argNames:
+      - T
+  - _array:
+    - _typeNameAndAssembly: GameValue`1, Assembly-CSharp
+      _guid: d88561023977ae048ac8038788c8ee03
+      AssemblyGUID: 
+      _argNames:
+      - T
+  - _array:
+    - _typeNameAndAssembly: ListGameValue`1, Assembly-CSharp
+      _guid: 87d157e9578d91c4e83635057b82e07c
+      AssemblyGUID: 
+      _argNames:
+      - T
+  - _array:
+    - _typeNameAndAssembly: ListGameValue`1, Assembly-CSharp
+      _guid: 87d157e9578d91c4e83635057b82e07c
+      AssemblyGUID: 
+      _argNames:
+      - T
+  - _array:
+    - _typeNameAndAssembly: ListGameValue`1, Assembly-CSharp
+      _guid: 87d157e9578d91c4e83635057b82e07c
+      AssemblyGUID: 
+      _argNames:
+      - T
+  - _array:
+    - _typeNameAndAssembly: ListGameValue`1, Assembly-CSharp
+      _guid: 87d157e9578d91c4e83635057b82e07c
+      AssemblyGUID: 
+      _argNames:
+      - T
+  _genericTypeKeys:
+  - _typeNameAndAssembly: MoreMountains.Tools.MMReferencedScriptableObject`1, MoreMountains.Tools
+    _guid: cfb03c2bcbc7bd64fbf6cc6081b9c441
+    AssemblyGUID: 
+    _argNames:
+    - T
+  - _typeNameAndAssembly: UnityEditor.Rendering.DebugState`1, Unity.RenderPipelines.Core.Editor
+    _guid: 
+    AssemblyGUID: 
+    _argNames:
+    - T
+  - _typeNameAndAssembly: UnityEditor.Rendering.Universal.Path2D.GenericScriptablePath`1,
+      Unity.RenderPipelines.Universal.Editor
+    _guid: 
+    AssemblyGUID: 
+    _argNames:
+    - T
+  - _typeNameAndAssembly: UnityEditor.Rendering.Universal.Path2D.GenericScriptablePathInspector`2,
+      Unity.RenderPipelines.Universal.Editor
+    _guid: 
+    AssemblyGUID: 
+    _argNames:
+    - U
+    - T
+  - _typeNameAndAssembly: UnityEditor.Rendering.Universal.Path2D.ScriptableData`1,
+      Unity.RenderPipelines.Universal.Editor
+    _guid: 
+    AssemblyGUID: 
+    _argNames:
+    - T
+  - _typeNameAndAssembly: UnityEngine.HexagonalRuleTile`1, Unity.2D.Tilemap.Extras
+    _guid: 
+    AssemblyGUID: 
+    _argNames:
+    - T
+  - _typeNameAndAssembly: UnityEngine.IsometricRuleTile`1, Unity.2D.Tilemap.Extras
+    _guid: 
+    AssemblyGUID: 
+    _argNames:
+    - T
+  - _typeNameAndAssembly: UnityEngine.RuleTile`1, Unity.2D.Tilemap.Extras
+    _guid: 
+    AssemblyGUID: 
+    _argNames:
+    - T
+  - _typeNameAndAssembly: Unity.Cloud.Collaborate.Common.ScriptableObjectSingleton`1,
+      Unity.CollabProxy.Editor
+    _guid: 
+    AssemblyGUID: 
+    _argNames:
+    - T
+  - _typeNameAndAssembly: UnityEditor.U2D.Path.GenericScriptablePath`1, Unity.2D.Path.Editor
+    _guid: 
+    AssemblyGUID: 
+    _argNames:
+    - T
+  - _typeNameAndAssembly: UnityEditor.U2D.Path.GenericScriptablePathInspector`2,
+      Unity.2D.Path.Editor
+    _guid: 
+    AssemblyGUID: 
+    _argNames:
+    - U
+    - T
+  - _typeNameAndAssembly: UnityEditor.U2D.Path.ScriptableData`1, Unity.2D.Path.Editor
+    _guid: 
+    AssemblyGUID: 
+    _argNames:
+    - T
+  - _typeNameAndAssembly: GameValue`1, Assembly-CSharp
+    _guid: d88561023977ae048ac8038788c8ee03
+    AssemblyGUID: 
+    _argNames:
+    - T
+  - _typeNameAndAssembly: UnityEditor.ScriptableSingleton`1, UnityEditor.CoreModule
+    _guid: 
+    AssemblyGUID: 
+    _argNames:
+    - T
+  - _typeNameAndAssembly: ListGameValue`1, Assembly-CSharp
+    _guid: 87d157e9578d91c4e83635057b82e07c
+    AssemblyGUID: 
+    _argNames:
+    - T

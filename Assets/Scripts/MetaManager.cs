@@ -14,15 +14,29 @@ public class MetaManager : MonoBehaviour
     public WeatherSettings weathers;
     public Seasons seasons;
     public OptionsMenuController options;
+    [SerializeField] private SaveDataManager _saveManager;
 
     public RectTransform LoadScreen;
 
     private SessionVariables sessionVariables;
 
     public static bool GameCanAdvance = true;
-    public static bool TutorialActive = true;
+    public static bool TutorialActive => PlayerPrefs.GetInt("SkipTutorial", 0) == 1;
 
     public Tutorial Tutorial;
+
+    [SerializeField] private GameValue<int> _svDay;
+    [SerializeField] private GameValue<float> _svExperience;
+    [SerializeField] private GameValue<int> _svFollowers;
+    [SerializeField] private GameValue<float> _svReputation;
+    [SerializeField] private GameValue<float> _svIncomeMult;
+    [SerializeField] private GameValue<float> _svMaxIncome;
+    [SerializeField] private ListGameValue<Expense> _svExpenses;
+    [SerializeField] private GameValue<ValidColors> _svColors;
+    [SerializeField] private ListGameValue<Weather> _svWeather;
+    [SerializeField] private ListGameValue<Mechanics> _svTutorials;
+    [SerializeField] private ListGameValue<EventData> _svEvents;
+    [SerializeField] private GameValue<float> _svSavings;
 
     // Start is called before the first frame update
     void Awake()
@@ -40,6 +54,20 @@ public class MetaManager : MonoBehaviour
         weathers.Init();
         SessionVariables.weatherSettings = weathers;
         SessionVariables.seasonSettings = seasons;
+
+        SessionVariables.Day = _svDay;
+        SessionVariables.Experience = _svExperience;
+        SessionVariables.Followers = _svFollowers;
+        SessionVariables.Reputation = _svReputation;
+        SessionVariables.IncomeMultiplier = _svIncomeMult;
+        SessionVariables.MaxIncomeBase = _svMaxIncome;
+        SessionVariables.Expenses = _svExpenses;
+        SessionVariables.Colors = _svColors;
+        SessionVariables.UpcomingWeathers = _svWeather;
+        SessionVariables.TutorialsDone = _svTutorials;
+        SessionVariables.Events = _svEvents;
+        SessionVariables._savings = _svSavings;
+
         GameCanAdvance = true;
 
         foreach (Event ev in events.events)
@@ -47,17 +75,12 @@ public class MetaManager : MonoBehaviour
             ev.Initialize();
         }
 
-        if (SceneManager.GetActiveScene().buildIndex != 0)
-        {
-            TutorialActive = false;
-        }
-
         sessionVariables = ScriptableObject.CreateInstance<SessionVariables>();
-        sessionVariables.Initialize();
     }
 
     private void Start()
     {
+        sessionVariables.ResetAll();
         if (SceneManager.GetActiveScene().buildIndex == 0)
         {
             AudioManager.ChangeMusic(BGM.MainMenu);
@@ -79,7 +102,7 @@ public class MetaManager : MonoBehaviour
     {
         SFX.ButtonPress.Play();
         AudioManager.ChangeMusic(BGM.MainMenu);
-        sessionVariables.Initialize();
+        sessionVariables.ResetAll();
         ShowLoadScreen(0, a =>
         {
             HideLoadScreen(() =>
@@ -125,6 +148,11 @@ public class MetaManager : MonoBehaviour
             if (oldScene == 3)
             {
                 SessionVariables.NewDayBegins();
+                SaveSaveData();
+            } else
+            {
+                LoadSaveData();
+                sessionVariables.Initialize();
             }
             HideLoadScreen(() =>
             {
@@ -148,5 +176,36 @@ public class MetaManager : MonoBehaviour
     private void HideLoadScreen(System.Action callback)
     {
         LoadScreen.DOLocalMoveY(20, 1.0f).SetEase(Ease.InQuad).OnComplete(() => callback.Invoke());
+    }
+
+    public void StartNewGame()
+    {
+        ClearSaveData();
+        TransitionToPreGameScene();
+    }
+
+    public void LoadSaveData()
+    {
+        _saveManager.Restore();
+    }
+
+    public void ClearSaveData()
+    {
+        _saveManager.Clear();
+    }
+
+    public void SaveSaveData()
+    {
+        _saveManager.Save();
+    }
+
+    public bool HasSaveData()
+    {
+        return _saveManager.Exists();
+    }
+
+    public int ReadDayFromSave()
+    {
+        return _saveManager.ReadDay();
     }
 }

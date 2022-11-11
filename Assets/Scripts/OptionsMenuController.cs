@@ -44,6 +44,8 @@ public class OptionsMenuController : MonoBehaviour
         {
             o.OnSave();
         }
+
+        PlayerPrefs.Save();
     }
 
     private void CloseCommon()

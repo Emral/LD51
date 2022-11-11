@@ -66,6 +66,7 @@ public class PostgameManager : MonoBehaviour
         {
             PlayerPerson.MakeDie();
             SFX.GameOver.Play();
+            MetaManager.instance.ClearSaveData();
             SuccessText.text = "Too bad...";
             SuccessText.gameObject.SetActive(true);
             SuccessText.transform.localScale = Vector3.zero;

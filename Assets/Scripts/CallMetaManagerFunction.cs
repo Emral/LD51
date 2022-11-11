@@ -9,6 +9,11 @@ public class CallMetaManagerFunction : MonoBehaviour
         MetaManager.instance.TransitionToPreGameScene();
     }
 
+    public void StartNewGame()
+    {
+        MetaManager.instance.StartNewGame();
+    }
+
     public void LoadGame()
     {
         MetaManager.instance.TransitionToGameScene();

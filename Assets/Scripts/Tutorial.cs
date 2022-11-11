@@ -68,7 +68,7 @@ public class Tutorial : MonoBehaviour
 
     public void ShowTutorial(TutorialElement elem)
     {
-        if (SessionVariables.TutorialsDone.Contains(elem.mechanic) || !MetaManager.TutorialActive)
+        if (SessionVariables.TutorialsDone.Value.Contains(elem.mechanic) || !MetaManager.TutorialActive)
         {
             return;
         }

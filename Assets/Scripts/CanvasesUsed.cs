@@ -13,7 +13,7 @@ public class CanvasesUsed : MonoBehaviour
     private void Start()
     {
         _text = GetComponent<Text>();
-        expense = SessionVariables.Expenses.Find(e => e.Name == "Utensils");
+        expense = SessionVariables.Expenses.Value.Find(e => e.Name == "Utensils");
     }
 
     void Update()

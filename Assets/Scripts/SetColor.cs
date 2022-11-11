@@ -14,7 +14,7 @@ public class SetColor : MonoBehaviour
 
     private void Start()
     {
-        if (ownColor != (ValidColors)0 && (ownColor & SessionVariables.Colors) == 0)
+        if (ownColor != (ValidColors)0 && (ownColor & SessionVariables.Colors.Value) == 0)
         {
             gameObject.SetActive(false);
             return;

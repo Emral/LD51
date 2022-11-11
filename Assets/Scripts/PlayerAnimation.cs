@@ -65,7 +65,7 @@ public class PlayerAnimation : MonoBehaviour
                 else
                 {
                     Head.sprite = BodyUp;
-                    Face.sprite = DayManager.Globals.LastGain > 0.8f * SessionVariables.MaxIncomeBase * SessionVariables.IncomeMultiplier ? ShowingWearyHappy : ShowingWearyNormal;
+                    Face.sprite = DayManager.Globals.LastGain > 0.8f * SessionVariables.MaxIncomeBase.Value * SessionVariables.IncomeMultiplier.Value ? ShowingWearyHappy : ShowingWearyNormal;
                 }
             } else
             {
@@ -78,7 +78,7 @@ public class PlayerAnimation : MonoBehaviour
                 else
                 {
                     Head.sprite = BodyUp;
-                    Face.sprite = DayManager.Globals.LastGain > 0.8f * SessionVariables.MaxIncomeBase * SessionVariables.IncomeMultiplier ? ShowingHappy : ShowingNormal;
+                    Face.sprite = DayManager.Globals.LastGain > 0.8f * SessionVariables.MaxIncomeBase.Value * SessionVariables.IncomeMultiplier.Value ? ShowingHappy : ShowingNormal;
                 }
             }
         } else

@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 402cb5eb17974d24bb00263b59dc709c, type: 3}
+  m_Name: ScriptableObjectsDatabase
+  m_EditorClassIdentifier: 
+  _keys:
+  - _typeNameAndAssembly: MoreMountains.Tools.MMReferencedScriptableObject`1, MoreMountains.Tools
+  - _typeNameAndAssembly: UnityEditor.Rendering.DebugState`1, Unity.RenderPipelines.Core.Editor
+  - _typeNameAndAssembly: UnityEditor.Rendering.Universal.Path2D.GenericScriptablePath`1,
+      Unity.RenderPipelines.Universal.Editor
+  - _typeNameAndAssembly: UnityEditor.Rendering.Universal.Path2D.GenericScriptablePathInspector`2,
+      Unity.RenderPipelines.Universal.Editor
+  - _typeNameAndAssembly: UnityEditor.Rendering.Universal.Path2D.ScriptableData`1,
+      Unity.RenderPipelines.Universal.Editor
+  - _typeNameAndAssembly: UnityEngine.HexagonalRuleTile`1, Unity.2D.Tilemap.Extras
+  - _typeNameAndAssembly: UnityEngine.IsometricRuleTile`1, Unity.2D.Tilemap.Extras
+  - _typeNameAndAssembly: UnityEngine.RuleTile`1, Unity.2D.Tilemap.Extras
+  - _typeNameAndAssembly: Unity.Cloud.Collaborate.Common.ScriptableObjectSingleton`1,
+      Unity.CollabProxy.Editor
+  - _typeNameAndAssembly: UnityEditor.U2D.Path.GenericScriptablePath`1, Unity.2D.Path.Editor
+  - _typeNameAndAssembly: UnityEditor.U2D.Path.GenericScriptablePathInspector`2,
+      Unity.2D.Path.Editor
+  - _typeNameAndAssembly: UnityEditor.U2D.Path.ScriptableData`1, Unity.2D.Path.Editor
+  - _typeNameAndAssembly: GameValue`1, Assembly-CSharp
+  - _typeNameAndAssembly: UnityEditor.ScriptableSingleton`1, UnityEditor.CoreModule
+  - _typeNameAndAssembly: ListGameValue`1, Assembly-CSharp
+  _values:
+  - _keys: []
+    _values: []
+  - _keys: []
+    _values: []
+  - _keys: []
+    _values: []
+  - _keys: []
+    _values: []
+  - _keys: []
+    _values: []
+  - _keys: []
+    _values: []
+  - _keys: []
+    _values: []
+  - _keys: []
+    _values: []
+  - _keys: []
+    _values: []
+  - _keys: []
+    _values: []
+  - _keys: []
+    _values: []
+  - _keys: []
+    _values: []
+  - _keys:
+    - _collection:
+      - _typeNameAndAssembly: System.Int32, mscorlib
+    - _collection:
+      - _typeNameAndAssembly: System.Single, mscorlib
+    - _collection:
+      - _typeNameAndAssembly: ValidColors, Assembly-CSharp
+    _values:
+    - _typeNameAndAssembly: GenericUnityObjects.ConcreteClasses.ConcreteClass_293a028fda6e5014e865674ae5135628,
+        z_GameValue_Int32
+    - _typeNameAndAssembly: GenericUnityObjects.ConcreteClasses.ConcreteClass_e1e23c9f63a3cf74ca4a3f8459f8ea7b,
+        z_GameValue_Single
+    - _typeNameAndAssembly: GenericUnityObjects.ConcreteClasses.ConcreteClass_65f64cb823facb44a8fa0cd601d988e9,
+        z_GameValue_ValidColors
+  - _keys: []
+    _values: []
+  - _keys:
+    - _collection:
+      - _typeNameAndAssembly: Weather, Assembly-CSharp
+    - _collection:
+      - _typeNameAndAssembly: Mechanics, Assembly-CSharp
+    - _collection:
+      - _typeNameAndAssembly: EventData, Assembly-CSharp
+    - _collection:
+      - _typeNameAndAssembly: Expense, Assembly-CSharp
+    _values:
+    - _typeNameAndAssembly: GenericUnityObjects.ConcreteClasses.ConcreteClass_5296deaa7dc309d4897c94fea6c8d078,
+        z_ListGameValue_Weather
+    - _typeNameAndAssembly: GenericUnityObjects.ConcreteClasses.ConcreteClass_87a3ef826afbf104d93802b113a4ab3e,
+        z_ListGameValue_Mechanics
+    - _typeNameAndAssembly: GenericUnityObjects.ConcreteClasses.ConcreteClass_70901607f34b4ed44acee1fcbac59435,
+        z_ListGameValue_EventData
+    - _typeNameAndAssembly: GenericUnityObjects.ConcreteClasses.ConcreteClass_98c9112220ceffd4cb6a1762e5a795f5,
+        z_ListGameValue_Expense

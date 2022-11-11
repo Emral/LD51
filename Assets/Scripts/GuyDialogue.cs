@@ -18,19 +18,19 @@ public class GuyDialogue : ScriptableObject
         if (price < 1)
         {
             list = thanksOverride.worst.Count > 0 ? thanksOverride.worst : worst;
-        } else if (price < 0.3f * SessionVariables.IncomeMultiplier * SessionVariables.MaxIncomeBase)
+        } else if (price < 0.3f * SessionVariables.IncomeMultiplier.Value * SessionVariables.MaxIncomeBase.Value)
         {
             list = thanksOverride.bad.Count > 0 ? thanksOverride.bad : bad;
         }
-        else if (price < 0.6f * SessionVariables.IncomeMultiplier * SessionVariables.MaxIncomeBase)
+        else if (price < 0.6f * SessionVariables.IncomeMultiplier.Value * SessionVariables.MaxIncomeBase.Value)
         {
             list = thanksOverride.decent.Count > 0 ? thanksOverride.decent : decent;
         }
-        else if (price < 0.85f * SessionVariables.IncomeMultiplier * SessionVariables.MaxIncomeBase)
+        else if (price < 0.85f * SessionVariables.IncomeMultiplier.Value * SessionVariables.MaxIncomeBase.Value)
         {
             list = thanksOverride.good.Count > 0 ? thanksOverride.good : good;
         }
-        else if (price < 0.95f * SessionVariables.IncomeMultiplier * SessionVariables.MaxIncomeBase)
+        else if (price < 0.95f * SessionVariables.IncomeMultiplier.Value * SessionVariables.MaxIncomeBase.Value)
         {
             list = thanksOverride.great.Count > 0 ? thanksOverride.great : great;
         }

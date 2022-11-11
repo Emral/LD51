@@ -153,7 +153,7 @@ public class GuessableImage : SerializedScriptableObject
 
     public static bool CanDrawBase(Guessable sprite)
     {
-        return (SessionVariables.Colors & sprite.colors) == sprite.colors;
+        return (SessionVariables.Colors.Value & sprite.colors) == sprite.colors;
     }
 
     public static GuessableMap GetRandomValidVariation(Guessable sprite)
@@ -174,7 +174,7 @@ public class GuessableImage : SerializedScriptableObject
                 }
             }
 
-            if ((SessionVariables.Colors & color) == color)
+            if ((SessionVariables.Colors.Value & color) == color)
             {
                 sprites.Add(variation);
             }
@@ -190,7 +190,7 @@ public class GuessableImage : SerializedScriptableObject
 
     private Guessable FindSprite(List<Guessable> sprites, float bias)
     {
-        var upperLimit = Mathf.FloorToInt((SessionVariables.Experience + 0.5f - bias * 0.5f));
+        var upperLimit = Mathf.FloorToInt((SessionVariables.Experience.Value + 0.5f - bias * 0.5f));
         var candidates = new List<Guessable>();
 
         bool hasTested = false;

@@ -7,7 +7,16 @@ public class EventList : ScriptableObject
 {
     public List<Event> events;
 
-    public Event FindEligible()
+    private void Awake()
+    {
+        int i = 0;
+        foreach(var e in events)
+        {
+            e.data.idx = i;
+        }
+    }
+
+    public EventData FindEligible()
     {
         var candidates = new List<Event>();
         foreach(Event e in events)
@@ -23,13 +32,29 @@ public class EventList : ScriptableObject
             return null;
         }
 
-        return candidates[Random.Range(0, candidates.Count)];
+        return candidates[Random.Range(0, candidates.Count)].data;
     }
+
+    public Event GetEvent(EventData data)
+    {
+        return events[data.idx];
+    }
+}
+
+[System.Serializable]
+public class EventData
+{
+    public int idx;
+    public bool eventLogMessageSeen;
+    public int StartDay;
+    public int Duration;
 }
 
 [System.Serializable]
 public class Event
 {
+    public EventData data = new EventData();
+
     public string eventLogMessage;
     public int minDuration;
     public int maxDuration;
@@ -40,13 +65,9 @@ public class Event
     public float IncreasesRushHourMin = 0;
     public float IncreasesRushHourMax = 0;
 
-    private int StartDay;
-    private int Duration;
-
     public bool CanRepeat;
     public int MinRepeatDayDifference;
 
-    private bool eventLogMessageSeen = false;
 
     public float IncreaseMaxIncomeMultiplier = 0;
     public float IncreaseMaxIncome = 0;
@@ -64,31 +85,31 @@ public class Event
 
     public bool EventLogSeen()
     {
-        return eventLogMessageSeen;
+        return data.eventLogMessageSeen;
     }
 
     public void Initialize()
     {
-        StartDay = 0;
-        eventLogMessageSeen = false;
+        data.StartDay = 0;
+        data.eventLogMessageSeen = false;
     }
 
     public void Schedule()
     {
-        eventLogMessageSeen = false;
-        SessionVariables.Events.Add(this);
-        StartDay = SessionVariables.Day + Delay;
-        Duration = Random.Range(minDuration, maxDuration + 1);
+        data.eventLogMessageSeen = false;
+        data.StartDay = SessionVariables.Day.Value + Delay;
+        data.Duration = Random.Range(minDuration, maxDuration + 1);
+        SessionVariables.Events.Add(data);
     }
 
     public void SetMessageSeen()
     {
-        eventLogMessageSeen = true;
+        data.eventLogMessageSeen = true;
     }
 
     public int GetStartDay()
     {
-        return StartDay;
+        return data.StartDay;
     }
 
     public int GetEndDay()
@@ -98,17 +119,17 @@ public class Event
             return -1;
         }
 
-        return StartDay + Duration;
+        return data.StartDay + data.Duration;
     }
 
     public bool CanUnlock()
     {
-        if (StartDay != 0 && (SessionVariables.Day - (StartDay + Duration) < MinRepeatDayDifference || !CanRepeat))
+        if (data.StartDay != 0 && (SessionVariables.Day.Value - (data.StartDay + data.Duration) < MinRepeatDayDifference || !CanRepeat))
         {
             return false;
         }
 
-        if (SessionVariables.Day >= DayRequired && SessionVariables.Followers >= FollowersRequired && SessionVariables.Experience >= ExperienceRequired && SessionVariables.Reputation >= ReputationRequired && SessionVariables.Savings >= MoneyRequired)
+        if (SessionVariables.Day.Value >= DayRequired && SessionVariables.Followers.Value >= FollowersRequired && SessionVariables.Experience.Value >= ExperienceRequired && SessionVariables.Reputation.Value >= ReputationRequired && SessionVariables.Savings >= MoneyRequired)
         {
             return true;
         }
@@ -123,8 +144,8 @@ public class Event
             SessionVariables.AddNewColorSet();
         }
 
-        SessionVariables.IncomeMultiplier += IncreaseMaxIncomeMultiplier;
-        SessionVariables.MaxIncomeBase += IncreaseMaxIncome;
+        SessionVariables.IncomeMultiplier.Value += IncreaseMaxIncomeMultiplier;
+        SessionVariables.MaxIncomeBase.Value += IncreaseMaxIncome;
 
         for (int i = 0; i < newExpenses.Count; i++)
         {
@@ -148,8 +169,8 @@ public class Event
 
     public void EndEvent()
     {
-        SessionVariables.IncomeMultiplier -= IncreaseMaxIncomeMultiplier;
-        SessionVariables.MaxIncomeBase -= IncreaseMaxIncome;
+        SessionVariables.IncomeMultiplier.Value -= IncreaseMaxIncomeMultiplier;
+        SessionVariables.MaxIncomeBase.Value -= IncreaseMaxIncome;
 
         for (int i = 0; i < newExpenses.Count; i++)
         {
