@@ -160,10 +160,9 @@ public class SessionVariables : ScriptableObject
         CalculateWeather(Day.Value + 5);
 
         var eData = MetaManager.instance.events.FindEligible();
-        var e = MetaManager.instance.events.GetEvent(eData);
-
-        if (e != null)
+        if (eData != null)
         {
+            var e = MetaManager.instance.events.GetEvent(eData);
             e.Schedule();
             if (!e.Permanent)
             {

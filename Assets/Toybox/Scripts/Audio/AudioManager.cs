@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using DG.Tweening;
 
 public enum SFX
 {
@@ -80,6 +81,7 @@ public class AudioManager : MonoBehaviour
     public AudioSource SFXSource;
     public AudioSource MusicSource;
     public AudioSource MusicSubTrackSource;
+    public AudioSource TutorialSource;
 
     public AudioDefinition data;
 
@@ -95,6 +97,9 @@ public class AudioManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
         instance = this;
     }
+
+    private float time;
+    private BGM targetClip;
 
     public static async void ChangeMusic(AudioClip newClip, float blendSpeed = 0.5f)
     {
@@ -128,11 +133,13 @@ public class AudioManager : MonoBehaviour
 
     public static void ChangeMusic(BGM introClip, BGM loopingClip)
     {
+        instance.targetClip = loopingClip;
         ChangeMusic(instance.data.GetMusic(introClip), instance.data.GetMusic(loopingClip));
     }
 
     public static void ChangeMusic(BGM clip)
     {
+        instance.targetClip = clip;
         ChangeMusic(null, instance.data.GetMusic(clip));
     }
 
@@ -142,6 +149,24 @@ public class AudioManager : MonoBehaviour
         MusicSubTrackSource.Stop();
         MusicSource.clip = null;
         MusicSubTrackSource.clip = null;
+    }
+
+    public static async void FadeOut()
+    {
+        instance.targetClip = BGM.None;
+        if (instance.MusicSource.clip != null)
+        {
+            float t = 1;
+            while (t > 0)
+            {
+                t -= Time.unscaledDeltaTime * 0.5f;
+                instance.MusicSource.volume = t;
+                instance.MusicSubTrackSource.volume = t;
+                await System.Threading.Tasks.Task.Yield();
+            }
+        }
+        instance.MusicSource.Stop();
+        instance.MusicSubTrackSource.Stop();
     }
 
     public static async void ChangeMusic(Music introClip, Music loopingClip)
@@ -188,6 +213,28 @@ public class AudioManager : MonoBehaviour
             instance.MusicSubTrackSource.Play();
             instance.MusicSubTrackSource.volume = 0;
         }
+    }
+
+    public static void StoredFadeout(float duration)
+    {
+        instance.time = instance.MusicSource.time;
+        instance.MusicSource.DOFade(0, duration);
+        instance.MusicSubTrackSource.DOFade(0, duration);
+        instance.TutorialSource.volume = 0;
+        instance.TutorialSource.time = 5 + Random.Range(0, 3) * 10;
+        instance.TutorialSource.Play();
+        instance.TutorialSource.DOFade(1, duration);
+    }
+    public static void StoredRestore(float duration)
+    {
+        if (instance.targetClip != BGM.None)
+        {
+            instance.MusicSource.time = instance.time - duration;
+            instance.MusicSubTrackSource.time = instance.time - duration;
+            instance.MusicSource.DOFade(1, duration);
+            instance.MusicSubTrackSource.DOFade(1, duration);
+        }
+        instance.TutorialSource.DOFade(0, duration).OnComplete(() => instance.TutorialSource.Stop());
     }
 
     public static void SetSubtrackVolume(float volume)

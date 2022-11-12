@@ -13,24 +13,56 @@ MonoBehaviour:
   m_Name: Events
   m_EditorClassIdentifier: 
   events:
-  - eventLogMessage: I think I should expand my palette a little. Just black and
+  - data:
+      idx: 0
+      eventLogMessageSeen: 0
+      StartDay: 0
+      Duration: 0
+    eventLogMessage: I think I should expand my palette a little. Just black and
       white is a bit boring.
-    minDuration: 0
-    maxDuration: 0
+    minMaxDuration: {x: 1, y: 1}
     Permanent: 1
-    Delay: 0
-    IncreasesRushHourMin: 0
-    IncreasesRushHourMax: 0
+    RushHourIncrease: {x: 0, y: 0}
+    CustomerGapDecrease: {x: 0, y: 0}
     CanRepeat: 0
     MinRepeatDayDifference: 0
     IncreaseMaxIncomeMultiplier: 0
-    IncreaseMaxIncome: 1
+    IncreaseMaxIncome: 0.5
     UnlocksColors: 1
     FollowersRequired: 0
     ExperienceRequired: 0
     ReputationRequired: 0
     MoneyRequired: 0
-    DayRequired: 2
+    MinimumDay: 0
+    FixedDay: 2
+    tags: 
+    newExpenses:
+    - Name: Utensils
+      Value: 0.1
+      PerWhat: 
+      Multiplier: 0
+      DefaultMultiplier: 1
+  - data:
+      idx: 0
+      eventLogMessageSeen: 0
+      StartDay: 0
+      Duration: 0
+    eventLogMessage: I think I'm gonna expand my palette even further.
+    minMaxDuration: {x: 1, y: 1}
+    Permanent: 1
+    RushHourIncrease: {x: 0, y: 0}
+    CustomerGapDecrease: {x: 0, y: 0}
+    CanRepeat: 0
+    MinRepeatDayDifference: 0
+    IncreaseMaxIncomeMultiplier: 0
+    IncreaseMaxIncome: 0.5
+    UnlocksColors: 1
+    FollowersRequired: 0
+    ExperienceRequired: 0
+    ReputationRequired: 0
+    MoneyRequired: 0
+    MinimumDay: 0
+    FixedDay: 4
     tags: 
     newExpenses:
     - Name: Utensils
@@ -38,60 +70,43 @@ MonoBehaviour:
       PerWhat: 
       Multiplier: 0
       DefaultMultiplier: 1
-  - eventLogMessage: I think I'm gonna expand my palette even further.
-    minDuration: 0
-    maxDuration: 0
-    Permanent: 1
-    Delay: 0
-    IncreasesRushHourMin: 0
-    IncreasesRushHourMax: 0
-    CanRepeat: 0
-    MinRepeatDayDifference: 0
-    IncreaseMaxIncomeMultiplier: 0
-    IncreaseMaxIncome: 1
-    UnlocksColors: 1
-    FollowersRequired: 0
-    ExperienceRequired: 0
-    ReputationRequired: 0
-    MoneyRequired: 0
-    DayRequired: 4
-    tags: 
-    newExpenses:
-    - Name: Utensils
-      Value: 0.05
-      PerWhat: 
-      Multiplier: 0
-      DefaultMultiplier: 1
-  - eventLogMessage: Oh wow! Someone's tweet mentioning me blew up! Looks like a
-      lot of people might be coming over soon.
-    minDuration: 1
-    maxDuration: 3
+  - data:
+      idx: 0
+      eventLogMessageSeen: 0
+      StartDay: 0
+      Duration: 0
+    eventLogMessage: One of yesterday's customers gave me a shoutout online and it
+      went viral! There may be more people around than usual.
+    minMaxDuration: {x: 2, y: 3}
     Permanent: 0
-    Delay: 0
-    IncreasesRushHourMin: 0.1
-    IncreasesRushHourMax: 0.2
+    RushHourIncrease: {x: 0.1, y: 0.2}
+    CustomerGapDecrease: {x: 0.05, y: 0.15}
     CanRepeat: 1
     MinRepeatDayDifference: 10
-    IncreaseMaxIncomeMultiplier: 0.1
-    IncreaseMaxIncome: 0
+    IncreaseMaxIncomeMultiplier: 0.25
+    IncreaseMaxIncome: 1
     UnlocksColors: 0
-    FollowersRequired: 25
+    FollowersRequired: 50
     ExperienceRequired: 5
     ReputationRequired: 5
     MoneyRequired: 0
-    DayRequired: 0
+    MinimumDay: 8
+    FixedDay: -1
     tags: 
     newExpenses: []
-  - eventLogMessage: Today my landlord increased my rent. I'll have to work harder
+  - data:
+      idx: 0
+      eventLogMessageSeen: 0
+      StartDay: 0
+      Duration: 0
+    eventLogMessage: Today my landlord increased my rent. I'll have to work harder
       to make ends meet.
-    minDuration: 0
-    maxDuration: 0
+    minMaxDuration: {x: 1, y: 1}
     Permanent: 1
-    Delay: 0
-    IncreasesRushHourMin: 0
-    IncreasesRushHourMax: 0
+    RushHourIncrease: {x: 0, y: 0}
+    CustomerGapDecrease: {x: 0, y: 0}
     CanRepeat: 1
-    MinRepeatDayDifference: 7
+    MinRepeatDayDifference: 20
     IncreaseMaxIncomeMultiplier: 0
     IncreaseMaxIncome: 0
     UnlocksColors: 0
@@ -99,7 +114,8 @@ MonoBehaviour:
     ExperienceRequired: 0
     ReputationRequired: 0
     MoneyRequired: 0
-    DayRequired: 5
+    MinimumDay: 21
+    FixedDay: -1
     tags: 
     newExpenses:
     - Name: Rent
@@ -107,16 +123,19 @@ MonoBehaviour:
       PerWhat: 
       Multiplier: 0
       DefaultMultiplier: 1
-  - eventLogMessage: Looks like a convention for a famous videogame is coming to
+  - data:
+      idx: 0
+      eventLogMessageSeen: 0
+      StartDay: 0
+      Duration: 0
+    eventLogMessage: Looks like a convention for a famous videogame is coming to
       town soon. Chances are many people will want drawings of their favourite creatures.
-    minDuration: 1
-    maxDuration: 3
+    minMaxDuration: {x: 1, y: 2}
     Permanent: 0
-    Delay: 1
-    IncreasesRushHourMin: 0.05
-    IncreasesRushHourMax: 0.1
+    RushHourIncrease: {x: 0.1, y: 0.2}
+    CustomerGapDecrease: {x: 0.1, y: 0.2}
     CanRepeat: 1
-    MinRepeatDayDifference: 12
+    MinRepeatDayDifference: 0
     IncreaseMaxIncomeMultiplier: 0
     IncreaseMaxIncome: 0
     UnlocksColors: 0
@@ -124,17 +143,21 @@ MonoBehaviour:
     ExperienceRequired: 0
     ReputationRequired: 0
     MoneyRequired: 0
-    DayRequired: 9
+    MinimumDay: 0
+    FixedDay: 7
     tags: 07000000
     newExpenses: []
-  - eventLogMessage: There is a nature festival today. Maybe people will come over
+  - data:
+      idx: 0
+      eventLogMessageSeen: 0
+      StartDay: 0
+      Duration: 0
+    eventLogMessage: There is a nature festival today. Maybe people will come over
       for specific paintings.
-    minDuration: 1
-    maxDuration: 1
+    minMaxDuration: {x: 1, y: 1}
     Permanent: 0
-    Delay: 0
-    IncreasesRushHourMin: 0.2
-    IncreasesRushHourMax: 0.3
+    RushHourIncrease: {x: 0.2, y: 0.4}
+    CustomerGapDecrease: {x: 0.1, y: 0.2}
     CanRepeat: 1
     MinRepeatDayDifference: 12
     IncreaseMaxIncomeMultiplier: 0
@@ -144,6 +167,246 @@ MonoBehaviour:
     ExperienceRequired: 0
     ReputationRequired: 0
     MoneyRequired: 0
-    DayRequired: 6
-    tags: 00000000
+    MinimumDay: 13
+    FixedDay: -1
+    tags: 020000000100000031000000
     newExpenses: []
+  - data:
+      idx: 0
+      eventLogMessageSeen: 0
+      StartDay: 0
+      Duration: 0
+    eventLogMessage: With summer heat around the corner, the AC is gonna have to
+      do extra work I'm afraid.
+    minMaxDuration: {x: 10, y: 10}
+    Permanent: 0
+    RushHourIncrease: {x: 0, y: 0}
+    CustomerGapDecrease: {x: 0, y: 0}
+    CanRepeat: 1
+    MinRepeatDayDifference: 0
+    IncreaseMaxIncomeMultiplier: 0
+    IncreaseMaxIncome: 0
+    UnlocksColors: 0
+    FollowersRequired: 0
+    ExperienceRequired: 0
+    ReputationRequired: 0
+    MoneyRequired: 0
+    MinimumDay: 0
+    FixedDay: 11
+    tags: 
+    newExpenses:
+    - Name: AC
+      Value: 5
+      PerWhat: 
+      Multiplier: 1
+      DefaultMultiplier: 1
+  - data:
+      idx: 0
+      eventLogMessageSeen: 0
+      StartDay: 0
+      Duration: 0
+    eventLogMessage: I've made quite the name for myself. I think I can get away
+      with charging a bit more from now on.
+    minMaxDuration: {x: 1, y: 1}
+    Permanent: 1
+    RushHourIncrease: {x: 0, y: 0}
+    CustomerGapDecrease: {x: 0, y: 0}
+    CanRepeat: 0
+    MinRepeatDayDifference: 0
+    IncreaseMaxIncomeMultiplier: 0.1
+    IncreaseMaxIncome: 1.5
+    UnlocksColors: 0
+    FollowersRequired: 150
+    ExperienceRequired: 0
+    ReputationRequired: 10
+    MoneyRequired: 0
+    MinimumDay: 0
+    FixedDay: -1
+    tags: 
+    newExpenses: []
+  - data:
+      idx: 0
+      eventLogMessageSeen: 0
+      StartDay: 0
+      Duration: 0
+    eventLogMessage: Winter is looking to be harsh. I'll need to cover the extra
+      cost of heating.
+    minMaxDuration: {x: 10, y: 10}
+    Permanent: 0
+    RushHourIncrease: {x: 0, y: 0}
+    CustomerGapDecrease: {x: 0, y: 0}
+    CanRepeat: 1
+    MinRepeatDayDifference: 0
+    IncreaseMaxIncomeMultiplier: 0
+    IncreaseMaxIncome: 0
+    UnlocksColors: 0
+    FollowersRequired: 0
+    ExperienceRequired: 0
+    ReputationRequired: 0
+    MoneyRequired: 0
+    MinimumDay: 0
+    FixedDay: 31
+    tags: 
+    newExpenses:
+    - Name: Heating
+      Value: 10
+      PerWhat: 
+      Multiplier: 1
+      DefaultMultiplier: 1
+  - data:
+      idx: 0
+      eventLogMessageSeen: 0
+      StartDay: 0
+      Duration: 0
+    eventLogMessage: Halloween is around the corner! I wonder what costumes everyone
+      is going to be wearing.
+    minMaxDuration: {x: 1, y: 1}
+    Permanent: 0
+    RushHourIncrease: {x: 0.2, y: 0.3}
+    CustomerGapDecrease: {x: 0.1, y: 0.2}
+    CanRepeat: 1
+    MinRepeatDayDifference: 0
+    IncreaseMaxIncomeMultiplier: 0
+    IncreaseMaxIncome: 0
+    UnlocksColors: 0
+    FollowersRequired: 0
+    ExperienceRequired: 0
+    ReputationRequired: 0
+    MoneyRequired: 0
+    MinimumDay: 0
+    FixedDay: 27
+    tags: 1900000043000000
+    newExpenses: []
+  - data:
+      idx: 0
+      eventLogMessageSeen: 0
+      StartDay: 0
+      Duration: 0
+    eventLogMessage: Today is my birthday! Given the occasion I will treat myself
+      to something nice tonight.
+    minMaxDuration: {x: 1, y: 1}
+    Permanent: 0
+    RushHourIncrease: {x: 0, y: 0}
+    CustomerGapDecrease: {x: 0, y: 0}
+    CanRepeat: 1
+    MinRepeatDayDifference: 0
+    IncreaseMaxIncomeMultiplier: 0
+    IncreaseMaxIncome: 0
+    UnlocksColors: 0
+    FollowersRequired: 0
+    ExperienceRequired: 0
+    ReputationRequired: 0
+    MoneyRequired: 0
+    MinimumDay: 0
+    FixedDay: 25
+    tags: 20000000
+    newExpenses:
+    - Name: Present
+      Value: 25
+      PerWhat: 
+      Multiplier: 1
+      DefaultMultiplier: 1
+  - data:
+      idx: 0
+      eventLogMessageSeen: 0
+      StartDay: 0
+      Duration: 0
+    eventLogMessage: Happy holidays! The year is swiftly coming to a close, isn't
+      it?
+    minMaxDuration: {x: 1, y: 1}
+    Permanent: 0
+    RushHourIncrease: {x: 0.1, y: 0.2}
+    CustomerGapDecrease: {x: 0.05, y: 0.15}
+    CanRepeat: 1
+    MinRepeatDayDifference: 0
+    IncreaseMaxIncomeMultiplier: 0
+    IncreaseMaxIncome: 0
+    UnlocksColors: 0
+    FollowersRequired: 0
+    ExperienceRequired: 0
+    ReputationRequired: 0
+    MoneyRequired: 0
+    MinimumDay: 0
+    FixedDay: 36
+    tags: 2d000000
+    newExpenses: []
+  - data:
+      idx: 0
+      eventLogMessageSeen: 0
+      StartDay: 0
+      Duration: 0
+    eventLogMessage: Spring of the new year has begun! It's the store's anniversary!
+    minMaxDuration: {x: 1, y: 1}
+    Permanent: 0
+    RushHourIncrease: {x: 0.1, y: 0.1}
+    CustomerGapDecrease: {x: 0.1, y: 0.1}
+    CanRepeat: 1
+    MinRepeatDayDifference: 0
+    IncreaseMaxIncomeMultiplier: 0.05
+    IncreaseMaxIncome: 1
+    UnlocksColors: 0
+    FollowersRequired: 0
+    ExperienceRequired: 0
+    ReputationRequired: 0
+    MoneyRequired: 0
+    MinimumDay: 41
+    FixedDay: 1
+    tags: 20000000
+    newExpenses: []
+  - data:
+      idx: 0
+      eventLogMessageSeen: 0
+      StartDay: 0
+      Duration: 0
+    eventLogMessage: I finally got wrapped up in the clutches of bureaucracy. They
+      want a percentage of my income.
+    minMaxDuration: {x: 1, y: 1}
+    Permanent: 1
+    RushHourIncrease: {x: 0, y: 0}
+    CustomerGapDecrease: {x: 0, y: 0}
+    CanRepeat: 0
+    MinRepeatDayDifference: 0
+    IncreaseMaxIncomeMultiplier: 0
+    IncreaseMaxIncome: 0
+    UnlocksColors: 0
+    FollowersRequired: 60
+    ExperienceRequired: 4
+    ReputationRequired: 3
+    MoneyRequired: 200
+    MinimumDay: 27
+    FixedDay: -1
+    tags: 
+    newExpenses:
+    - Name: Tax
+      Value: 1
+      PerWhat: '%'
+      Multiplier: 1
+      DefaultMultiplier: 1
+  - data:
+      idx: 0
+      eventLogMessageSeen: 0
+      StartDay: 0
+      Duration: 0
+    eventLogMessage: I got a letter today notifying me of a tax increase. How greedy.
+    minMaxDuration: {x: 1, y: 1}
+    Permanent: 0
+    RushHourIncrease: {x: 0, y: 0}
+    CustomerGapDecrease: {x: 0, y: 0}
+    CanRepeat: 1
+    MinRepeatDayDifference: 21
+    IncreaseMaxIncomeMultiplier: 0
+    IncreaseMaxIncome: 0
+    UnlocksColors: 0
+    FollowersRequired: 120
+    ExperienceRequired: 6
+    ReputationRequired: 6
+    MoneyRequired: 350
+    MinimumDay: 40
+    FixedDay: -1
+    tags: 
+    newExpenses:
+    - Name: Tax
+      Value: 1
+      PerWhat: '%'
+      Multiplier: 1
+      DefaultMultiplier: 1

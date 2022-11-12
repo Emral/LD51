@@ -60,6 +60,7 @@ public class DayManager : MonoBehaviour
     // Start is called before the first frame update
     async void Start()
     {
+        AudioManager.FadeOut();
         DrawComparison.Curve = BalanceCurve;
         DrawController.DisableDrawing();
         imageCandidates.Initialize();
@@ -277,7 +278,7 @@ public class DayManager : MonoBehaviour
 
             if (_dayActive)
             {
-                yield return new WaitForSeconds(Random.Range(Globals.weather.customerDelay.x, Globals.weather.customerDelay.y));
+                yield return new WaitForSeconds(Random.Range(Mathf.Max(0, Globals.weather.customerDelay.x - Globals.CustomerDelay.x), Mathf.Max(0, Globals.weather.customerDelay.y - Globals.CustomerDelay.y)));
                 NewGuessable();
                 CanvasSurface.DOLocalMoveY(y, 0.25f, true).OnComplete(() =>
                 {

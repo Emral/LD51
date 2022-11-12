@@ -38,6 +38,13 @@ public class PostgameManager : MonoBehaviour
         }
         SFX.Sell.Play();
         SessionVariables.Savings = limit;
+        var taxExpense = SessionVariables.Expenses.Value.Find(e => e.Name == "Tax");
+        float taxPercent = 1;
+        if (taxExpense != null)
+        {
+            taxPercent = taxExpense.Value;
+            taxExpense.Value = taxExpense.Value * 0.01f * SessionVariables.TodaysEarnings;
+        }
         yield return new WaitForSeconds(1);
         ExpensesText.SetActive(true);
         limit = SessionVariables.Savings - SessionVariables.CalculateExpenses();
@@ -48,6 +55,11 @@ public class PostgameManager : MonoBehaviour
             SessionVariables.Savings -= Time.deltaTime * 100;
         }
         SessionVariables.Savings = limit;
+
+        if (taxExpense != null)
+        {
+            taxExpense.Value = taxPercent;
+        }
 
         if (SessionVariables.Savings > 0)
         {

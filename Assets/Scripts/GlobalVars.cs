@@ -24,5 +24,7 @@ public class GlobalVars
         }
     }
 
+    public Vector2 CustomerDelay;
+
     public UnityEvent<Color> OnPenColorChanged = new UnityEvent<Color>();
 }

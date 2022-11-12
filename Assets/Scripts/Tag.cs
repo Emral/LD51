@@ -67,5 +67,8 @@ public enum Tag
 	Pirate = 64,
 	Reptile = 65,
 	Building = 66,
+	Halloween = 67,
+	Magic = 68,
+	Cryptic = 69,
 
 }

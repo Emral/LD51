@@ -21,7 +21,7 @@ public class MetaManager : MonoBehaviour
     private SessionVariables sessionVariables;
 
     public static bool GameCanAdvance = true;
-    public static bool TutorialActive => PlayerPrefs.GetInt("SkipTutorial", 0) == 1;
+    public static bool TutorialActive => PlayerPrefs.GetInt("SkipTutorial", 0) == 0;
 
     public Tutorial Tutorial;
 

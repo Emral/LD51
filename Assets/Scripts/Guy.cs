@@ -41,6 +41,7 @@ public class Guy : SerializedScriptableObject
 
     [PreviewField(ObjectFieldAlignment.Left)]
     public Sprite idleSprite;
+    public Dictionary<Tag, Sprite> tagAlterEgo = new Dictionary<Tag, Sprite>();
     public bool leavesRightSide = false;
 
     [Range(-2, 2)]

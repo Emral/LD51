@@ -38,7 +38,16 @@ public class GuyDisplay : MonoBehaviour
     {
         inEase = a.leavesRightSide ? Ease.OutQuad : Ease.OutBack;
         outEase = a.leavesRightSide ? Ease.InQuad : Ease.InBack;
-        guyImage.sprite = a.idleSprite;
+        var sprite = a.idleSprite;
+        foreach (var kvp in a.tagAlterEgo)
+        {
+            if (DayManager.Globals.tagBiases.Contains(kvp.Key))
+            {
+                sprite = kvp.Value;
+                break;
+            }
+        }
+        guyImage.sprite = sprite;
         guyImage.transform.localPosition = guyPosition + Vector3.right * 160;
         guyImage.transform.DOLocalMoveX(guyPosition.x, 0.4f).SetEase(inEase);
     }

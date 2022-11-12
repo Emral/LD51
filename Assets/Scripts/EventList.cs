@@ -1,29 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Sirenix.OdinInspector;
 
 [CreateAssetMenu(menuName = "Data/Event", fileName = "Event")]
 public class EventList : ScriptableObject
 {
     public List<Event> events;
 
-    private void Awake()
+    public EventData FindEligible()
     {
         int i = 0;
-        foreach(var e in events)
+        foreach (var e in events)
         {
             e.data.idx = i;
         }
-    }
 
-    public EventData FindEligible()
-    {
         var candidates = new List<Event>();
         foreach(Event e in events)
         {
             if (e.CanUnlock())
             {
                 candidates.Add(e);
+
+                if (e.FixedDay != -1)
+                {
+                    return e.data;
+                }
             }
         }
 
@@ -56,18 +59,18 @@ public class Event
     public EventData data = new EventData();
 
     public string eventLogMessage;
-    public int minDuration;
-    public int maxDuration;
+    [MinMaxSlider(1, 10, showFields: true)]
+    public Vector2Int minMaxDuration = Vector2Int.one;
     public bool Permanent = false;
 
-    public int Delay = 1;
+    [MinMaxSlider(0, 1, showFields: true)]
+    public Vector2 RushHourIncrease = Vector2.zero;
 
-    public float IncreasesRushHourMin = 0;
-    public float IncreasesRushHourMax = 0;
+    [MinMaxSlider(0, 3, showFields: true)]
+    public Vector2 CustomerGapDecrease = Vector2.zero;
 
     public bool CanRepeat;
     public int MinRepeatDayDifference;
-
 
     public float IncreaseMaxIncomeMultiplier = 0;
     public float IncreaseMaxIncome = 0;
@@ -77,7 +80,8 @@ public class Event
     public float ExperienceRequired;
     public float ReputationRequired;
     public float MoneyRequired;
-    public float DayRequired;
+    public int MinimumDay;
+    public int FixedDay = -1;
 
     public List<Tag> tags;
 
@@ -97,8 +101,8 @@ public class Event
     public void Schedule()
     {
         data.eventLogMessageSeen = false;
-        data.StartDay = SessionVariables.Day.Value + Delay;
-        data.Duration = Random.Range(minDuration, maxDuration + 1);
+        data.StartDay = SessionVariables.Day.Value;
+        data.Duration = Random.Range(minMaxDuration.x, minMaxDuration.y + 1);
         SessionVariables.Events.Add(data);
     }
 
@@ -129,7 +133,12 @@ public class Event
             return false;
         }
 
-        if (SessionVariables.Day.Value >= DayRequired && SessionVariables.Followers.Value >= FollowersRequired && SessionVariables.Experience.Value >= ExperienceRequired && SessionVariables.Reputation.Value >= ReputationRequired && SessionVariables.Savings >= MoneyRequired)
+        if (FixedDay > 0)
+        {
+            return SessionVariables.Day.Value + 1 == FixedDay;
+        }
+
+        if ((SessionVariables.Day.Value + 1) >= MinimumDay && SessionVariables.Followers.Value >= FollowersRequired && SessionVariables.Experience.Value >= ExperienceRequired && SessionVariables.Reputation.Value >= ReputationRequired && SessionVariables.Savings >= MoneyRequired)
         {
             return true;
         }
@@ -199,7 +208,7 @@ public class Event
                 DayManager.Globals.tagBiases.Add(tag);
             }
         }
-        var increase = Random.Range(IncreasesRushHourMin, IncreasesRushHourMax);
+        var increase = Random.Range(RushHourIncrease.x, RushHourIncrease.y);
         DayManager.Globals.RushHourStart -= increase;
         if (DayManager.Globals.RushHourStart < 0)
         {
@@ -207,5 +216,6 @@ public class Event
             DayManager.Globals.RushHourStart = 0;
             DayManager.Globals.RushHourEnd = Mathf.Min(DayManager.Globals.RushHourEnd, 1);
         }
+        DayManager.Globals.CustomerDelay = DayManager.Globals.CustomerDelay - CustomerGapDecrease;
     }
 }
