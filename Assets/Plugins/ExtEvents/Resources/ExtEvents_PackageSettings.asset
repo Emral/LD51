@@ -9,9 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -592871233, guid: 293a028fda6e5014e865674ae5135628, type: 3}
-  m_Name: SD_CurrentDay
+  m_Script: {fileID: 11500000, guid: 7d327ecf945f4b1490f8917cde73fcb0, type: 3}
+  m_Name: ExtEvents_PackageSettings
   m_EditorClassIdentifier: 
-  _persistent: 1
-  _value: 0
-  _testValue: 36
+  _showInvocationWarning: 1

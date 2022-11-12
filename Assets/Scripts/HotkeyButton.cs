@@ -27,6 +27,7 @@ public class HotkeyButton : MonoBehaviour
                 text.text = "_";
             }
         }
+        text.gameObject.SetActive(PlayerPrefs.GetInt("ShowHotkeys", 1) == 1);
     }
 
     private void OnHotkey(char c)

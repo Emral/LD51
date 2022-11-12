@@ -62,6 +62,8 @@ MonoBehaviour:
     - {fileID: 580946822, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
     - {fileID: -670231060, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
     - {fileID: 810213386, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
+    - {fileID: 21300000, guid: aaf88c52067391e47b514a2399d21281, type: 3}
+    - {fileID: 21300000, guid: 08ad5256866db6148be3632bb7620a46, type: 3}
     - {fileID: 96978101, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
     - {fileID: 1859468734, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
     - {fileID: 591365158, guid: e3b0e55b737343d48956b3eb27935c21, type: 3}
@@ -160,6 +162,9 @@ MonoBehaviour:
     - Name: scrollingWeatherTextureSpeed
       Entry: 4
       Data: 0
+    - Name: scrollingWeatherTextureSine
+      Entry: 4
+      Data: 0
     - Name: preScreenExterior
       Entry: 10
       Data: 2
@@ -169,6 +174,9 @@ MonoBehaviour:
     - Name: preScreenScrollingTextureSpeed
       Entry: 4
       Data: 0
+    - Name: preScreenScrollingWeatherTextureSine
+      Entry: 4
+      Data: 0
     - Name: preScreenWindowBackground
       Entry: 10
       Data: 3
@@ -176,6 +184,9 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: preScreenWindowScrollingTextureSpeed
+      Entry: 4
+      Data: 0
+    - Name: preScreenWindowScrollingTextureSine
       Entry: 4
       Data: 0
     - Name: weatherIconSpring
@@ -286,6 +297,9 @@ MonoBehaviour:
     - Name: scrollingWeatherTextureSpeed
       Entry: 4
       Data: 0
+    - Name: scrollingWeatherTextureSine
+      Entry: 4
+      Data: 0
     - Name: preScreenExterior
       Entry: 10
       Data: 2
@@ -295,6 +309,9 @@ MonoBehaviour:
     - Name: preScreenScrollingTextureSpeed
       Entry: 4
       Data: 0
+    - Name: preScreenScrollingWeatherTextureSine
+      Entry: 4
+      Data: 0
     - Name: preScreenWindowBackground
       Entry: 10
       Data: 3
@@ -302,6 +319,9 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: preScreenWindowScrollingTextureSpeed
+      Entry: 4
+      Data: 0
+    - Name: preScreenWindowScrollingTextureSine
       Entry: 4
       Data: 0
     - Name: weatherIconSpring
@@ -412,6 +432,9 @@ MonoBehaviour:
     - Name: scrollingWeatherTextureSpeed
       Entry: 4
       Data: 0
+    - Name: scrollingWeatherTextureSine
+      Entry: 4
+      Data: 0
     - Name: preScreenExterior
       Entry: 10
       Data: 2
@@ -421,6 +444,9 @@ MonoBehaviour:
     - Name: preScreenScrollingTextureSpeed
       Entry: 4
       Data: 0
+    - Name: preScreenScrollingWeatherTextureSine
+      Entry: 4
+      Data: 0
     - Name: preScreenWindowBackground
       Entry: 10
       Data: 3
@@ -428,6 +454,9 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: preScreenWindowScrollingTextureSpeed
+      Entry: 4
+      Data: 0
+    - Name: preScreenWindowScrollingTextureSine
       Entry: 4
       Data: 0
     - Name: weatherIconSpring
@@ -538,6 +567,9 @@ MonoBehaviour:
     - Name: scrollingWeatherTextureSpeed
       Entry: 4
       Data: 1.5
+    - Name: scrollingWeatherTextureSine
+      Entry: 4
+      Data: 0
     - Name: preScreenExterior
       Entry: 10
       Data: 23
@@ -547,13 +579,19 @@ MonoBehaviour:
     - Name: preScreenScrollingTextureSpeed
       Entry: 4
       Data: 1
+    - Name: preScreenScrollingWeatherTextureSine
+      Entry: 4
+      Data: 0
     - Name: preScreenWindowBackground
       Entry: 10
       Data: 25
     - Name: preScreenWindowScrollingTexture
-      Entry: 6
-      Data: 
+      Entry: 10
+      Data: 24
     - Name: preScreenWindowScrollingTextureSpeed
+      Entry: 4
+      Data: 1.5
+    - Name: preScreenWindowScrollingTextureSine
       Entry: 4
       Data: 0
     - Name: weatherIconSpring
@@ -667,6 +705,9 @@ MonoBehaviour:
     - Name: scrollingWeatherTextureSpeed
       Entry: 4
       Data: 1.5
+    - Name: scrollingWeatherTextureSine
+      Entry: 4
+      Data: 0
     - Name: preScreenExterior
       Entry: 10
       Data: 23
@@ -676,13 +717,19 @@ MonoBehaviour:
     - Name: preScreenScrollingTextureSpeed
       Entry: 4
       Data: 1
+    - Name: preScreenScrollingWeatherTextureSine
+      Entry: 4
+      Data: 0
     - Name: preScreenWindowBackground
       Entry: 10
       Data: 25
     - Name: preScreenWindowScrollingTexture
-      Entry: 6
-      Data: 
+      Entry: 10
+      Data: 24
     - Name: preScreenWindowScrollingTextureSpeed
+      Entry: 4
+      Data: 1.5
+    - Name: preScreenWindowScrollingTextureSine
       Entry: 4
       Data: 0
     - Name: weatherIconSpring
@@ -799,6 +846,9 @@ MonoBehaviour:
     - Name: scrollingWeatherTextureSpeed
       Entry: 4
       Data: 0
+    - Name: scrollingWeatherTextureSine
+      Entry: 4
+      Data: 0
     - Name: preScreenExterior
       Entry: 10
       Data: 36
@@ -808,6 +858,9 @@ MonoBehaviour:
     - Name: preScreenScrollingTextureSpeed
       Entry: 4
       Data: 0
+    - Name: preScreenScrollingWeatherTextureSine
+      Entry: 4
+      Data: 0
     - Name: preScreenWindowBackground
       Entry: 10
       Data: 37
@@ -815,6 +868,9 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: preScreenWindowScrollingTextureSpeed
+      Entry: 4
+      Data: 0
+    - Name: preScreenWindowScrollingTextureSine
       Entry: 4
       Data: 0
     - Name: weatherIconSpring
@@ -925,6 +981,9 @@ MonoBehaviour:
     - Name: scrollingWeatherTextureSpeed
       Entry: 4
       Data: 0
+    - Name: scrollingWeatherTextureSine
+      Entry: 4
+      Data: 0
     - Name: preScreenExterior
       Entry: 10
       Data: 2
@@ -934,6 +993,9 @@ MonoBehaviour:
     - Name: preScreenScrollingTextureSpeed
       Entry: 4
       Data: 0
+    - Name: preScreenScrollingWeatherTextureSine
+      Entry: 4
+      Data: 0
     - Name: preScreenWindowBackground
       Entry: 10
       Data: 3
@@ -941,6 +1003,9 @@ MonoBehaviour:
       Entry: 6
       Data: 
     - Name: preScreenWindowScrollingTextureSpeed
+      Entry: 4
+      Data: 0
+    - Name: preScreenWindowScrollingTextureSine
       Entry: 4
       Data: 0
     - Name: weatherIconSpring
@@ -1050,41 +1115,50 @@ MonoBehaviour:
       Entry: 10
       Data: 21
     - Name: scrollingWeatherTexture
-      Entry: 6
-      Data: 
+      Entry: 10
+      Data: 46
     - Name: scrollingWeatherTextureSpeed
       Entry: 4
-      Data: 0
+      Data: 8
+    - Name: scrollingWeatherTextureSine
+      Entry: 4
+      Data: 12
     - Name: preScreenExterior
       Entry: 10
       Data: 23
     - Name: preScreenScrollingTexture
-      Entry: 6
-      Data: 
+      Entry: 10
+      Data: 47
     - Name: preScreenScrollingTextureSpeed
       Entry: 4
-      Data: 0
+      Data: 6
+    - Name: preScreenScrollingWeatherTextureSine
+      Entry: 4
+      Data: 12
     - Name: preScreenWindowBackground
       Entry: 10
       Data: 25
     - Name: preScreenWindowScrollingTexture
-      Entry: 6
-      Data: 
-    - Name: preScreenWindowScrollingTextureSpeed
-      Entry: 4
-      Data: 0
-    - Name: weatherIconSpring
       Entry: 10
       Data: 46
-    - Name: weatherIconSummer
-      Entry: 10
-      Data: 47
-    - Name: weatherIconAutumn
+    - Name: preScreenWindowScrollingTextureSpeed
+      Entry: 4
+      Data: 6
+    - Name: preScreenWindowScrollingTextureSine
+      Entry: 4
+      Data: 12
+    - Name: weatherIconSpring
       Entry: 10
       Data: 48
-    - Name: weatherIconWinter
+    - Name: weatherIconSummer
       Entry: 10
       Data: 49
+    - Name: weatherIconAutumn
+      Entry: 10
+      Data: 50
+    - Name: weatherIconWinter
+      Entry: 10
+      Data: 51
     - Name: sallyDialogue
       Entry: 7
       Data: 24|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
@@ -1176,41 +1250,50 @@ MonoBehaviour:
       Entry: 10
       Data: 21
     - Name: scrollingWeatherTexture
-      Entry: 6
-      Data: 
+      Entry: 10
+      Data: 46
     - Name: scrollingWeatherTextureSpeed
       Entry: 4
-      Data: 0
+      Data: 3
+    - Name: scrollingWeatherTextureSine
+      Entry: 4
+      Data: 4
     - Name: preScreenExterior
       Entry: 10
       Data: 23
     - Name: preScreenScrollingTexture
-      Entry: 6
-      Data: 
+      Entry: 10
+      Data: 47
     - Name: preScreenScrollingTextureSpeed
       Entry: 4
-      Data: 0
+      Data: 2
+    - Name: preScreenScrollingWeatherTextureSine
+      Entry: 4
+      Data: 4
     - Name: preScreenWindowBackground
       Entry: 10
       Data: 25
     - Name: preScreenWindowScrollingTexture
-      Entry: 6
-      Data: 
+      Entry: 10
+      Data: 46
     - Name: preScreenWindowScrollingTextureSpeed
       Entry: 4
-      Data: 0
+      Data: 3
+    - Name: preScreenWindowScrollingTextureSine
+      Entry: 4
+      Data: 4
     - Name: weatherIconSpring
       Entry: 10
-      Data: 50
+      Data: 52
     - Name: weatherIconSummer
       Entry: 10
-      Data: 51
+      Data: 53
     - Name: weatherIconAutumn
       Entry: 10
-      Data: 52
+      Data: 54
     - Name: weatherIconWinter
       Entry: 10
-      Data: 53
+      Data: 55
     - Name: sallyDialogue
       Entry: 7
       Data: 27|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
@@ -1240,7 +1323,10 @@ MonoBehaviour:
       Data: 28|System.Collections.Generic.List`1[[Tag, Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
-      Data: 0
+      Data: 1
+    - Name: 
+      Entry: 3
+      Data: 46
     - Name: 
       Entry: 13
       Data: 
@@ -1300,46 +1386,55 @@ MonoBehaviour:
       Data: 
     - Name: exteriorImageDay
       Entry: 10
-      Data: 54
+      Data: 56
     - Name: exteriorImageNight
       Entry: 10
-      Data: 55
+      Data: 57
     - Name: scrollingWeatherTexture
       Entry: 6
       Data: 
     - Name: scrollingWeatherTextureSpeed
       Entry: 4
       Data: 0
+    - Name: scrollingWeatherTextureSine
+      Entry: 4
+      Data: 0
     - Name: preScreenExterior
       Entry: 10
-      Data: 56
+      Data: 58
     - Name: preScreenScrollingTexture
       Entry: 6
       Data: 
     - Name: preScreenScrollingTextureSpeed
       Entry: 4
       Data: 0
+    - Name: preScreenScrollingWeatherTextureSine
+      Entry: 4
+      Data: 0
     - Name: preScreenWindowBackground
       Entry: 10
-      Data: 57
+      Data: 59
     - Name: preScreenWindowScrollingTexture
       Entry: 6
       Data: 
     - Name: preScreenWindowScrollingTextureSpeed
       Entry: 4
       Data: 0
+    - Name: preScreenWindowScrollingTextureSine
+      Entry: 4
+      Data: 0
     - Name: weatherIconSpring
       Entry: 10
-      Data: 58
+      Data: 60
     - Name: weatherIconSummer
       Entry: 10
-      Data: 59
+      Data: 61
     - Name: weatherIconAutumn
       Entry: 10
-      Data: 60
+      Data: 62
     - Name: weatherIconWinter
       Entry: 10
-      Data: 61
+      Data: 63
     - Name: sallyDialogue
       Entry: 7
       Data: 30|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib

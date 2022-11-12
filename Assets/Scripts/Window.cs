@@ -27,17 +27,20 @@ public class Window : MonoBehaviour
                 DayBackground.sprite = weather.preScreenExterior;
                 WeatherBackground.sprite = weather.preScreenScrollingTexture;
                 rain.speedMult = weather.preScreenScrollingTextureSpeed;
+                rain.doSineWave = weather.preScreenScrollingWeatherTextureSine;
                 break;
             case WindowType.Door:
                 DayBackground.sprite = weather.preScreenWindowBackground;
                 WeatherBackground.sprite = weather.preScreenWindowScrollingTexture;
                 rain.speedMult = weather.preScreenWindowScrollingTextureSpeed;
+                rain.doSineWave = weather.preScreenWindowScrollingTextureSine;
                 break;
             case WindowType.Main:
                 DayBackground.sprite = weather.exteriorImageDay;
                 NightBackground.sprite = weather.exteriorImageNight;
                 WeatherBackground.sprite = weather.scrollingWeatherTexture;
                 rain.speedMult = weather.scrollingWeatherTextureSpeed;
+                rain.doSineWave = weather.scrollingWeatherTextureSine;
                 break;
         }
         if (WeatherBackground.sprite == null)

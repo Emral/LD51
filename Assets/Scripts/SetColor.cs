@@ -25,6 +25,7 @@ public class SetColor : MonoBehaviour
         {
             text.text = s.ToUpper();
         }
+        text.gameObject.SetActive(PlayerPrefs.GetInt("ShowHotkeys", 1) == 1);
 
         DayManager.Globals.OnPenColorChanged.AddListener(OnPenColorChanged);
         OnPenColorChanged(DayManager.Globals.PenColor);

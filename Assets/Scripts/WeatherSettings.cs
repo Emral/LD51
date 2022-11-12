@@ -31,6 +31,7 @@ public class WeatherConfig
     [HideLabel]
     public Sprite scrollingWeatherTexture;
     public float scrollingWeatherTextureSpeed;
+    public float scrollingWeatherTextureSine;
     [HorizontalGroup(GroupID = "B")]
     [PreviewField]
     [HideLabel]
@@ -40,6 +41,7 @@ public class WeatherConfig
     [HideLabel]
     public Sprite preScreenScrollingTexture;
     public float preScreenScrollingTextureSpeed;
+    public float preScreenScrollingWeatherTextureSine;
     [HorizontalGroup(GroupID = "C")]
     [PreviewField]
     [HideLabel]
@@ -49,6 +51,7 @@ public class WeatherConfig
     [HideLabel]
     public Sprite preScreenWindowScrollingTexture;
     public float preScreenWindowScrollingTextureSpeed;
+    public float preScreenWindowScrollingTextureSine;
     [PreviewField]
     [HorizontalGroup(GroupID = "D")]
     [HideLabel]
