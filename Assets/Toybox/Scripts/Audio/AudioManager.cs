@@ -221,16 +221,16 @@ public class AudioManager : MonoBehaviour
         instance.MusicSource.DOFade(0, duration);
         instance.MusicSubTrackSource.DOFade(0, duration);
         instance.TutorialSource.volume = 0;
-        instance.TutorialSource.time = 5 + Random.Range(0, 3) * 10;
+        instance.TutorialSource.time = (5 + Random.Range(0, 7) * 10) % instance.TutorialSource.clip.length;
         instance.TutorialSource.Play();
         instance.TutorialSource.DOFade(1, duration);
     }
     public static void StoredRestore(float duration)
     {
-        if (instance.targetClip != BGM.None)
+        if (instance.targetClip != BGM.None && instance.MusicSubTrackSource.clip != null)
         {
-            instance.MusicSource.time = instance.time - duration;
-            instance.MusicSubTrackSource.time = instance.time - duration;
+            instance.MusicSource.time = (instance.time - duration);
+            instance.MusicSubTrackSource.time = (instance.time - duration);
             instance.MusicSource.DOFade(1, duration);
             instance.MusicSubTrackSource.DOFade(1, duration);
         }

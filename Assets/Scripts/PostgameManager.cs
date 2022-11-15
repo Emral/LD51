@@ -9,11 +9,18 @@ public class PostgameManager : MonoBehaviour
     public GameObject EarningsText;
     public GameObject ExpensesText;
     public Text SavingsValueText;
+    public Text ResultsText;
     public PostgamePlayerAnimation PlayerPerson;
 
     public RectTransform Results;
     public RectTransform Canvas;
     public Image CanvasContents;
+
+    public CanvasGroup GalleryOverlay;
+    public RectTransform GalleryContent;
+    public Transform GalleryLayoutGroup;
+    public GalleryImage GalleryImagePrefab;
+    public Button OpenGalleryButton;
 
     public Button LoseButton;
     public Button ContinueButton;
@@ -23,6 +30,35 @@ public class PostgameManager : MonoBehaviour
     void Start()
     {
         CoroutineManager.Start(ResultsRoutine());
+
+        ResultsText.text = $"Day {SessionVariables.Day.Value + 1} Summary";
+
+        int i = 0;
+        foreach (var drawing in SessionVariables.todaysDrawings)
+        {
+            var newButton = Instantiate(GalleryImagePrefab, GalleryLayoutGroup);
+            newButton.Initialize(drawing, i);
+            i++;
+        }
+    }
+
+    public void OpenGallery()
+    {
+        GalleryOverlay.DOFade(1, 0.75f).SetEase(Ease.OutQuad).OnComplete(() => {
+            GalleryOverlay.blocksRaycasts = true;
+            GalleryOverlay.interactable = true;
+        });
+        GalleryContent.transform.localPosition = Vector3.right * 512;
+        GalleryContent.transform.DOLocalMoveX(0, 0.75f).SetEase(Ease.OutQuad);
+    }
+
+    public void CloseGallery()
+    {
+        GalleryOverlay.DOFade(0, 0.75f).SetEase(Ease.InQuad).OnComplete(() => {
+            GalleryOverlay.blocksRaycasts = false;
+            GalleryOverlay.interactable = false;
+        });
+        GalleryContent.transform.DOLocalMoveX(512, 0.75f).SetEase(Ease.InQuad);
     }
 
     private IEnumerator ResultsRoutine()
@@ -74,6 +110,12 @@ public class PostgameManager : MonoBehaviour
             ContinueButton.gameObject.SetActive(true);
             ContinueButton.transform.localScale = Vector3.zero;
             ContinueButton.transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack);
+            if (SessionVariables.todaysDrawings.Count > 0)
+            {
+                OpenGalleryButton.gameObject.SetActive(true);
+                OpenGalleryButton.transform.localScale = Vector3.zero;
+                OpenGalleryButton.transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack);
+            }
         } else
         {
             PlayerPerson.MakeDie();
@@ -88,6 +130,12 @@ public class PostgameManager : MonoBehaviour
             LoseButton.gameObject.SetActive(true);
             LoseButton.transform.localScale = Vector3.zero;
             LoseButton.transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack);
+            if (SessionVariables.todaysDrawings.Count > 0)
+            {
+                OpenGalleryButton.gameObject.SetActive(true);
+                OpenGalleryButton.transform.localScale = Vector3.zero;
+                OpenGalleryButton.transform.DOScale(Vector3.one, 0.5f).SetEase(Ease.OutBack);
+            }
         }
     }
 

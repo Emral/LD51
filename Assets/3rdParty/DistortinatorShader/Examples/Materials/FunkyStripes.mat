@@ -10,6 +10,7 @@ Material:
   m_Name: FunkyStripes
   m_Shader: {fileID: 4800000, guid: 1265c942dcf64fa45ac15e5b0299819c, type: 3}
   m_ValidKeywords:
+  - NOISE_ON
   - VERTICAL_WOBBLE_ON
   m_InvalidKeywords:
   - ETC1_EXTERNAL_ALPHA
@@ -27,24 +28,24 @@ Material:
         m_Scale: {x: 4, y: 4}
         m_Offset: {x: 0, y: 0}
     - _NoiseTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 142a8903847610d4189299a0c890415f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
     - INTERLACING: 0
-    - NOISING: 0
+    - NOISING: 1
     - VERTICAL_WOBBLE: 1
-    - _Amplitude: 0.04
-    - _AnimationPhase: 0.488
-    - _AnimationSpeed: 0.67
-    - _Distortion: 0
-    - _DistortionX: 1.5
+    - _Amplitude: 0.1
+    - _AnimationPhase: 0.833
+    - _AnimationSpeed: -0.61
+    - _Distortion: -0
+    - _DistortionX: 1.2
     - _DistortionY: 1.2
-    - _Frequency: 0.4
+    - _Frequency: 0.1
     - _Interlace2: 0
     - _InterlaceSize: 0
-    - _MoveX: 0.07
+    - _MoveX: 0.13
     - _MoveY: 0
     - _MyDstMode: 8
     - _MySrcMode: 5

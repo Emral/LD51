@@ -70,5 +70,9 @@ public enum Tag
 	Halloween = 67,
 	Magic = 68,
 	Cryptic = 69,
+	Science = 70,
+	BenFranklin = 71,
+	Karate = 72,
+	Sally = 73,
 
 }

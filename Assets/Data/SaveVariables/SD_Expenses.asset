@@ -27,8 +27,8 @@ MonoBehaviour:
   - Name: Utensils
     Value: 0.5
     PerWhat: ' / canvas'
-    Multiplier: 1
-    DefaultMultiplier: 1
+    Multiplier: 0
+    DefaultMultiplier: 0
   _testValue:
   - Name: Rent
     Value: 50
@@ -43,5 +43,5 @@ MonoBehaviour:
   - Name: Utensils
     Value: 0.5
     PerWhat: ' / canvas'
-    Multiplier: 1
-    DefaultMultiplier: 1
+    Multiplier: 0
+    DefaultMultiplier: 0
