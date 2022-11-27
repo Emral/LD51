@@ -228,7 +228,7 @@ MonoBehaviour:
   idleSprite: {fileID: 21300000, guid: 87bb5d19a7909c348839cf4569183254, type: 3}
   leavesRightSide: 0
   bias: 0.25
-  ArrivalSound: 0
+  ArrivalSound: 147
   OnlyAppearIfDayPrefersTag: 0
   PreferredTagSelectionChance: 0.5
   preferredTags: 0e0000003100000038000000

@@ -74,5 +74,9 @@ public enum Tag
 	BenFranklin = 71,
 	Karate = 72,
 	Sally = 73,
+	Dinosaur = 74,
+	Sights = 75,
+	Mushroom = 76,
+	Strong = 77,
 
 }

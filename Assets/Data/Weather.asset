@@ -761,7 +761,7 @@ MonoBehaviour:
       Data: 
     - Name: backgroundMusic
       Entry: 3
-      Data: 4
+      Data: 5
     - Name: weather
       Entry: 3
       Data: 5
@@ -800,7 +800,7 @@ MonoBehaviour:
       Data: 17|WeatherConfig, Assembly-CSharp
     - Name: dayLength
       Entry: 4
-      Data: 80
+      Data: 90
     - Name: name
       Entry: 1
       Data: Heatwave
@@ -902,7 +902,7 @@ MonoBehaviour:
       Data: 
     - Name: backgroundMusic
       Entry: 3
-      Data: 3
+      Data: 5
     - Name: weather
       Entry: 3
       Data: 6
@@ -1182,7 +1182,7 @@ MonoBehaviour:
       Data: 
     - Name: backgroundMusic
       Entry: 3
-      Data: 3
+      Data: 4
     - Name: weather
       Entry: 3
       Data: 8
@@ -1215,7 +1215,7 @@ MonoBehaviour:
       Data: 26|WeatherConfig, Assembly-CSharp
     - Name: dayLength
       Entry: 4
-      Data: 70
+      Data: 90
     - Name: name
       Entry: 1
       Data: Snowstorm
@@ -1320,7 +1320,7 @@ MonoBehaviour:
       Data: 
     - Name: backgroundMusic
       Entry: 3
-      Data: 3
+      Data: 5
     - Name: weather
       Entry: 3
       Data: 9

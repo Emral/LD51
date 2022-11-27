@@ -62,7 +62,41 @@ public enum SFX
     Customer_Gordon = 132,
     Customer_Bouncy = 133,
     Customer_UFO = 134,
-    Customer_Bloo = 135
+    Customer_Bloo = 135,
+    Customer_Pumpkin = 136,
+    Customer_Horseman = 137,
+    Customer_Crocodile = 138,
+    Customer_Oldman = 139,
+    Customer_FBI = 140,
+    Customer_Snowgirl = 141,
+    Customer_Tree = 142,
+    Customer_WorriedSkeleton = 143,
+    Customer_Nutcracker = 144,
+    Customer_Karategirl = 145,
+    Customer_Magician = 146,
+    Customer_WormGF = 147,
+    Customer_Fairy = 148,
+    Customer_Nagitrout = 149,
+    Customer_Crowd = 150,
+    Customer_Girl = 151,
+    Customer_Kimonogirl = 152,
+    Customer_Polygongirl = 153,
+    Customer_Summergirl = 154,
+    Customer_Surfmush = 155,
+    Customer_Parrot = 156,
+    Customer_Lamp = 157,
+    Customer_Flurret = 158,
+    Customer_Frog = 159,
+    Customer_Iceman = 160,
+    Customer_Snowman = 161,
+    Customer_Toaster = 162,
+    Customer_MirrorGoblin = 163,
+    Customer_Grrrol = 164,
+    Customer_Anubis = 165,
+    Customer_Scientist = 166,
+    Customer_Traveller = 167,
+    Customer_Benfranklin = 168,
+    Customer_Hoodie = 169
 }
 
 public enum BGM
@@ -72,7 +106,8 @@ public enum BGM
     PreGame,
     PostGame,
     GameRegular,
-    GameRain
+    GameRain,
+    GameThunderStorm
 }
 
 

@@ -170,7 +170,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 3
-      Data: 1
+      Data: 4
     - Name: $v
       Entry: 7
       Data: 10|Guy+Chance, Assembly-CSharp
@@ -210,7 +210,7 @@ MonoBehaviour:
   idleSprite: {fileID: 21300000, guid: 89735cd8e2cb3104da6630f1fb7ad499, type: 3}
   leavesRightSide: 0
   bias: -0.45
-  ArrivalSound: 0
+  ArrivalSound: 166
   OnlyAppearIfDayPrefersTag: 0
   PreferredTagSelectionChance: 0.5
   preferredTags: 46000000090000001f000000

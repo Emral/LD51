@@ -152,7 +152,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 3
-      Data: 2
+      Data: 1
     - Name: $v
       Entry: 7
       Data: 9|Guy+Chance, Assembly-CSharp
@@ -176,7 +176,7 @@ MonoBehaviour:
       Data: 10|Guy+Chance, Assembly-CSharp
     - Name: Multiplier
       Entry: 4
-      Data: 1
+      Data: 0.75
     - Name: 
       Entry: 8
       Data: 
@@ -194,7 +194,7 @@ MonoBehaviour:
       Data: 11|Guy+Chance, Assembly-CSharp
     - Name: Multiplier
       Entry: 4
-      Data: 1
+      Data: 0.5
     - Name: 
       Entry: 8
       Data: 
@@ -210,7 +210,7 @@ MonoBehaviour:
   idleSprite: {fileID: 21300000, guid: 0d31db15fb47fb24db3a94c1115c473a, type: 3}
   leavesRightSide: 0
   bias: 0.45
-  ArrivalSound: 0
+  ArrivalSound: 162
   OnlyAppearIfDayPrefersTag: 0
   PreferredTagSelectionChance: 0.5
   preferredTags: 460000000500000045000000

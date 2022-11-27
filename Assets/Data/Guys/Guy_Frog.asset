@@ -21,13 +21,39 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
+    - Name: tagAlterEgo
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[Tag, Assembly-CSharp],[UnityEngine.Sprite,
+        UnityEngine.CoreModule]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.EnumEqualityComparer`1[[Tag, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: appearanceWeights
       Entry: 7
-      Data: 0|System.Collections.Generic.Dictionary`2[[Weather, Assembly-CSharp],[Guy+Weight,
+      Data: 2|System.Collections.Generic.Dictionary`2[[Weather, Assembly-CSharp],[Guy+Weight,
         Assembly-CSharp]], mscorlib
     - Name: comparer
       Entry: 7
-      Data: 1|System.Collections.Generic.EnumEqualityComparer`1[[Weather, Assembly-CSharp]],
+      Data: 3|System.Collections.Generic.EnumEqualityComparer`1[[Weather, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
@@ -49,7 +75,7 @@ MonoBehaviour:
       Data: 4
     - Name: $v
       Entry: 7
-      Data: 2|Guy+Weight, Assembly-CSharp
+      Data: 4|Guy+Weight, Assembly-CSharp
     - Name: WeightValue
       Entry: 3
       Data: 10
@@ -67,7 +93,7 @@ MonoBehaviour:
       Data: 5
     - Name: $v
       Entry: 7
-      Data: 3|Guy+Weight, Assembly-CSharp
+      Data: 5|Guy+Weight, Assembly-CSharp
     - Name: WeightValue
       Entry: 3
       Data: 7
@@ -85,11 +111,11 @@ MonoBehaviour:
       Data: 
     - Name: seasonAppearanceMultipliers
       Entry: 7
-      Data: 4|System.Collections.Generic.Dictionary`2[[Season, Assembly-CSharp],[Guy+Chance,
+      Data: 6|System.Collections.Generic.Dictionary`2[[Season, Assembly-CSharp],[Guy+Chance,
         Assembly-CSharp]], mscorlib
     - Name: comparer
       Entry: 7
-      Data: 5|System.Collections.Generic.EnumEqualityComparer`1[[Season, Assembly-CSharp]],
+      Data: 7|System.Collections.Generic.EnumEqualityComparer`1[[Season, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
@@ -111,7 +137,7 @@ MonoBehaviour:
       Data: 1
     - Name: $v
       Entry: 7
-      Data: 6|Guy+Chance, Assembly-CSharp
+      Data: 8|Guy+Chance, Assembly-CSharp
     - Name: Multiplier
       Entry: 4
       Data: 1
@@ -129,7 +155,7 @@ MonoBehaviour:
       Data: 2
     - Name: $v
       Entry: 7
-      Data: 7|Guy+Chance, Assembly-CSharp
+      Data: 9|Guy+Chance, Assembly-CSharp
     - Name: Multiplier
       Entry: 4
       Data: 0.5
@@ -147,7 +173,7 @@ MonoBehaviour:
       Data: 3
     - Name: $v
       Entry: 7
-      Data: 8|Guy+Chance, Assembly-CSharp
+      Data: 10|Guy+Chance, Assembly-CSharp
     - Name: Multiplier
       Entry: 4
       Data: 1
@@ -165,7 +191,7 @@ MonoBehaviour:
       Data: 4
     - Name: $v
       Entry: 7
-      Data: 9|Guy+Chance, Assembly-CSharp
+      Data: 11|Guy+Chance, Assembly-CSharp
     - Name: Multiplier
       Entry: 4
       Data: 0.5
@@ -184,7 +210,7 @@ MonoBehaviour:
   idleSprite: {fileID: 21300000, guid: f93cd09676ed9b3458a5b230a4564f0b, type: 3}
   leavesRightSide: 0
   bias: 1.7
-  ArrivalSound: 0
+  ArrivalSound: 159
   OnlyAppearIfDayPrefersTag: 0
   PreferredTagSelectionChance: 0.5
   preferredTags: 3f0000000e00000018000000
