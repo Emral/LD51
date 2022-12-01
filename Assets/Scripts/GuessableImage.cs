@@ -77,6 +77,7 @@ public class Guessable
     [OnCollectionChanged(After = "AddNewVariation")]
     public List<GuessableMap> variations = new List<GuessableMap>();
 
+#if UNITY_EDITOR
     public void AddNewVariation(CollectionChangeInfo info, object value)
     {
         if (info.ChangeType == CollectionChangeType.Add)
@@ -93,6 +94,7 @@ public class Guessable
             }
         }
     }
+#endif
 
     public void SetColors()
     {

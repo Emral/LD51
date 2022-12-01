@@ -66,7 +66,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 4
+      Data: 5
     - Name: 
       Entry: 7
       Data: 
@@ -140,6 +140,24 @@ MonoBehaviour:
       Entry: 8
       Data: 
     - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 6
+    - Name: $v
+      Entry: 7
+      Data: 8|Guy+Weight, Assembly-CSharp
+    - Name: WeightValue
+      Entry: 3
+      Data: 6
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
       Entry: 13
       Data: 
     - Name: 
@@ -147,11 +165,11 @@ MonoBehaviour:
       Data: 
     - Name: seasonAppearanceMultipliers
       Entry: 7
-      Data: 8|System.Collections.Generic.Dictionary`2[[Season, Assembly-CSharp],[Guy+Chance,
+      Data: 9|System.Collections.Generic.Dictionary`2[[Season, Assembly-CSharp],[Guy+Chance,
         Assembly-CSharp]], mscorlib
     - Name: comparer
       Entry: 7
-      Data: 9|System.Collections.Generic.EnumEqualityComparer`1[[Season, Assembly-CSharp]],
+      Data: 10|System.Collections.Generic.EnumEqualityComparer`1[[Season, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
@@ -173,7 +191,7 @@ MonoBehaviour:
       Data: 4
     - Name: $v
       Entry: 7
-      Data: 10|Guy+Chance, Assembly-CSharp
+      Data: 11|Guy+Chance, Assembly-CSharp
     - Name: Multiplier
       Entry: 4
       Data: 0.45
@@ -191,7 +209,7 @@ MonoBehaviour:
       Data: 2
     - Name: $v
       Entry: 7
-      Data: 11|Guy+Chance, Assembly-CSharp
+      Data: 12|Guy+Chance, Assembly-CSharp
     - Name: Multiplier
       Entry: 4
       Data: 0.6
@@ -209,7 +227,7 @@ MonoBehaviour:
       Data: 3
     - Name: $v
       Entry: 7
-      Data: 12|Guy+Chance, Assembly-CSharp
+      Data: 13|Guy+Chance, Assembly-CSharp
     - Name: Multiplier
       Entry: 4
       Data: 1

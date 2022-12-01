@@ -19,7 +19,7 @@ public class ListGameValue<T> : GameValueBase, IEnumerable<T>
     [SerializeField] protected List<T> _testValue = new List<T>();
 
     [AutoReset("_value", "_testValue")]
-    protected List<T> v;
+    protected List<T> v = new List<T>();
 
     public System.Action<List<T>> OnValueChanged;
     public System.Action<List<T>, T> OnItemAdded;

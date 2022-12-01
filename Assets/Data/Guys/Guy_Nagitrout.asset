@@ -78,7 +78,7 @@ MonoBehaviour:
       Data: 4|Guy+Weight, Assembly-CSharp
     - Name: WeightValue
       Entry: 3
-      Data: 3
+      Data: 1
     - Name: 
       Entry: 8
       Data: 
@@ -96,7 +96,7 @@ MonoBehaviour:
       Data: 5|Guy+Weight, Assembly-CSharp
     - Name: WeightValue
       Entry: 3
-      Data: 2
+      Data: 1
     - Name: 
       Entry: 8
       Data: 
@@ -150,7 +150,7 @@ MonoBehaviour:
       Data: 8|Guy+Weight, Assembly-CSharp
     - Name: WeightValue
       Entry: 3
-      Data: 3
+      Data: 1
     - Name: 
       Entry: 8
       Data: 
