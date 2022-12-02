@@ -42,12 +42,13 @@ MonoBehaviour:
       I work a shorter shift.
   - mechanic: 8
     title: Events
-    description: An event is coming up! This can affect the day significantly.
+    description: Today seems to be a special event. The kinds of drawings people
+      request me to draw might change.
   - mechanic: 9
     title: Followers
     description: I'm gaining quite a few followers. If this keeps up, I might become
       popular online!
   - mechanic: 10
     title: Rainy days
-    description: Not as many people come around on rainy days. But it brings out
+    description: Not as many people come around on rainy days, but they bring out
       some unusual folk as well.

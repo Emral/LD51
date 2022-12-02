@@ -17,7 +17,7 @@ MonoBehaviour:
       idx: 0
       eventLogMessageSeen: 0
       StartDay: 0
-      Duration: 0
+      Duration: 1
     eventLogMessage: I think I should expand my palette a little. Just black and
       white is a bit boring.
     minMaxDuration: {x: 1, y: 1}
@@ -38,15 +38,15 @@ MonoBehaviour:
     tags: 
     newExpenses:
     - Name: Utensils
-      Value: 0.1
+      Value: 0.25
       PerWhat: 
       Multiplier: 0
       DefaultMultiplier: 1
   - data:
-      idx: 0
+      idx: 1
       eventLogMessageSeen: 0
       StartDay: 0
-      Duration: 0
+      Duration: 1
     eventLogMessage: I think I'm gonna expand my palette even further.
     minMaxDuration: {x: 1, y: 1}
     Permanent: 1
@@ -66,15 +66,15 @@ MonoBehaviour:
     tags: 
     newExpenses:
     - Name: Utensils
-      Value: 0.05
+      Value: 0.25
       PerWhat: 
       Multiplier: 0
       DefaultMultiplier: 1
   - data:
-      idx: 0
-      eventLogMessageSeen: 0
-      StartDay: 0
-      Duration: 0
+      idx: 2
+      eventLogMessageSeen: 1
+      StartDay: 9
+      Duration: 2
     eventLogMessage: One of yesterday's customers gave me a shoutout online and it
       went viral! There may be more people around than usual.
     minMaxDuration: {x: 2, y: 3}
@@ -90,12 +90,12 @@ MonoBehaviour:
     ExperienceRequired: 5
     ReputationRequired: 5
     MoneyRequired: 0
-    MinimumDay: 8
+    MinimumDay: 9
     FixedDay: -1
     tags: 
     newExpenses: []
   - data:
-      idx: 0
+      idx: 3
       eventLogMessageSeen: 0
       StartDay: 0
       Duration: 0
@@ -124,13 +124,13 @@ MonoBehaviour:
       Multiplier: 0
       DefaultMultiplier: 1
   - data:
-      idx: 0
+      idx: 4
       eventLogMessageSeen: 0
       StartDay: 0
-      Duration: 0
+      Duration: 2
     eventLogMessage: Looks like a convention for a famous videogame is coming to
       town soon. Chances are many people will want drawings of their favourite creatures.
-    minMaxDuration: {x: 1, y: 2}
+    minMaxDuration: {x: 2, y: 2}
     Permanent: 0
     RushHourIncrease: {x: 0.1, y: 0.2}
     CustomerGapDecrease: {x: 0.1, y: 0.2}
@@ -144,11 +144,11 @@ MonoBehaviour:
     ReputationRequired: 0
     MoneyRequired: 0
     MinimumDay: 0
-    FixedDay: 7
+    FixedDay: 8
     tags: 07000000
     newExpenses: []
   - data:
-      idx: 0
+      idx: 5
       eventLogMessageSeen: 0
       StartDay: 0
       Duration: 0
@@ -167,12 +167,12 @@ MonoBehaviour:
     ExperienceRequired: 0
     ReputationRequired: 0
     MoneyRequired: 0
-    MinimumDay: 13
-    FixedDay: -1
+    MinimumDay: 0
+    FixedDay: 15
     tags: 020000000100000031000000
     newExpenses: []
   - data:
-      idx: 0
+      idx: 6
       eventLogMessageSeen: 0
       StartDay: 0
       Duration: 0
@@ -196,12 +196,12 @@ MonoBehaviour:
     tags: 
     newExpenses:
     - Name: AC
-      Value: 5
+      Value: 10
       PerWhat: 
       Multiplier: 1
       DefaultMultiplier: 1
   - data:
-      idx: 0
+      idx: 7
       eventLogMessageSeen: 0
       StartDay: 0
       Duration: 0
@@ -225,7 +225,7 @@ MonoBehaviour:
     tags: 
     newExpenses: []
   - data:
-      idx: 0
+      idx: 8
       eventLogMessageSeen: 0
       StartDay: 0
       Duration: 0
@@ -249,18 +249,18 @@ MonoBehaviour:
     tags: 
     newExpenses:
     - Name: Heating
-      Value: 10
+      Value: 20
       PerWhat: 
       Multiplier: 1
       DefaultMultiplier: 1
   - data:
-      idx: 0
+      idx: 9
       eventLogMessageSeen: 0
       StartDay: 0
       Duration: 0
     eventLogMessage: Halloween is around the corner! I wonder what costumes everyone
       is going to be wearing.
-    minMaxDuration: {x: 1, y: 1}
+    minMaxDuration: {x: 4, y: 4}
     Permanent: 0
     RushHourIncrease: {x: 0.2, y: 0.3}
     CustomerGapDecrease: {x: 0.1, y: 0.2}
@@ -275,10 +275,10 @@ MonoBehaviour:
     MoneyRequired: 0
     MinimumDay: 0
     FixedDay: 27
-    tags: 1900000043000000
+    tags: 190000004300000011000000
     newExpenses: []
   - data:
-      idx: 0
+      idx: 10
       eventLogMessageSeen: 0
       StartDay: 0
       Duration: 0
@@ -299,7 +299,7 @@ MonoBehaviour:
     MoneyRequired: 0
     MinimumDay: 0
     FixedDay: 25
-    tags: 20000000
+    tags: 2000000031000000
     newExpenses:
     - Name: Present
       Value: 25
@@ -307,13 +307,13 @@ MonoBehaviour:
       Multiplier: 1
       DefaultMultiplier: 1
   - data:
-      idx: 0
+      idx: 11
       eventLogMessageSeen: 0
       StartDay: 0
       Duration: 0
     eventLogMessage: Happy holidays! The year is swiftly coming to a close, isn't
       it?
-    minMaxDuration: {x: 1, y: 1}
+    minMaxDuration: {x: 3, y: 3}
     Permanent: 0
     RushHourIncrease: {x: 0.1, y: 0.2}
     CustomerGapDecrease: {x: 0.05, y: 0.15}
@@ -331,7 +331,7 @@ MonoBehaviour:
     tags: 2d000000
     newExpenses: []
   - data:
-      idx: 0
+      idx: 12
       eventLogMessageSeen: 0
       StartDay: 0
       Duration: 0
@@ -354,7 +354,7 @@ MonoBehaviour:
     tags: 20000000
     newExpenses: []
   - data:
-      idx: 0
+      idx: 13
       eventLogMessageSeen: 0
       StartDay: 0
       Duration: 0
@@ -373,7 +373,7 @@ MonoBehaviour:
     ExperienceRequired: 4
     ReputationRequired: 3
     MoneyRequired: 200
-    MinimumDay: 27
+    MinimumDay: 28
     FixedDay: -1
     tags: 
     newExpenses:
@@ -383,7 +383,7 @@ MonoBehaviour:
       Multiplier: 1
       DefaultMultiplier: 1
   - data:
-      idx: 0
+      idx: 14
       eventLogMessageSeen: 0
       StartDay: 0
       Duration: 0
@@ -410,3 +410,97 @@ MonoBehaviour:
       PerWhat: '%'
       Multiplier: 1
       DefaultMultiplier: 1
+  - data:
+      idx: 15
+      eventLogMessageSeen: 0
+      StartDay: 0
+      Duration: 0
+    eventLogMessage: There is a magic show in town today. Maybe next year I'll go,
+      too.
+    minMaxDuration: {x: 1, y: 1}
+    Permanent: 0
+    RushHourIncrease: {x: 0.1, y: 0.15}
+    CustomerGapDecrease: {x: 0.1, y: 0.15}
+    CanRepeat: 0
+    MinRepeatDayDifference: 0
+    IncreaseMaxIncomeMultiplier: 0
+    IncreaseMaxIncome: 0
+    UnlocksColors: 0
+    FollowersRequired: 0
+    ExperienceRequired: 0
+    ReputationRequired: 0
+    MoneyRequired: 0
+    MinimumDay: 0
+    FixedDay: 22
+    tags: 44000000
+    newExpenses: []
+  - data:
+      idx: 16
+      eventLogMessageSeen: 0
+      StartDay: 0
+      Duration: 0
+    eventLogMessage: Ah, such perfect weather for going to the beach. Maybe some
+      beachgoers will stop by.
+    minMaxDuration: {x: 1, y: 1}
+    Permanent: 0
+    RushHourIncrease: {x: 0.1, y: 0.1}
+    CustomerGapDecrease: {x: 0.1, y: 0.1}
+    CanRepeat: 0
+    MinRepeatDayDifference: 0
+    IncreaseMaxIncomeMultiplier: 0
+    IncreaseMaxIncome: 0
+    UnlocksColors: 0
+    FollowersRequired: 0
+    ExperienceRequired: 0
+    ReputationRequired: 0
+    MoneyRequired: 0
+    MinimumDay: 0
+    FixedDay: 18
+    tags: 1b0000003a000000
+    newExpenses: []
+  - data:
+      idx: 17
+      eventLogMessageSeen: 0
+      StartDay: 0
+      Duration: 1
+    eventLogMessage: There's a science fair happening today, it seems.
+    minMaxDuration: {x: 1, y: 1}
+    Permanent: 0
+    RushHourIncrease: {x: 0.1, y: 0.1}
+    CustomerGapDecrease: {x: 0.1, y: 0.1}
+    CanRepeat: 0
+    MinRepeatDayDifference: 0
+    IncreaseMaxIncomeMultiplier: 0
+    IncreaseMaxIncome: 0
+    UnlocksColors: 0
+    FollowersRequired: 0
+    ExperienceRequired: 0
+    ReputationRequired: 0
+    MoneyRequired: 0
+    MinimumDay: 0
+    FixedDay: 32
+    tags: 460000000500000016000000
+    newExpenses: []
+  - data:
+      idx: 18
+      eventLogMessageSeen: 0
+      StartDay: 0
+      Duration: 0
+    eventLogMessage: Summer vacation has begun. I bet people will be looking to travel.
+    minMaxDuration: {x: 2, y: 2}
+    Permanent: 0
+    RushHourIncrease: {x: 0, y: 0}
+    CustomerGapDecrease: {x: 0, y: 0}
+    CanRepeat: 0
+    MinRepeatDayDifference: 0
+    IncreaseMaxIncomeMultiplier: 0
+    IncreaseMaxIncome: 0
+    UnlocksColors: 0
+    FollowersRequired: 0
+    ExperienceRequired: 0
+    ReputationRequired: 0
+    MoneyRequired: 0
+    MinimumDay: 0
+    FixedDay: 12
+    tags: 4b000000010000002f000000
+    newExpenses: []

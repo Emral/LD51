@@ -188,11 +188,6 @@ public class SessionVariables : ScriptableObject
         {
             await MetaManager.instance.DoTutorial(Mechanics.Rain);
         }
-
-        if (Followers.Value >= 25 && Day.Value > 2)
-        {
-            await MetaManager.instance.DoTutorial(Mechanics.Followers);
-        }
     }
 
     public static string GetMessageOfTheDay()

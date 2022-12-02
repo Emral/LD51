@@ -240,6 +240,19 @@ public class GuessableImage : SerializedScriptableObject
         Guessable result = null;
         if (guy.preferredTags.Count > 0)
         {
+            if (Random.Range(0.0f, 1.0f) <= guy.DayTagSelectionChance)
+            {
+                foreach (var tag in DayManager.Globals.tagBiases)
+                {
+                    result = FindSprite(guessablesByTag[tag], guy.bias);
+
+                    if (result != null)
+                    {
+                        break;
+                    }
+                }
+            }
+
             foreach (var tag in guy.preferredTags)
             {
 

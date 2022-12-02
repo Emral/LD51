@@ -265,9 +265,10 @@ MonoBehaviour:
   leavesRightSide: 0
   bias: -0.3
   ArrivalSound: 132
+  DayTagSelectionChance: 0.25
   OnlyAppearIfDayPrefersTag: 0
   PreferredTagSelectionChance: 0.5
-  preferredTags: 1a0000000600000010000000
+  preferredTags: 1a0000000600000003000000
   thanksMessages:
     worst: []
     bad: []

@@ -260,7 +260,7 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 3
-      Data: 3
+      Data: 2
     - Name: $v
       Entry: 7
       Data: 15|Guy+Chance, Assembly-CSharp
@@ -283,6 +283,7 @@ MonoBehaviour:
   leavesRightSide: 0
   bias: -0.5
   ArrivalSound: 165
+  DayTagSelectionChance: 0
   OnlyAppearIfDayPrefersTag: 0
   PreferredTagSelectionChance: 0.5
   preferredTags: 3b000000

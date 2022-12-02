@@ -229,6 +229,7 @@ MonoBehaviour:
   leavesRightSide: 0
   bias: 0.2
   ArrivalSound: 142
+  DayTagSelectionChance: 0.25
   OnlyAppearIfDayPrefersTag: 0
   PreferredTagSelectionChance: 0.5
   preferredTags: 02000000010000001e000000

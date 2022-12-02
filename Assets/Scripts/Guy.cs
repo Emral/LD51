@@ -51,6 +51,8 @@ public class Guy : SerializedScriptableObject
 
     public SFX ArrivalSound = SFX.None;
 
+    [Range(0, 1)]
+    public float DayTagSelectionChance = 0f;
     public bool OnlyAppearIfDayPrefersTag;
     [Range(0, 1)]
     public float PreferredTagSelectionChance = 0.5f;

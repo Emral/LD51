@@ -223,10 +223,13 @@ public class AudioManager : MonoBehaviour
                 }
                 instance.MusicSource.clip = introClip.clip;
                 instance.MusicSource.Play();
+                instance.MusicSource.time = 0;
                 instance.MusicSource.volume = introClip.volume;
                 instance.MusicSource.loop = false;
                 instance.MusicSubTrackSource.clip = introClip.subLoopClip;
                 instance.MusicSubTrackSource.Play();
+                instance.MusicSubTrackSource.time = 0;
+                instance.time = 0;
                 instance.MusicSubTrackSource.volume = 0;
                 instance.MusicSubTrackSource.loop = false;
                 while (instance.MusicSource.isPlaying)
@@ -242,10 +245,13 @@ public class AudioManager : MonoBehaviour
             instance.MusicSource.clip = loopingClip.clip;
             instance.MusicSource.loop = true;
             instance.MusicSource.Play();
+            instance.MusicSource.time = 0;
+            instance.time = 0;
             instance.MusicSource.volume = loopingClip.volume;
             instance.MusicSubTrackSource.clip = loopingClip.subLoopClip;
             instance.MusicSubTrackSource.loop = true;
             instance.MusicSubTrackSource.Play();
+            instance.MusicSubTrackSource.time = 0;
             instance.MusicSubTrackSource.volume = 0;
         }
     }

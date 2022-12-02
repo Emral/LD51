@@ -122,10 +122,6 @@ public class DayManager : MonoBehaviour
             await MetaManager.instance.DoTutorial(Mechanics.RushHour);
         }
 
-        if (SessionVariables.Day == 3)
-        {
-            await MetaManager.instance.DoTutorial(Mechanics.MoneyExplanation);
-        }
         CoroutineManager.Start(StartNextDay());
         SessionVariables.todaysDrawings.Clear();
     }
@@ -216,7 +212,7 @@ public class DayManager : MonoBehaviour
         } else
         {
 
-            _timerTimeElapsed = Mathf.Max(_timerTimeElapsed - 20 * Time.deltaTime, Mathf.Max(_dayTimeElapsed - 90, isRushHour ? 3 : 0));
+            _timerTimeElapsed = Mathf.Max(_timerTimeElapsed - 20 * Time.deltaTime, Mathf.Max(_dayTimeElapsed - (dayLength - 10), isRushHour ? 3 : 0));
         }
 
         TimerImage.fillAmount = 1 - _timerTimeElapsed / 10;

@@ -14,6 +14,7 @@ public class EventList : ScriptableObject
         foreach (var e in events)
         {
             e.data.idx = i;
+            i++;
         }
 
         var candidates = new List<Event>();
@@ -183,7 +184,7 @@ public class Event
 
         for (int i = 0; i < newExpenses.Count; i++)
         {
-            for (int j = SessionVariables.Expenses.Count; j >= 0; j--)
+            for (int j = SessionVariables.Expenses.Count - 1; j >= 0; j--)
             {
                 var e = SessionVariables.Expenses[j];
                 if (e.Name == newExpenses[i].Name)
