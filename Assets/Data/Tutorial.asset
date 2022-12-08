@@ -37,7 +37,7 @@ MonoBehaviour:
     description: The tinted section of the daily shift line is a rush hour period.
       My time limit will be stricter!
   - mechanic: 7
-    title: Extreme weather
+    title: Bad weather
     description: On days with extreme weather, not as many guests come around, so
       I work a shorter shift.
   - mechanic: 8

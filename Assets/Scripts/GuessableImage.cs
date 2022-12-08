@@ -39,25 +39,25 @@ public class Guessable
     public static readonly Dictionary<Color, ValidColors> colorMap = new Dictionary<Color, ValidColors>()
     {
         [new Color(29 / 255.0f, 31 / 255.0f, 38 / 255.0f)] = ValidColors.Black,
-        [new Color(111 / 255.0f, 109 / 255.0f, 142 / 255.0f)] = ValidColors.Grey,
-        [new Color(153 / 255.0f, 18 / 255.0f, 54 / 255.0f)] = ValidColors.Red,
-        [new Color(204 / 255.0f, 89 / 255.0f, 7 / 255.0f)] = ValidColors.Orange,
-        [new Color(206 / 255.0f, 196 / 255.0f, 82 / 255.0f)] = ValidColors.Yellow,
-        [new Color(0 / 255.0f, 195 / 255.0f, 110 / 255.0f)] = ValidColors.Green,
-        [new Color(99 / 255.0f, 129 / 255.0f, 211 / 255.0f)] = ValidColors.Blue,
-        [new Color(197 / 255.0f, 102 / 255.0f, 219 / 255.0f)] = ValidColors.Purple
+        [new Color(104 / 255.0f, 92 / 255.0f, 100 / 255.0f)] = ValidColors.Grey,
+        [new Color(173 / 255.0f, 34 / 255.0f, 46 / 255.0f)] = ValidColors.Red,
+        [new Color(204 / 255.0f, 97 / 255.0f, 59 / 255.0f)] = ValidColors.Orange,
+        [new Color(204 / 255.0f, 169 / 255.0f, 83 / 255.0f)] = ValidColors.Yellow,
+        [new Color(97 / 255.0f, 183 / 255.0f, 97 / 255.0f)] = ValidColors.Green,
+        [new Color(23 / 255.0f, 117 / 255.0f, 168 / 255.0f)] = ValidColors.Blue,
+        [new Color(183 / 255.0f, 102 / 255.0f, 183 / 255.0f)] = ValidColors.Purple
     };
 
     public static readonly Dictionary<ValidColors, Color> colorReverseMap = new Dictionary<ValidColors, Color>()
     {
         [ValidColors.Black] = new Color(29 / 255.0f, 31 / 255.0f, 38 / 255.0f),
-        [ValidColors.Grey] = new Color(111 / 255.0f, 109 / 255.0f, 142 / 255.0f),
-        [ValidColors.Red] = new Color(153 / 255.0f, 18 / 255.0f, 54 / 255.0f),
-        [ValidColors.Orange] = new Color(204 / 255.0f, 89 / 255.0f, 7 / 255.0f),
-        [ValidColors.Yellow] = new Color(206 / 255.0f, 196 / 255.0f, 82 / 255.0f),
-        [ValidColors.Green] = new Color(0 / 255.0f, 195 / 255.0f, 110 / 255.0f),
-        [ValidColors.Blue] = new Color(99 / 255.0f, 129 / 255.0f, 211 / 255.0f),
-        [ValidColors.Purple] = new Color(197 / 255.0f, 102 / 255.0f, 219 / 255.0f)
+        [ValidColors.Grey] = new Color(104 / 255.0f, 92 / 255.0f, 100 / 255.0f),
+        [ValidColors.Red] = new Color(173 / 255.0f, 34 / 255.0f, 46 / 255.0f),
+        [ValidColors.Orange] = new Color(204 / 255.0f, 97 / 255.0f, 59 / 255.0f),
+        [ValidColors.Yellow] = new Color(204 / 255.0f, 169 / 255.0f, 83 / 255.0f),
+        [ValidColors.Green] = new Color(97 / 255.0f, 183 / 255.0f, 97 / 255.0f),
+        [ValidColors.Blue] = new Color(23 / 255.0f, 117 / 255.0f, 168 / 255.0f),
+        [ValidColors.Purple] = new Color(183 / 255.0f, 102 / 255.0f, 183 / 255.0f)
     };
 
     [HideLabel]

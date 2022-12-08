@@ -78,5 +78,7 @@ public enum Tag
 	Sights = 75,
 	Mushroom = 76,
 	Strong = 77,
+	Cevin = 78,
+	OtherCharacter = 79,
 
 }

@@ -68,7 +68,10 @@ public class DayManager : MonoBehaviour
         Globals.weather = SessionVariables.GetTodaysWeather();
         foreach (var e in SessionVariables.Events)
         {
-            MetaManager.instance.events.GetEvent(e).DailyExecute();
+            if (SessionVariables.Day.Value >= e.StartDay && SessionVariables.Day.Value < e.StartDay + e.Duration)
+            {
+                MetaManager.instance.events.GetEvent(e).DailyExecute();
+            }
         }
         foreach (var e in Globals.weather.inherentTags)
         {
@@ -227,7 +230,6 @@ public class DayManager : MonoBehaviour
     {
         if (_timerActive)
         {
-            SFX.Sell.Play();
             CoroutineManager.Start(SellRoutine());
         }
     }
@@ -238,6 +240,7 @@ public class DayManager : MonoBehaviour
 
         if (_timerActive)
         {
+            SFX.Sell.Play();
             _timerActive = false;
             var tex = DrawController.FinishDrawing();
             var tex2 = new Texture2D(64, 64);

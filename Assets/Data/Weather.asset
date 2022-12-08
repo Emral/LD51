@@ -206,10 +206,16 @@ MonoBehaviour:
       Data: 3|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 3
     - Name: 
       Entry: 1
       Data: Today is a nice and sunny day! This really lifts the spirits.
+    - Name: 
+      Entry: 1
+      Data: It's sunny out. Lovely!
+    - Name: 
+      Entry: 1
+      Data: Wonderful weather, today! I'm super motivated to get started.
     - Name: 
       Entry: 13
       Data: 
@@ -341,10 +347,16 @@ MonoBehaviour:
       Data: 6|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 3
     - Name: 
       Entry: 1
-      Data: The weather looks to be quite normal today.
+      Data: The weather is quite nice today.
+    - Name: 
+      Entry: 1
+      Data: It's a bit cloudy, but I don't think it will rain today.
+    - Name: 
+      Entry: 1
+      Data: It's nice to work in the shade from time to time.
     - Name: 
       Entry: 13
       Data: 
@@ -476,10 +488,17 @@ MonoBehaviour:
       Data: 9|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 3
     - Name: 
       Entry: 1
-      Data: A somewhat cloudy day, but overall pleasant.
+      Data: Today looks to be a pleasant day.
+    - Name: 
+      Entry: 1
+      Data: The weather isn't anything special, but cozy nontheless.
+    - Name: 
+      Entry: 1
+      Data: Some clouds make the warmth of the occasional sunbeam that much more
+        special.
     - Name: 
       Entry: 13
       Data: 
@@ -611,10 +630,13 @@ MonoBehaviour:
       Data: 12|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 2
     - Name: 
       Entry: 1
       Data: It's raining today. There may be fewer people out and about.
+    - Name: 
+      Entry: 1
+      Data: It already started rainining, huh. It might be a slower-paced day, then.
     - Name: 
       Entry: 13
       Data: 
@@ -749,10 +771,13 @@ MonoBehaviour:
       Data: 15|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 2
     - Name: 
       Entry: 1
-      Data: It's storming outside. Maybe I should do a shorter shift...
+      Data: It's storming outside. Maybe I should work a shorter shift...
+    - Name: 
+      Entry: 1
+      Data: What a strong storm! It shows no sign of stopping either.
     - Name: 
       Entry: 13
       Data: 
@@ -890,10 +915,14 @@ MonoBehaviour:
       Data: 18|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 2
     - Name: 
       Entry: 1
       Data: It's so hot out today! I should do a shorter shift to avoid heatstroke.
+    - Name: 
+      Entry: 1
+      Data: They said today would be one of the hottest days of the year. Oh my,
+        ...
     - Name: 
       Entry: 13
       Data: 
@@ -1031,11 +1060,15 @@ MonoBehaviour:
       Data: 21|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 2
     - Name: 
       Entry: 1
       Data: Looks like it's quite windy today. People might be less inclined to go
         out.
+    - Name: 
+      Entry: 1
+      Data: Moderately strong winds are blowing. This was my favorite weather when
+        I was young.
     - Name: 
       Entry: 13
       Data: 
@@ -1170,10 +1203,13 @@ MonoBehaviour:
       Data: 24|System.Collections.Generic.List`1[[System.String, mscorlib]], mscorlib
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 2
     - Name: 
       Entry: 1
       Data: It's snowing! This should make for a relaxing change of pace.
+    - Name: 
+      Entry: 1
+      Data: Snow day! I'll grab a hot beverage and get ready right away.
     - Name: 
       Entry: 13
       Data: 
@@ -1458,7 +1494,7 @@ MonoBehaviour:
       Data: 
     - Name: backgroundMusic
       Entry: 3
-      Data: 3
+      Data: 6
     - Name: weather
       Entry: 3
       Data: 10

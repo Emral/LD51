@@ -18,6 +18,11 @@ public class ButtonEffects : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
 
     private bool hover = false;
 
+    public bool IsIdle()
+    {
+        return img.sprite == Idle;
+    }
+
     public void OnPointerDown(PointerEventData eventData)
     {
         img.sprite = Press;

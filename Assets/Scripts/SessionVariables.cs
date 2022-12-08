@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -105,7 +106,12 @@ public class SessionVariables : ScriptableObject
         UpcomingWeathers.ResetToDefault();
         Events.ResetToDefault();
 
-        for (int i = 0; i < 40; i++)
+        foreach (var e in MetaManager.instance.events.events)
+        {
+            Events.Add(e.data);
+        }
+
+        for (int i = 0; i < 32; i++)
         {
             CalculateWeather(Day.Value + i);
         }
@@ -123,18 +129,18 @@ public class SessionVariables : ScriptableObject
     {
         var list = seasonSettings.springWeathersByDay;
 
-        if (day % 40 >= 30)
+        if (day % 32 >= 24)
         {
             list = seasonSettings.winterWeathersByDay;
-        } else if (day % 40 >= 20)
+        } else if (day % 32 >= 16)
         {
             list = seasonSettings.autumnWeathersByDay;
-        } else if (day % 40 >= 10)
+        } else if (day % 32 >= 8)
         {
             list = seasonSettings.summerWeathersByDay;
         }
 
-        UpcomingWeathers.Add(weatherSettings.weathers[list[day % 10].choices[Random.Range(0, list[day % 10].choices.Count)]].weather);
+        UpcomingWeathers.Add(weatherSettings.weathers[list[day % 8].choices[Random.Range(0, list[day % 8].choices.Count)]].weather);
     }
 
     public static WeatherConfig GetTodaysWeather()
@@ -173,14 +179,12 @@ public class SessionVariables : ScriptableObject
         for (int i = Events.Count-1; i >= 0; i--)
         {
             var ev = MetaManager.instance.events.GetEvent(Events[i]);
-            if (ev.GetStartDay() == Day.Value)
-            {
-                ev.StartEvent();
-            }
-            else if (ev.GetEndDay() == Day.Value)
+            if (ev.GetEndDay() == Day.Value)
             {
                 ev.EndEvent();
-                Events.Remove(Events[i]);
+            } else if (ev.GetStartDay() == Day.Value)
+            {
+                ev.StartEvent();
             }
         }
 
@@ -188,18 +192,29 @@ public class SessionVariables : ScriptableObject
         {
             await MetaManager.instance.DoTutorial(Mechanics.Rain);
         }
+
+        if (UpcomingWeathers[Day.Value - LastDay] == Weather.Thunder)
+        {
+            await MetaManager.instance.DoTutorial(Mechanics.Thunderstorms);
+        }
+
+        foreach (var e in Events) {
+            var ev = MetaManager.instance.events.GetEvent(e);
+            e.StartDay = ev.data.StartDay;
+            e.Duration = ev.data.Duration;
+        }
     }
 
     public static string GetMessageOfTheDay()
     {
         var weather = weatherSettings.weathers[UpcomingWeathers[Day.Value - LastDay]];
+        var e = MetaManager.instance.events.events.FirstOrDefault(ev => ev.data.StartDay == Day.Value);
         if (Day.Value == 0)
         {
             return "Alright, let's get started! Today is the first day of my new art studio!";
-        } else if (Events.Count > 0 && !Events[Events.Count - 1].eventLogMessageSeen)
+        } else if (e != null)
         {
-            Events[Events.Count - 1].eventLogMessageSeen = true;
-            return MetaManager.instance.events.GetEvent(Events[Events.Count - 1]).eventLogMessage;
+            return e.eventLogMessage;
         } else if (weather.sallyDialogue.Count > 0)
         {
             return weather.sallyDialogue[Random.Range(0, weather.sallyDialogue.Count)];
@@ -375,6 +390,6 @@ public class SessionVariables : ScriptableObject
 
     public static Season GetSeason(int day)
     {
-        return (Season)(1 + (Mathf.Floor(day / 10.0f) % 4));
+        return (Season)(1 + (Mathf.Floor(day / 8.0f) % 4));
     }
 }

@@ -1384,7 +1384,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1405,7 +1405,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1426,7 +1426,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1447,7 +1447,7 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1455,6 +1455,279 @@ TextureImporter:
       bones: []
       spriteID: 3de35d66712be6d4998555d3f1aa1867
       internalID: -817385862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guess_Set_4_64
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c32feb0de806a054d98f2fd0830e0052
+      internalID: -371517725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guess_Set_4_65
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0ad8bdaf409a9f47aa297dc1a43ba7b
+      internalID: 835264734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guess_Set_4_66
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da30a3fc69de6e5418ab272cb2c46e78
+      internalID: 1148988417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guess_Set_4_67
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4efdaed13196cfa41801114e758e0780
+      internalID: 727469125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guess_Set_4_68
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f79b247cfc40f6a4eb55c247aa5dc7a1
+      internalID: 666582688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guess_Set_4_69
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe7c72668e338a46b87abf02e7a9ced
+      internalID: 1956255498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guess_Set_4_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8ba77fc7a6bc94587d70648dd854cb
+      internalID: -1117918705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guess_Set_4_71
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38048c924ced8314796ffdd0ca4b218f
+      internalID: 1145851644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guess_Set_4_72
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcb53077b57991341a29a45e3f607f13
+      internalID: -1958159498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guess_Set_4_73
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ebf0aaded7d7f744ac57f7bb439ce7d
+      internalID: 1894029322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guess_Set_4_74
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4fc4d3d0f3d7814a94bac72a2b5c6b3
+      internalID: -267193618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guess_Set_4_75
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9308a3620cf31ca4b88b05f69b97c058
+      internalID: 1652180955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guess_Set_4_76
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a66cfe3454f27e458d0df469d282ca1
+      internalID: -615498344
       vertices: []
       indices: 
       edges: []
@@ -1482,19 +1755,27 @@ TextureImporter:
       Guess_Set_4_55: 1714058619
       Guess_Set_4_32: -1833318416
       Guess_Set_4_58: 550314101
+      Guess_Set_4_67: 727469125
       Guess_Set_4_44: -1483777001
+      Guess_Set_4_68: 666582688
+      Guess_Set_4_74: -267193618
+      Guess_Set_4_72: -1958159498
       Guess_Set_4_23: -1902545198
       Guess_Set_4_24: -401204698
       Guess_Set_4_0: -1098419356
+      Guess_Set_4_66: 1148988417
       Guess_Set_4_39: -399199625
+      Guess_Set_4_71: 1145851644
       Guess_Set_4_36: 479807474
       Guess_Set_4_6: -442801724
       Guess_Set_4_56: 790870661
       Guess_Set_4_10: -976583414
+      Guess_Set_4_70: -1117918705
       Guess_Set_4_28: 683347200
       Guess_Set_4_40: -1566665904
       Guess_Set_4_17: 110520904
       Guess_Set_4_34: 645517322
+      Guess_Set_4_76: -615498344
       Guess_Set_4_31: -1809503746
       Guess_Set_4_51: -156470044
       Guess_Set_4_43: -1701936380
@@ -1502,12 +1783,15 @@ TextureImporter:
       Guess_Set_4_47: -1480854927
       Guess_Set_4_63: -817385862
       Guess_Set_4_54: 2043554813
+      Guess_Set_4_69: 1956255498
       Guess_Set_4_45: 1697573478
       Guess_Set_4_62: -1443768328
       Guess_Set_4_18: -397549234
+      Guess_Set_4_73: 1894029322
       Guess_Set_4_29: 1840915794
       Guess_Set_4_30: 895000937
       Guess_Set_4_35: -674683141
+      Guess_Set_4_64: -371517725
       Guess_Set_4_38: -790262661
       Guess_Set_4_1: -660471876
       Guess_Set_4_8: 913536868
@@ -1523,6 +1807,7 @@ TextureImporter:
       Guess_Set_4_59: -2135576683
       Guess_Set_4_41: -1963047773
       Guess_Set_4_42: -879558185
+      Guess_Set_4_75: 1652180955
       Guess_Set_4_3: -1929129980
       Guess_Set_4_11: 1435938493
       Guess_Set_4_60: 824650621
@@ -1532,6 +1817,7 @@ TextureImporter:
       Guess_Set_4_13: -841291457
       Guess_Set_4_50: -2074852637
       Guess_Set_4_27: 783329200
+      Guess_Set_4_65: 835264734
       Guess_Set_4_20: 1911231977
       Guess_Set_4_61: 846732549
   spritePackingTag: 

@@ -15,19 +15,58 @@ MonoBehaviour:
   serializationData:
     SerializedFormat: 2
     SerializedBytes: 
-    ReferencedUnityObjects: []
+    ReferencedUnityObjects:
+    - {fileID: 21300000, guid: fb150fe169ca4a5489ec9f6c678eecec, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
+    - Name: tagAlterEgo
+      Entry: 7
+      Data: 0|System.Collections.Generic.Dictionary`2[[Tag, Assembly-CSharp],[UnityEngine.Sprite,
+        UnityEngine.CoreModule]], mscorlib
+    - Name: comparer
+      Entry: 7
+      Data: 1|System.Collections.Generic.EnumEqualityComparer`1[[Tag, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 32
+    - Name: $v
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
     - Name: appearanceWeights
       Entry: 7
-      Data: 0|System.Collections.Generic.Dictionary`2[[Weather, Assembly-CSharp],[Guy+Weight,
+      Data: 2|System.Collections.Generic.Dictionary`2[[Weather, Assembly-CSharp],[Guy+Weight,
         Assembly-CSharp]], mscorlib
     - Name: comparer
       Entry: 7
-      Data: 1|System.Collections.Generic.EnumEqualityComparer`1[[Weather, Assembly-CSharp]],
+      Data: 3|System.Collections.Generic.EnumEqualityComparer`1[[Weather, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
@@ -49,7 +88,7 @@ MonoBehaviour:
       Data: 1
     - Name: $v
       Entry: 7
-      Data: 2|Guy+Weight, Assembly-CSharp
+      Data: 4|Guy+Weight, Assembly-CSharp
     - Name: WeightValue
       Entry: 3
       Data: 5
@@ -67,7 +106,7 @@ MonoBehaviour:
       Data: 2
     - Name: $v
       Entry: 7
-      Data: 3|Guy+Weight, Assembly-CSharp
+      Data: 5|Guy+Weight, Assembly-CSharp
     - Name: WeightValue
       Entry: 3
       Data: 5
@@ -85,7 +124,7 @@ MonoBehaviour:
       Data: 3
     - Name: $v
       Entry: 7
-      Data: 4|Guy+Weight, Assembly-CSharp
+      Data: 6|Guy+Weight, Assembly-CSharp
     - Name: WeightValue
       Entry: 3
       Data: 5
@@ -103,11 +142,11 @@ MonoBehaviour:
       Data: 
     - Name: seasonAppearanceMultipliers
       Entry: 7
-      Data: 5|System.Collections.Generic.Dictionary`2[[Season, Assembly-CSharp],[Guy+Chance,
+      Data: 7|System.Collections.Generic.Dictionary`2[[Season, Assembly-CSharp],[Guy+Chance,
         Assembly-CSharp]], mscorlib
     - Name: comparer
       Entry: 7
-      Data: 6|System.Collections.Generic.EnumEqualityComparer`1[[Season, Assembly-CSharp]],
+      Data: 8|System.Collections.Generic.EnumEqualityComparer`1[[Season, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
@@ -120,49 +159,13 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 4
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 1
-    - Name: $v
-      Entry: 7
-      Data: 7|Guy+Chance, Assembly-CSharp
-    - Name: Multiplier
-      Entry: 4
-      Data: 1
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
-      Data: 2
-    - Name: $v
-      Entry: 7
-      Data: 8|Guy+Chance, Assembly-CSharp
-    - Name: Multiplier
-      Entry: 4
-      Data: 1
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 3
       Data: 3
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 1
     - Name: $v
       Entry: 7
       Data: 9|Guy+Chance, Assembly-CSharp
@@ -180,10 +183,28 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 3
-      Data: 4
+      Data: 2
     - Name: $v
       Entry: 7
       Data: 10|Guy+Chance, Assembly-CSharp
+    - Name: Multiplier
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 3
+      Data: 3
+    - Name: $v
+      Entry: 7
+      Data: 11|Guy+Chance, Assembly-CSharp
     - Name: Multiplier
       Entry: 4
       Data: 1
@@ -203,6 +224,7 @@ MonoBehaviour:
   leavesRightSide: 0
   bias: 0.2
   ArrivalSound: 108
+  DayTagSelectionChance: 0
   OnlyAppearIfDayPrefersTag: 0
   PreferredTagSelectionChance: 0.5
   preferredTags: 36000000

@@ -283,6 +283,27 @@ MonoBehaviour:
   - type: 169
     clip: {fileID: 8300000, guid: adab5d79013e8924d8f499e037a12d60, type: 3}
     volume: 1
+  - type: 172
+    clip: {fileID: 8300000, guid: a996b8fcb9e3b8a4c82b341f46c015b2, type: 3}
+    volume: 1
+  - type: 170
+    clip: {fileID: 8300000, guid: a57c79bd6f3a5b445a920532ee2568bc, type: 3}
+    volume: 1
+  - type: 174
+    clip: {fileID: 8300000, guid: 5e8ae20d2abab3d458d2d35e706c10d2, type: 3}
+    volume: 1
+  - type: 171
+    clip: {fileID: 8300000, guid: e6021176420383944af3f712f02bb6a8, type: 3}
+    volume: 1
+  - type: 173
+    clip: {fileID: 8300000, guid: 6290aa9fbf051c442abd62b3b8dba574, type: 3}
+    volume: 1
+  - type: 150
+    clip: {fileID: 8300000, guid: 1d6a7b5bd64b9fc47ba89619a989fa91, type: 3}
+    volume: 1
+  - type: 175
+    clip: {fileID: 8300000, guid: 5bc4dd5df1e0f034195305f040377636, type: 3}
+    volume: 1
   Music:
   - type: 0
     clip: {fileID: 8300000, guid: 1f0b988bb85c34d4885f26ca72505c24, type: 3}
@@ -308,3 +329,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: ca69f9c0bcf2fe540a4595caea6a0a48, type: 3}
     subLoopClip: {fileID: 8300000, guid: 146ce531c42f21d40b75b14b425e11ee, type: 3}
     volume: 0.924
+  - type: 6
+    clip: {fileID: 8300000, guid: 76517611058524643a207a7aa7909664, type: 3}
+    subLoopClip: {fileID: 8300000, guid: f05c32174ebf84b4aa0a818d4a35f4c7, type: 3}
+    volume: 0.936

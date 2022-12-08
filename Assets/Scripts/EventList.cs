@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 using Sirenix.OdinInspector;
 
 [CreateAssetMenu(menuName = "Data/Event", fileName = "Event")]
@@ -10,13 +11,6 @@ public class EventList : ScriptableObject
 
     public EventData FindEligible()
     {
-        int i = 0;
-        foreach (var e in events)
-        {
-            e.data.idx = i;
-            i++;
-        }
-
         var candidates = new List<Event>();
         foreach(Event e in events)
         {
@@ -49,9 +43,8 @@ public class EventList : ScriptableObject
 public class EventData
 {
     public int idx;
-    public bool eventLogMessageSeen;
-    public int StartDay;
-    public int Duration;
+    public int StartDay = -1;
+    public int Duration = 0;
 }
 
 [System.Serializable]
@@ -88,28 +81,23 @@ public class Event
 
     public List<Expense> newExpenses;
 
-    public bool EventLogSeen()
-    {
-        return data.eventLogMessageSeen;
-    }
-
     public void Initialize()
     {
-        data.StartDay = 0;
-        data.eventLogMessageSeen = false;
+        var e = SessionVariables.Events.FirstOrDefault(ev => ev.idx == data.idx);
+        if (e != null)
+        {
+            data.StartDay = e.StartDay;
+            data.Duration = e.Duration;
+        } else
+        {
+            data.StartDay = -1;
+        }
     }
 
     public void Schedule()
     {
-        data.eventLogMessageSeen = false;
         data.StartDay = SessionVariables.Day.Value;
-        data.Duration = Random.Range(minMaxDuration.x, minMaxDuration.y + 1);
-        SessionVariables.Events.Add(data);
-    }
-
-    public void SetMessageSeen()
-    {
-        data.eventLogMessageSeen = true;
+        data.Duration = Random.Range(minMaxDuration.x, minMaxDuration.y);
     }
 
     public int GetStartDay()
@@ -119,7 +107,7 @@ public class Event
 
     public int GetEndDay()
     {
-        if (Permanent)
+        if (Permanent || data.StartDay == -1)
         {
             return -1;
         }
@@ -129,14 +117,20 @@ public class Event
 
     public bool CanUnlock()
     {
-        if (data.StartDay != 0 && (SessionVariables.Day.Value - (data.StartDay + data.Duration) < MinRepeatDayDifference || !CanRepeat))
+        var e = SessionVariables.Events.FirstOrDefault(a => a.idx == data.idx);
+        if (e != null)
+        {
+            data.StartDay = e.StartDay;
+            data.Duration = e.Duration;
+        }
+        if (data.StartDay > 0 && (SessionVariables.Day.Value - (data.StartDay + data.Duration) < MinRepeatDayDifference || !CanRepeat))
         {
             return false;
         }
 
         if (FixedDay > 0)
         {
-            return SessionVariables.Day.Value + 1 == FixedDay;
+            return (SessionVariables.Day.Value + 1) % 32 == FixedDay && (SessionVariables.Day.Value + 1) >= MinimumDay;
         }
 
         if ((SessionVariables.Day.Value + 1) >= MinimumDay && SessionVariables.Followers.Value >= FollowersRequired && SessionVariables.Experience.Value >= ExperienceRequired && SessionVariables.Reputation.Value >= ReputationRequired && SessionVariables.Savings >= MoneyRequired)

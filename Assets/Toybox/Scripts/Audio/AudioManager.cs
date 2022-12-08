@@ -96,7 +96,13 @@ public enum SFX
     Customer_Scientist = 166,
     Customer_Traveller = 167,
     Customer_Benfranklin = 168,
-    Customer_Hoodie = 169
+    Customer_Hoodie = 169,
+    Customer_Luminati = 170,
+    Customer_Moray = 171,
+    Customer_Pengour = 172,
+    Customer_Sleeper = 173,
+    Customer_Slug = 174,
+    Customer_Zeus = 175
 }
 
 public enum BGM
@@ -107,7 +113,8 @@ public enum BGM
     PostGame,
     GameRegular,
     GameRain,
-    GameThunderStorm
+    GameThunderStorm,
+    GameFestival
 }
 
 

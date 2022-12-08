@@ -106,7 +106,7 @@ MonoBehaviour:
     RushHourIncrease: {x: 0, y: 0}
     CustomerGapDecrease: {x: 0, y: 0}
     CanRepeat: 1
-    MinRepeatDayDifference: 20
+    MinRepeatDayDifference: 12
     IncreaseMaxIncomeMultiplier: 0
     IncreaseMaxIncome: 0
     UnlocksColors: 0
@@ -114,7 +114,7 @@ MonoBehaviour:
     ExperienceRequired: 0
     ReputationRequired: 0
     MoneyRequired: 0
-    MinimumDay: 21
+    MinimumDay: 17
     FixedDay: -1
     tags: 
     newExpenses:
@@ -129,8 +129,8 @@ MonoBehaviour:
       StartDay: 0
       Duration: 2
     eventLogMessage: Looks like a convention for a famous videogame is coming to
-      town soon. Chances are many people will want drawings of their favourite creatures.
-    minMaxDuration: {x: 2, y: 2}
+      town.
+    minMaxDuration: {x: 1, y: 1}
     Permanent: 0
     RushHourIncrease: {x: 0.1, y: 0.2}
     CustomerGapDecrease: {x: 0.1, y: 0.2}
@@ -168,7 +168,7 @@ MonoBehaviour:
     ReputationRequired: 0
     MoneyRequired: 0
     MinimumDay: 0
-    FixedDay: 15
+    FixedDay: 13
     tags: 020000000100000031000000
     newExpenses: []
   - data:
@@ -178,7 +178,7 @@ MonoBehaviour:
       Duration: 0
     eventLogMessage: With summer heat around the corner, the AC is gonna have to
       do extra work I'm afraid.
-    minMaxDuration: {x: 10, y: 10}
+    minMaxDuration: {x: 8, y: 8}
     Permanent: 0
     RushHourIncrease: {x: 0, y: 0}
     CustomerGapDecrease: {x: 0, y: 0}
@@ -192,7 +192,7 @@ MonoBehaviour:
     ReputationRequired: 0
     MoneyRequired: 0
     MinimumDay: 0
-    FixedDay: 11
+    FixedDay: 9
     tags: 
     newExpenses:
     - Name: AC
@@ -231,7 +231,7 @@ MonoBehaviour:
       Duration: 0
     eventLogMessage: Winter is looking to be harsh. I'll need to cover the extra
       cost of heating.
-    minMaxDuration: {x: 10, y: 10}
+    minMaxDuration: {x: 8, y: 8}
     Permanent: 0
     RushHourIncrease: {x: 0, y: 0}
     CustomerGapDecrease: {x: 0, y: 0}
@@ -245,7 +245,7 @@ MonoBehaviour:
     ReputationRequired: 0
     MoneyRequired: 0
     MinimumDay: 0
-    FixedDay: 31
+    FixedDay: 25
     tags: 
     newExpenses:
     - Name: Heating
@@ -260,7 +260,7 @@ MonoBehaviour:
       Duration: 0
     eventLogMessage: Halloween is around the corner! I wonder what costumes everyone
       is going to be wearing.
-    minMaxDuration: {x: 4, y: 4}
+    minMaxDuration: {x: 3, y: 3}
     Permanent: 0
     RushHourIncrease: {x: 0.2, y: 0.3}
     CustomerGapDecrease: {x: 0.1, y: 0.2}
@@ -274,7 +274,7 @@ MonoBehaviour:
     ReputationRequired: 0
     MoneyRequired: 0
     MinimumDay: 0
-    FixedDay: 27
+    FixedDay: 22
     tags: 190000004300000011000000
     newExpenses: []
   - data:
@@ -298,7 +298,7 @@ MonoBehaviour:
     ReputationRequired: 0
     MoneyRequired: 0
     MinimumDay: 0
-    FixedDay: 25
+    FixedDay: 20
     tags: 2000000031000000
     newExpenses:
     - Name: Present
@@ -327,7 +327,7 @@ MonoBehaviour:
     ReputationRequired: 0
     MoneyRequired: 0
     MinimumDay: 0
-    FixedDay: 36
+    FixedDay: 29
     tags: 2d000000
     newExpenses: []
   - data:
@@ -341,7 +341,7 @@ MonoBehaviour:
     RushHourIncrease: {x: 0.1, y: 0.1}
     CustomerGapDecrease: {x: 0.1, y: 0.1}
     CanRepeat: 1
-    MinRepeatDayDifference: 0
+    MinRepeatDayDifference: 32
     IncreaseMaxIncomeMultiplier: 0.05
     IncreaseMaxIncome: 1
     UnlocksColors: 0
@@ -349,7 +349,7 @@ MonoBehaviour:
     ExperienceRequired: 0
     ReputationRequired: 0
     MoneyRequired: 0
-    MinimumDay: 41
+    MinimumDay: 33
     FixedDay: 1
     tags: 20000000
     newExpenses: []
@@ -373,7 +373,7 @@ MonoBehaviour:
     ExperienceRequired: 4
     ReputationRequired: 3
     MoneyRequired: 200
-    MinimumDay: 28
+    MinimumDay: 21
     FixedDay: -1
     tags: 
     newExpenses:
@@ -389,11 +389,11 @@ MonoBehaviour:
       Duration: 0
     eventLogMessage: I got a letter today notifying me of a tax increase. How greedy.
     minMaxDuration: {x: 1, y: 1}
-    Permanent: 0
+    Permanent: 1
     RushHourIncrease: {x: 0, y: 0}
     CustomerGapDecrease: {x: 0, y: 0}
     CanRepeat: 1
-    MinRepeatDayDifference: 21
+    MinRepeatDayDifference: 16
     IncreaseMaxIncomeMultiplier: 0
     IncreaseMaxIncome: 0
     UnlocksColors: 0
@@ -401,7 +401,7 @@ MonoBehaviour:
     ExperienceRequired: 6
     ReputationRequired: 6
     MoneyRequired: 350
-    MinimumDay: 40
+    MinimumDay: 34
     FixedDay: -1
     tags: 
     newExpenses:
@@ -431,32 +431,8 @@ MonoBehaviour:
     ReputationRequired: 0
     MoneyRequired: 0
     MinimumDay: 0
-    FixedDay: 22
-    tags: 44000000
-    newExpenses: []
-  - data:
-      idx: 16
-      eventLogMessageSeen: 0
-      StartDay: 0
-      Duration: 0
-    eventLogMessage: Ah, such perfect weather for going to the beach. Maybe some
-      beachgoers will stop by.
-    minMaxDuration: {x: 1, y: 1}
-    Permanent: 0
-    RushHourIncrease: {x: 0.1, y: 0.1}
-    CustomerGapDecrease: {x: 0.1, y: 0.1}
-    CanRepeat: 0
-    MinRepeatDayDifference: 0
-    IncreaseMaxIncomeMultiplier: 0
-    IncreaseMaxIncome: 0
-    UnlocksColors: 0
-    FollowersRequired: 0
-    ExperienceRequired: 0
-    ReputationRequired: 0
-    MoneyRequired: 0
-    MinimumDay: 0
     FixedDay: 18
-    tags: 1b0000003a000000
+    tags: 44000000
     newExpenses: []
   - data:
       idx: 17
@@ -478,7 +454,7 @@ MonoBehaviour:
     ReputationRequired: 0
     MoneyRequired: 0
     MinimumDay: 0
-    FixedDay: 32
+    FixedDay: 27
     tags: 460000000500000016000000
     newExpenses: []
   - data:
@@ -501,6 +477,6 @@ MonoBehaviour:
     ReputationRequired: 0
     MoneyRequired: 0
     MinimumDay: 0
-    FixedDay: 12
+    FixedDay: 10
     tags: 4b000000010000002f000000
     newExpenses: []

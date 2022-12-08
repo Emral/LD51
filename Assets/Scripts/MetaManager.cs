@@ -69,9 +69,11 @@ public class MetaManager : MonoBehaviour
         SessionVariables._savings = _svSavings;
 
         GameCanAdvance = true;
-
+        int i = 0;
         foreach (Event ev in events.events)
         {
+            ev.data.idx = i;
+            i++;
             ev.Initialize();
         }
 
